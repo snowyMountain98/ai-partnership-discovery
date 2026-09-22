@@ -3,537 +3,115 @@ const path = require("path");
 const { XMLParser } = require("fast-xml-parser");
 
 const OUTPUT_FILE = path.join(__dirname, "../data/companies.json");
-
-const RSS_BASE_URL =
-  "https://news.google.com/rss/search";
-
-const NEWS_PERIOD = "when:7d";
-
-// 너무 많은 기사를 가져오지 않도록 제한
-const MAX_NEWS_PER_QUERY = 30;
-
-// 최종적으로 저장할 기업 수
-const MAX_COMPANIES = 50;
-
-// 최소 몇 개의 신호가 있어야 후보 기업으로 인정할지
+const RSS_BASE_URL = "https://news.google.com/rss/search";
+const NEWS_PERIOD = "when:14d";
+const MAX_NEWS_PER_QUERY = 25;
+const MAX_COMPANIES = 40;
 const MIN_MENTIONS = 2;
 
-
 /*
- * =========================================================
- * KB스타플랫폼 제휴 후보 발굴 검색어
- * =========================================================
+ * KB스타플랫폼의 실제 가맹점 후보를 찾기 위한 검색어입니다.
  *
- * 단순히 "핀테크 기업"을 찾는 것이 아니라
+ * 핵심 기준
+ * 1) 상품/서비스를 실제로 판매하는 사업자
+ * 2) 온라인몰/자사몰/앱/예약/티켓 등 거래가 발생하는 채널 보유
+ * 3) 결제 수요가 보이는 기업
+ * 4) 최근 신규 상품/서비스/온라인 판매 확대 등 제휴 타이밍이 보이는 기업
  *
- * 1. 온라인 판매
- * 2. 자체 앱/플랫폼
- * 3. 간편결제
- * 4. 구독/정기결제
- * 5. B2B
- * 6. 예약/교육/여행/헬스케어 등 플랫폼
- * 7. 기부/후원/헌금
- *
- * 등 "결제가 발생할 가능성이 높은 사업"을 찾는다.
+ * 금융사·통신사·빅테크·결제사업자 자체를 찾는 검색어는 의도적으로 제외합니다.
  */
-
 const discoveryQueries = [
-  // -------------------------------------------------------
-  // 온라인 커머스
-  // -------------------------------------------------------
-  "온라인 쇼핑몰 신규 서비스 출시",
-  "온라인몰 사업 확장",
-  "온라인 커머스 플랫폼 출시",
-  "모바일 커머스 서비스 출시",
-  "자체 쇼핑 앱 출시",
-  "온라인 판매 서비스 출시",
-
-  // -------------------------------------------------------
-  // 플랫폼 / 앱
-  // -------------------------------------------------------
-  "플랫폼 신규 서비스 출시",
-  "모바일 플랫폼 신규 서비스",
-  "자체 앱 서비스 출시",
-  "앱 기반 서비스 출시",
-  "플랫폼 사업 확장",
-
-  // -------------------------------------------------------
-  // 구독 / 정기결제
-  // -------------------------------------------------------
-  "구독 서비스 출시",
-  "정기결제 서비스 출시",
-  "월 구독 서비스 출시",
-  "subscription 서비스 출시",
-  "SaaS 구독 서비스 출시",
-  "구독형 서비스 사업 확대",
-
-  // -------------------------------------------------------
-  // B2B
-  // -------------------------------------------------------
-  "B2B 플랫폼 출시",
-  "B2B 서비스 출시",
-  "기업용 플랫폼 출시",
-  "기업 대상 플랫폼 출시",
-  "B2B SaaS 출시",
-  "기업용 SaaS 출시",
-  "법인 대상 서비스 출시",
-
-  // -------------------------------------------------------
-  // 예약 / 교육 / 여행 / 헬스케어 / 레저
-  // -------------------------------------------------------
-  "예약 플랫폼 서비스 출시",
-  "교육 플랫폼 서비스 출시",
-  "온라인 교육 서비스 출시",
-  "헬스케어 플랫폼 출시",
-  "여행 플랫폼 서비스 출시",
-  "레저 플랫폼 서비스 출시",
-  "모빌리티 플랫폼 서비스 출시",
-
-  // -------------------------------------------------------
-  // 결제
-  // -------------------------------------------------------
-  "간편결제 도입 기업",
-  "모바일 결제 도입",
-  "온라인 결제 시스템 도입",
-  "자체 결제 서비스 출시",
-  "앱 결제 서비스 출시",
-
-  // -------------------------------------------------------
-  // 기부 / 후원 / 종교
-  // -------------------------------------------------------
-  "온라인 기부 플랫폼",
-  "디지털 기부 서비스",
-  "온라인 후원 서비스",
-  "비영리단체 온라인 후원",
-  "디지털 헌금 서비스"
+  "온라인몰 신규 상품 출시",
+  "자사몰 신규 상품 출시",
+  "브랜드몰 온라인 판매 확대",
+  "온라인 쇼핑몰 사업 확대",
+  "D2C 브랜드 온라인 판매 확대",
+  "온라인 커머스 신규 브랜드 출시",
+  "모바일 쇼핑몰 신규 서비스",
+  "온라인 주문 서비스 출시",
+  "온라인 예약 서비스 출시",
+  "예약 플랫폼 신규 상품 출시",
+  "숙박 예약 서비스 신규 상품",
+  "여행 상품 온라인 판매 확대",
+  "티켓 예매 서비스 출시",
+  "공연 티켓 온라인 판매",
+  "교육 수강권 온라인 판매",
+  "온라인 클래스 신규 상품",
+  "헬스케어 서비스 이용권 출시",
+  "레저 이용권 온라인 판매",
+  "회원권 온라인 판매",
+  "정기구독 상품 출시",
+  "구독형 상품 출시",
+  "월 구독 서비스 신규 출시",
+  "멤버십 상품 출시 온라인",
+  "온라인 결제 도입 쇼핑몰",
+  "온라인 결제 도입 브랜드",
+  "모바일 결제 도입 쇼핑몰",
+  "자사몰 결제 시스템 도입",
+  "온라인 판매 신규 진출 기업",
+  "소비자 대상 신규 서비스 출시",
+  "소비자 대상 온라인 서비스 출시"
 ];
 
-
-/*
- * =========================================================
- * 제외할 일반 단어
- * =========================================================
- */
-
-const invalidCompanyNames = new Set([
-  "온라인",
-  "서비스",
-  "플랫폼",
-  "기업",
-  "업체",
-  "시장",
-  "사업",
-  "신규",
-  "출시",
-  "확대",
-  "도입",
-  "결제",
-  "간편결제",
-  "정기결제",
-  "구독",
-  "커머스",
-  "쇼핑몰",
-  "스타트업",
-  "금융",
-  "핀테크",
-  "SaaS",
-  "B2B",
-  "모바일",
-  "앱",
-  "고객",
-  "소비자",
-  "서비스업",
-  "플랫폼업체",
-  "기업들",
-  "업계",
-  "시장",
-  "정부",
-  "은행",
-  "카드",
-  "증권",
-  "보험"
+/* 명백히 가맹점 발굴 대상이 아닌 회사/업종 */
+const excludedCompanyNames = new Set([
+  "카카오", "네이버", "메타", "페이스북", "아마존", "amazon",
+  "SK텔레콤", "SKT", "KT", "LG유플러스",
+  "카카오페이", "네이버페이", "토스", "토스페이", "케이뱅크",
+  "KB국민은행", "신한은행", "하나은행", "우리은행", "NH농협은행",
+  "삼성카드", "현대카드", "신한카드", "KB국민카드",
+  "비자", "마스터카드", "VISA", "Mastercard",
+  "KG이니시스", "토스페이먼츠", "NHN KCP", "나이스페이",
+  "다날", "헥토파이낸셜", "카페24", "NHN", "쿠팡이츠"
 ]);
 
-
-/*
- * =========================================================
- * 산업 분류
- * =========================================================
- */
-
-function inferIndustry(text) {
-  const value = text.toLowerCase();
-
-  if (
-    value.includes("쇼핑") ||
-    value.includes("커머스") ||
-    value.includes("온라인몰") ||
-    value.includes("판매")
-  ) {
-    return "커머스";
-  }
-
-  if (
-    value.includes("구독") ||
-    value.includes("subscription") ||
-    value.includes("saas")
-  ) {
-    return "구독/SaaS";
-  }
-
-  if (
-    value.includes("b2b") ||
-    value.includes("법인") ||
-    value.includes("기업용")
-  ) {
-    return "B2B";
-  }
-
-  if (
-    value.includes("교육") ||
-    value.includes("학습")
-  ) {
-    return "교육";
-  }
-
-  if (
-    value.includes("여행") ||
-    value.includes("호텔") ||
-    value.includes("관광")
-  ) {
-    return "여행/관광";
-  }
-
-  if (
-    value.includes("헬스") ||
-    value.includes("의료") ||
-    value.includes("건강")
-  ) {
-    return "헬스케어";
-  }
-
-  if (
-    value.includes("예약") ||
-    value.includes("레저")
-  ) {
-    return "예약/레저";
-  }
-
-  if (
-    value.includes("기부") ||
-    value.includes("후원") ||
-    value.includes("헌금") ||
-    value.includes("봉헌") ||
-    value.includes("보시")
-  ) {
-    return "기부/비영리";
-  }
-
-  if (
-    value.includes("모빌리티") ||
-    value.includes("택시") ||
-    value.includes("교통")
-  ) {
-    return "모빌리티";
-  }
-
-  return "플랫폼/서비스";
-}
-
-
-/*
- * =========================================================
- * 제휴 서비스 적합성 분석
- * =========================================================
- */
-
-function analyzePartnershipFit(company) {
-  const text = [
-    company.name,
-    company.industry,
-    ...company.queries,
-    ...company.news.map((news) => news.title),
-    ...company.news.map((news) => news.description || "")
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  const signals = [];
-
-  let score = 0;
-
-  let paymentNeed = false;
-  let onlineService = false;
-  let mobileApp = false;
-  let subscription = false;
-  let b2b = false;
-  let commerce = false;
-  let donation = false;
-
-  /*
-   * 온라인 서비스
-   */
-  if (
-    text.includes("온라인") ||
-    text.includes("플랫폼") ||
-    text.includes("앱") ||
-    text.includes("모바일") ||
-    text.includes("웹")
-  ) {
-    onlineService = true;
-    score += 15;
-
-    signals.push("온라인/플랫폼 기반 서비스");
-  }
-
-  /*
-   * 결제 수요
-   */
-  if (
-    text.includes("결제") ||
-    text.includes("판매") ||
-    text.includes("쇼핑") ||
-    text.includes("커머스") ||
-    text.includes("예약") ||
-    text.includes("주문") ||
-    text.includes("구매")
-  ) {
-    paymentNeed = true;
-    score += 25;
-
-    signals.push("상품·서비스 판매에 따른 결제 수요");
-  }
-
-  /*
-   * 자체 앱
-   */
-  if (
-    text.includes("앱 출시") ||
-    text.includes("모바일 앱") ||
-    text.includes("자체 앱") ||
-    text.includes("애플리케이션")
-  ) {
-    mobileApp = true;
-    score += 10;
-
-    signals.push("자체 모바일 앱 서비스");
-  }
-
-  /*
-   * 구독 / 정기결제
-   */
-  if (
-    text.includes("구독") ||
-    text.includes("정기결제") ||
-    text.includes("월 구독") ||
-    text.includes("subscription") ||
-    text.includes("saas")
-  ) {
-    subscription = true;
-    paymentNeed = true;
-
-    score += 20;
-
-    signals.push("구독·정기결제 가능성");
-  }
-
-  /*
-   * B2B
-   */
-  if (
-    text.includes("b2b") ||
-    text.includes("법인") ||
-    text.includes("기업용") ||
-    text.includes("기업 대상")
-  ) {
-    b2b = true;
-    paymentNeed = true;
-
-    score += 15;
-
-    signals.push("B2B/법인 결제 수요 가능성");
-  }
-
-  /*
-   * 커머스
-   */
-  if (
-    text.includes("커머스") ||
-    text.includes("쇼핑몰") ||
-    text.includes("온라인몰") ||
-    text.includes("온라인 쇼핑") ||
-    text.includes("판매")
-  ) {
-    commerce = true;
-    paymentNeed = true;
-
-    score += 10;
-
-    signals.push("온라인 커머스 사업");
-  }
-
-  /*
-   * 기부 / 후원
-   */
-  if (
-    text.includes("기부") ||
-    text.includes("후원") ||
-    text.includes("헌금") ||
-    text.includes("봉헌") ||
-    text.includes("보시")
-  ) {
-    donation = true;
-
-    score += 20;
-
-    signals.push("기부·후원·헌금 관련 서비스");
-  }
-
-  /*
-   * 최근 사업 확장
-   */
-  if (
-    text.includes("출시") ||
-    text.includes("신규") ||
-    text.includes("확장") ||
-    text.includes("확대") ||
-    text.includes("사업 확대") ||
-    text.includes("신사업")
-  ) {
-    score += 5;
-
-    signals.push("최근 신규 서비스/사업 확대");
-  }
-
-  /*
-   * 최대 100점
-   */
-  score = Math.min(score, 100);
-
-  /*
-   * 서비스 추천
-   */
-
-  const fitServices = [];
-
-  if (paymentNeed || commerce || onlineService) {
-    fitServices.push("브랜드Pay");
-  }
-
-  if (subscription) {
-    fitServices.push("정기결제");
-  }
-
-  if (b2b) {
-    fitServices.push("법인결제(B2B)");
-  }
-
-  if (paymentNeed) {
-    fitServices.push("현금영수증");
-    fitServices.push("결제·정산 관리");
-  }
-
-  if (donation) {
-    fitServices.push("KB마음더하기");
-  }
-
-  /*
-   * 중복 제거
-   */
-  const uniqueServices = [...new Set(fitServices)];
-
-  /*
-   * 제휴 이유 생성
-   */
-
-  let discoveryReason = "";
-
-  if (uniqueServices.length > 0) {
-    discoveryReason =
-      `${company.name}은(는) ${signals.slice(0, 3).join(", ")} 등의 신호가 확인되어 ` +
-      `KB스타플랫폼의 ${uniqueServices.slice(0, 3).join(", ")}와의 연계 가능성을 검토할 후보로 분류했습니다.`;
-  } else {
-    discoveryReason =
-      `${company.name}은(는) 최근 온라인 서비스 또는 사업 확장 관련 외부 활동이 확인된 기업입니다.`;
-  }
-
-  return {
-    partnershipScore: score,
-    paymentNeed,
-    onlineService,
-    mobileApp,
-    subscription,
-    b2b,
-    commerce,
-    donation,
-    fitServices: uniqueServices,
-    discoverySignals: signals,
-    discoveryReason
-  };
-}
-
-
-/*
- * =========================================================
- * Google News RSS 조회
- * =========================================================
- */
-
-async function fetchNews(query) {
-  const url =
-    `${RSS_BASE_URL}?q=${encodeURIComponent(
-      `${query} ${NEWS_PERIOD}`
-    )}&hl=ko&gl=KR&ceid=KR:ko`;
-
-  console.log(`뉴스 검색: ${query}`);
-
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(
-      `Google News 요청 실패: ${response.status}`
-    );
-  }
-
-  const xml = await response.text();
-
-  const parser = new XMLParser({
-    ignoreAttributes: false
-  });
-
-  const parsed = parser.parse(xml);
-
-  const items =
-    parsed?.rss?.channel?.item || [];
-
-  const normalizedItems = Array.isArray(items)
-    ? items
-    : [items];
-
-  return normalizedItems
-    .slice(0, MAX_NEWS_PER_QUERY)
-    .map((item) => ({
-      title: cleanText(item.title),
-      link: item.link || "",
-      pubDate: item.pubDate || "",
-      description: cleanText(item.description || "")
-    }))
-    .filter((item) => item.title);
-}
-
-
-/*
- * =========================================================
- * 텍스트 정리
- * =========================================================
- */
+/* 제목/본문에 아래 표현이 강하게 나오면 '결제사업자 또는 자체 결제 인프라'로 간주 */
+const paymentProviderKeywords = [
+  "결제대행", "pg사", "pg 사업", "pg서비스", "전자지급결제대행",
+  "결제 플랫폼", "결제 인프라", "결제 솔루션", "결제 솔루션 사업",
+  "자체 결제 시스템", "자체 결제시스템", "자체 결제 서비스",
+  "자체 간편결제", "자체 페이", "페이 서비스", "간편결제 서비스",
+  "결제수단을 직접", "결제사업", "결제 사업자", "결제 전문"
+];
+
+/* 뉴스에서 기존 결제수단 구축/운영이 확인되면 후보 점수를 크게 낮춤 */
+const existingPaymentKeywords = [
+  "자체 결제 시스템", "자체 결제시스템", "자체 결제 서비스",
+  "자체 간편결제", "자체 페이", "페이 출시", "페이 서비스 출시",
+  "결제 시스템 구축", "결제시스템 구축", "결제 플랫폼 구축",
+  "결제 인프라 구축", "간편결제 구축", "결제수단 구축",
+  "pg 연동", "pg사 연동", "결제대행 연동", "결제 모듈 구축"
+];
+
+const merchantPositiveKeywords = [
+  "쇼핑몰", "온라인몰", "자사몰", "브랜드몰", "상품", "제품",
+  "판매", "주문", "구매", "장바구니", "배송", "예약", "예매",
+  "티켓", "입장권", "이용권", "수강권", "회원권", "숙박", "객실",
+  "여행상품", "패키지", "구독상품", "정기구독", "멤버십", "수강료",
+  "서비스 이용료", "온라인 판매", "소비자 대상"
+];
+
+const merchantNegativeKeywords = [
+  "핀테크", "금융지주", "은행", "카드사", "증권사", "보험사",
+  "통신사", "통신", "ai 모델", "ai 플랫폼", "클라우드",
+  "데이터센터", "반도체", "소프트웨어 솔루션", "결제 솔루션",
+  "pg", "결제대행", "핀테크 플랫폼", "금융 플랫폼"
+];
+
+const industryRules = [
+  { name: "패션/뷰티", keys: ["패션", "의류", "뷰티", "화장품", "브랜드", "잡화"] },
+  { name: "식품/식음료", keys: ["식품", "푸드", "식음료", "간편식", "베이커리", "커피"] },
+  { name: "홈리빙", keys: ["가구", "인테리어", "홈리빙", "생활용품", "리빙"] },
+  { name: "여행/숙박", keys: ["여행", "숙박", "호텔", "리조트", "관광", "항공"] },
+  { name: "교육", keys: ["교육", "학원", "강의", "클래스", "수강", "학습"] },
+  { name: "레저/티켓", keys: ["레저", "티켓", "공연", "전시", "입장권", "예매"] },
+  { name: "헬스케어", keys: ["헬스", "건강", "의료", "피트니스", "병원"] },
+  { name: "반려동물", keys: ["반려동물", "펫", "강아지", "고양이"] },
+  { name: "서비스/예약", keys: ["예약", "방문", "출장", "청소", "세차", "돌봄"] }
+];
 
 function cleanText(value) {
-  if (!value) {
-    return "";
-  }
-
-  return String(value)
+  return String(value || "")
     .replace(/<[^>]*>/g, " ")
     .replace(/&quot;/g, '"')
     .replace(/&amp;/g, "&")
@@ -544,552 +122,275 @@ function cleanText(value) {
     .trim();
 }
 
+function normalizeName(name) {
+  return name
+    .replace(/["'“”‘’]/g, "")
+    .replace(/^(주식회사|㈜)\s*/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
-/*
- * =========================================================
- * 기업명 후보 추출
- * =========================================================
- *
- * 뉴스 제목에서 기업명을 찾는 휴리스틱.
- *
- * Google News 제목은 보통
- *
- * "네이버, 새로운 구독 서비스 출시"
- * "무신사, 모바일 결제 서비스 확대"
- *
- * 같은 형태이기 때문에 앞쪽 명사를 우선 추출한다.
- *
- * 완벽한 기업명 인식은 아니므로
- * 후속 AI 분석 단계에서 추가 검증한다.
- */
+function isExcludedName(name) {
+  const n = normalizeName(name).toLowerCase();
+  if (excludedCompanyNames.has(name)) return true;
+  return [...excludedCompanyNames].some(x => n === String(x).toLowerCase());
+}
+
+function isValidCompanyName(name) {
+  const n = normalizeName(name);
+  if (!n || n.length < 2 || n.length > 30) return false;
+  if (isExcludedName(n)) return false;
+  if (/^(온라인|모바일|디지털|신규|기업|서비스|플랫폼|상품|브랜드|시장|업계|소비자)/.test(n)) return false;
+  if (/(출시|확대|도입|판매|사업|시장|관련|기반|기업들|업계)$/.test(n)) return false;
+  if (/^(정부|한국|국내|서울|금융위원회|금융감독원|중소벤처기업부)/.test(n)) return false;
+  return true;
+}
 
 function extractCompanyCandidates(title) {
   const candidates = [];
 
-  /*
-   * 1. 제목 앞쪽에서
-   *    "기업명, ..."
-   */
-  const commaMatch = title.match(
-    /^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.\- ]{1,25}?)[,，:：]/
-  );
+  // "기업명, ..." / "기업명: ..."
+  const prefix = title.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.()·\- ]{1,24}?)[,，:：]/);
+  if (prefix) candidates.push(prefix[1]);
 
-  if (commaMatch) {
-    candidates.push(commaMatch[1].trim());
-  }
+  // "기업명은/는/이/가 ..."
+  const subject = title.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.()·\- ]{1,22}?)(?:은|는|이|가)\s/);
+  if (subject) candidates.push(subject[1]);
 
-  /*
-   * 2. "기업명은/는/이/가" 형태
-   */
-  const subjectMatch = title.match(
-    /^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.\- ]{1,20}?)(?:은|는|이|가)\s/
-  );
+  // "주식회사 XXX"
+  const corp = title.match(/(?:주식회사|㈜)\s*([가-힣A-Za-z0-9&.()·\-]{2,30})/);
+  if (corp) candidates.push(corp[1]);
 
-  if (subjectMatch) {
-    candidates.push(subjectMatch[1].trim());
-  }
-
-  /*
-   * 3. "기업명,..." 외에도
-   *    괄호 안 영문명이 있는 경우
-   */
-  const englishMatch = title.match(
-    /\(([A-Za-z][A-Za-z0-9&.\- ]{1,30})\)/
-  );
-
-  if (englishMatch) {
-    candidates.push(englishMatch[1].trim());
-  }
-
-  /*
-   * 4. 주식회사 XXX
-   */
-  const corporationMatch = title.match(
-    /(?:주식회사|㈜)\s*([가-힣A-Za-z0-9&.\-]{2,30})/
-  );
-
-  if (corporationMatch) {
-    candidates.push(corporationMatch[1].trim());
-  }
-
-  return candidates
-    .map((name) =>
-      name
-        .replace(/["'“”‘’]/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-    )
-    .filter((name) => isValidCompanyName(name));
+  return [...new Set(candidates.map(normalizeName).filter(isValidCompanyName))];
 }
 
-
-/*
- * =========================================================
- * 기업명 유효성 검사
- * =========================================================
- */
-
-function isValidCompanyName(name) {
-  if (!name) {
-    return false;
+function inferIndustry(text) {
+  const value = text.toLowerCase();
+  for (const rule of industryRules) {
+    if (rule.keys.some(key => value.includes(key.toLowerCase()))) return rule.name;
   }
-
-  if (name.length < 2 || name.length > 30) {
-    return false;
-  }
-
-  if (invalidCompanyNames.has(name)) {
-    return false;
-  }
-
-  /*
-   * 너무 일반적인 문구 제외
-   */
-  const invalidPatterns = [
-    /^(온라인|모바일|디지털|신규|기업|서비스|플랫폼)/,
-    /(출시|확대|도입|사업|시장|업계|관련|기반)$/,
-    /^제\d+회/,
-    /^올해/,
-    /^내년/,
-    /^국내/,
-    /^글로벌/,
-    /^한국/,
-    /^서울/,
-    /^정부/,
-    /^금융위원회/,
-    /^금융감독원/,
-    /^중소벤처기업부/
-  ];
-
-  if (
-    invalidPatterns.some((pattern) =>
-      pattern.test(name)
-    )
-  ) {
-    return false;
-  }
-
-  return true;
+  return "기타 소비자 서비스";
 }
 
+function countMatches(text, keywords) {
+  const value = text.toLowerCase();
+  return keywords.filter(k => value.includes(k.toLowerCase())).length;
+}
 
-/*
- * =========================================================
- * 뉴스 중복 제거
- * =========================================================
- */
+function analyzeMerchantFit(company) {
+  const text = [
+    company.name,
+    ...company.queries,
+    ...company.news.map(n => n.title),
+    ...company.news.map(n => n.description || "")
+  ].join(" ");
 
-function deduplicateNews(news) {
+  const positive = countMatches(text, merchantPositiveKeywords);
+  const negative = countMatches(text, merchantNegativeKeywords);
+  const provider = countMatches(text, paymentProviderKeywords);
+  const existingPayment = countMatches(text, existingPaymentKeywords);
+
+  let score = 0;
+  const signals = [];
+
+  // 실제 판매/거래 신호를 가장 크게 반영
+  score += Math.min(40, positive * 8);
+  if (positive > 0) signals.push("상품·서비스 판매/거래 신호");
+
+  if (/온라인몰|자사몰|브랜드몰|쇼핑몰|온라인 판매|온라인 주문|온라인 예약/i.test(text)) {
+    score += 20;
+    signals.push("온라인 판매 채널 확인");
+  }
+
+  if (/상품|제품|판매|주문|구매|예약|예매|티켓|입장권|이용권|수강권|숙박|회원권/i.test(text)) {
+    score += 15;
+    signals.push("고객 결제가 발생하는 상품/서비스");
+  }
+
+  if (/신규 상품|신상품|신규 서비스|출시|사업 확대|온라인 판매 확대|자사몰 확대/i.test(text)) {
+    score += 10;
+    signals.push("최근 상품·서비스 확대 신호");
+  }
+
+  // 금융/통신/결제사업자는 강하게 제외
+  score -= Math.min(45, negative * 18);
+  score -= Math.min(60, provider * 25);
+
+  if (negative > 0) signals.push("금융·통신·결제사업자 성격");
+  if (provider > 0) signals.push("결제 인프라/결제사업 관련 신호");
+
+  // 자체 결제 구축이 명시적으로 확인되면 사실상 탈락
+  const paymentSystemStatus = existingPayment > 0
+    ? "existing"
+    : provider > 0
+      ? "provider"
+      : "unknown";
+
+  if (existingPayment > 0) {
+    score -= 70;
+    signals.push("기존 자체 결제 시스템/결제 인프라 확인");
+  }
+
+  // 명백한 제외 업종은 0점 처리
+  if (negative >= 2 || provider >= 2 || paymentSystemStatus === "existing") {
+    score = 0;
+  }
+
+  score = Math.max(0, Math.min(100, score));
+
+  const fitServices = [];
+  if (score >= 50) fitServices.push("브랜드Pay");
+  if (/구독|정기구독|멤버십/i.test(text) && score >= 45) fitServices.push("정기결제");
+  if (score >= 50) fitServices.push("현금영수증");
+  if (score >= 50) fitServices.push("결제·정산 관리");
+
+  const discoveryReason = score >= 50
+    ? `${company.name}은(는) ${signals.slice(0, 3).join(", ")}이 확인되어 실제 상품·서비스 결제가 발생하는 가맹점 후보로 분류했습니다.`
+    : "공개 뉴스만으로 KB스타플랫폼 가맹점 후보로 보기 어려워 우선순위를 낮췄습니다.";
+
+  return {
+    merchantFitScore: score,
+    partnershipScore: score,
+    paymentNeed: positive > 0 || /결제|주문|구매|판매|예약|예매/i.test(text),
+    onlineService: /온라인|자사몰|브랜드몰|쇼핑몰|모바일/i.test(text),
+    subscription: /구독|정기구독|멤버십/i.test(text),
+    existingPaymentSystem: paymentSystemStatus === "existing",
+    paymentSystemStatus,
+    fitServices: [...new Set(fitServices)],
+    discoverySignals: signals,
+    discoveryReason
+  };
+}
+
+async function fetchNews(query) {
+  const url = `${RSS_BASE_URL}?q=${encodeURIComponent(`${query} ${NEWS_PERIOD}`)}&hl=ko&gl=KR&ceid=KR:ko`;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Google News 요청 실패: ${response.status}`);
+  const xml = await response.text();
+  const parser = new XMLParser({ ignoreAttributes: false });
+  const parsed = parser.parse(xml);
+  const raw = parsed?.rss?.channel?.item || [];
+  const items = Array.isArray(raw) ? raw : [raw];
+
+  return items.slice(0, MAX_NEWS_PER_QUERY).map(item => ({
+    title: cleanText(item.title),
+    link: item.link || "",
+    pubDate: item.pubDate || "",
+    description: cleanText(item.description || "")
+  })).filter(item => item.title);
+}
+
+function dedupeNews(news) {
   const map = new Map();
-
   for (const item of news) {
     const key = item.link || item.title;
-
-    if (!map.has(key)) {
-      map.set(key, item);
-    }
+    if (!map.has(key)) map.set(key, item);
   }
-
   return [...map.values()];
 }
 
-
-/*
- * =========================================================
- * 기업 ID
- * =========================================================
- */
-
 function makeId(name) {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9가-힣]+/gi, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 60);
+  return name.toLowerCase().replace(/[^a-z0-9가-힣]+/gi, "-").replace(/^-+|-+$/g, "").slice(0, 60);
 }
 
-
-/*
- * =========================================================
- * 기업 설명
- * =========================================================
- */
-
-function createDescription(company) {
-  const parts = [];
-
-  if (company.commerce) {
-    parts.push("커머스");
-  }
-
-  if (company.subscription) {
-    parts.push("구독");
-  }
-
-  if (company.b2b) {
-    parts.push("B2B");
-  }
-
-  if (company.mobileApp) {
-    parts.push("모바일 앱");
-  }
-
-  if (company.donation) {
-    parts.push("기부·후원");
-  }
-
-  if (parts.length === 0) {
-    parts.push(company.industry);
-  }
-
-  return `${parts.join(", ")} 관련 외부 활동이 확인된 제휴 후보 기업`;
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-
-/*
- * =========================================================
- * 메인
- * =========================================================
- */
 
 async function main() {
-  console.log("");
   console.log("==============================================");
-  console.log(" KB스타플랫폼 제휴 후보 기업 발굴 시작");
+  console.log(" KB스타플랫폼 가맹점 후보 발굴 시작");
   console.log("==============================================");
-  console.log("");
 
   const companyMap = new Map();
 
-  /*
-   * -------------------------------------------------------
-   * 1. 외부 뉴스 수집
-   * -------------------------------------------------------
-   */
-
   for (const query of discoveryQueries) {
     try {
+      console.log(`뉴스 검색: ${query}`);
       const newsItems = await fetchNews(query);
 
-      console.log(
-        `  → ${newsItems.length}건 수집`
-      );
-
       for (const news of newsItems) {
-        const candidates =
-          extractCompanyCandidates(news.title);
-
-        for (const companyName of candidates) {
-          const key = companyName.toLowerCase();
-
+        for (const name of extractCompanyCandidates(news.title)) {
+          const key = name.toLowerCase();
           if (!companyMap.has(key)) {
-            companyMap.set(key, {
-              name: companyName,
-              queries: [],
-              news: []
-            });
+            companyMap.set(key, { name, queries: [], news: [] });
           }
-
-          const company =
-            companyMap.get(key);
-
-          if (!company.queries.includes(query)) {
-            company.queries.push(query);
-          }
-
-          company.news.push({
-            ...news,
-            query
-          });
+          const company = companyMap.get(key);
+          if (!company.queries.includes(query)) company.queries.push(query);
+          company.news.push({ ...news, query });
         }
       }
 
-      /*
-       * Google News에 과도한 요청을 보내지 않도록
-       * 쿼리 사이에 잠깐 대기
-       */
       await sleep(300);
-
     } catch (error) {
-      console.error(
-        `  ✕ 검색 실패: ${query}`
-      );
-
-      console.error(error.message);
+      console.error(`검색 실패: ${query} / ${error.message}`);
     }
   }
 
-
-  /*
-   * -------------------------------------------------------
-   * 2. 기업별 데이터 집계
-   * -------------------------------------------------------
-   */
-
-  const companies = [];
+  const candidates = [];
 
   for (const company of companyMap.values()) {
-    company.news = deduplicateNews(company.news);
+    company.news = dedupeNews(company.news);
+    if (company.news.length < MIN_MENTIONS) continue;
 
-    /*
-     * 최소 언급 횟수
-     */
-    if (company.news.length < MIN_MENTIONS) {
-      continue;
-    }
+    const fit = analyzeMerchantFit(company);
+    if (fit.merchantFitScore < 35) continue;
+    if (fit.paymentSystemStatus === "existing") continue;
+    if (fit.paymentSystemStatus === "provider") continue;
 
-    /*
-     * 전체 텍스트
-     */
-    const allText = [
-      company.name,
-      ...company.queries,
-      ...company.news.map((item) => item.title),
-      ...company.news.map((item) => item.description)
-    ].join(" ");
+    const allText = [company.name, ...company.queries, ...company.news.map(n => n.title), ...company.news.map(n => n.description)].join(" ");
+    company.news.sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0));
 
-    company.industry =
-      inferIndustry(allText);
+    const newsActivityScore = Math.min(100, 30 + company.news.length * 8);
 
-    /*
-     * 최근 뉴스가 많을수록 높은 활동 점수
-     */
-    const newsCount =
-      company.news.length;
-
-    const newsActivityScore =
-      Math.min(
-        100,
-        30 + newsCount * 8
-      );
-
-    /*
-     * 제휴 적합성
-     */
-    const fit =
-      analyzePartnershipFit(company);
-
-    /*
-     * 최근 뉴스 순 정렬
-     */
-    company.news.sort((a, b) => {
-      const dateA =
-        new Date(a.pubDate || 0).getTime();
-
-      const dateB =
-        new Date(b.pubDate || 0).getTime();
-
-      return dateB - dateA;
-    });
-
-    /*
-     * 최종 기업 객체
-     */
-    companies.push({
+    candidates.push({
       id: makeId(company.name),
-
       name: company.name,
-
-      industry: company.industry,
-
-      description: createDescription({
-        ...company,
-        ...fit
-      }),
-
-      /*
-       * 기존 화면과의 호환성을 위해 유지
-       */
-      newsCount,
-
+      industry: inferIndustry(allText),
+      description: "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
+      newsCount: company.news.length,
       newsActivityScore,
-
-      /*
-       * 기존 interestScore 대신
-       * KB스타플랫폼 제휴 적합도를 사용
-       */
-      interestScore:
-        fit.partnershipScore,
-
-      /*
-       * 신규 핵심 필드
-       */
-      partnershipScore:
-        fit.partnershipScore,
-
-      paymentNeed:
-        fit.paymentNeed,
-
-      onlineService:
-        fit.onlineService,
-
-      mobileApp:
-        fit.mobileApp,
-
-      subscription:
-        fit.subscription,
-
-      b2b:
-        fit.b2b,
-
-      commerce:
-        fit.commerce,
-
-      donation:
-        fit.donation,
-
-      fitServices:
-        fit.fitServices,
-
-      discoverySignals:
-        fit.discoverySignals,
-
-      discoveryReason:
-        fit.discoveryReason,
-
-      discoveryQueries:
-        company.queries,
-
-      latestNews:
-        company.news.slice(0, 5).map((item) => ({
-          title: item.title,
-          link: item.link,
-          pubDate: item.pubDate
-        }))
+      interestScore: fit.merchantFitScore,
+      partnershipScore: fit.partnershipScore,
+      merchantFitScore: fit.merchantFitScore,
+      paymentNeed: fit.paymentNeed,
+      onlineService: fit.onlineService,
+      subscription: fit.subscription,
+      existingPaymentSystem: fit.existingPaymentSystem,
+      paymentSystemStatus: fit.paymentSystemStatus,
+      fitServices: fit.fitServices,
+      discoverySignals: fit.discoverySignals,
+      discoveryReason: fit.discoveryReason,
+      discoveryQueries: company.queries,
+      latestNews: company.news.slice(0, 5).map(n => ({
+        title: n.title,
+        link: n.link,
+        pubDate: n.pubDate
+      }))
     });
   }
 
-
-  /*
-   * -------------------------------------------------------
-   * 3. 제휴 적합도 기준 정렬
-   * -------------------------------------------------------
-   */
-
-  companies.sort((a, b) => {
-    if (
-      b.partnershipScore !==
-      a.partnershipScore
-    ) {
-      return (
-        b.partnershipScore -
-        a.partnershipScore
-      );
-    }
-
-    return (
-      b.newsActivityScore -
-      a.newsActivityScore
-    );
+  candidates.sort((a, b) => {
+    if (b.merchantFitScore !== a.merchantFitScore) return b.merchantFitScore - a.merchantFitScore;
+    if (b.newsActivityScore !== a.newsActivityScore) return b.newsActivityScore - a.newsActivityScore;
+    return b.newsCount - a.newsCount;
   });
 
+  const finalCompanies = candidates.slice(0, MAX_COMPANIES);
 
-  /*
-   * -------------------------------------------------------
-   * 4. 상위 후보만 저장
-   * -------------------------------------------------------
-   */
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalCompanies, null, 2), "utf8");
 
-  const finalCompanies =
-    companies.slice(0, MAX_COMPANIES);
-
-
-  /*
-   * -------------------------------------------------------
-   * 5. JSON 저장
-   * -------------------------------------------------------
-   */
-
-  fs.writeFileSync(
-    OUTPUT_FILE,
-    JSON.stringify(
-      finalCompanies,
-      null,
-      2
-    ),
-    "utf8"
-  );
-
-
-  /*
-   * -------------------------------------------------------
-   * 6. 결과 출력
-   * -------------------------------------------------------
-   */
-
-  console.log("");
-  console.log("==============================================");
-  console.log(" 제휴 후보 기업 발굴 완료");
-  console.log("==============================================");
-
-  console.log(
-    `전체 후보 기업: ${companies.length}개`
-  );
-
-  console.log(
-    `저장 기업: ${finalCompanies.length}개`
-  );
-
+  console.log(`전체 후보: ${candidates.length}개`);
+  console.log(`최종 저장: ${finalCompanies.length}개`);
   console.log("");
 
-  finalCompanies
-    .slice(0, 20)
-    .forEach((company, index) => {
-      console.log(
-        `${index + 1}. ${company.name}`
-      );
-
-      console.log(
-        `   제휴 적합도: ${company.partnershipScore}`
-      );
-
-      console.log(
-        `   업종: ${company.industry}`
-      );
-
-      console.log(
-        `   추천 서비스: ${
-          company.fitServices.join(", ") || "-"
-        }`
-      );
-
-      console.log(
-        `   근거: ${
-          company.discoverySignals
-            .slice(0, 3)
-            .join(", ") || "-"
-        }`
-      );
-
-      console.log("");
-    });
-
-  console.log(
-    `저장 위치: ${OUTPUT_FILE}`
-  );
+  finalCompanies.slice(0, 20).forEach((company, index) => {
+    console.log(`${index + 1}. ${company.name} / 가맹점 적합도 ${company.merchantFitScore}`);
+    console.log(`   ${company.industry} / ${company.fitServices.join(", ") || "서비스 미정"}`);
+  });
 }
 
-
-/*
- * =========================================================
- * 유틸
- * =========================================================
- */
-
-function sleep(ms) {
-  return new Promise((resolve) =>
-    setTimeout(resolve, ms)
-  );
-}
-
-
-main().catch((error) => {
-  console.error("");
-  console.error(
-    "제휴 후보 발굴 중 오류가 발생했습니다."
-  );
-
+main().catch(error => {
   console.error(error);
-
   process.exit(1);
 });

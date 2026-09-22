@@ -3,243 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="외부 데이터와 AI 분석을 기반으로 유망 제휴 후보 업체를 발굴하고 제휴 전략을 분석하는 시스템"
-  >
-
-  <title>AI 제휴 후보 발굴 시스템</title>
-
+  <meta name="description" content="KB스타플랫폼과 제휴할 가능성이 높은 실제 상품·서비스 판매 가맹점을 외부 데이터와 AI로 발굴하는 시스템">
+  <title>KB스타플랫폼 가맹점 제휴 후보 발굴</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-
-  <!-- ================================
-       Header
-  ================================= -->
-
   <header class="topbar">
-
     <div class="brand">
-
-      <div class="brand-mark">
-        AI
-      </div>
-
+      <div class="brand-mark">AI</div>
       <div>
         <h1>AI 제휴 후보 발굴 시스템</h1>
-
-        <p>
-          외부 데이터 기반 유망 업체 발굴 · AI 비즈니스 분석
-        </p>
+        <p>KB스타플랫폼 가맹점 후보 발굴 · AI 제휴 분석</p>
       </div>
-
     </div>
-
-    <div class="topbar-status">
-      <span class="status-dot"></span>
-      데이터 정상
-    </div>
-
+    <div class="topbar-status"><span class="status-dot"></span> 데이터 정상</div>
   </header>
 
-
-  <!-- ================================
-       Main
-  ================================= -->
-
   <main class="container">
-
-
-    <!-- ================================
-         Hero
-    ================================= -->
-
     <section class="hero">
-
       <div>
-
-        <span class="eyebrow">
-          PLATFORM PARTNERSHIP
-        </span>
-
-        <h2>
-          외부 데이터로 발견하고,<br>
-          <strong>AI로 제휴 기회를 분석합니다.</strong>
-        </h2>
-
-        <p>
-          기업 관련 외부 뉴스 데이터를 수집하여<br>
-          사업 동향과 제휴 가능성을 AI로 분석합니다.
-        </p>
-
+        <span class="eyebrow">KB STAR PLATFORM · MERCHANT DISCOVERY</span>
+        <h2>결제가 필요한 가맹점을 찾고,<br><strong>AI로 제휴 기회를 분석합니다.</strong></h2>
+        <p>상품·서비스를 실제로 판매하는 기업을 외부 데이터에서 발굴하고<br>자체 결제시스템 보유 여부와 KB스타플랫폼 제휴 가능성을 검증합니다.</p>
       </div>
-
-      <div class="hero-icon">
-        ✦
-      </div>
-
+      <div class="hero-icon">✦</div>
     </section>
 
-
-    <!-- ================================
-         Statistics
-    ================================= -->
-
-    <section
-      class="stats-grid"
-      id="statsGrid"
-    ></section>
-
-
-    <!-- ================================
-         Company Discovery
-    ================================= -->
+    <section class="stats-grid" id="statsGrid"></section>
 
     <section class="panel">
-
       <div class="section-head">
-
         <div>
-
-          <span class="section-label">
-            01 · DISCOVERY
-          </span>
-
-          <h2>
-            유망 업체 발굴
-          </h2>
-
-          <p>
-            외부 활동 및 관심도 데이터를 기준으로
-            제휴 후보 업체를 탐색합니다.
-          </p>
-
+          <span class="section-label">01 · MERCHANT DISCOVERY</span>
+          <h2>가맹점 제휴 후보</h2>
+          <p>단순 플랫폼·핀테크 기업이 아니라 상품·서비스를 판매하고 고객 결제가 발생하는 사업자를 우선 탐색합니다.</p>
         </div>
-
-
-        <!-- ============================
-             Filters
-        ============================= -->
-
         <div class="filters">
-
-          <label>
-
-            업종
-
-            <select id="industryFilter">
-
-              <option value="ALL">
-                전체
-              </option>
-
-            </select>
-
-          </label>
-
-
-          <label>
-
-            정렬
-
-            <select id="sortFilter">
-
-              <option value="score">
-                종합 관심도순
-              </option>
-
-              <option value="news">
-                뉴스 활동량순
-              </option>
-
-              <option value="activity">
-                외부 활동 지수순
-              </option>
-
-            </select>
-
-          </label>
-
-
-          <label class="search-box">
-
-            업체 검색
-
-            <input
-              id="searchInput"
-              type="search"
-              placeholder="업체명을 입력하세요"
-            >
-
-          </label>
-
+          <label>업종<select id="industryFilter"><option value="ALL">전체</option></select></label>
+          <label>정렬<select id="sortFilter">
+            <option value="score">가맹점 적합도순</option>
+            <option value="news">뉴스 활동량순</option>
+            <option value="activity">외부 활동 지수순</option>
+          </select></label>
+          <label class="search-box">후보 검색<input id="searchInput" type="search" placeholder="기업명·업종·서비스"></label>
         </div>
-
       </div>
-
-
-      <!-- Company List -->
-
-      <div
-        id="companyList"
-        class="company-list"
-      ></div>
-
+      <div id="companyList" class="company-list"></div>
     </section>
-
-
-    <!-- ================================
-         Data Notice
-    ================================= -->
 
     <section class="notice">
-
-      <div class="notice-icon">
-        i
-      </div>
-
+      <div class="notice-icon">i</div>
       <div>
-
-        <strong>
-          데이터 안내
-        </strong>
-
-        <p>
-          현재 PoC에서는 Google News RSS를 통해 수집한
-          기업 관련 뉴스 데이터를 외부 활동 지표로 활용합니다.
-          수집된 데이터를 기반으로 AI가 사업 동향과
-          제휴 가능성을 분석합니다.
-        </p>
-
+        <strong>발굴 기준</strong>
+        <p>Google News RSS의 최근 외부 기사를 기반으로 상품·서비스 판매, 온라인몰·예약·예매·구독 등 결제 신호를 찾습니다. 금융사·통신사·결제사업자와 공개적으로 자체 결제시스템이 확인되는 후보는 제외하며, 결제시스템 미확인은 미보유를 의미하지 않습니다.</p>
       </div>
-
     </section>
-
-
   </main>
 
-
-  <!-- ================================
-       Footer
-  ================================= -->
-
-  <footer>
-
-    <span>
-      AI Partnership Discovery PoC
-    </span>
-
-    <span>
-      © KB Platform Partnership
-    </span>
-
-  </footer>
-
-
+  <footer><span>AI Partnership Discovery PoC</span><span>© KB Platform Partnership</span></footer>
   <script src="./js/app.js"></script>
-
 </body>
 </html>
