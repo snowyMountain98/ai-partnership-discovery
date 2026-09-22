@@ -1,1414 +1,2606 @@
 [
   {
-    "id": "bnk투자증권",
-    "name": "BNK투자증권",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 금융 플랫폼 신규 사업",
-    "newsCount": 10,
-    "newsActivityScore": 85,
-    "interestScore": 90,
-    "discoverySignals": [
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 10,
-      "queryCount": 1,
-      "recentNewsCount": 10
-    },
-    "latestNews": [
-      {
-        "title": "BNK투자증권, IP 기반 조각투자·STO 사업 확대 - 서울파이낸스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91OFZMWW8yU0JfMHJpQkJTMTdtS085VHRPX0hjRzJkbGNoN1ZlQ0dyRFZFYnVZbk9IMkNGRnlScWNEZVBlbWx4dk9UVy01YjJEWi0ySE50TXdnUFVYVlNtNDhVamJvMlhSMEE?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 23:19:53 GMT",
-        "source": "서울파이낸스"
-      },
-      {
-        "title": "BNK투자증권, IP 기반 조각투자·STO 확대 - 한국금융경제신문",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03Nk1nWklPT0YxQUpsUWdXVDdEUVltNGhxV1Rma1lQRHJjdjFSenpDLVJzaGVhRmRmc2VBcEZTWEpyWmRoRVJuVlpoaEJnUFpfa01JTmZNUjVCTmJoNjlBUjlZV2tIZURhTmdneNIBcEFVX3lxTFA1Z01xd05qUzl5VWZWVXRYbGYxbFVtMHJCUlV1eWI3MjQ3VUhrQ1JYQVE1YklqdXBjb0l2amwzT0E5Ml9ia0RPTWdlYUhSM3VRVHc3bVZPYW44Q1F0bDNwODVwNUw4aDZCSjBmWjBUWm0?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 08:45:19 GMT",
-        "source": "한국금융경제신문"
-      },
-      {
-        "title": "BNK투자증권, 토큰증권 생태계 확장 가속... 플랫폼·IP 전문기업과 맞손 - 뉴스락",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DVTNPN1FoOW5BSm56dkNVU3c1b3hOdzJZUTVkcmZHMzFheDN4OEVILWNrWTU2VHJpVTN6RmtlaVVxY1FPWER5bkszM05HZGU0dmVkaFRVMEVDcEMzZWhGNkFuWFVVUlZWLVQ4cg?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 08:21:08 GMT",
-        "source": "뉴스락"
-      },
-      {
-        "title": "BNK투자증권, IP 기반 조각투자·토큰증권 사업 확대 나선다 - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ndFFQOWRkdE9XTUdPclNWX3FqWEpINGFaeWtZbkxWb2ZJYTZUTFRhM0hMQnN3VDkxSURFa3QxVXMyeGdiY196MWtEMkluRy1Wc01MZ1hIVVlFYnIyMEViRDRJNkfSAWRBVV95cUxOZ3RRUDlkZHRPV01HT3JTVl9xalhKSDRhWnlrWW5MVm9mSWE2VExUYTNITEJzd1Q5MUlERWt0MVVzMnhnYmNfejFrRDJJbkctVnNNTGdYSFVZRWJyMjBFYkQ0STZH?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:37:16 GMT",
-        "source": "뉴스1"
-      },
-      {
-        "title": "BNK투자증권, IP 조각투자·토큰증권 확대…3사 업무협약 - 인더뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12N2tNTmxHTTRja043SXlqR0JQRmhPRWwyWXhINnByRTQxZEswTTl5MVBLUXU4cTdtY1FiYlVGbWdfRVpURUZvQnVwV0JHVU9WdlVBdVV3Yy1hRWxFWWMxMHJVd3Y?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:25:19 GMT",
-        "source": "인더뉴스"
-      },
-      {
-        "title": "BNK투자증권·바이셀스탠다드·인텔렉츄얼디스커버리, IP 기반 토큰증권(STO) 3자 MOU 체결… 금융상품 연계 가속화 - 청년투데이",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZdWRzRUVlRVN0dXNGV3QwcDJfU3diWHZ4elY2em1GSUdrbTkzS2tDVmVTTFA0S243Ukc1SU1BdGt1eXB0ZVcyNjZHa1E5NHExVmR3dDFqVVQtVlc0dFZwTGNmeDg5Y2htVmc?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:43:43 GMT",
-        "source": "청년투데이"
-      },
-      {
-        "title": "BNK투자증권, IP 자산 토큰화로 투자자 선택지 넓힌다 - 데일리한국",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsbFhVaUJtT19xbXYtUlZESFlMUVB2V3J3czR2SGtQa2hPZEZZRDRkbVgwOFc0SjczQndFMkhDTjFVb3ZiZWNPLWRXRDFoT0pfNVVBYkFuSlRtVjFlVUpkZHhOYzdTQkwxNE1lQWNJZkVOM03SAXNBVV95cUxQbGxYVWlCbU9fcW12LVJWREhZTFFQdldyd3M0dkhrUGtoT2RGWUQ0ZG1YMDhXNEo3M0J3RTJIQ04xVW92YmVjTy1kV0QxaE9KXzVVQWJBbkpUbVYxZVVKZGR4TmM3U0JMMTRNZUFjSWZFTjNN?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:15:53 GMT",
-        "source": "데일리한국"
-      },
-      {
-        "title": "BNK투자증권, IP 기반 조각투자·토큰증권 사업 확대 - 헤럴드경제",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12ak5Kc3ZFTjkzSjB5dXJpc3hsbEpVUmphc1Z5WlYxeXBWREhYQWtMSFV1VTdPSHNpV3NLc0hQMk1qdmE2ZEhDVU1TNWlGU2trNXdzY1NB?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:00:27 GMT",
-        "source": "헤럴드경제"
-      },
-      {
-        "title": "BNK투자증권, 지식재산권 조각투자 추진…토큰증권 사업 확대 - 국민일보",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PWTBVVkNFbTcxTkk4WDFmTDYwT0hYN2hjaFJYdUZ6RC00Y1JxT0FhU2h1TWNVQmtOaF9QQ2h3clJxdFNBa05tb0lTRHJUZHNJYzlPcGxHYWpCX3ptWUxOZHdiMFRfX1lZN3cyVNIBbEFVX3lxTE9PWTBVVkNFbTcxTkk4WDFmTDYwT0hYN2hjaFJYdUZ6RC00Y1JxT0FhU2h1TWNVQmtOaF9QQ2h3clJxdFNBa05tb0lTRHJUZHNJYzlPcGxHYWpCX3ptWUxOZHdiMFRfX1lZN3cyVA?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:34:00 GMT",
-        "source": "국민일보"
-      },
-      {
-        "title": "BNK투자증권, 특허·콘텐츠 IP도 조각투자로…토큰증권 기초자산 넓힌다 - 이코노미사이언스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53aXJmNzBxQnJ5R3ota3dqUmpYM3VPR3gzZklpM1lucS1pdFNKTnp2ZndiQ2EwTkduUS1jQXlUVE9DS2pHX0hnSjRiSTRqbHBGNzZBU2dYTm1vaFFvMWFWeHNxN09xc2U4cDU2QVI0TQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:27:05 GMT",
-        "source": "이코노미사이언스"
-      }
-    ]
-  },
-  {
-    "id": "kb증권",
-    "name": "KB증권",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 신규 서비스, 금융 스타트업 투자 유치",
-    "newsCount": 8,
-    "newsActivityScore": 80,
-    "interestScore": 85,
-    "discoverySignals": [
-      "핀테크 신규 서비스",
-      "금융 스타트업 투자 유치"
-    ],
-    "discoveryReason": {
-      "mentionCount": 8,
-      "queryCount": 2,
-      "recentNewsCount": 8
-    },
-    "latestNews": [
-      {
-        "title": "KB증권, ‘깨비오’ 승부수…증권사 MTS ‘거래앱’ 넘어 ‘플랫폼’ 경쟁 - 뉴스투데이",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9sd3Rpa29WcEprQjFfemJkVlRGNjhmWmY1cWN5alFnUHZIdk1OUzJZT3h2djdwLU4tZk5BRmc0TVZCVmNsMFJ6UGFka3FfaGNMNXpGWVg0Mmp2VzRrV3c?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:44:00 GMT",
-        "source": "뉴스투데이"
-      },
-      {
-        "title": "KB증권, 'KB금융 코리아 콘퍼런스' 성황리 개최 - 뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zb19DYzNZeG5OQjA1RWU4SkhoNFZUNG05RGdXRU5PQk1Zcy1kSVVENWExaGhhTUxBVlk0Mzkyb0NnRklnOFJQRHRfOC1nTHN1Y1VRcXE5eWpXRGc3bk9wV9IBeEFVX3lxTE5pTlFWQlRpRmE5X0RFX2lrR0pDVXMxS3QwRVNaYl9xZGJwdlY2ZE5YSUQyU2ZoXzdaeW5veG1lNWtZXzFZUDc4Q3hqN3JDQURfWmNDYkZDbGhjOC1kNE1JOERJSnFsU1loczEtcmVSR2dBb3pUTGl5OA?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 08:54:49 GMT",
-        "source": "뉴시스"
-      },
-      {
-        "title": "KB증권, 2026 KB금융 코리아 컨퍼런스 개최...국내 투자 연결 강화 - 파이낸셜투데이",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hOEVPbTc4OFNUckN3dzlpQWpFS0N6Uy1lNDB6cEZBb2RDT19HOWJCMFJ4MUZ1NHVlYkhXelhvMEJGeVpuX0xTa0t2bHBfbC11cVhUVEZtcW9hTC1GLVlheUtKQzczZ3RHSW5j0gFuQVVfeXFMUHdEOWNOWlJWUjRqazIyblZPQTR6WkF2alhkTmVNNGtIVnpKRzB4ZUc0NFRYdlVRRVR5Z0dfYl9FTmh6THpkUU5zd3lLS0pHT1FheVVlczAxSWhfZU04dE90NmVkMXluT3A2VDBHZWc?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 08:35:41 GMT",
-        "source": "파이낸셜투데이"
-      },
-      {
-        "title": "KB증권, ‘2026 KB금융 코리아 컨퍼런스’ 성료 - 딜라이트닷넷",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8ycEk4LTRTZzdrZF9pVzFtS0NiTzliQldQcTRqdTFaUEpvdWdjOWgyS1gtSklsZHloTk9hbGdzWWRfbkJaZ1J0dDZyY2JBUXhUV0lISnZMR1dodDFIVWdiX3hVandYUV9LTGZkLUJSMGV2Z9IBckFVX3lxTE8ycEk4LTRTZzdrZF9pVzFtS0NiTzliQldQcTRqdTFaUEpvdWdjOWgyS1gtSklsZHloTk9hbGdzWWRfbkJaZ1J0dDZyY2JBUXhUV0lISnZMR1dodDFIVWdiX3hVandYUV9LTGZkLUJSMGV2Zw?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 08:19:41 GMT",
-        "source": "딜라이트닷넷"
-      },
-      {
-        "title": "KB증권 \"코리아 컨퍼런스 성료…국내외 기관투자자 650여곳 참여\" - 파이낸셜포스트",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11WUducWVQY0ptVGVJSUNlOXVSZ2UtbHM0YklJR012U0FBYzZyV3BfOVVHNzF5cUF4N0g1bmJVQkpLQ3NLd0h1VTlFcUltcWllMGlBUlI0VHB0Mk5VNTlLeUJQbHZZd21MWG5abk84OElvQl9D?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 05:35:39 GMT",
-        "source": "파이낸셜포스트"
-      },
-      {
-        "title": "KB증권, '2026 KB금융 코리아 컨퍼런스' 개최 - 뉴스핌",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5wVS05UlU1Q2lGXzYzTU5iMGNTaXdaTlYtSEhWcE9DWkhFb0pud2lpbmZNUWJqUFRGRjRKQ0xsOEszTUExTVVhejAxOG96cUJPSG1naFEyUnJHR09z?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 05:34:00 GMT",
-        "source": "뉴스핌"
-      },
-      {
-        "title": "KB증권, 코리아 콘퍼런스 성료…글로벌 650개 기관 참여 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HMUNxVm9OOEVsY1JJY25oX0cyRVFGbU1US1lvVURuT1ZPVHlUZlFEQkRhVlpoMWVNR0tXWkt4RlltSFJvVEFlUWZ1YW5RNWdhTV9FYw?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 05:09:00 GMT",
-        "source": "이투데이"
-      },
-      {
-        "title": "KB증권, ‘2026 KB금융 코리아 컨퍼런스’ 성료 - 글로벌이코노믹",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPc0JsdGxsbFF2YWI4enpGZ19hMjQyVDYwTTJIOTBvS0N3NVNpVUxibVc5NzVBSF9YYk9nS2YwcXFuVG1rbm84VDRKQWtaekpVdmZDNkZtajhUd0c0VDlzUGh4UVRidVJfNGdtbWxoUENfZjVablNHc3R1ZVZ6R2l2UXZBMmFLc1oy?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 05:07:17 GMT",
-        "source": "글로벌이코노믹"
-      }
-    ]
-  },
-  {
-    "id": "하나금융",
-    "name": "하나금융",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약",
-    "newsCount": 7,
-    "newsActivityScore": 70,
-    "interestScore": 75,
-    "discoverySignals": [
-      "핀테크 업무협약"
-    ],
-    "discoveryReason": {
-      "mentionCount": 7,
-      "queryCount": 1,
-      "recentNewsCount": 7
-    },
-    "latestNews": [
-      {
-        "title": "하나금융, 중동 디지털금융 확대…ADGM·한화자산운용 3자 협약 - 메가경제",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1UanFUbG9xbGNSSnRCOHRfRUNjWEY3dEI4SFNIVWtvOGxqZUJsZHJILWxMTEdVYzVHenVyUW5OVTNGbkVzVFpScDEwX1VhZXhOX2dxdk5PSHRQWTBoTG1tM3lkZU90c3Z6QVExNkNoOFJMZ9IBckFVX3lxTE1UanFUbG9xbGNSSnRCOHRfRUNjWEY3dEI4SFNIVWtvOGxqZUJsZHJILWxMTEdVYzVHenVyUW5OVTNGbkVzVFpScDEwX1VhZXhOX2dxdk5PSHRQWTBoTG1tM3lkZU90c3Z6QVExNkNoOFJMZw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 05:13:48 GMT",
-        "source": "메가경제"
-      },
-      {
-        "title": "하나금융, UAE 디지털금융 허브와 맞손…디지털금융 영토 넓힌다 - 조세일보",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mQm5yS0dWRHhtNFRSSGN4TGtGb1FBMENiTXowWkI2NV9kS0JtZ1FvWUpFYXB5UUVmRUdGb2VYVHFwM2xkOUF2bUFJWThvQ1hhdjRvc1p0cWV4QjdRZlJF?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:59:57 GMT",
-        "source": "조세일보"
-      },
-      {
-        "title": "하나금융, ADGM·한화자산운용과 '국경간 결제 인프라 협력 등' 3자 협약 - 파이낸셜포스트",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yZHVoamw3MkUzcnA1YWZBcE1NS3h2SlYwV1ROWGNUMFJqWUU4NndMSEJkanl6MUxvR1hDWE15X2h5R0UwOXNVeFR5NnJEai1URVBldHBKbk9hV0V1eXZqdnh5TnZuZ0o3dGR2TnpMOGh3ZkFj?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:35:40 GMT",
-        "source": "파이낸셜포스트"
-      },
-      {
-        "title": "하나금융, ADGM·한화운용과 스테이블코인 협력 - 뉴스프리존",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9UWi1rTDJfWnlRNlJnSUVHNVh2R3M4LXZQLUFYQnpXTXBjaU1FRmdSQkl4YmFhb1lpRW9mekVwN0ZDUnVWYW9oSnRhRU8xUDJfMzFIRGJad3JEcVloQUR1dUFyU29uVWtzUUoyUjQ5ckNrcEg4TXVr0gF3QVVfeXFMT1RaLWtMMl9aeVE2UmdJRUc1WHZHczgtdlAtQVhCeldNcGNpTUVGZ1JCSXhiYWFvWWlFb2Z6RXA3RkNSdVZhb2hKdGFFTzFQMl8zMUhEYlp3ckRxWWhBRHV1QXJTb25Va3NRSjJSNDlyQ2twSDhNdWs?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:19:18 GMT",
-        "source": "뉴스프리존"
-      },
-      {
-        "title": "하나금융, 한화자산운용·ADGM과 스테이블 코인 협력 ‘맞손’ - 헤럴드경제",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wRXYxa09RZlIxZXhiV01JSzdsMkNpeHh2QWstTzFpa1FHNi1heUo2QjRhb21qQ0J1VkNnTU84ejhjempaanRwWjJwdG4tNVV0RWVrWkZR?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:11:05 GMT",
-        "source": "헤럴드경제"
-      },
-      {
-        "title": "하나금융, ADGM·한화자산운용과 디지털자산 금융 인프라 구축 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1fNGRhRzBNMmhkeDF0NlBULW1hR1E2Tno3VHhaZ0Z3MDAxckhiYm1zdlRKZ052ZnE5QzViM0FuclU4Q1lfWGc?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:01:00 GMT",
-        "source": "v.daum.net"
-      },
-      {
-        "title": "하나금융, 스테이블코인으로 한국·아부다비 금융 연결 나선다 - 뉴스퀘스트",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9JVEdmdWxhaFlSYTFGLWFIeE9ZdmpJWGQ0YVE1WWdqTG9XaG10WUMxUmZ3UWhQVFV6c2ROYkZBQUhTaHlSNEFqT1FoZGRHajZOdFJyaWFNelJybnpvcEM5YVZaUUJLaGNkbXFISGt5Yw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 00:01:35 GMT",
-        "source": "뉴스퀘스트"
-      }
-    ]
-  },
-  {
-    "id": "뉴로퓨전",
-    "name": "뉴로퓨전",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, AI 금융 플랫폼",
-    "newsCount": 6,
-    "newsActivityScore": 70,
-    "interestScore": 75,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "AI 금융 플랫폼"
-    ],
-    "discoveryReason": {
-      "mentionCount": 6,
-      "queryCount": 2,
-      "recentNewsCount": 6
-    },
-    "latestNews": [
-      {
-        "title": "뉴로퓨전, 답 없는 글로벌 AI 미래 예측 벤치마크 1위…국내 스타트업 ‘기술력 증명’ - AI타임스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kaXc4UlRMX056ZTlkOTNDakVPNjVpcEd4SzUxVlhJSkF4ZzAyV1pqQ1BFVkYwa2xreXRDcVNYd3N5Ti11LWNPeUNuZk95OWR2WnNvdlRaUXNLQ0pXTmVOcVNYMDJiOE9Ba0E?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 19:54:46 GMT",
-        "source": "AI타임스"
-      },
-      {
-        "title": "뉴로퓨전, 글로벌 AI 미래예측 벤치마크 ‘ForecastBench’ 선행 리더보드 1위 - 스타트업엔(StartupN)",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53NHBhOVhkbi1pVGR3NzBPWHNjUk54aFBDa0pYczRxbGQyRmZPRnQyV2hEeW4wZG1MU2JBMGk0VmpTclBFaTZISDhmVzhkeExyU2NBVnZCNU1HQ1Q0RGtvaEdjSHd2dmNi0gFsQVVfeXFMT0pndnZoSlZhRmhhY1Q1ZVIyazlKSEVhS01RcXd4NDlIQlp4NWJIUnQtTkJvRzZjX3d4UklHaUtNZERlYTQ2TW9nVjR6N1lpUmV1cFFFaFdaWmxpU0lyOEh1SEFfSGN6RE5DRERD?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:26:58 GMT",
-        "source": "스타트업엔(StartupN)"
-      },
-      {
-        "title": "뉴로퓨전, AI 미래 예측 평가 ‘포캐스트벤치’ 선행 리더보드 1위 - 파이낸셜포스트",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wWmVGT1NNaGJnUjhZUjhEZV9GaUo4T0doSlB2eVlNanZGb01XQmp4OUpBWmhWLVVRWTJrZnFwckt5MFVQeXZBN3FQcHg2V1JDcE5MZXZLSTNpUTZ6aTN0ZVVBSS1TV3QyaDFCZFpoTmdNU2hy?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:12:16 GMT",
-        "source": "파이낸셜포스트"
-      },
-      {
-        "title": "뉴로퓨전, 글로벌 AI 미래 예측 벤치마크 1위 - 와우테일",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE45ckd6dU0zcDdWR0JvUU5xMHdPVXVXVEo3V09RY3psUHlfOHBYV3Z2SDRCYWdtUlFoVWR0N25QYXUtT2VXbFR5VG9OVWk3SVU?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 23:13:50 GMT",
-        "source": "와우테일"
-      },
-      {
-        "title": "뉴로퓨전, 금융 데이터에 AI 추론 더한다…‘Valley AI’ 리서치 강화 - 이지경제",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9odmJHTnh1SkRTM3JkMm96QmZKc0Z3aGVuMTdVUE5vXzF5UkxxeVhBTS1JcEFVQkR3dU9nZ3laSXFYUGh0LWk4UGY0QVlzVzBab3NEQlRrSXdnTENyckNnWWx3VDBFd216amxGUElR?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 06:16:25 GMT",
-        "source": "이지경제"
-      },
-      {
-        "title": "[게시판] 뉴로퓨전, 금융 플랫폼 '밸리 AI'에 투자 리서치 에이전트 탑재 등 단신 - AI타임스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FNExIRVV4M0VwQlVYT2ZuRDBTTm0yMWtZRW1WSHBpOURpTi0tQUlvcGFjdGZ1ekRxN3puVGxoNmNqNnZfUjhESGFWMEsyZkxlYUZ0Zm55N1I3c0tlOFR2ckZFbW9MZUg3MUE?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 08:00:00 GMT",
-        "source": "AI타임스"
-      }
-    ]
-  },
-  {
-    "id": "어피닛",
-    "name": "어피닛",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, 금융 플랫폼 신규 사업",
-    "newsCount": 5,
-    "newsActivityScore": 60,
-    "interestScore": 65,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 5,
-      "queryCount": 2,
-      "recentNewsCount": 5
-    },
-    "latestNews": [
-      {
-        "title": "어피닛, 인도 시장 10년 도전 담은 ‘매스니치 서바이벌’ 출간 - 스타트업엔(StartupN)",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DVEhVZl8xNFRBRlhIdHQwU3ZiNjg4Z1kzdl9ERERZc1Rzd3hRdlpiQUVHbGNoVllka1RMVkNSSDRETVFZVm5QWlpnZ0FFZUtoYWVWZWR1TXZpMEJOeFh0OHdwYldZVWdCNGZJRdIBbEFVX3lxTE5DVEhVZl8xNFRBRlhIdHQwU3ZiNjg4Z1kzdl9ERERZc1Rzd3hRdlpiQUVHbGNoVllka1RMVkNSSDRETVFZVm5QWlpnZ0FFZUtoYWVWZWR1TXZpMEJOeFh0OHdwYldZVWdCNGZJRQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:42:44 GMT",
-        "source": "스타트업엔(StartupN)"
-      },
-      {
-        "title": "어피닛, 인도 시장 10년 도전 담은 ‘매스니치 서바이벌’ 출간 - 스타트업엔(StartupN)",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41eDdzTlNQSlRRZ2JKQU1WZ1cwQUNPYTRxWkZ4WHc3d19HbWRiOUs5TVZvb0k0NnB5bGJhQzhxYi10OU5EWWtUNVh2ckVtTHRWWk9ZRFhJWURxMzRzTUcxeVBwYUprcm9o0gFsQVVfeXFMTkNUSFVmXzE0VEFGWEh0dDBTdmI2ODhnWTN2X0RERFlzVHN3eFF2WmJBRUdsY2hWWWRrVExWQ1JINERNUVlWblBaWmdnQUVlS2hhZVZlZHVNdmkwQk54WHQ4d3BiV1lVZ0I0ZklF?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:17:08 GMT",
-        "source": "스타트업엔(StartupN)"
-      },
-      {
-        "title": "어피닛, 인도 시장 개척 스토리 담은 ‘매스니치 서바이벌’ 출간 - 데이터넷",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10d2dONDZIQkhIN3A3NUlFS2tBcEZfemx2TGNjSE1CQ0VmcVVsM2puSEpVaHJjOFBQWG44Qnd3NDJXcmhZX1hORXNuNDRDckRzdXBMS0xLZ1hvWkhVM3dVMnJ1YjBPV3lUYlFoZw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:03:57 GMT",
-        "source": "데이터넷"
-      },
-      {
-        "title": "어피닛, 인도 금융 시장 10년 도전기 담은 ‘매스니치 서바이벌’ 출간 - beSUCCESS",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4zZVM0cWRGdDZtbkc2QmJ6MkxuX0M5aExJRzZpS0hQODZhVktwRnNaYS0wckIyQTdDdHd3REJxTzNLZ2dBQVE?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:14:59 GMT",
-        "source": "beSUCCESS"
-      },
-      {
-        "title": "어피닛, 인도 10억 금융시장 10년 도전기 책으로…‘매스니치 서바이벌’ 출간 - edaily.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNHJsSy1RbGJPeEJud1ZCcm5JZjVHNng5azAtWGNfZVhvZGt5eWh3TDNxazVqbUppMkowMGN4VHZrb1lOZUtIb0V6WGlxdHJPRVZHTUlEaTVGOGFzRElkSkpWU0lBZ1BCb0N2N3VDRF9WS3ZXOWdrd1Mxek5aOHNFWQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 01:21:11 GMT",
-        "source": "edaily.co.kr"
-      }
-    ]
-  },
-  {
-    "id": "오케스트로-클라우드",
-    "name": "오케스트로 클라우드",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, 금융 플랫폼 신규 사업",
-    "newsCount": 5,
-    "newsActivityScore": 60,
-    "interestScore": 65,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 5,
-      "queryCount": 2,
-      "recentNewsCount": 5
-    },
-    "latestNews": [
-      {
-        "title": "오케스트로 클라우드, KT와 AI 사업 키운다…AIDC·GPU 전방위 협력 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBGSHBHaEh0eVVWQnJwaDJya0ZEYmMyVHlFNTdjODVUMTU0Y0x5ZFJlV3pCaVNaS195VTZLaXFDU2x1dXdoTEE?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 04:37:55 GMT",
-        "source": "v.daum.net"
-      },
-      {
-        "title": "오케스트로 클라우드, KT와 AI 사업 키운다…AIDC·GPU 전방위 협력 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9yRVJzODc1cE1INTlkbEdCMHNXVl8wVUZwQWY5elgyYWdfcl9wLU1tX1N5QVo0MW1HMnVNTFZnc3JLVUlBbk1tOGFDZw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 04:37:55 GMT",
-        "source": "v.daum.net"
-      },
-      {
-        "title": "오케스트로 클라우드, KT와 AI 사업 키운다…AIDC·GPU 전방위 협력 - zdnet.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWVVFqMDcwUUtibnloeXpNOFpJNndJYlVSRFh5QjFkNGtUeW5abHpTYXJTUDNRek1URVBmNWhabUlvZm83NlRKRDI3RnRBQ3pXRm14aGhR?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 04:36:27 GMT",
-        "source": "zdnet.co.kr"
-      },
-      {
-        "title": "오케스트로 클라우드, KT 연합으로 풀스택 인공지능 인프라 시장 공략∙∙∙엔드투엔드 B2B 생태계 완성 - 스타트업투데이",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hbXgyMmZEdE93YmVPLWRESlhGNWg3d3lNc3dOTzlRM1RUR01wN0NuZWwwWEhWa0hPc2h2WHJtUHB5MHFyZzM1ZnR3bm51eU91b1RNa2NXSnZZdEI2OFlnUW81RERwS2RHTW5yZmNR?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:10:11 GMT",
-        "source": "스타트업투데이"
-      },
-      {
-        "title": "오케스트로 클라우드, KT와 손잡고 AI 사업 확대…5개 분야 협력 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE55WThFQTZ4ZHhqLVYyZlRjVm5TUkViVENXZ0JOZDFfZ0ExT1FmNlJtWmpzUm0yTzUwQU0yVHNSNGNBNzh1ZGZuUHE4TE1rQQ?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 00:44:56 GMT",
-        "source": "전자신문"
-      }
-    ]
-  },
-  {
-    "id": "아라코어",
-    "name": "아라코어",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약",
-    "newsCount": 5,
-    "newsActivityScore": 55,
-    "interestScore": 60,
-    "discoverySignals": [
-      "핀테크 업무협약"
-    ],
-    "discoveryReason": {
-      "mentionCount": 5,
-      "queryCount": 1,
-      "recentNewsCount": 5
-    },
-    "latestNews": [
-      {
-        "title": "아라코어, 한·말레이 기관용 스테이블코인 결제모델 발굴 - 시장경제신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rTDYzcFhGc2VfZXQtNjJka0VEQjdrT2F6ODRVYV9PVERyS2NhMk9WRVMwQkE2eGlMSGZfTkZ1eTRYNEhzenRjSUc1cmhZMWRERlNuMEFnamFwT1Q4VldlWXc0Si1naGtTa0cyWjB2S1E?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:56:30 GMT",
-        "source": "시장경제신문"
-      },
-      {
-        "title": "아라코어, 말레이시아 테이자와 기관용 스테이블코인 결제 모델 발굴 - khgames.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ucFhIcnBiUHIxYzlCRDRBV2lHRkxUTjBxdUZsUWRvUXVLQzF5a3R6VHBWSkQ4QmJzdDBFaGtrX280QnFmUDdoNlRUbGhaVFdlajlyWWo4UnF5YnRneVlMaTM1YUI0UlFtRENyeg?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:42:43 GMT",
-        "source": "khgames.co.kr"
-      },
-      {
-        "title": "아라코어, 테이자 MOU 체결 - 메가경제",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JQzhSc3VBWWpCZTh6VnF1MDdRWGh0dHpDak8xSmh5YWd4NDBHYTFLd01hYlhERWxlWWVVUmZVMUg3ek9BYmlFZFdkUFBmOEJBQjk3OER0RVZNZnBEM3BBWGdndHdldVc1QklGdHdOU2htUdIBckFVX3lxTE5JQzhSc3VBWWpCZTh6VnF1MDdRWGh0dHpDak8xSmh5YWd4NDBHYTFLd01hYlhERWxlWWVVUmZVMUg3ek9BYmlFZFdkUFBmOEJBQjk3OER0RVZNZnBEM3BBWGdndHdldVc1QklGdHdOU2htUQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:38:21 GMT",
-        "source": "메가경제"
-      },
-      {
-        "title": "아라코어, 테이자와 한·말레이시아 기관 스테이블코인 정산 모델 발굴 협력 - digitaltoday.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40SjJ5b2Q4VTdSell4QzdBMTc2eXUyZHN4TGduUTUwVEhMTXg4YVZqUXFuWUlkSERRVll1aXpIdTktSG9GdS02ZTNLc2x5QjdHZmpTN29PeHVPTWV6XzBScTVjQlZMSDNWR1o2VmZfQkEwdWM?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:34:47 GMT",
-        "source": "digitaltoday.co.kr"
-      },
-      {
-        "title": "아라코어, 테이자와 한·말레이시아 스테이블코인 결제·정산 모델 공동 발굴 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wdElZWi1CS3NrV3NoQWQ4T1Rkc1dsMDFOaDY0RGgyaml0QjV1RGxfc2N2VFJTTVcyV0k2ckJKLU5jeHR2eFptbmFPbi1MeEFPYVJ1WQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:09:00 GMT",
-        "source": "v.daum.net"
-      }
-    ]
-  },
-  {
-    "id": "제2서울핀테크랩",
-    "name": "제2서울핀테크랩",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자, 금융 플랫폼 신규 사업, 금융 스타트업 투자 유치",
-    "newsCount": 3,
-    "newsActivityScore": 45,
-    "interestScore": 50,
-    "discoverySignals": [
-      "AI 핀테크 투자",
-      "금융 플랫폼 신규 사업",
-      "금융 스타트업 투자 유치"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 3,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "서울 차세대 핀테크 스타트업 성장 지원... 제2서울핀테크랩 신규입주 유망기업 공모 - 서울STV뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkeTJHa0FSTDhNWU1yVTZpX3JQUE05b3Vsd05lbzB5Y1JQS1c1bERENEh1b3BRdFA1MU15UUZsV21XOVR1b1oybVlnSTlwWDdSMmZYN09Yc092X1hSdXVvalpTVjNIREU?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:31:22 GMT",
-        "source": "서울STV뉴스"
-      },
-      {
-        "title": "서울시, 제2서울핀테크랩 입주기업 21개사 모집…창업 생태계 강화 - 뉴스핌",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aenRsaEdCRXVqNDJxaktMempiTGwwSmg3N0RqZzNBQmZJZUNLSHFRVnhHUHRrZjhtRm8yTE94R1d3QmY3SG1yOXlfSG0tNThnVzVTRFloSDFXbFA0?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 02:15:00 GMT",
-        "source": "뉴스핌"
-      },
-      {
-        "title": "서울시, '제2서울핀테크랩' 입주기업 21개사 모집⋯시장진출까지 돕는다 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5yb3JfSnZkYWxQMEplYS1HVTBBa0ZUS2p6c2hZYWNhUEFOaEJwaXB3WldMallGUXJOYkRsLVdXOFdOLW5lZXFzVlNZV20xdVM4YXVkQg?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 02:15:00 GMT",
-        "source": "이투데이"
-      }
-    ]
-  },
-  {
-    "id": "kt",
-    "name": "KT",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 플랫폼",
-    "newsCount": 4,
-    "newsActivityScore": 45,
-    "interestScore": 45,
-    "discoverySignals": [
-      "AI 금융 플랫폼"
-    ],
-    "discoveryReason": {
-      "mentionCount": 4,
-      "queryCount": 1,
-      "recentNewsCount": 4
-    },
-    "latestNews": [
-      {
-        "title": "KT, AI 통해 업무자동화·콘텐츠제작…'금융·미디어' AX 투트랙 가속 - 신아일보",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ecm5FNngzZGZuRkM3c2lCNkpuNU9pc2xTMjdDYUVVdHVPMVVKejZhVkxjQnJDX2hBTjNKQ2VTTGw5cEtYRXlXWGF5c0FLTlFsTnFHXy1UX0lmeFZydm5CQTN1b25xNEdsLXVrYXowTmk?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:44:22 GMT",
-        "source": "신아일보"
-      },
-      {
-        "title": "KT, 금융·미디어까지 AI 심는다…그룹 전체로 AX 확산 - 매일일보",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE53WkJWdWRFSUwzZGh6cDJ1SmxSbXpQYldnR2IxVXRFVy0wRXVNdjk5RWdaek9qSEdXM1pkUXNJYW05bWFoS25VdU1OdEo3dnJSQ2hBRGVKWDBKSmhCVG95ZmJYcHZHRUxK0gFoQVVfeXFMTndaQlZ1ZEVJTDNkaHpwMnVKbFJtelBiV2dHYjFVdEVXLTBFdU12OTlFZ1p6T2pIR1czWmRRc0lhbTltYWhLblV1TU50Sjd2clJDaEFEZUpYMEpKaEJUb3lmYlhwdkdFTEo?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:16:08 GMT",
-        "source": "매일일보"
-      },
-      {
-        "title": "[Telecom & Now] KT, 금융·미디어 AX 사례 공개 - ebn.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxTElWUW5OSFhua245R3V3YjBCZ3lyT3dJZHFDc1I1NExZR2xzZG8yeVZGSHM3ZUFfamlqUm9CNmF2X0MwNVBzRmZEUmhXOW1wQzFmbFZjaEtEMHc2ZHFoakRWem5PM1dl?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 00:33:16 GMT",
-        "source": "ebn.co.kr"
-      },
-      {
-        "title": "KT, 인프라부터 금융·미디어까지…AX 혁신 성과 공유 - 아주경제",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ucnkwejZ3SGNobHpuTHJEWWM3TmhtQUp0N2tUN2QwbHdJbnUyVDNQcmoycVV4eTF1eGNYQk93aVNfeElrcHJwWVk0WFViMUZRSFMxVkZZanDSAVhBVV95cUxPbnJ5MHo2d0hjaGx6bkxyRFljN05obUFKdDdrVDdkMGx3SW51MlQzUHJqMnFVeHkxdXhjWEJPd2lTX3hJa3BycFlZNFhVYjFGUUhTMVZGWWpw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 00:24:09 GMT",
-        "source": "아주경제"
-      }
-    ]
-  },
-  {
-    "id": "신보",
-    "name": "신보",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, 금융 스타트업 투자 유치",
-    "newsCount": 3,
-    "newsActivityScore": 40,
-    "interestScore": 40,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "금융 스타트업 투자 유치"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 2,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "신보, 7개국에 ‘디지털·AI 정책금융’ 노하우 전수…15명 연수 - lcnews.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrWDNkdUFpQTZHeVJmLWRfWE85Vkc0QklHTE9sQTU0YjBVazlkeTJQWHpyTnNNbHo3WHNGLXdmQXRjTllrbWJZTWk5QjZXQmVJME9QS1ZpRWNfdzFUcElHaGJuZ3k2V3Zxa2sw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 01:36:46 GMT",
-        "source": "lcnews.co.kr"
-      },
-      {
-        "title": "신보, 'AI 기업평가 전수'... 7개국 정책금융 역량 결집 - 중앙이코노미뉴스",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLazkySGY4SjZrdHJFc0M4TkhLQUR5X3J0TzNxOFFEd3ZlTzlFVmJ1UnplN0xabXduYjI3eE5mZXVBdlJtaF9MOU1lblRLTGs1dnZGeVpBeVpzVnRvbl9tWVZaa3BxYVJndTFrM2djSEEtdw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 00:40:38 GMT",
-        "source": "중앙이코노미뉴스"
-      },
-      {
-        "title": "신보·신한금융, 혁신 스타트업 해외진출 지원⋯베트남서 첫발 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJYjlpdG4wazdsOHBYTkhBdXlXenhlbFNFbzAxY2t3emJjZlZBUmlRaWdhWXBJV3RORF8wVmZhVnZCVDJqZ2dlQ3dobER2Ml9YMzNkdA?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:26:00 GMT",
-        "source": "이투데이"
-      }
-    ]
-  },
-  {
-    "id": "신한금융",
-    "name": "신한금융",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 파트너십, 금융 스타트업 투자 유치",
-    "newsCount": 3,
-    "newsActivityScore": 40,
-    "interestScore": 40,
-    "discoverySignals": [
-      "핀테크 파트너십",
-      "금융 스타트업 투자 유치"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 2,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "신한금융, 베트남 빈그룹과 자본시장 협력 확대 - BBS불교방송",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NMmdCTU4xRGtpUGN3eDVYM2t6QUNUWTcyRUc2M2NBY2xxbmJQTUpkYWlKOG84SlVtUmVOREJaZm5NRHp6SkphZUF6VUZnSjY0REN3SlNpb1A2cEN4eUZ4RVktMWFkakNxS3Bv?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 03:47:35 GMT",
-        "source": "BBS불교방송"
-      },
-      {
-        "title": "신한금융, ‘밸류업 2.0’ 성과로 한국IR대상 수상 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wcmpoaHctbDRhdEtKTUhSSGtibW5MWk50MmZtZmRocDlfOG5FTzFHWkY0djgtQVFjX255SmR6Tm5fd0psOFRJVi1tLWpPeDBERTJMWA?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 07:35:00 GMT",
-        "source": "이투데이"
-      },
-      {
-        "title": "신한금융, 우즈벡·카자흐 손잡고 중앙아시아 핀테크 실크로드 연다 - 뉴스락",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14STk2R1VoeWxYclBqeWJGTEVxb2VYRHRDMFJXZ1ZCYTJ2b01zdDZHNTE0S0xfSGxEZkExTnNBemFQTmo4ZWRHWkw1ekVUVzJudDk5NFRFd2tKLU0zSzFTNGhsb2c5RVB1ZnV5Rw?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 04:56:51 GMT",
-        "source": "뉴스락"
-      }
-    ]
-  },
-  {
-    "id": "ibk기업은행",
-    "name": "IBK기업은행",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약, 금융 스타트업 투자 유치",
-    "newsCount": 3,
-    "newsActivityScore": 40,
-    "interestScore": 40,
-    "discoverySignals": [
-      "핀테크 업무협약",
-      "금융 스타트업 투자 유치"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 2,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "IBK기업은행, 신보와 초기 스타트업 지원 위한 업무협약 체결 - 핀테크경제신문",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBfNVNFUWpMZU1jWVMyRDlOeng3VmlFSmVQMTRWbHlMeGthOG50bVNzbGt1QWEtRFozRmdaQXNURkVfMzExRXFMWkQza0ljYVB5QjVSWGtIT3N3QlRlSnd3QzVhNA?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 09:41:10 GMT",
-        "source": "핀테크경제신문"
-      },
-      {
-        "title": "IBK기업은행, 초기 혁신스타트업에 3000억원 금융지원 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mOTFfd1pQWlh3a3ZnaTVTRm1Pam1PcTludjd1aHg0bVBCak1WbGN5WXlucThWeVByZ3hUR0xrVGdlRkk1UXNtbGozYW1lNmY0WEJhVQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:19:00 GMT",
-        "source": "이투데이"
-      },
-      {
-        "title": "IBK기업은행, 초기 스타트업 3천억 지원…성장사다리 '구축' - 초이스경제",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WRXIyQmZpdVFHUmUzdjQwTXZkbTRJdm9qQm9ETVZpXzdVb0pqVXF5ekJxcHZISm5fR243Y0JOU28xdWpjdWsySUtUUkxxMF9BZGI4Vy13akpDMVl4dUxrMzR6TjRaVmxBS2FiSmtXLUdoSzjSAXNBVV95cUxOVkVyMkJmaXVRR1JlM3Y0ME12ZG00SXZvakJvRE1WaV83VW9KalVxeXpCcXB2SEpuX0duN2NCTlNvMXVqY3VrMklLVFJMcTBfQWRiOFctd2pKQzFZeHVMazM0ek40WlZsQUthYkprVy1HaEs4?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:18:21 GMT",
-        "source": "초이스경제"
-      }
-    ]
-  },
-  {
-    "id": "미래에셋벤처투자",
-    "name": "미래에셋벤처투자",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자",
-    "newsCount": 3,
-    "newsActivityScore": 35,
-    "interestScore": 35,
-    "discoverySignals": [
-      "AI 핀테크 투자"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 1,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "미래에셋벤처투자, 카자흐 QIC·스파크랩과 ‘실크로드 펀드’ MOU - 서울경제",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oY1BqclJsc2tTRWMyTlNhMS15blN6cUZwZnNZV1JTd2FtcExvbFc0LWFxZ1lCRDRZbGNCblVjb2RXUDc1ZWh4ZFBheVBkNzFNV1HSAVNBVV95cUxONG84VU1NRG1XYW40ZjFZVFJqTDYtLWpCSTFnTFhFVGNPVjFCTnFUek0yWlZEQTU3S051S1N0MmRyMTZrblRRa2taM2luanJZT3htZw?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 01:11:43 GMT",
-        "source": "서울경제"
-      },
-      {
-        "title": "미래에셋벤처투자, 카자흐 QIC·스파크랩과 ‘실크로드 펀드’ MOU - 서울경제TV",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xX0toZElySjRXcnpmRWVCVGcweDdka1kyYnR6TV8xaVVKS2dIckxXdWpTSVFoZzFMdmNsaF85cXVIWFFpUF9HMUcyVEp5VlY3RTQ5N0hnS3h0OHpONTJvdEFaSWs?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 01:11:02 GMT",
-        "source": "서울경제TV"
-      },
-      {
-        "title": "미래에셋벤처투자, 스파크랩그룹·카자흐스탄투자공사와 '실크로드 펀드' 결성 - 뉴스핌",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81a2hKNDhoaDJpVUNYWWpfYnZOaE5IRTZ0Y1YzRGwxd3I1M2xrN3hzOTAzaWpCVUxIZFRMTTRYamV0Y1VTa3c2ODlVSUVVYVZSQWhFdFZadEVucUlR?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 00:58:00 GMT",
-        "source": "뉴스핌"
-      }
-    ]
-  },
-  {
-    "id": "안랩블록체인컴퍼니",
-    "name": "안랩블록체인컴퍼니",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 금융 플랫폼 신규 사업",
-    "newsCount": 3,
-    "newsActivityScore": 35,
-    "interestScore": 35,
-    "discoverySignals": [
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 1,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "안랩블록체인컴퍼니, 금융권 디지털자산 플랫폼 ‘트러스’ 선보여 - 서울경제TV",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZOEEzLTBkWTB4ellGNmgyT0Mxa3QxRlRDeG5raDg3UldmUkZMN2NKVkQ0UHFRcThkQVppSlFyTE1kNzdBNWdIVDhXdVJDRThaczJNRjJSV0RiUno3VS1MUnIwbHY?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 00:19:54 GMT",
-        "source": "서울경제TV"
-      },
-      {
-        "title": "안랩블록체인컴퍼니, 금융사 내부망 구축형 디지털자산 플랫폼 출시 - edaily.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNa2pCUHJqT2x6Y3pJNVdleVpYZ0VHMjdNX2FFQWVoS1JIb0h5blNNNWpZb1lnQVUzT1N4a3hvcEcxaDJEd3hWT2R2SzZ6VTd4eEdua1F3RUEwR0tIMjEteWdUOHJYZzJkbjlpMVlFMUIyRUd4TnlwUk8xM3FhRXVZMg?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 00:10:11 GMT",
-        "source": "edaily.co.kr"
-      },
-      {
-        "title": "안랩블록체인컴퍼니, 금융권 겨냥 온프레미스 디지털자산 플랫폼 '트러스' 출시 - digitaltoday.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9QblZ4TEFjX1pXeVlvLUluRUt1YWFZcnQ2clVIV0ZheC1nTG9jamM5bVR6OTZ1eWVUdGFrZmpBTzB1SnRZaDRpWmliWFRHZ2JrbDFrejZTVF9NS3VIdFhJV0VURG1jazIyMkpxUkU4OGNnTDQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 23:40:16 GMT",
-        "source": "digitaltoday.co.kr"
-      }
-    ]
-  },
-  {
-    "id": "카카오그룹",
-    "name": "카카오그룹",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약",
-    "newsCount": 3,
-    "newsActivityScore": 35,
-    "interestScore": 35,
-    "discoverySignals": [
-      "핀테크 업무협약"
-    ],
-    "discoveryReason": {
-      "mentionCount": 3,
-      "queryCount": 1,
-      "recentNewsCount": 3
-    },
-    "latestNews": [
-      {
-        "title": "카카오그룹, 파이어블록스와 국내 디지털 자산 인프라 구축 나선다 - 포인트데일리",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9pWjFnQVYzZkNFeUZ1bXotVDJQMHBsam5rR2NwRUIxejFPc3E3SUphd3RBU2ZMVTdIUlBDNGRwSEM2b0VYdVdSYWpBVmc2ZnVBUWVTS1NILTVydEFWLWdERm5NYWdjN2d5Ny1zekxWTEjSAXRBVV95cUxPOWFqSmNNckZOQXJHTmZOS2dxWGJsWEV4YWs5SVdvVHZvcTBBVDBJUno4QXpvbmM3ZHN6Y1l1cGFqYkdGS2l1QktKa2RldUJyTVpGOHBsNUpWaEFWSTZWZGRJaDNKNm0xRTBtNjR4cGg1bVZPYg?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:56:21 GMT",
-        "source": "포인트데일리"
-      },
-      {
-        "title": "카카오그룹, ‘파이어블록스’와 디지털 자산 생태계 구축 MOU 체결 - 뉴스웰",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hc2tpN1llTFdXM2dJQVZJRFBVNm1ubno1bmtkNzhxUGJjQnZkQ0o0eVVmODRxeEFsM1hLZ0ZVZlVrdktEWVJ2X1lVdXQ2elBFNkZIeTY0QVVPMVIydU1zQVFRRVJOUkliSTNyQw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:41:23 GMT",
-        "source": "뉴스웰"
-      },
-      {
-        "title": "카카오그룹, '파이어블록스'와 디지털 자산 생태계 구축 협력을 위한 MOU 체결 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00NXNWVXRHU3cyM09qTzktLUpzTUI2b3kzdVJCX3c2dmJmQ0RwQTdUbG5LWTNNdy1ISENJY1M5bThRc1Y2anhfa2dfcG5jdw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:16:08 GMT",
-        "source": "전자신문"
-      }
-    ]
-  },
-  {
-    "id": "나만을-위한-금융-ai-시대-온다",
-    "name": "나만을 위한 금융 AI 시대 온다",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, AI 핀테크 투자",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "AI 핀테크 투자"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "“나만을 위한 금융 AI 시대 온다” - 서울핀테크위크 2026, 10월 여의도서 개최 - 한국도시환경헤럴드",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5qaVlnbjl2eXBCTEJtbHRTc1NGNDhkQW05bUVFNWtIZ29IMC03bmxtOUR2OUs0bFpjVHNoeEVCNkM1bndvRldpVFczRVB2SzZSazloRzNEZUZNU3VpZUVkNjFDZ1JTWHhpY3F0eTA2ZXXSAXBBVV95cUxOamlZZ245dnlwQkxCbWx0U3NTRjQ4ZEFtOW1FRTVrSGdvSDAtN25sbTlEdjlLNGxaY1RzaHhFQjZDNW53b0ZXaVRXM0VQdks2Ums5aEczRGVGTVN1aWVFZDYxQ2dSU1h4aWNxdHkwNmV1?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 03:34:11 GMT",
-        "source": "한국도시환경헤럴드"
-      },
-      {
-        "title": "“나만을 위한 금융 AI 시대 온다” - 서울핀테크위크 2026, 10월 여의도서 개최 - 한국도시환경헤럴드",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zX1I4bVF0LXkwM19jeGszanBaei1YdnF1eS1nYnE3aFVrY0FTNFVScDVqNlJTWnlvSUNDS0VGWW5zWkIwaEdFNG5ZX200ZEN5YU8tQkR1anYtelBCdWlaa0o2eFVIcWR5bHJ2M3l30gFwQVVfeXFMTmppWWduOXZ5cEJMQm1sdFNzU0Y0OGRBbTltRUU1a0hnb0gwLTdubG05RHY5SzRsWmNUc2h4RUI2QzVud29GV2lUVzNFUHZLNlJrOWhHM0RlRk1TdWllRWQ2MUNnUlNYeGljcXR5MDZldQ?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 23:00:00 GMT",
-        "source": "한국도시환경헤럴드"
-      }
-    ]
-  },
-  {
     "id": "카카오",
     "name": "카카오",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업, AI 핀테크 투자",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 금융 스타트업",
-      "AI 핀테크 투자"
+    "industry": "커머스",
+    "description": "커머스, 구독, 모바일 앱, 기부·후원 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 16,
+    "newsActivityScore": 100,
+    "interestScore": 100,
+    "partnershipScore": 100,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": true,
+    "b2b": false,
+    "commerce": true,
+    "donation": true,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리",
+      "KB마음더하기"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "구독·정기결제 가능성",
+      "온라인 커머스 사업",
+      "기부·후원·헌금 관련 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "카카오은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 커머스 플랫폼 출시",
+      "모바일 커머스 서비스 출시",
+      "온라인 판매 서비스 출시",
+      "플랫폼 신규 서비스 출시",
+      "자체 앱 서비스 출시",
+      "앱 기반 서비스 출시",
+      "구독 서비스 출시",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시",
+      "예약 플랫폼 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "온라인 교육 서비스 출시",
+      "온라인 후원 서비스",
+      "비영리단체 온라인 후원"
+    ],
     "latestNews": [
       {
-        "title": "카카오, 'AI 비즈니스 실전 과정' 운영…소상공인·스타트업 지원 - digitaltoday.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE54R3FLV3N5RmpsSTlpYndZMG5WUFRiaXpfOVhldm50WlhrbWZ5dnhFY01uS0VxSFFjdE5MenJDbFFVTkdyMVFjRkJZNXdjU25URWNHV2Z1NHUwZ1E3WG9WWjZIajloMWphRlJ1U2s3UE9aQ2s?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 00:14:18 GMT",
-        "source": "digitaltoday.co.kr"
+        "title": "카카오, 내달 통합 멤버십 출시…구독사업 강화 - 서울이코노미뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jSU9TUi0yekpJLVlJVEtnRHRfd2JpZVNaeGFwZWlBSGFnTDZ1N2NEenA1LW1aM2w1SktSczEwcngweV9vTWQtMUpFUnBNN0FSSlBFeEpzdEVNY1BkdGhEZkVwVEp6R3dFeURwcldn?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:54:45 GMT"
       },
       {
-        "title": "카카오, 인적분할 주주 설득…AI 매출 1조·3년간 3000억 자사주 소각 - digitaltoday.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oUnpFNHJnZHMyRkg3X2hNRnVwQ2dPWG1nZktNakN4T05rMUJzSWE0d0hmLW1DVmFxM3VYSDNmbkhRQWZNeU5DNlZLMzNQV2s1RzF2UmptRk1MdkJjT19aNEZvcFQ2aEpiUklIbzlTeWx2d0U?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 09:16:00 GMT",
-        "source": "digitaltoday.co.kr"
+        "title": "카카오, 월 4900원 ‘통합 멤버십’ 출사표… 네이버와 맞대결 - 대한경제",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UWFQyV29XdE43bFBqaWRiSmRGd2ItUkZjWE5CZmpFTVVRSWlDb1NTcXpiTXJUaXRJTEZGYk1ySFd1bkZnQ2RzSkdHZ0xPVV9DQ1lGWUlwaHZtYUlZc3JCc1FHVDNCWHJZcWJLWDZnQmNjc1lx?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 20:20:18 GMT"
+      },
+      {
+        "title": "카카오, AI 챗봇 서비스 ‘카나나’… 정식 출시 못하고 내달 사업 종료 - 조선일보",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT29sRzcxRERtVFRJemUyWXNRbzE1VFJyeklfRFRlNEZNNVlWZ1JqRm9vb25ZejVNZkVMRklYdnJoQUFIcTR0dmFvcF81OFI1MW1GYVY2eE01bnJHWHNSUnU5cEpXMUVnUjV6c194ZEU2TWRGSmxIRzE2UmdNbkhPUGVlWQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 15:34:00 GMT"
+      },
+      {
+        "title": "카카오, 통합 멤버십 10월1일 시범 출시 - 블로터",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9yckpzTzc3M3AtRzRyRV9JZjZBSUk2dnl5aFlReThVNnVOT2poUUZFTEtYMEF3SGh2d2E4NjluRE9JQnpHUGYxdjlmVXpCSkYzY3RhVFRRc1ZHemY5TFZjb0FxRVNSQzlP0gFsQVVfeXFMUGpXTXB2MmFHY2N3SFhCazc2Z0l3ZzJRWGtNUjZYNVRCQ1Rsei00R195c3pKUEZSMVBKNnRTNDVRMFV4SFVxU2llTlZVcHBLc0VsTk01bzdJZ2dCeGRmQWhENTZ4UEU4NGJjZ0w2?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 08:45:45 GMT"
+      },
+      {
+        "title": "카카오, 카나나 앱 종료…카톡 중심 AI '선택과 집중' - 뉴스토마토",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uYmx2dkUxY0t6OF91SjVrLVB5M3FOdms1RkNya05MT1J3THpNeU9NMDNveV9kY1pmcGRpZXV4TktXenpNUjN2VlVUQ0JUeWRKTk5Vb2Q2dEd3NU1lcVQxMA?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 07:53:13 GMT"
       }
     ]
   },
   {
-    "id": "핀테크-회사",
-    "name": "핀테크 회사",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자, 핀테크 신규 서비스",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 핀테크 투자",
-      "핀테크 신규 서비스"
+    "id": "메타",
+    "name": "메타",
+    "industry": "커머스",
+    "description": "커머스, 구독, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 6,
+    "newsActivityScore": 78,
+    "interestScore": 85,
+    "partnershipScore": 85,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": true,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "구독·정기결제 가능성",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "메타은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 쇼핑 앱 출시",
+      "구독 서비스 출시",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시",
+      "여행 플랫폼 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "핀테크 회사는 잊어라 … 우리는 금융 AI기업으로 변신중 - 매일경제",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Vc1ExRUNDa1JaalJCeW83VlNDZnVDUDQyNHlFdWl0QmV1dk5wZkRPS3haU2dtR0ZicHR6N2NlVVhFcDRyUE9PcFJTSklmUQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 08:09:50 GMT",
-        "source": "매일경제"
+        "title": "메타, AI 에이전트 ‘뮤즈’ 흥행 돌풍에 주가 11%대 폭등 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmWmREYmE2WmlxTkFzdGtKYzJNYnZFMzlXMGpzU0lidHlpNGo1V0FEMTZkc3ZBaER1VjZXVmVvc1hTVUdCM3VpRjA3THQ0WWs3eWYyajlINFJFQQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:55:47 GMT"
       },
       {
-        "title": "핀테크 회사는 잊어라 … 우리는 금융 AI기업으로 변신중 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB5bG43Z2htY05MNXE1U05sV0tqLXlLMHZRdFdZSmhqSHdsOEtiVFlGX2hSMklvNVF4dDhVeFZpMGdaeW5pLUE?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:06:00 GMT",
-        "source": "v.daum.net"
-      }
-    ]
-  },
-  {
-    "id": "핑거",
-    "name": "핑거",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자, 금융 플랫폼 신규 사업",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 핀테크 투자",
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "핑거, 독보적 금융 플랫폼 기술력 입증... 차세대 AI 핀테크 혁신 가속 - 핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByQzV5WTJuaHdfZkNQZ0owQXBXWjNHbFZtV1VUN1NQcXRlZDdaTDZqZVhOeER2a2xwVDZ0RUx2QUs5d05tNGNqU2tCSFNjLWZmMGJtRllLZmlxREZrMG1YblhMYVU4M1lPMXdpWFdrcEJzVmpaODVV0gF3QVVfeXFMUHJDNXlZMm5od19mQ1BnSjBBcFdaM0dsVm1XVVQ3U1BxdGVkN1pMNmplWE54RHZrbHBUNnRFTHZBSzl3Tm00Y2pTa0JIU2MtZmYwYm1GWUtmaXFERmswbVhuWExhVTgzWU8xd2lYV2twQnNWalo4NVU?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:47:55 GMT",
-        "source": "핀포인트뉴스"
+        "title": "메타, 인스타·페북·왓츠앱·AI 묶은 구독 서비스 '메타 원' 출시 - IT타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tVWZ6ZkhEV3NRZUlSdmdlUDZaaFpNUlY0YU1ZaWJQMGdMWXcyMzIzd3IzQkgyX0tQNWdqUlBmYUtLV3FwajFLWEJJYmwzQUJWeEV0VlQ0Ty1hc0FqMndWR25TMGdidHZi?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 08:58:37 GMT"
       },
       {
-        "title": "핑거, 독보적 금융 플랫폼 기술력 입증... 차세대 AI 핀테크 혁신 가속 - 핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBUWEJCQmwyUjEwZnh4UWhVUnZfbTJucDJJSExRbUdNQ0tKRHRZdTFrUFQ4a21uazNXemdFTHFHdEhFOEVQZENaczV6SDNtbXZxMUFmdTlhWTlzemduTkZyNUJFVVFpR1ZoUzQ4NGNIUGE1SknSAXdBVV95cUxQckM1eVkybmh3X2ZDUGdKMEFwV1ozR2xWbVdVVDdTUHF0ZWQ3Wkw2amVYTnhEdmtscFQ2dEVMdkFLOXdObTRjalNrQkhTYy1mZjBibUZZS2ZpcURGazBtWG5YTGFVODNZTzF3aVhXa3BCc1ZqWjg1VQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:40:56 GMT",
-        "source": "핀포인트뉴스"
-      }
-    ]
-  },
-  {
-    "id": "스마트폰-넘어-금융",
-    "name": "스마트폰 넘어 금융",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자, AI 금융 플랫폼",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 핀테크 투자",
-      "AI 금융 플랫폼"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "스마트폰 넘어 금융·AI로 확장… 모바일솔루션株 들썩 - 핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBXRzFRYVh4cVhaTERDV2FMRWVqUzA4WU4wOHJENUFiYldtMURXUVpoUlFPa0VqeURrNjNnbVlHY2ZMQnBEbGlsLVZxVE5YVDdCTzBJY0RGc3phTTJqcDBEcE1iV2w1ZmhUMDR3MGdfZG1wbmZmVUFv0gF3QVVfeXFMUFdHMVFhWHhxWFpMRENXYUxFZWpTMDhZTjA4ckQ1QWJiV20xRFdRWmhSUU9rRWp5RGs2M2dtWUdjZkxCcERsaWwtVnFUTlhUN0JPMEljREZzemFNMmpwMERwTWJXbDVmaFQwNHcwZ19kbXBuZmZVQW8?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:50:25 GMT",
-        "source": "핀포인트뉴스"
+        "title": "메타, AI 기능 대폭 강화한 구독 서비스 '메타 원' 출시…시간외↓ - 마켓인",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15RGdxdEtFdmZjSzFLZ3A0Q0o2aEpzWDh2eDJmclQ3TER4ejRTdFZJTnotUmZkMmFiQl9PLWpORmxrc3ZqTXRpRTloRms5M0ZfUmJxbUt6Rm5zTWhZQzdlaUs4aWRJNWNwOFN2SHE1RlF6XzQ?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 21:25:15 GMT"
       },
       {
-        "title": "스마트폰 넘어 금융·AI로 확장… 모바일솔루션株 들썩 - 핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAzemRGMlJUQkRfYUlYTEp3Zld0QV9BNFpBMVhFbDFHblBvd2YwM3Y3Z05lVENJRXRXVGRtQVVla0lxWXpDRVJrV0pubWNTZFpObkZlSS1laEYyVVlPN09Ib05POTIydy1kSlFOVldlamU2cGfSAXdBVV95cUxQV0cxUWFYeHFYWkxEQ1dhTEVlalMwOFlOMDhyRDVBYmJXbTFEV1FaaFJRT2tFanlEazYzZ21ZR2NmTEJwRGxpbC1WcVROWFQ3Qk8wSWNERnN6YU0yanAwRHBNYldsNWZoVDA0dzBnX2RtcG5mZlVBbw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:26:26 GMT",
-        "source": "핀포인트뉴스"
-      }
-    ]
-  },
-  {
-    "id": "규칙-읽기에-익숙해지",
-    "name": "규칙 읽기에 익숙해지",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자, AI 금융 플랫폼",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 핀테크 투자",
-      "AI 금융 플랫폼"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "규칙 읽기에 익숙해지는 카지노 꽁 머니 즉시 지급 입문 노트 - Histoire pour tous",
-        "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQWWVkVFU1SEpteUQ1dU5WcXN2c2dwQ0lvSjhRUmtqZnJLUnBRT1VWTTJZQlM0Q0pvejZkWlhfUm1KM1o4LVdlNnNPcHdtaHNzUGN2UWhTWnVPTndydFBybTFaQUF6ZjVUSHFGSHkzdHZWS1hJWExRVVV6Y0FXV2p0U0hjaWhzQmt3cWFIaDIyZFpaYTdIQ2lBMndiWkZSZ2FGbXIxWmU2ZGRZSzlCN3R1Qy1wdF9PSGI3Z0ZfYXRUYnZxTnVybkwxelpDTWgyWUxCYlUyNUdHOE5sTWtVdlhMbHhyT1l2eWZWWGc2RGRrTk4td3JWTDRDVW9qY21pMVRVNmFYdjVtOUN3dFBUZF84SEFzSk1QUFFf?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 16:47:24 GMT",
-        "source": "Histoire pour tous"
+        "title": "메타, 구독형 AI 서비스 출시 - Investing.com 한국어",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBqWFZuYnVTQ0d3Q0NvSl9OOWo1eFBmRGdqSWtIVDJsc0loT1JYSHlZQVpEUVJiRi1iZkJnZ28wSnpVTFc5bFBDZ1Q4aWwyckpscFZlZ1QtOWhXcWswX2ZYNkNXQnhYZHAwb2Z4cWwtMTdkZlk3SUM4?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 15:07:00 GMT"
       },
       {
-        "title": "규칙 읽기에 익숙해지는 중국계열 슬롯 입문 노트 - Histoire pour tous",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVjA1LTNvSlRFT0hOWldnc1FveUZmT2R3VmhzZXJmV1hlamVGVENtM2VVUS1hSkQtaHNhM2pMdTdKR214a2RMRk55UGEtRTJkY2hOYm00clQyMFdPc2FWcTJobUdHak5yUDNzZjZOSExsWTliLWFoZXY4WDVWNFZVTHJ0UE05bHBKSWdoZ2VKd2xzQzlZVUhYdi1YYXFMVlJPRWlhTGhsS24?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 13:45:56 GMT",
-        "source": "Histoire pour tous"
-      }
-    ]
-  },
-  {
-    "id": "토스-이승건",
-    "name": "토스 이승건",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 신규 서비스, 금융 플랫폼 신규 사업",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "핀테크 신규 서비스",
-      "금융 플랫폼 신규 사업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "[금융★들의 궤적] 토스 이승건, 혁신DNA…슈퍼앱 넘어 결제망으로 - 블로터",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xeVViaXpFVVdBdkhiekZQNkdjck5pNW5YWWZaYm02ZGJ0TVdKRDdXdDM3djE3TmdUYUlsYThVdDB4WkJOZXRpZjFlTzduZFZYcWRMcElCYVdPUmNFUVR3MFZrNGVQUlRUb2JNbNIBbEFVX3lxTE1xeVViaXpFVVdBdkhiekZQNkdjck5pNW5YWWZaYm02ZGJ0TVdKRDdXdDM3djE3TmdUYUlsYThVdDB4WkJOZXRpZjFlTzduZFZYcWRMcElCYVdPUmNFUVR3MFZrNGVQUlRUb2JNbA?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 01:15:51 GMT",
-        "source": "블로터"
-      },
-      {
-        "title": "[금융★들의 궤적] 토스 이승건, 혁신DNA…슈퍼앱 넘어 결제망으로 - 블로터",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TSWY4Z3RIUGxfbzlPV2ZCMWwxdlo3a1lfUUxDYzNuZXJlTDVqYm9jTWpOWUJKZFpsamROMFJvZGNCbXBpcGYzVGJuRHN4azNRZEFFeUNWbU5WLU5sZmVoSkRkWmo5Tzk30gFsQVVfeXFMTXF5VWJpekVVV0F2SGJ6RlA2R2NyTmk1blhZZlpibTZkYnRNV0pEN1d0Mzd2MTdOZ1RhSWxhOFV0MHhaQk5ldGlmMWVPN25kVlhxZExwSUJhV09SY0VRVHcwVms0ZVBSVFRvYk1s?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 01:08:26 GMT",
-        "source": "블로터"
-      }
-    ]
-  },
-  {
-    "id": "오아시스",
-    "name": "오아시스",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 금융 플랫폼 신규 사업, 핀테크 파트너십",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "금융 플랫폼 신규 사업",
-      "핀테크 파트너십"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "오아시스, 300억 유상증자 결정…토스 단독 참여로 '협력 강화' - Naver Blog",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE04OTJWN1JPa1haUjhJNW51RmRNbTlhbFlKamxEamFPSTBETjVXWUdfUU80QXFXcEFfRjVpQkhvNS05WWhHSzRBN0U3dnNIa3pRWDBPcWctRENsVGIwZG1kTFhnSFgySmFfVDl0cEtvOElDajJyZ0J4cExzR2QxSGs?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 13:00:00 GMT",
-        "source": "Naver Blog"
-      },
-      {
-        "title": "오아시스, 토스쇼핑에 둥지 틀다…신선식품 배송 전쟁 새 국면 - 더바이어",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1TjVVVnZDSHRuN3FCU0VheTMzOHNWRkM2aXlMMXhjZWFxZ3M2RFR4bHU3RnhlTnNHdVh3ZXRYU1J2Z2tXSGpia2RTOE5LRTl2U0hMZ3pOZ0JUczNfbVVEUTlLRFpkZV9JVXhv?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 23:02:01 GMT",
-        "source": "더바이어"
-      }
-    ]
-  },
-  {
-    "id": "오케스트로",
-    "name": "오케스트로",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 금융 플랫폼 신규 사업, AI 금융 플랫폼",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "금융 플랫폼 신규 사업",
-      "AI 금융 플랫폼"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "오케스트로, 퓨리오사와 AI 인프라 서비스 사업 공동 발굴 - 서울경제",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5QOFVQLXpUZF9sa0NVN2l5RGVaZjdTZkUtSHZXcGdMZFd6WENhanpKdV9fbnB2M2hfZzV3NUlVZXl0ZThPTUlvLWxoSGxlNG9PemfSAVNBVV95cUxNaHdsdV95Q2xDSGNydEJFQmsyUHF3RzI5V3pHWEk1MTI0dUx2dUliRTZsbDF1U3Y4c21yZzF4RWh2NG5JVWdWREhlZDVwbUEzaENaRQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 00:06:07 GMT",
-        "source": "서울경제"
-      },
-      {
-        "title": "오케스트로, KT와 AI 인프라 공동개발...공공·금융 시장 공략 - 파이낸셜리뷰",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VQm9YR3pXd2hkdG1hTEIzZVZmN0gyeDVVbDlPM3lJOF81WUFrS1FWNmNyUUFiRVExVzhuckJrQ0k5SnFjaU95Xy1lUS1UdjNaQVZfUkc5MmxyRV8wX2dYNlJLamxCTXQtVzI3TmlLSU9UWS00?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 04:01:06 GMT",
-        "source": "파이낸셜리뷰"
-      }
-    ]
-  },
-  {
-    "id": "kb국민은행",
-    "name": "KB국민은행",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 플랫폼, 핀테크 업무협약",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "AI 금융 플랫폼",
-      "핀테크 업무협약"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "KB국민은행, SAP와 ERP 연계…금융서비스 편의성 구축 - 스페셜경제",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YdF85aUZiMkVWeVhHZUQ2VUtOZVc3SGlGTXgwbUp2MVc4T01seXJtQlpJVkgzYUJnS1haMmkydkg0TnZQaFpuYTRhaFpYTEJwZmJLNG1IQUN5UVFfc0FNODZVTkl4LTZfeFc0QQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:46:09 GMT",
-        "source": "스페셜경제"
-      },
-      {
-        "title": "KB국민은행, 생성형 AI 기반 'KB AI' 서비스 출시…대화형 금융거래 지원 - Queen 이코노미퀸",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnMHBVUFRpT2pUMU82VzA0UXlvRTdyeDFrM2xCRlFYclRjYUZlbl92M2Y4V2NJTVRBMjdjSjd0TWM0NElmaDgtZXdiZnM4VUNtSHNQM0hLTUFKSGxRaUhaMVY4TUFmVVFh?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 01:26:42 GMT",
-        "source": "Queen 이코노미퀸"
-      }
-    ]
-  },
-  {
-    "id": "한화금융",
-    "name": "한화금융",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 파트너십, 핀테크 업무협약",
-    "newsCount": 2,
-    "newsActivityScore": 30,
-    "interestScore": 30,
-    "discoverySignals": [
-      "핀테크 파트너십",
-      "핀테크 업무협약"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 2,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "한화금융, 아부다비투자청·ADGM 손잡고 글로벌 자산 플랫폼 구축 - 퍼블릭뉴스통신",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zc1ZtbVZJZVFhOW5CQUV0R1EwUHZBOG9HaTlIVTRQWUdDR0ZSRUxEdGdwTU8xdHVkNmZERzMxN2g5ZzhnTW9oU0RrU3B2QlcyS0tCcXZBOEF6OGJXaTdMQ2ZaWXlsVnBDMlZN?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 12:39:28 GMT",
-        "source": "퍼블릭뉴스통신"
-      },
-      {
-        "title": "한화금융, 아부다비와 디지털금융 ‘맞손’ - 헤럴드경제",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TXzZRMjd6M1NGdUZWbXM5MFdrMHFRa2VGTmF3c3VuSGxQOHc1TTFZZHV5OVNCV2dfTEhOT2lkYktYd2xqU2FsVGFfN0EyblZtZW1IUmx3?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 02:12:49 GMT",
-        "source": "헤럴드경제"
-      }
-    ]
-  },
-  {
-    "id": "인도-10억-서민-잡았다-어피닛",
-    "name": "인도 10억 서민 잡았다\"…어피닛",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 금융 스타트업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "\"인도 10억 서민 잡았다\"…어피닛, 10년 맨땅 생존기 책으로 펴내 - 유니콘팩토리",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85czZuekVkakxIZldjd3E1WXFkeW5vWkthT2tWcU1xTDRrUm9WTEFyTFJlNU9EQTRDWW51bGNSNU9OdlM1OWJCekZ5STJQbzk5NXhyUUIyVTM2N2NoeWp0bjh2VlRsWTdyYnFuQw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 11:00:13 GMT",
-        "source": "유니콘팩토리"
-      },
-      {
-        "title": "\"인도 10억 서민 잡았다\"…어피닛, 10년 맨땅 생존기 책으로 펴내 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBbEhFa0hWLS1oQ2ZGeFJBSTFLYWk3eDVsMm1WZ1BwTlpRS2Qwdkp4YXJxd2E3aUxIX1ZYSVBOelBSaG1NOW5Uc2drT1RYOWU3TXp1ei1PcjZrQ19VWVM0akRORkdaY1RtaXRWblB3WdIBb0FVX3lxTFBBbEhFa0hWLS1oQ2ZGeFJBSTFLYWk3eDVsMm1WZ1BwTlpRS2Qwdkp4YXJxd2E3aUxIX1ZYSVBOelBSaG1NOW5Uc2drT1RYOWU3TXp1ei1PcjZrQ19VWVM0akRORkdaY1RtaXRWblB3WQ?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 11:00:00 GMT",
-        "source": "머니투데이"
-      }
-    ]
-  },
-  {
-    "id": "뉴로퓨전-금융-ai",
-    "name": "뉴로퓨전 금융 AI",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 금융 스타트업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "뉴로퓨전 금융 AI, 글로벌 미래 예측 벤치마크 1위 - 이지경제",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4cldkeGM5WXhELU1WenRRSVlPMEZuM1c4STlLLXF2NG12T0pfVTMxMHl3Z2RKaDZHZ1V0UFFON0d3eHlLcWxySzZOdHdRS3pfMXcxNXJVZ1JGZ1I0YzlYUnBObnRlZGlhSG1TTUN3?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:31:17 GMT",
-        "source": "이지경제"
-      },
-      {
-        "title": "뉴로퓨전 금융 AI, 글로벌 미래예측 벤치마크 경쟁서 1위 - 퍼블릭타임스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jak9XWVpyZ3FyaTNPV2tKdE9hWmQzalprOFVHb09IaVhCd0VtcnZCRGl2RzNNNk5ydHdmY1FqYjdjczkzbVBITmZXYkg0TDNBQnVrLUlUQnlKWENWYnh1Mndzb2MtQ1phQmfSAW5BVV95cUxQZG9LQTRiVlNycmF0LS0yMGM3cFRCejF6aEp3ZVhBM2kzUXptNmctZzNNa3JPOW9YSzN1VjItMVRybkY1X3BQTTZfdDgtZm9Ja2JXR0IyX1htV1ZfdWc3N25Qc0w5NUtKNTZzV01HZw?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 04:00:00 GMT",
-        "source": "퍼블릭타임스"
-      }
-    ]
-  },
-  {
-    "id": "문샷ai",
-    "name": "문샷AI",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 금융 스타트업"
-    ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
-    "latestNews": [
-      {
-        "title": "문샷AI, '키미' 금융 서비스 공개…투자은행 업무로 확장 - digitaltoday.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5meFkwZTN1Ym11eXV1RXZVV3FtWDViRG9ncXN5clZ0UU5xVmFOTEczRW1JbUhyZnQyMnhwLUhSSENaSXBSLTV4eU9Od1VuT01PbFpHUEhLN1BLUkNheklWWDJ2eW1pN253d3BCckppVXJFa3c?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 01:07:00 GMT",
-        "source": "digitaltoday.co.kr"
-      },
-      {
-        "title": "문샷AI, 금융 특화 AI '키미' 출시…\"10~20일 걸리던 리서치 이틀로\" - 알파경제",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2TVBGUXgtMDBQZDdYQXhjZGhHV2ZOcE1HaXdzNFdVNzcyWnFxelhHVnhzYzNfTlNMOUtPb3g4QzJNcE5EWi15dzZ5Z0psMExxeUZGdERqcTY1eU1SQnd0aFAyREJlcFBfN01sdE5B?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 22:24:47 GMT",
-        "source": "알파경제"
+        "title": "메타, 강화된 AI 기능을 갖춘 구독 서비스 출시 - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85eEZhRjM0QUJ5US1qcV82VG4zaVdkLUtyS0U1WXdscDJ0SnF5NVVxZ1NPdF9BZHNFenJ5Yklfd05scXFkU29nZWtxclRhenRyZk5PR2dIQTN3SlJhVGUwTkRfU05jMXRKYW9iOURDeG5FYjBMUlhiZA?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 15:00:30 GMT"
       }
     ]
   },
   {
     "id": "skt",
     "name": "SKT",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 스타트업",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 금융 스타트업"
+    "industry": "구독/SaaS",
+    "description": "구독, B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 80,
+    "partnershipScore": 80,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "구독·정기결제 가능성",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "SKT은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 구독·정기결제 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 법인결제(B2B)와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시",
+      "B2B 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "SKT, 보이스피싱부터 취약계층 돌봄까지…'선한 AI' 11종 선보인다 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KcW9mR3VFRDBWa0R4c1NWOF9OQmZ4bFdGdXV3YkNuUE9lVlNieDY1Qm5xU3F1VlE0T24yODFvdmVRNFFWanlrenpiMGRzQXcya24xUE5KMmU0dWtIWDlsTDY1NHcwazVXdXQtc9IBbEFVX3lxTE5KcW9mR3VFRDBWa0R4c1NWOF9OQmZ4bFdGdXV3YkNuUE9lVlNieDY1Qm5xU3F1VlE0T24yODFvdmVRNFFWanlrenpiMGRzQXcya24xUE5KMmU0dWtIWDlsTDY1NHcwazVXdXQtcw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 00:55:43 GMT",
-        "source": "머니투데이"
+        "title": "SKT, ‘채팅+ PC버전’ 고객 이벤트⋯2천만원 상당 경품 - 브릿지경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LNi16NFMtYjJtZHVld01iVkF2bHg3OFRmQ3cwckx3LThnMEt1OWhNTVFyTkhzX0pxTUgwVFdsanBwUzF0azlsSXYzdmstNE04czU0RzFSUGV1dw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 23:42:00 GMT"
       },
       {
-        "title": "SKT, AI로 보이스피싱·금융사고 막는다…‘선한 AI’로 사회문제 해결 - edaily.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNWlAwV0U4VGRkR1dQMlNpRVp6a2VSTFdKYWZzSjl5MEJsZDJFVDhBLXZuUDBTajFsYldJRjAtQ0lCZ0tBN2dIN2ZVbjlWbnV1aDZLbXRNQVhyTGxOVzZiMUlHdFlRZXNiODBOc0U1dHVyZDBOM2Q0N005V04wQklyQg?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 00:00:05 GMT",
-        "source": "edaily.co.kr"
+        "title": "SKT, 차세대 'iPhone 18 Pro' 시리즈 개통 시작… 구독형 서비스 및 구매 혜택 강화 - jonghapnews.com",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55U0t6dnNLNTQ5Y0RXdWd4YWhlRElKSlpmbDRvM3NUZndvWVR6WF9pZ283S2F2Q0lvQjRIdmNIcC1haFR1YXI1UTdVMzZOc1FadDZNaGUyQ200RFd4cVVwcGIwMVNUOGZxXzl2YzJn0gFyQVVfeXFMT1hmTlhCUy1zR1Q2cnUwTEtYbkZNYWExLTVzRmxnZEJRbFpXdGdfTm41WDZoaUstUVpSMUJJZ2o4RGppRnMyUEVUVXpSejJSOXpVaHZiekxWQ1dpblk3ZDNBdTliWUw0MWYtcmJ3TnVsTTN3?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "title": "SKT, F5와 클라우드 보안 제휴…AI인프라 시장 공략 - 경제타임스",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIUnFEcWdrOW1PaEVSeUdHTm1oWlctcHFYY18zWDV4NDlOV3JBOTlJRlB2YzBpZllyMDZPcnZ5cDVUaUdjcEJPd0w0T2NtZU94dEgw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 01:30:12 GMT"
       }
     ]
   },
   {
-    "id": "서울시립대",
-    "name": "서울시립대",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 핀테크 투자",
+    "id": "네이버",
+    "name": "네이버",
+    "industry": "커머스",
+    "description": "커머스, B2B, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
     "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 핀테크 투자"
+    "newsActivityScore": 46,
+    "interestScore": 80,
+    "partnershipScore": 80,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": true,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "네이버은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인몰 사업 확장",
+      "자체 쇼핑 앱 출시",
+      "B2B 플랫폼 출시"
+    ],
     "latestNews": [
       {
-        "title": "서울시립대, ‘서울형 BRIDGE 기술사업화 협의체’ 출범 - 신아일보",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5idmF0cXpVX3F0NTlBZUJIaXBRUGlHVzA5Vm5tZTZEenUwTzJaRWltMGxOOXRoSTFZbFRxX1poSG5jR1Rxck45emNqQUp2QkZWWGdKY3BLd1BFSVVHaFJGdml5WG1Sbklob2RwdHphang?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 06:40:56 GMT",
-        "source": "신아일보"
+        "title": "네이버, 사업자 전용 'B2B몰' 10월 테스트 개시…“스마트스토어 생태계 확장” - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8wUFgtQzdhZl9sQ3dubGw2WVNCUUV0bl9pOUlXVVJnckVHcVFrV1V3YVdYalRGZ0FwRFIwYW9GcnluWWZmWDR5aERXTVdDdw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 01:54:47 GMT"
       },
       {
-        "title": "서울시립대, ‘서울형 BRIDGE’ 출범, AI·로봇·바이오 등 기술사업화 생태계 구축 - 이뉴스투데이",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40WjBITXhnaDVOZEV0b0FIRXB4Nl9DeEJiZS1TWjRDQ3Y3U3RNRDdISC1LWkg4a2F2RE9xRHFXUkhWTkI2YmZMQXVUamxyQU12a1lFV3FDaDVnemtPbjExMDFUYzFBRmswVi1yQ1VuR3lRUU9W0gF0QVVfeXFMTjRaMEhNeGdoNU5kRXRvQUhFcHg2X0N4QmJlLVNaNENDdjdTdE1EN0hILUtaSDhrYXZET3FEcVdSSFZOQjZiZkxBdVRqbHJBTXZrWUVXcUNoNWd6a09uMTEwMVRjMUFGazBWLXJDVW5HeVFRT1Y?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 05:43:46 GMT",
-        "source": "이뉴스투데이"
+        "title": "네이버, AI 쇼핑 에이전트로 거래액 82% 증가 - 아시아투데이",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EN2VPMmdMODk5NTRreEVxSE1UR0pjQjBmT210c3dSdkx1Wm5tc1dOUi00aWJ4NEhzTUhzdmFaa1N0dVY0ZnBjT1JRUnNmakpFMTczVks4WGNCVjZBT0ktaldsSE9tNGpQRWJUeklB?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 00:25:13 GMT"
       }
     ]
   },
   {
-    "id": "농협상호금융",
-    "name": "농협상호금융",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 신규 서비스",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "핀테크 신규 서비스"
+    "id": "kt",
+    "name": "KT",
+    "industry": "B2B",
+    "description": "B2B, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 18,
+    "newsActivityScore": 100,
+    "interestScore": 70,
+    "partnershipScore": 70,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "KT은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 신규 서비스 출시",
+      "모바일 플랫폼 신규 서비스",
+      "자체 앱 서비스 출시",
+      "앱 기반 서비스 출시",
+      "B2B 플랫폼 출시",
+      "B2B 서비스 출시",
+      "기업용 플랫폼 출시",
+      "기업 대상 플랫폼 출시",
+      "예약 플랫폼 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "여행 플랫폼 서비스 출시",
+      "레저 플랫폼 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "농협상호금융, NH콕뱅크 ‘소액 해외송금 서비스’ 출시 - kenews.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qNjhtV05uME02SWhpclFnQVlFTmV4c3c3c0xDRHNweEROdDhyRmdscHk5XzdiTXhCYS1xSEZCVzlubDV0bzZYZ3VOZmtCUkNWZ0JPUnZIUjNPeld4ckVWaQ?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 08:45:38 GMT",
-        "source": "kenews.co.kr"
+        "title": "KT, ‘모두의 AI’ 컨소시엄 출범…10월 '모두의 AI’ 베타 서비스 출시 - 이로운넷",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05aVA4bzkwYndoYVJMVFlDa3E0V0w5RUcwUXgzN1lUd2NETVF1MmEyZm1QTkMydld1R2NVcUE3NVhLNlZuVC15Tzc3MGpCOVNGdmFoVXdBbjNSUkNJZHRkR1FQMmN6Zw?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:12:23 GMT"
       },
       {
-        "title": "농협상호금융, 한패스와 손잡고 '소액 해외송금 서비스' 출시…외국인 송금 절차·수수료 부담↓ - 퍼블릭뉴스통신",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5UeXVEek9MdFBQc09BSk1SbmFOYWtraDRPTF9jb3lEVFZnWmxjY3dPUXp0RWx6eUtrU19TMzRGOFNxdGtQUnR3S0ZDenBHUW9YdDR1LWhlNEg5MWRoenhwOUJ2dU5MUGJnZGxV?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 12:44:12 GMT",
-        "source": "퍼블릭뉴스통신"
+        "title": "KT, 16개 기업과 ‘모두의 AI’ 본격화…10월 베타 서비스 공개 - 테크월드",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mRGdWZmxhSnJYV1RDMlpGRm1ZTzd4bXdsZVdDT3V4Z3VWaWN1X1NwQVdKNTFOelQtSXYyanF1Z0RTX24wR3I2Mmk1NzJhdm9fSC1KTF9wX1RmeTMwQ2pObU4wVm02THdV?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:42:55 GMT"
+      },
+      {
+        "title": "KT, ‘모두의 AI’ 컨소시엄 한 자리에…모델보다 ‘연결’ 먼저 푼다 - 아이티데일리",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQNFhVQjdrZmk3Njh1aHRiX2JIMHRYMU9velR1amRDQU5hRUhJNjRISGpqZzlfOXlidm1CanEwQU5rbWZQZXZoR3BSWFZLbjdpMHluQU5QVkVUcVlpckdSU0x1WmlFbXYt?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:59:03 GMT"
+      },
+      {
+        "title": "KT, ‘모두의 AI’ 협력체 가동…10월 베타 서비스 선보인다 - 서울경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NcmRXZ2UxQ1JPSE5kTGJMNGx3X0ZOSVBXNHpDVWpPTFdHN1BRSGhwRU1MZ1llVXlRd3hpWDZSeGhCdDBYX0huVnljUTRRRG9VeldtYkpqNlgwallqeDFYLUVBUVI?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:57:53 GMT"
+      },
+      {
+        "title": "KT, '모두의 AI' 컨소시엄 한 자리에…국민 체감형 AI 서비스 구현 본격화 - yna.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oNzI0OTBJeHFYc3VOczNwbWk1UE1keUFBeDNHMzFPUFpyZmplUW5FdHpnM09tUUVkbVQtcWkxeGtaU0tkWks2V0ZMQ2RaNy1MY2FwWE5iUENtTUk?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:51:31 GMT"
       }
     ]
   },
   {
-    "id": "신한은행",
-    "name": "신한은행",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: AI 금융 플랫폼",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "AI 금융 플랫폼"
+    "id": "카카오페이",
+    "name": "카카오페이",
+    "industry": "플랫폼/서비스",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "카카오페이은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 구독·정기결제 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "앱 기반 서비스 출시",
+      "정기결제 서비스 출시",
+      "자체 결제 서비스 출시",
+      "앱 결제 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "신한은행, 국가 AI 프로젝트 합류…메신저·통신 결합한 금융 인공지능 속도 - 글로벌에픽",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Ea2wybEpzdXVSUmVfQVpBTnZfRHdLUU9xcndqUmV1amJaLWt4YU1aU1RwMkZ0ZUJPLXp0RGkzUGJVQ2wyTFZwMlNKWW9JUEVDQzgzVThZUDJ2V0pBV0RsbVFLOVBYMUxVbV94OWFOb3Jtb0RiaFlCcTBONkU?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 07:03:25 GMT",
-        "source": "글로벌에픽"
+        "title": "카카오페이, 로그인 없이 카드 비교한다 …웹 서비스 '카드연구소' 출시 - 더글로벌기빙뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1MMFk4TC1tOEhZOVMwRDBwRGdLU0poelQ2Y25vUHpxTzctcVlMeE1wT1NIWVdOZkF2YnBBVGNZWGFzVXphOGd6Tk92cm5yd2ZNNDBkUQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 13:26:00 GMT"
       },
       {
-        "title": "신한은행, 과기정통부 '모두의 AI' 카카오 컨소시엄 참여…금융 AI 서비스 발굴 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9RcS1fMVZ1eXV3anJGa2NXYl9BZ18tMmxGb0RwUHdyOFFjYWpkczc2NWg2a1lEbVZYdXR1d0FGNVlMcHZKZUlHZTR1VnZndw?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 05:57:21 GMT",
-        "source": "전자신문"
+        "title": "카카오페이, 로그인 없이 카드 비교하는 웹 ‘카드연구소’ 출시 - 팝콘뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5aUWlRY0h3emJ5aXNKOEhOTW1JcmZWbVZzamVxbDNOd0NOMGktek5zcVIxamhsMWJTeXVOTlBWRWRQcVFNSW94OHNNU2NDUGkxUi15bDM3RHNrX2VsRHg4czNyQ3BmY2hRZzBKVXV30gFyQVVfeXFMUGxmRDBlRHRZY0dGWllGaHFXbGJXc2JSaHhScWNubVdsYUcxVG1YMmhxRjRXbXpfYmVrRmN3NXhCajRtZWR0dkRlVGtrWldMZUlRVkRGcHdUTllkbEFNbWpHRTlWUG5WYTNkZzRYdTJuZ1l3?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 06:17:52 GMT"
+      },
+      {
+        "title": "카카오페이, 로그인 없이 카드 비교하는 웹 ‘카드연구소’ 출시 - 팝콘뉴스",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01QXNZT0RIYkdCMHNiSjNUWUpWSVlzRWk1Q01UcEd3STNrMTNIdHFQWnZJUlRPM0pyMTZKbnpFWmdkckdSZDE2bWtoWlN6RHZzWlotaERMZG5sTVVMVjFVeTZwdzgzYlJQbElQSmM0VdIBckFVX3lxTFBsZkQwZUR0WWNHRlpZRmhxV2xiV3NiUmh4UnFjbm1XbGFHMVRtWDJocUY0V216X2Jla0ZjdzV4Qmo0bWVkdHZEZVRra1pXTGVJUVZERnB3VE5ZZGxBTW1qR0U5VlBuVmEzZGc0WHUybmdZdw?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 06:17:52 GMT"
+      },
+      {
+        "title": "카카오페이, PG 사업 진출…4300만 앞세워 결제 인프라 구축한다 - 인사이트코리아",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yUXBTTFFlNnhyYWJ1c01fd2ZXeGJNYlU1Z0h1Z1JqRmdYR0hDc3Q0SFhDRDB4T2NpTjNlaHhMRnhIVGJmeXBmRzlfeFpoTll0MUhFUjVTWUJFTWtQbHFqc2JvNm1BeVQyREdPNG1VQ1daSVHSAXdBVV95cUxQR05iWjMzSVFnWjBaUEx3RkE1dlZvSVh2U2FydzJDSHJyTU9hcV8xYXJnMjJIYzBLOUx2RnRpRWVUWms3TWlKd05nYU43ZU5GQm9Hak5sajNvdXBIVGFsSEtCX21UWU16S3g1ZVE2bnB4NWVVYTJabw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 07:27:33 GMT"
       }
     ]
   },
   {
-    "id": "사이오닉에이아이",
-    "name": "사이오닉에이아이",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 파트너십",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "핀테크 파트너십"
+    "id": "타다",
+    "name": "타다",
+    "industry": "예약/레저",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "타다은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 구독·정기결제 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "정기결제 서비스 출시",
+      "예약 플랫폼 서비스 출시",
+      "모빌리티 플랫폼 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "사이오닉에이아이, AI 검색기술 앞세워 동남아 시장 정조준 - 에너지안전신문",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12d25ZR3pXcHZwZ244WlVNVk03cDhPS0trSXRlTTA1a2pMekxqMmFWdmIxZzB5eUVmM1Y0X0NDNTUxclI4SWhBRkRUQjFFeGQyV1RhNWdmdVJmU080eV8yeDFZUU4?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 02:10:49 GMT",
-        "source": "에너지안전신문"
+        "title": "타다, 반복 이동 정기 서비스 본격 출시 - 포인트데일리",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rVUdpbW5saVZ5c3plbTBQSFlDQmlBQ0s3WFNWelpOeDJlOXJLd0VjSDU1bS1NX2hNMS1PMlhyZzJ3bVkzamNnMjNSVGVGRXk5QzZ5S3dqUEpERktQV3o4WUl5MU5YTWU5SkZZRi0xYTLSAXRBVV95cUxPZ1pkeUhlOVUwVGEwYUJ5REg3YldnaGM5VEVuU1BPRE9HRkxnRlZBLXYweVFaX2NaZUtESXZNbU43UEdBcmtGWVNKN2hOZllzT2pMUGtwODIwclZoMDdfR2FOMDZYMERuR056U0hZY1dzelVKUA?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:11:02 GMT"
       },
       {
-        "title": "사이오닉에이아이, 태국·싱가포르 공략 가속…동남아 AI 시장 확장 본격화 - zdnet.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lT19kRmJNNWFnUVpIOG5yZm53YXEtckthNEttREZpalhNVmk2VHZpeW01ZnpXWG16N0RUMENBUGNxSC10TUdwOTFZbXRrX0J2eTJFRzN3?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 07:02:58 GMT",
-        "source": "zdnet.co.kr"
+        "title": "타다, 반복 이동 돕는 '정기 예약' 서비스 출시 - 한스경제",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KR004T1ktVHQ2dFJSRUJrSFB5YVZXN191VE44dFUxWFhacEdIVTBzcTFpU2E0bHN6OEtJWmtSUUxFV2lFampTRGc3RmZ5TV95SU1pOG5fUThtMWc2bXJPaWl3c3owLXBVUGtn?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:51:28 GMT"
+      },
+      {
+        "title": "타다, 반복 이동 일정 한번에 관리하는 '정기 예약' 서비스 출시 - 핀테크경제신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE91ZzU1YXZsYU9UREZCZU1HN2g3emV4cTVGcnl4TktsN1o5elJzSlpDenl4NFpiNmItSi13a2FaZnNteXo2TzlNakZPbV9rQ0VKenpNdkNzTkFFLUx5TThLTE1BUUZkczJx?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:17:53 GMT"
+      },
+      {
+        "title": "타다, 반복 이동을 한 번에 예약하는 정기 예약 서비스 출시 - 뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BN0I1WHFYSzF5Sk92MUYzM3hWWGlTQkFsMUduMWJqTmtyaGg5ZTVEX0NSNnZORUkzV0FiXzFWZzBaQktELUdXajVudFB0U1JOajhOeEs3MmE3ZFpy?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:07:00 GMT"
       }
     ]
   },
   {
-    "id": "웹케시",
-    "name": "웹케시",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "핀테크 업무협약"
+    "id": "platum",
+    "name": "Platum",
+    "industry": "커머스",
+    "description": "커머스, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "Platum은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 쇼핑 앱 출시",
+      "자체 앱 서비스 출시",
+      "앱 기반 서비스 출시",
+      "자체 결제 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "웹케시, 아이디헤어 112개 매장에 ‘경리나라’ 공급…프랜차이즈 경리업무 표준화 - 핀테크투데이",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAwb1NLOWxHQnBlVld3b3F1ZEtESzc1ekNleFRub2lZVm1ybmZzRlBrX3A4YkI3X29YVG11TjRPbDVCOXgxR2lTYWNJcXV5U3I2eVpJaTEzYjR0RV9lQ0FFYlRJVWxFaTN3dlZqVlI2QdIBc0FVX3lxTE9vSU5FVUxLWjhfMThfV3FRYm5VR1AtQnZsNEFrWkowZmlsZk5RWVlDRjlBbHdRb1JFQlNqbHlmRV9ZeXIwU3B3Q01jTVl4b3ZyaU91T240SmEzNGgzUjNTVzNlVzEzT1VkRlhXSXlZVW5ReEk?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 06:24:31 GMT",
-        "source": "핀테크투데이"
+        "title": "[스타트업 모닝커피 1403회] 트리거스, 일상의 반복 행동을 리워드로 연결하는 버티컬 플랫폼 - 플래텀(Platum)",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CaDV1c1ZnbWlDS3Uyelp6TU9vWDRsMzN5eEhDQ21ISzhTYUNyR216NGN4QmsyS3ltWVNEMmk4N3hRb3Y0WUVwaQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 03:03:07 GMT"
       },
       {
-        "title": "웹케시, 아이디뷰티와 손잡고 헤어살롱 112개 매장에 경리 SaaS 표준화 - 한국데이터경제신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50cVZRM1BuaVFWWjhxY1ZzT193TFVCTXYtYUFEQnR5Z1ZJYUVVSkVKN1hHdEN0c2tYa2ZOVnJiQ0dHUVlDaXZYVUJpWWdxclZTdG1fQUpSOEkzWk5zaGxnbXFTUXNIdzBQS1FCQkNSelXSAXRBVV95cUxNTzNRLWpmOXJZb0RFcXdCVVl3MGVWZ21mMy1DMkx4Q2x3OUJGMDdfbks3eTQ5aGE1TmpKTHFhLVBLR3VpZENzMkV0UVUyN05jUl9GY0tYOTE0NXUzYVdqTHFKYmpLTUhNVjJSejJtZThDeElHeA?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 20:08:00 GMT",
-        "source": "한국데이터경제신문"
+        "title": "트래블월렛 누적 거래액 10조원, 카드 발급 1,000만장 넘어 - 플래텀(Platum)",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1VaUpETWNGUW43RXh3Z2NJUURYVWthLUhETnNRdlRRWUhXcDlfQmd3d1NnLU1uRkpfeFBNY21lbGc1dzFkclFmNw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 23:33:42 GMT"
+      },
+      {
+        "title": "네이버지도, AI 기반 대화형 장소 탐색 기능 ‘플레이스 에이전트’ 출시 - 플래텀(Platum)",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9TMGdRM1B5cHlIREdLMWRyNUNhZHJ4M0p3VGVzYjFfWE1aeUlPN09DLXJRTFJENzQ3bEVYbnkzdlhTZF9ZNDlPRg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 00:49:48 GMT"
       }
     ]
   },
   {
-    "id": "하나금융그룹",
-    "name": "하나금융그룹",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 핀테크 업무협약",
-    "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "핀테크 업무협약"
+    "id": "집지켜",
+    "name": "집지켜",
+    "industry": "플랫폼/서비스",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "집지켜은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 구독·정기결제 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "정기결제 서비스 출시",
+      "자체 결제 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "하나금융그룹·ADGM·한화자산운용, 스테이블코인·크로스보더 금융 협력 MOU 체결 - 금융계",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81UVlLUXdtLVg2NlNVN2w3OW1qeloxNnZFdzlwWmtka1J2eENOSE5BTmhvNUxGT0lrSkxxZlNxY24yOFRTVkVjdHNGR3k5NXU3eG05Yy1WNFA5RUJubWFHVzNTOEJaVFhGbzF30gFrQVVfeXFMTzVRWUtRd20tWDY2U1U3bDc5bWp6WjE2dkV3OXBaa2RrUnZ4Q05ITkFOaG81TEZPSWtKTHFmU3FjbjI4VFNWRWN0c0ZHeTk1dTd4bTljLVY0UDlFQm5tYUdXM1M4QlpUWEZvMXc?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 11:40:27 GMT",
-        "source": "금융계"
+        "title": "집지켜, 공공임대 월세도 카드로 낸다…급여일 안 맞으면 할부 활용 - 벤처스퀘어",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE51cFlrQTV4WmhLN0pDejV0R3drcWRNRnprdXRrT0dLUjB2VzBJcmEwUF82NFJrVmo3Ykd0RFhPOTI4MWEzbV9vLVczZ29JdU0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 14:32:47 GMT"
       },
       {
-        "title": "하나금융그룹, ADGM·한화자산운용과 맞손...한·아부다비 디지털 금융 인프라 구축 - 레디앙",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84SkJtNzg0U0g3Wk4tYzVQTUphNEpGRHZEWEJWMlFXRXdSbXBKQjktT0d3dFlpbUZDOWFmazBHNkhYd1JEUkNIdGxsWWtxWEpOY0VpSFJCb2RPckJjcGFkU0UtM1hZMW43?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 00:33:04 GMT",
-        "source": "레디앙"
+        "title": "집지켜, 공공임대 청년 월세 납부 카드 결제 서비스 출시 - 와우테일",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmQmRydWJjQ2NqVkljSHl4N05venlBTGxTX2FTaV9PSDZGMWJ6bS0yc29sc0hjekZLMlgyeHBRUk5OV0VyZXZDX3JXSWxqRXM?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 06:50:55 GMT"
+      },
+      {
+        "title": "집지켜, 공공임대 청년 월세 카드 결제 서비스 출시 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1sVGUwdTVmWHJ3LTh2N2RRcHpLWGdlYnk5Sm5oXzFXMnp3NkJFdTlWMXhWQWRjX2N5UTliRWx3cjkxZFFmbFVRNDZkWlk4MVd2MnpySVBCdmx4ZjdFcDlZTlZoU0FrNTJzRS1JZdIBbEFVX3lxTE1sVGUwdTVmWHJ3LTh2N2RRcHpLWGdlYnk5Sm5oXzFXMnp3NkJFdTlWMXhWQWRjX2N5UTliRWx3cjkxZFFmbFVRNDZkWlk4MVd2MnpySVBCdmx4ZjdFcDlZTlZoU0FrNTJzRS1JZQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:12:20 GMT"
       }
     ]
   },
   {
-    "id": "한국수자원공사",
-    "name": "한국수자원공사",
-    "industry": "핀테크",
-    "description": "핀테크 관련 외부 뉴스에서 발견된 기업. 주요 발견 키워드: 금융 스타트업 투자 유치",
+    "id": "아마존",
+    "name": "아마존",
+    "industry": "커머스",
+    "description": "커머스, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
     "newsCount": 2,
-    "newsActivityScore": 25,
-    "interestScore": 25,
-    "discoverySignals": [
-      "금융 스타트업 투자 유치"
+    "newsActivityScore": 46,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
     ],
-    "discoveryReason": {
-      "mentionCount": 2,
-      "queryCount": 1,
-      "recentNewsCount": 2
-    },
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "아마존은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 쇼핑 앱 출시",
+      "레저 플랫폼 서비스 출시"
+    ],
     "latestNews": [
       {
-        "title": "한국수자원공사, 39개 투자기관과 \"혁신 스타트업 투자 활성화 잇는다\" - 컨슈머타임스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WVkV3SUUyWW1VVElmYjJMT2szbWFUY19kQWJ0NFNBYlVLT0VVMXRoSDhLbTZseEhXc2hPYXN3UHBWckJYeVlMZTV2TmVqM0VhNWlTRV9WazZkRW56M1ZLUHkyZjBwT2ZvYVE?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 19:09:20 GMT",
-        "source": "컨슈머타임스"
+        "title": "아마존, 외부 AI 에이전트에 빗장…메타 '뮤즈' 상품 구매 차단 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5TnRIUUdmNjFuYkUxVVZRVHA5aGFLRjROLXZTemRlLThZNld4dERyUnB3WGotZ2Jjd2hFR2NBZlJLZkNITUpYN054SjE2ZFd5UWFUSGF3?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:48:28 GMT"
       },
       {
-        "title": "한국수자원공사, 혁신 스타트업 투자 확대…물산업 미래기술 키운다 - ppss.kr",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9IX09wMzRTVE0ya0duazhZRnB5S2V5cXQ3WkQ0bkF6bFNtSXR0akZEd0JFd0VDeUxpb0l2MlFVZDFXTkNiRGtyR1pLQkl5THAxMVdRRWRxUFVfd25ZRnFpNXJxU2s?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 02:14:42 GMT",
-        "source": "ppss.kr"
+        "title": "아마존, 원격 진료플랫폼 전국 출시 - 미주조선일보",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUHdsVloxMjhJckUySVhuSC1vaU1yQkVES1VyLTVvckNESnBvbWVIYTYtV3FyVksxb05jWi14Y3lpQjZYZl92WHlHdW1aYUo2Q3AzMnZaOGJoQUtxZnpMc05Va1NoWXNOaE1nYmg2SFBoaUh0ZWg4TVZXX01xTzZkdlZGNS1RcE92c0EzR3hGWnU4OERzak1IS2dZZkhJV196RUp1Z2d2VWVKejc3TnAyNkhhcmtKZENGTWtiVmFiR2ZjeXotUnpBaFNZZHp1REtOUnZ5N1o5Ym1yUS1rOHROTQ?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 10:43:19 GMT"
+      }
+    ]
+  },
+  {
+    "id": "startupn",
+    "name": "StartupN",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 5,
+    "newsActivityScore": 70,
+    "interestScore": 60,
+    "partnershipScore": 60,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "StartupN은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, B2B/법인 결제 수요 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 신규 서비스 출시",
+      "B2B 플랫폼 출시",
+      "기업 대상 플랫폼 출시",
+      "예약 플랫폼 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "온라인 교육 서비스 출시",
+      "자체 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "트래블월렛, 누적 거래액 10조원 돌파…카드 발급 1000만장 넘었다 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85TnFDSGtjendVSWV2VzN5T2hXYWRqRjNTUThDaFFYWUc3VjhjX0UzNzFqODFFRi12U2dxVkVWSzNtRzl1T2pUYUlaeVpyTlItZ1JHLUxXUmtaaTg4dEM2Z1FmTE9pOWPSAWxBVV95cUxPWlJuU016Z19MOUJDNGRjZTN2anZHM2Uzek04Yy1lVWRpcUx1anFuTWZ0MDVucWh4TE1sX0drc2xpR09xeThyVXFLSjF4MldVQ194VTFEd3dOUjg2NXU0cEhmcktkNVJVX0o2eks?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:39:57 GMT"
+      },
+      {
+        "title": "집지켜, 공공임대 청년 월세 카드 결제 서비스 출시 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1sVGUwdTVmWHJ3LTh2N2RRcHpLWGdlYnk5Sm5oXzFXMnp3NkJFdTlWMXhWQWRjX2N5UTliRWx3cjkxZFFmbFVRNDZkWlk4MVd2MnpySVBCdmx4ZjdFcDlZTlZoU0FrNTJzRS1JZdIBbEFVX3lxTE1sVGUwdTVmWHJ3LTh2N2RRcHpLWGdlYnk5Sm5oXzFXMnp3NkJFdTlWMXhWQWRjX2N5UTliRWx3cjkxZFFmbFVRNDZkWlk4MVd2MnpySVBCdmx4ZjdFcDlZTlZoU0FrNTJzRS1JZQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:12:20 GMT"
+      },
+      {
+        "title": "그로우노트, 유료광고 없이 출시 2개월 만에 회원 1,000명 확보 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1GUFY0aVIxbFNZcUVGRjNFWFdmTVhTUG1aUnNFZWp4WTh5SW1ubDVNNUFhVzBwT2hoWHUzRW9OLVBHTUdVWXZUMzdvS2oxcE1aVHlyYVNpNXNZdENVODFIMjUwNWdGemJVS1hjctIBbEFVX3lxTE1GUFY0aVIxbFNZcUVGRjNFWFdmTVhTUG1aUnNFZWp4WTh5SW1ubDVNNUFhVzBwT2hoWHUzRW9OLVBHTUdVWXZUMzdvS2oxcE1aVHlyYVNpNXNZdENVODFIMjUwNWdGemJVS1hjcg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 04:45:08 GMT"
+      },
+      {
+        "title": "그로우노트, 유료광고 없이 출시 2개월 만에 회원 1,000명 확보 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Da1B4TzVDZnZYWTBvbWRVOHJKaXZnVG8zRGcyOVFIYWlzd05UYWVDR0xBOUM1Zm5RMnkyRHJLck5uM3VaQ0FlNFBMYW9IelBSODA1ck54MGdxQWh2bVNyY3U2N0xMSGZC0gFsQVVfeXFMTUZQVjRpUjFsU1lxRUZGM0VYV2ZNWFNQbVpSc0VlanhZOHlJbW5sNU01QWFXMHBPaGhYdTNFb04tUEdNR1VZdlQzN29LajFwTVpUeXJhU2k1c1l0Q1U4MUgyNTA1Z0Z6YlVLWGNy?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 04:21:42 GMT"
+      },
+      {
+        "title": "Muzig AI, 음악·이미지·음성 AI 생성물 판별 기능 출시 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16eExFeWo1bzNQNHRLT1I2ODZDcnI3eG15U3pacElGU09ObzE4bmJYZWVqakN3b1l4MTB1YTBRMTMxVmNqNWRESFJrcGluWl9BbHBqVFZJcHBLb3M3dlM2NWpudGlCTjJk0gFsQVVfeXFMTmVDZDVHamF6YUdtR0xyOWtST3pjREdPUHdSQlRNcF9wdGFMTVFBcVpDT3dhd0txZGpiZ2VhVXJnSTFGcU9SNEJIekhxbWtMOFphWkxINzRfX3FBajAxVWFMYUdtaWs1dkh0SnN1?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 04:32:55 GMT"
+      }
+    ]
+  },
+  {
+    "id": "케이뱅크",
+    "name": "케이뱅크",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 7,
+    "newsActivityScore": 86,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "케이뱅크은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 결제 도입",
+      "온라인 결제 시스템 도입"
+    ],
+    "latestNews": [
+      {
+        "title": "케이뱅크, 동행복권·어플라이 QR결제 도입…판매점 90% 이상 적용 - NSP통신",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PbW50RkM3UW1pdHpnVFV4aXBSZ0taRHVEQkpSNXFKZUpfd0JPTHJvRHVhMUFEYjBVQ0VWanhmaXpwOEhWZ28yYUVXLWlOaFdEZC1DMDNURTJRY24tOVltaA?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:54:09 GMT"
+      },
+      {
+        "title": "케이뱅크, 복권판매점 QR결제 도입…현금 없이 계좌이체 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RSUNLRlZJbVFvZTVaR1lmaEExSFpLZnNLQ2tyb0lZNTVzZ2UzT1VqdXRfMnBsUE9iXy16Sl9udFp5UWYycW92TkFhaWdVN0VQZ2N3dEoyX3E1YzBaYnJfVg?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:51:09 GMT"
+      },
+      {
+        "title": "케이뱅크, 전국 복권판매점에 QR결제 도입 - 뉴스퀘스트",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE42djE0aDBzYU5uMlpTaXFRRVZVTHFSRHBSOUJaRmZ0UzUzQXJrd3JlaDc1OEJSeVNPUjhVZEZYbHFiXzhHbGdJSzhkQ2FNOC1WUDd2RjhUNHVPbjlVQXF5dXY1WkI0MTlMNGhVcUJEUQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:19:50 GMT"
+      },
+      {
+        "title": "케이뱅크, 소상공인 비용 부담 낮춰..전국 복권판매점 90%에 QR결제 도입 - 한국정경신문",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1OV3VhLWtYWGZFam5mR1MwYkgyV3BmSGdvVEo2X0RYZWptOFdyY3YxTnJLU3cyZEs5ekNMcmVIdjBMYVZOYlNQZWJSZkcwbkJ5R3c?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:05:30 GMT"
+      },
+      {
+        "title": "케이뱅크, 전국 복권판매점에 QR결제 시스템 도입…소상공인 부담 경감 및 결제 편의성 강화 - fintechtimes.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqbUhiR1ZlX0FSZHlEb3BrZm45aHlaaDZFRXVHM1g1M3pGdmhWOF9iVEhoM1FnaE9VYmJNcFJNR0s2Qkc1Q3FGUk9YY2hzcUVHLVh2Mk1SY3U5MUJERl85d01Lc3hSSUhP?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:31:53 GMT"
+      }
+    ]
+  },
+  {
+    "id": "부산교통공사",
+    "name": "부산교통공사",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 5,
+    "newsActivityScore": 70,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "부산교통공사은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 판매 서비스 출시",
+      "온라인 교육 서비스 출시",
+      "여행 플랫폼 서비스 출시",
+      "앱 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "부산교통공사, KKday서 도시철도 승차권 단독 판매 - 메트로신문",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TRVpYcWdYUm95ZWdsYTg1SlRoTGk1eS1BTkJ1QTV4a3VpYWFjNkdSZkFjRU1ibUlNQmE0bk9LQjdsX1ZXSHFhTU91TmJrSkZrSjZpUkRUa2NXa3NZcE9Pcw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 23:10:25 GMT"
+      },
+      {
+        "title": "부산교통공사, 글로벌 여행·간편결제 플랫폼 연계 승차권 판매 - 부산경제방송",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pZTFXbExoTk5jUHg4djRPUFpHQWhGa2FkMmlKTnQ1U3hTWFZDQ0RPVXdrNGg3MHExSkoxYnFVV0R5N2lMem1OWVNFdVNBamhtRm8xZDd3OEREaW9kQ0RJTV9wTEwwU0dj?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:13:36 GMT"
+      },
+      {
+        "title": "부산교통공사, 글로벌 여행플랫폼서 도시철도 승차권 판매 - 아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zVG9hdVFiU3lzWHd3d3JwdTNvNDRKTGJMaWl6UHFMY19may1MUmIwNHFER2RWeW01ZlpvSG0zbmFQTGZVXzNQVlFZeWNPNjNLYlJsQTJ4X0FCNTFvVy0xaQ?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:11:40 GMT"
+      },
+      {
+        "title": "부산교통공사, 글로벌 여행·간편결제 플랫폼 연계 승차권 판매 - LG헬로비전",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FMEV2UXRXNm5Nem5yMmhKSkNER2JhQU44VkNlUHljclV5aTJxOHNvWUdJWEdKOW1VWU1WUHBwSVdzVHQwY1pEYi1razNESEtoYnhMZmRxVm9QVUpXT2VZTzVrdzVQNHN6ZWVKSmlGVWJvQdIBdkFVX3lxTE5Id3ZMa2d0T2NGeF9Tb1hLMjNQY0VSV2FmanhDZC1hZ3FSd25KaXNIejZDYUpfN3RlQ3VPUGhkZmpzZE5pZlJLSDdrZEh2OUtWbUZXQWpoelRGeGloZGxSa2FhNUNUckkyU1Rhc1FZcmlNTE5JWkE?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 04:38:51 GMT"
+      },
+      {
+        "title": "부산교통공사, 글로벌 여행사·간편결제 플랫폼 연계 승차권 판매 - 파이낸셜뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9xTENvVFZtN2hJS0x0S3k3ZzVTVFBfY1AtY3diS3BvbTNRemctUzZBUkdWa1pubGx6QWNmdUlwZVlyOHRfU3lqaUNmQW5zWXM5Ml9EVVpfMkdQZw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 04:37:14 GMT"
+      }
+    ]
+  },
+  {
+    "id": "월드",
+    "name": "월드",
+    "industry": "플랫폼/서비스",
+    "description": "모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "월드은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 앱 서비스 출시",
+      "앱 기반 서비스 출시",
+      "자체 결제 서비스 출시",
+      "앱 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "월드, 150개국에 월드 머니 출시…미국선 애플페이 충전 - tokenpost.kr",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FdGVxbmZPa0xqUlhnT3gzYWc1SHVaeTlfNkdkeHN0VGFDNjd1MFRkcTkyMnFxcGE5QUFLRTdoaXhobDdVem94MDNlcmRBLXNTNjU5LWs4Qjh6RlVPa244UA?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 02:51:27 GMT"
+      },
+      {
+        "title": "월드, 150개국 금융 슈퍼앱 '월드 머니' 출시…스테이블코인·스트라이프 연동 - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA1bEg0QTNmd3RvbkFUbEFod3FkanpSU2JMMkV2ejI0a0dtWno5TE8xNUpLeFBPUF8tQWdMbkxCOXY3ZXZYQzJLNV94REhRM3FwQV9oMS10blZacUhPdXM5aUJpTXJHRy1EYzFmQg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 21:44:50 GMT"
+      },
+      {
+        "title": "월드, 150개국 금융 슈퍼앱 '월드 머니' 출시…스테이블코인·스트라이프 연동 - 블루밍비트",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ZNVpmazUzOHpUYmFSX2hDc0twUGdieXhWYUFIRFZua0g3d19CSDJxOHlndnV2VmRoZ0s3cnhIMVVlXzJaZnlYMXZlM3BPUHZU?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 21:44:14 GMT"
+      }
+    ]
+  },
+  {
+    "id": "국토부",
+    "name": "국토부",
+    "industry": "예약/레저",
+    "description": "모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "국토부은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "앱 기반 서비스 출시",
+      "예약 플랫폼 서비스 출시",
+      "모빌리티 플랫폼 서비스 출시",
+      "앱 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "국토부, 한국형 통합교통서비스 ‘K-MaaS’ 기반 교통앱 출시 - IT비즈뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SaVVRNFp4UjhqU2p0emhwUGdRUEIxdHE2OW1QNG1PRDU5UF9tUzNaWFV6RFh0SEJQS2NNbWYyMU1DMDhQX1pKWDNuTFBTRU51dWRNdEVWSG5pclZ3dklVYWJrS19pX3BnR25lag?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 05:22:00 GMT"
+      },
+      {
+        "title": "국토부, 강릉 찾는 글로벌 방문객... 철도-버스-택시 예약-결제 앱 하나로 - 아시아뉴스전북",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSTVItNUtoLXpSem0zQWtsNXQyS1NsUW1XSjNlWTlWTTdOYkdKQ1d4MWd5V0t3V245OXNaM3c2N0V0RVVnb3d5NC1Ja0RoVmRublIxRHY0UzNQeF9xalQzNTlRT1B4dFpzb1HSAW5BVV95cUxPSzNBNHB5a1dvZ1Uxc0Frand4M1BTdDJqNDJKb2FyRlVtUE90RF9JT3NFdzc1QzltejJzMy1qYURQYnRhR1V1RjZWTjNicmJlY0VwSlFIazJFRkQ4a1V1V2xUbkU0QmdBVjhPQkhBQQ?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 05:05:15 GMT"
+      },
+      {
+        "title": "국토부, '강릉 ITS 세계총회' 맞춤형 교통앱 출시 - yna.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE02dWRrTjVsMUJSMENIY09Zc2R3UER0ZTczTTZ3Si1JQkhUa0MyYlpwUWRSYkZiZjM2NEU0V0htcXZBaFBsbFVNMU4zbV9vam00RTNZYlh1UTY5bWfSAWBBVV95cUxONm0tbDRkRnM4X3VOMmtUV3BpLVVEYTN6N0RMaFVHWmR2TnB4TnczQlB4akVSVTRGOTlBc1g3THkxaUlPVHdlWTVzRld4cTRVQlktb3c5WndZYnVyWXU1YW4?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 02:18:10 GMT"
+      }
+    ]
+  },
+  {
+    "id": "hlb라이프케어",
+    "name": "HLB라이프케어",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "HLB라이프케어은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인몰 사업 확장"
+    ],
+    "latestNews": [
+      {
+        "title": "HLB라이프케어, 자사몰 오픈…식전·저당 식단 신제품으로 사업 확장 - 직썰",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kWlBCRzZtaUtZQ05OVnRtNXRmWEZSdGoxVDc5bkxacGd1M0dTX0U5Z01QOHBWR3pjWVVzQkhkVzhvaklQenFLWFVQTG1WV0FHQnVlajVTY3lzY2RpeWdYNjFWcGJBbjF6Ni1uQtIBbEFVX3lxTE9kWlBCRzZtaUtZQ05OVnRtNXRmWEZSdGoxVDc5bkxacGd1M0dTX0U5Z01QOHBWR3pjWVVzQkhkVzhvaklQenFLWFVQTG1WV0FHQnVlajVTY3lzY2RpeWdYNjFWcGJBbjF6Ni1uQg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 08:40:17 GMT"
+      },
+      {
+        "title": "HLB라이프케어, ‘식전당부ㆍ밀당솥밥’ 출시…혈당 관리 포트폴리오 확장 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1nTllHS3I3QnpqTlJyU1RFek5fZW5FN0ZVem9wZWhnMmpicG5RX0VwSjBtUGQya1RMU05MLUwtMnJoZENIak5pNU9LTWsxeU0?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 01:21:06 GMT"
+      }
+    ]
+  },
+  {
+    "id": "soop",
+    "name": "SOOP",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "SOOP은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 커머스 플랫폼 출시",
+      "플랫폼 사업 확장"
+    ],
+    "latestNews": [
+      {
+        "title": "SOOP이 중소 제조기업 제품 판다…스트리밍 플랫폼, 커머스로 확장 - 스트레이트뉴스",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80bEwyVzFsQ29Pd2czTDY3TV9CNmVyZ1laS21WZjdwLUV0WWE4ZHRNS1FTU25xb3RYQjFoTUk4R3pvSk9sTXphQjF5dDJub1RUQXdudVcxU0E3Nk93NFpScTVsVUxrLWh2R01keTljM1JmVWfSAXdBVV95cUxQQmRtaFJXVE5tYVdrYllRSHVLMl9HaXZ3d3NUaUM0VFNzcU9QM1BPdFlCelo2QjVOQ2l4eUF6d1d4R1hmSmVZaDZ1SGhHX0JBNXNydldXY2tuNU00Nm5UTzcydXZkNGwxM1VqUWZORlhnU3V4aGZCMA?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 10:58:01 GMT"
+      },
+      {
+        "title": "SOOP, 한국상생제조연합회와 제조기업 판로 확대 협약 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBEQ1BLS0t0QnYxSVdCZy1oeTVLY3RFRFJlTWVDUnFqdlZheE80UlY4Nmo0X2FRdXlVSWxZdldURk1FTG80NTFDX0J1RDVHdHJGc0g4ZTNzdzjSAVtBVV95cUxPOEpnT2tzejlTOGFLUWZhSnM2S3h3SW5XSkJCRUpQLVdCYXluYmprSURrVmRFaFVSU1hJVmdYS0RzVUdQeENQNmo0dkprVktFZ3VpSFFqSTRvbVFv?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 05:26:42 GMT"
+      }
+    ]
+  },
+  {
+    "id": "롯데온",
+    "name": "롯데온",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "롯데온은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 커머스 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "롯데온, 추석·10월 연휴 겨냥 여행상품 출시···국내외 선택지 확대 - 스마트비즈",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KZkdmNjZ0UXFrUFZXeF92ZXhQWFVuZ19sVGJnNXJpNFd0MWxrTTc2WG5manp2NW5oZlJxZ2tKd1dwNlVMSDB5RVBCSzZkWWUzZEZQcUl4czR5ajdaZklJVXJpS1JJRkh2MFhxcA?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 07:39:59 GMT"
+      },
+      {
+        "title": "롯데온, 18일부터 日 투모로우랜드 가을·겨울 컬렉션 판매 - 뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GRUd4dmlTMjFnNHBHZTZTWFU5cEMwS2J1UjhSUk14WXhTRklnamJmTC1hNEkzTTNnUVZ4aWdPb3dpbmRoaFo5azlHd1FrbHNQNWxvWkhITG5sSjI3?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 23:55:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "kg이니시스",
+    "name": "KG이니시스",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "KG이니시스은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 판매 서비스 출시",
+      "온라인 교육 서비스 출시",
+      "온라인 결제 시스템 도입",
+      "자체 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "KG이니시스, 소상공인 온라인 판매 지원 ‘스마트결제’ 출시 - 디지틀조선일보",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWjFRSkRYVF9jX2RnM1Z0VDlUbVJZZG1uSEl6QTQ5N29WVmNtSWpncEd5enFVZnhVdTlnalduV1NmcFlZTTB4dV92LWN5UVRyZTk5WGVDVTFJSnA3NjlhY2xHdUpveUJJMWstTWREWllWcHlXZ0pmUjZUYWFEMF9DNHNXcmg0R1nSAXtBVV95cUxQZ2tFWEk3WFRSWDdGSlFZS2RWSWg1cFdKU3FTWWltXzJnR0p2TWlzQklha3I3ZEREWWhBSWVRczdLS1VHc3FCWHRKM2NDSXpuNWpkUXZLZkVoeE14WVlTYndERXJlaS1EeWllSWpYNmVLVmdkNWhxU3hfMDQ?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 08:09:00 GMT"
+      },
+      {
+        "title": "KG이니시스, 소상공인 온라인 판매 돕는 '스마트결제' 출시 - fetv.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE04elB6UzlCUXBHbTBPakZoQ0Z2bXM5ekhUUGdkekpiblVNdUJsaUpYeU9aX3F0WHdZeDVmMC0xNHF4SnVYa1pKaWFCQ0h2cl90eHhmMTVFLUhiYzhDZ1NVNjhJREtfZ1dm?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 05:55:04 GMT"
+      }
+    ]
+  },
+  {
+    "id": "잇다",
+    "name": "잇다",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "잇다은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 판매 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "잇다, 서점 POS에 카페 주문 통합…북카페 전용 서비스 출시 - 머니투데이 - 머니투데이",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5valBhSGtDT3NmMDBBbURHX1ZjU1BLQnV3RElSZnlJNFB3OG5EbnJkb3lHYmxaSlVEdEoySXpCdVdocU5fRWNyaXpJb3N6bXItVFB5YjlUTWRfMmY5clpfX1FXdm1Oc2NjT3VCTl9taUFnZ9IBckFVX3lxTE5valBhSGtDT3NmMDBBbURHX1ZjU1BLQnV3RElSZnlJNFB3OG5EbnJkb3lHYmxaSlVEdEoySXpCdVdocU5fRWNyaXpJb3N6bXItVFB5YjlUTWRfMmY5clpfX1FXdm1Oc2NjT3VCTl9taUFnZw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 07:22:28 GMT"
+      },
+      {
+        "title": "잇다, 서점 POS에 카페 주문 통합…북카페 전용 서비스 출시 · 주요 내용은? - supple.kr",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAzZkJaRks0dEItdGZwTzJ6djdSVVk2OVl6NWs3bzNCZmNmbmNnMWp5NXc1eGtjamRVSGlLVlNkNm5aN2xReWNxT0pMa0lvRnpSZnFpeEwwcGxOcWEx?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 07:22:28 GMT"
+      }
+    ]
+  },
+  {
+    "id": "모두의주차장",
+    "name": "모두의주차장",
+    "industry": "모빌리티",
+    "description": "모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "자체 모바일 앱 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "모두의주차장은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 자체 모바일 앱 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 앱 서비스 출시",
+      "모빌리티 플랫폼 서비스 출시",
+      "자체 결제 서비스 출시",
+      "앱 결제 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "모두의주차장, 'AI 음성 주차권 구매' 서비스 출시… \"국내 최초\" - 디지틀조선일보",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNb09JWWI4Rm5BSnphV3M0YVZoeWRWRFdvTkw1ZEpIMVhHT3MySGFYSHhzMTA3bENkYkF6NnRCV1d3VVA4LV84OW1iRGxQem42bE9DeWxPakJ6ODlKNzVNT0YzNkI1M1Q5ZF9SZXBVc3I3Zlh5T2hOVlZoT3ZiN3VIejViQmI0VG_SAXtBVV95cUxQS0UxcDhQeTlROVBtaFd6RWVKUDdkd1pKUjN1eFdkZ2RMU2IxSFcxOF8teUlEZERJaHdaaWtBcEYxU1RiTVdpbUVDS25PRnhfLTRIY21PSk1sRXlJODlWcGFfQUZWVUducWl3UmtDS1h5TFotWW5SNHd5OHM?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 02:08:00 GMT"
+      },
+      {
+        "title": "모두의주차장, 국내 최초 'AI 음성 주차권 구매' 서비스 출시 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9XTGlnQlRUbjJfMWtaYjZjcTRuOGQzNFliSjNxVVNlNjZXdF9uOGJiRFlWczFPMG9ESnVoZ25VS1ZxOTRGbXhVTnRxUnlGdw?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 00:43:42 GMT"
+      }
+    ]
+  },
+  {
+    "id": "ai",
+    "name": "AI",
+    "industry": "커머스",
+    "description": "커머스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": true,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "온라인 커머스 사업",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "AI은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 온라인 커머스 사업 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 교육 서비스 출시",
+      "온라인 결제 시스템 도입"
+    ],
+    "latestNews": [
+      {
+        "title": "AI가 상대역, 역할극으로 배우는 경영학…인시아드 새 시도 - 글로벌 비즈 뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEbHFmMEI0Rl9YMVN0WTZMYXhfLXZPaG5sbW9FSjhDQWozeHFzbC1xVENhVEtLbnhMSjVwSnktWHVzQmIxTHc0X3VMOWdiNFQwMzVIS0txaWM1VnZlWlZlY0w4SHpYNU5Q0gFoQVVfeXFMUERscWYwQjRGX1gxU3RZNkxheF8tdk9obmxtb0VKOENBajN4cXNsLXFUQ2FUS0tueExKNXBKeS1YdXNCYjFMdzRfdUw5Z2I0VDAzNUhLS3FpYzVWdmVaVmVjTDhIelg1TlA?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 03:32:07 GMT"
+      },
+      {
+        "title": "AI가 온라인 쇼핑 경쟁을 주도하고 있습니다. - Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAxc245T200QWY4dzZ5ZmhqNlJNa3N2cElpN1IwV2lFR25mUzZWUjZtMVhpa1M4QVJkUmxpc1lSVkVZMkgxTTlVOFhnNHdMeFRFRkluZy01SnVpOTZZdHJiX0pZX2NzaGJTYlV1dVFPTXdFRWdEZUN4Ug?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 03:36:38 GMT"
+      }
+    ]
+  },
+  {
+    "id": "우리카드",
+    "name": "우리카드",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 50,
+    "partnershipScore": 50,
+    "paymentNeed": true,
+    "onlineService": false,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "상품·서비스 판매에 따른 결제 수요",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "우리카드은(는) 상품·서비스 판매에 따른 결제 수요, 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "구독 서비스 출시",
+      "정기결제 서비스 출시",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "우리카드, ‘카드의정석2 DAILY’ 선봬…“고정소비 할인부터 구독까지” - 비즈월드",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3MklWZlFpaDhCNmpGX1dUOGVENzdHZk1FS0tiMzc4a3dPQmJsWUN1cEJIZE5sZXZlRzdOZkZXbk9MYkVQUG5ranFXUkxOVG53QjdHbEg1UkJIYkRXQWxrRC1HbE5MLV9nclE?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:51:00 GMT"
+      },
+      {
+        "title": "우리카드, 고정지출 할인 '카드의정석2 루틴' 눈길 - koreastocknews.com",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9sa29SeURuMXZYc0Uyb0ZGbE5YQ0dLWVY2ZXZlaUVmOW92R2ZMekxKSTd6YkV0X2JfMnl2dC1wbkkwYS1Iem1RN29RRWlVZEw4NDA5UU9zekFvZG5HUlQ3YW8wYUM5TEgzRUloNXBVWGw3QXM?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:49:27 GMT"
+      },
+      {
+        "title": "우리카드, ‘카드의정석2 데일리’ 출시…생활·구독 할인 담아 - 라이센스뉴스",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1MTHlKYnJNU1NTRDk4R2YtM181TGphQUlYeXgwSmdsRC11aGd1MmwzVENsV1R6bXFhdTVqeEJOcHVpbWJVSzAwSHEtMTk0XzJ6QnhUTUk1M1kzaVh1UlhaSGowalBoMXY0NDBV?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:20:38 GMT"
+      },
+      {
+        "title": "우리카드, ‘카드의정석2 DAILY’ 출시···“고정소비 할인부터 구독까지 한 장에” - 시사저널e",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzNElMUFV6WEhnYzhZanI1Z2pBY1ZUaGpUd0t0LTMtbFZSRzF5eHU3UjNHekotZ0V6cm1zNE94cGJ4c3RWMmJGTjJlT1RrdExUY2dET2ptYjMzcHJjVjZ5QkRMVXFOYTRjVXRIckE5VFFYQdIBdkFVX3lxTFA5dHk1WlliazNTbDRuVjQtWFRpVHZBVnpCdjhVVzVLR1lwOEpqSnRWTHMxOTdQSWM1YXJhVzNEalBpQjN0MzNvRFc1eGRHZmFZMTR2NGM1LTVsVEx3d2JRVnJ5dkN0ekEycEFJUlVnaEhyal9xTmc?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:54:39 GMT"
+      }
+    ]
+  },
+  {
+    "id": "gc케어",
+    "name": "GC케어",
+    "industry": "B2B",
+    "description": "B2B, 모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 12,
+    "newsActivityScore": 100,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "자체 모바일 앱 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "GC케어은(는) 온라인/플랫폼 기반 서비스, 자체 모바일 앱 서비스, B2B/법인 결제 수요 가능성 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "자체 앱 서비스 출시",
+      "B2B 플랫폼 출시",
+      "기업용 플랫폼 출시",
+      "기업 대상 플랫폼 출시",
+      "헬스케어 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "GC케어, 기업 보건관리 통합 서비스 ‘보건이지’ 출시 - 메디포뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PN2JVaWZHc3VEVXRyZVRkeVlTN0otcUNlWlNNUzJHaGRBNW1jaksycHl4TkJueG93bW9tUUxVenZCQkJfLTZEbk9lWlhQc0sxRUl0dTlSYW42SU51LUt2ZElCbHRjLTg?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 01:41:52 GMT"
+      },
+      {
+        "title": "GC케어, '보건이지' 출시···기업 보건관리 통합 서비스 제공 - 한국NGO신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NdHZaV3NNRGFFMl94QnlaRTdTUjVXX0FlSFNCeGdDaDgzYTdFc0NwcGUwSGZRbWFHNExTN1pZRHdzTWs3U0ZNMjNpbmZubGQya3RZNXo2YkJYdjZ1cnFHSmRGVG5sV0dy?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:05:39 GMT"
+      },
+      {
+        "title": "GC케어, 기업 보건관리 업무 자동화 서비스 ‘보건이지’ 출시 - 브릿지경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3aTgwTXI1MDZRQUJiTUEyYmFkZVJrdi1PYmliQmtZWkI1ZlphQy0wSjBIUGR1NjZfcWI2SEtlcEIyTlBZckRWdUZkYWhGNWFmSzd3a25KZFMwZw?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 04:26:00 GMT"
+      },
+      {
+        "title": "GC케어, 기업용 보건관리 자동화 솔루션 ‘보건이지’ 출시 - 직썰",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHUF80UjF2c0ZiaEM1elNkMDBoV3d3bWtzQ0NjSERPb3FOcWJ2dFZGUDVjTGJVYmNuT3g3NTdzSHV6SnN2TEcwUnJCbnJ6ZlktM2pyTzhwUm9xV0xGTHlZVmFvLUQ4ak53WlBCRtIBbEFVX3lxTFBHUF80UjF2c0ZiaEM1elNkMDBoV3d3bWtzQ0NjSERPb3FOcWJ2dFZGUDVjTGJVYmNuT3g3NTdzSHV6SnN2TEcwUnJCbnJ6ZlktM2pyTzhwUm9xV0xGTHlZVmFvLUQ4ak53WlBCRg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 03:29:21 GMT"
+      },
+      {
+        "title": "GC케어, 검진부터 사후관리까지 잇는 기업용 ‘보건이지’ 출시 - 주간한국",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xMGZXN3h5U3luQjh6czZ2WWtxcW9wcXRhMzBMWDRSdG9LTXh3U1hFQ09xOWlJcE5hRmlvczdMNGFoMnAybG5oeHBmdXVvYzYxXzEwZnVreGZ1ZWpPWTR6aWFBNDRzejRrSUlFR2pfLVnSAXRBVV95cUxPVTI4aXZyeWFZZHdWdnJjdEhaM1E4cnVsdm1CQnNESHdsOEw2SjR4SlJYeWtSSHozNk0teG5IWndPclhzdWc5cG1yNER2cjBPZ0RIRTA4eFd1YnlOVWxzNVMtTmpZMFpNX2xXRjVCenVhS1RUWA?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 03:06:15 GMT"
+      }
+    ]
+  },
+  {
+    "id": "엔비티",
+    "name": "엔비티",
+    "industry": "예약/레저",
+    "description": "예약/레저 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "엔비티은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 신규 서비스 출시",
+      "예약 플랫폼 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "엔비티, 오퍼월 신규 브랜드 '애디슨+' 출시…\"플랫폼 맞춤형 전환\" - 팍스경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmYks4YjNWUzRPNkJfMUlURFVYajFKejlCTVBnbElLUnNTWmZRZFlteERLTGNqdUtYTl8zT29xejdjRHVYT19BWkRUZ2I0WVM5aDNQc0ExZ1oxRDh0ZzJZOUFVVGRDZHBz?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 06:37:31 GMT"
+      },
+      {
+        "title": "엔비티, 오퍼월 신규 브랜드 '애디슨+' 출시 - 뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwNk1uaTJSaUlxcUJVN3cwMF9OeFQ3V05UYWUxOGFjVDNPRWpvWloyS2FSRVRSbG9INnpob3A3TnFSZ01LZUczWTBNVjZYWnpRMmJiRWg2WExzS29w?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 06:26:00 GMT"
+      },
+      {
+        "title": "엔비티, 프리미엄 오퍼월 '애디슨+' 출시…지면 구조 개편 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGclhpSUREc3M5VTVoOF9UaDhMSWk4TU44ZG9oX3ZpTmNLdkhkbk1NcWl6UHBIRFl6c3VQTzJWUjI1NzZLektGU2NmX1FVOXhMTU4wVGJVTFpMVnIzUTZIVtIBeEFVX3lxTE94cWdDdWxlaFczcklGV1pXQVNjVGJpTERVaG1BclZKZElaUVNhRWt0dVNJVWNEMGhUTmM4NjhYZ0tiUE9tNHg4SXppTHRGUXBCYXBxZTFDVFdlVE5ITEtFWE9icTJoVjIwNW9jZUJHWUpsV1M2djZYeg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 06:24:23 GMT"
+      }
+    ]
+  },
+  {
+    "id": "그로우노트",
+    "name": "그로우노트",
+    "industry": "교육",
+    "description": "교육 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "그로우노트은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 신규 서비스 출시",
+      "예약 플랫폼 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "온라인 교육 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "그로우노트, 유료광고 없이 출시 2개월 만에 회원 1,000명 확보 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1GUFY0aVIxbFNZcUVGRjNFWFdmTVhTUG1aUnNFZWp4WTh5SW1ubDVNNUFhVzBwT2hoWHUzRW9OLVBHTUdVWXZUMzdvS2oxcE1aVHlyYVNpNXNZdENVODFIMjUwNWdGemJVS1hjctIBbEFVX3lxTE1GUFY0aVIxbFNZcUVGRjNFWFdmTVhTUG1aUnNFZWp4WTh5SW1ubDVNNUFhVzBwT2hoWHUzRW9OLVBHTUdVWXZUMzdvS2oxcE1aVHlyYVNpNXNZdENVODFIMjUwNWdGemJVS1hjcg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 04:45:08 GMT"
+      },
+      {
+        "title": "그로우노트, 유료광고 없이 출시 2개월 만에 회원 1,000명 확보 - 스타트업엔(StartupN)",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Da1B4TzVDZnZYWTBvbWRVOHJKaXZnVG8zRGcyOVFIYWlzd05UYWVDR0xBOUM1Zm5RMnkyRHJLck5uM3VaQ0FlNFBMYW9IelBSODA1ck54MGdxQWh2bVNyY3U2N0xMSGZC0gFsQVVfeXFMTUZQVjRpUjFsU1lxRUZGM0VYV2ZNWFNQbVpSc0VlanhZOHlJbW5sNU01QWFXMHBPaGhYdTNFb04tUEdNR1VZdlQzN29LajFwTVpUeXJhU2k1c1l0Q1U4MUgyNTA1Z0Z6YlVLWGNy?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 04:21:42 GMT"
+      }
+    ]
+  },
+  {
+    "id": "하나은행",
+    "name": "하나은행",
+    "industry": "플랫폼/서비스",
+    "description": "플랫폼/서비스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "하나은행은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스",
+      "간편결제 도입 기업"
+    ],
+    "latestNews": [
+      {
+        "title": "하나은행, 파크골프 플랫폼 운영사 '픽셀소프트웨어'와 맞손 … 시니어 금융·스포츠 서비스 확대 - 워크투데이",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kallKTU5POTM2ck1VWFNMOVRrTktYZE1GOVE0ekR3aTJPVjZsZWoybXA1Mms0VWlSdHlpMUplRWdYOTFGNTNxTW9yN0ZQTFZsQlFMUmJHMlJwY2xNRWxSakhzaTNaWWpoZy1RSw?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:35:53 GMT"
+      },
+      {
+        "title": "하나은행, 파크골프 활성화 지원 나서 - 스마트투데이",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2bDZBTnVkM2NxMlFSQkczNDM4TjJrSWZtdW5ORGNQaFBYQlFFQXg3eThpTnEtQ0E5TnBzSEpwbjhWaElQb0szVkxIa1N6bEZ3eDYzX0ZaakREQUJSdTlB?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:06:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "안랩",
+    "name": "안랩",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 12,
+    "newsActivityScore": 100,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "안랩은(는) 온라인/플랫폼 기반 서비스, 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스",
+      "SaaS 구독 서비스 출시",
+      "구독형 서비스 사업 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "안랩, ‘AI-네이티브 보안 플랫폼 기업’ 전환 선언 - BI KOREA",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtYXpKM3R3bDMtRjIzczY1Mmt3N0VFVTNKT2tDSmd6VjQ5Z05lQ2Y0Wl9VOC1BWTVsWjlYQnFZd2QtVG9XRnRpdVJZMTdIOXcySGkzb25fZTFFdHV0LV9TdzJGYm00UQ?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 23:42:19 GMT"
+      },
+      {
+        "title": "안랩, AI 네이티브 전환에 3년간 1000억 투자…“2035년 매출 1조 노린다” - CEO스코어데일리",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZSTQxTWhibEVYYWh0dUZtd1hBbVBYUUFxcEZKUzdPUElmbVZ3eWkzVjcyX0FDRjFMelhvclNPcnY0Z0d1ZXIwc3JibVVjSnE1bnRzd3lQT1VNcl9iZ1JlWHV0VGcyTjRmeUkw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 07:50:12 GMT"
+      },
+      {
+        "title": "안랩, AI 중심 '체질 전환'…3년간 1000억 투자 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3T2Qwd1RVMnYySXRQMFVSbERONGFpbEJCRDdFUlhyeTVjbU1sNXJiYkxxT1I3bkluY1lfZFp1QnpuU0RJWnpId25qdw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:49:57 GMT"
+      },
+      {
+        "title": "안랩, ‘AI 네이티브 보안 기업’ 전환 선언…2035년 ‘매출 1조’ 목표 - 이투데이",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBsT0xoNHpBa2hkWGptQW1nSWlKSTZqTmdNZnktaG9DTTItSWFrVTJTR0FGUjN6ZlJVVVVCcnlxRnk3X0o0UnJ6ODBzQURxRWtDYlNZVQ?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:25:00 GMT"
+      },
+      {
+        "title": "안랩, ‘AI 네이티브’ 보안기업 전환…3년간 1000억 투자 - 서울경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE80cWt1Wk1WQVkwYzVGX3pVaTVmNGxpVVVNN3lIMjhENzFseWFzMnNaY3JqQVpjOWpCM0x0d1h3ejR1NzJzUkpDdEJwVHNfYWNRaXB4T2F1QTROV3d1UDRHdXlhRjM?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 05:35:02 GMT"
+      }
+    ]
+  },
+  {
+    "id": "조폐공사",
+    "name": "조폐공사",
+    "industry": "기부/비영리",
+    "description": "기부·후원 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 8,
+    "newsActivityScore": 94,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": true,
+    "fitServices": [
+      "브랜드Pay",
+      "KB마음더하기"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "기부·후원·헌금 관련 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "조폐공사은(는) 온라인/플랫폼 기반 서비스, 기부·후원·헌금 관련 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, KB마음더하기와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스",
+      "디지털 기부 서비스"
+    ],
+    "latestNews": [
+      {
+        "title": "조폐공사, 고향사랑 페스타서 디지털 지역경제 서비스 선보여 - 뉴스밴드",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fQXNtYy1WSW1ZTkRmS2ViTWFRcTBpRVd1LWstaUplLUdOX0J0U2dxMjNJNUVwOWZnS0w1Z3BvLUZhejlmcnlnRlJYdm1aa3I1TTdlb1dqaVF6RFNNZXAtWHgwbjdWLXFnWnc?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 10:58:25 GMT"
+      },
+      {
+        "title": "조폐공사, 고향사랑 페스타서 디지털 지역경제 진흥 플랫폼 소개 - 데일리한국",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxSzBhRDFrN1JrLU5zTzA5NHZ4eDFndzhiZk8xWjRJQ25vbFdsZHdTOHNuWmU0b21MSloybUFDbks1MGxNRGk4VFBYemxydHNIT1VrWjF1dldTNmZhblp2YlBTa2R0ZWtSMlU4UkJZVWlzTTDSAXNBVV95cUxQcUswYUQxazdSay1Oc08wOTR2eHgxZ3c4YmZPMVo0SUNub2xXbGR3UzhzblplNG9tTEpaMm1BQ25LNTBsTURpOFRQWHpscnRzSE9Va1oxdXZXUzZmYW5admJQU2tkdGVrUjJVOFJCWVVpc00w?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 09:14:02 GMT"
+      },
+      {
+        "title": "조폐공사, 지역화폐 넘어 공공서비스로 확장 - 핀포인트뉴스",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1ScmtDYkJMRWc0S3lHWXRpYnp0VjBPNzdrd0UtUWJwOGhra0Z6X0QxUk9iMWc3QjNuR3U3MDNwb2hvRFFzMzZoRTNYOXlLOFZEUjhSZ2Italdtb25hSTF0UjZHeTViMVc5MGlxZVBTYlNzOFNhbGI40gF3QVVfeXFMTVJya0NiQkxFZzRLeUdZdGlienRWME83N2t3RS1RYnA4aGtrRnpfRDFST2IxZzdCM25HdTcwM3BvaG9EUXMzNmhFM1g5eUs4VkRSOFJnYi1qV21vbmFJMXRSNkd5NWIxVzkwaXFlUFNiU3M4U2FsYjg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 06:50:25 GMT"
+      },
+      {
+        "title": "조폐공사, ‘착’부터 돈명태까지...화폐 기술로 지역경제 잇는다 - 충남일보",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IQjlueUtwaWk2Vk8wVkpkM3lxQW5oOUhfcWFDYm9jQnh4VTFxTF9ZSC05a2JlTjEyZkJ4Tk1EaGxGOXZOWXViNGtCclhON1p3TEs5RkJOVTB6djNYUjBoMllnbWRybWctQVpMSTZyd3g4Zw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 06:37:13 GMT"
+      },
+      {
+        "title": "조폐공사, ‘만드는 화폐’넘어 ‘쓰이는 화폐’로...디지털 지역경제 서비스 선보여 - 충청매일",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5EZGNXUWRiakQ0dW1vbXBaallaSDN2bmFJOWxtQ0ZQX0lVZjV1dEFyMlIwVzN0SkNqSmROWVpSMVBkWmhSeU9hb2JlQWJBXy1PUnJKcHJwSDZUeEh5WmZFZ0dBUjhrRndBSWc?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:40:10 GMT"
+      }
+    ]
+  },
+  {
+    "id": "차봇",
+    "name": "차봇",
+    "industry": "기부/비영리",
+    "description": "기부·후원 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 5,
+    "newsActivityScore": 70,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": true,
+    "fitServices": [
+      "브랜드Pay",
+      "KB마음더하기"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "기부·후원·헌금 관련 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "차봇은(는) 온라인/플랫폼 기반 서비스, 기부·후원·헌금 관련 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, KB마음더하기와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모빌리티 플랫폼 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "차봇, 문콕·스톤칩 등 신차 손상 보장 '차봇케어' 출시… 최대 200만원 보장 - edaily.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONjNhbmlGZGd5LUJ1YWV0UWp6VXZmdTBYWFk4c3FEOFlvLXAtcHF5aE1STl8wM3lIdzZQMzhfUTVIQVY0LTNETmJrNTVGTENtTkFMYU1VcUtRWEhEUlY4elJDamRLZzVlQ042cXBXNFFBeUhid013S0o1bmtOS2p0UA?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:09:53 GMT"
+      },
+      {
+        "title": "차봇, 신차 케어 서비스 ‘차봇케어’ 출시…“5종 손상·자동차보험 자기부담금 지원” - 바이라인네트워크",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBKTWxxdWttcUZzcFNfYTgwZUZLdnl5aXRZRnZwNkZaZGxjS2ZiR2h2WWNfY01zTmpwQV8tZGxkR0FfMk5mLVhjS20zR0tBNFBzQW9aNkhOaw?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:07:28 GMT"
+      },
+      {
+        "title": "차봇, 신차 안심 케어 ‘차봇케어’출시…\"주요 생활손상 보장\" - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2RF9vbEUzWUlYVkszdlJGTmRnSlZFR2RiOERlWU1OWkgteS1YSUNWd0NtbjB5azdzZDdxRktiLUxpcWhPaXV6ajY5bGVwaDNVdV9wQTBOWEktUQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 02:10:55 GMT"
+      },
+      {
+        "title": "차봇, 신차 생활손상 보장 ‘차봇케어’ 출시 - 이코노미스트",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBSWmVNLW4yQkt1NXFBQi1YN2ctRUlrQ2hBbnZzWTVoZU1MaXQwUzFpRlF6elBpUE82Rl8wLWZtakc1dFBVNGNlUjEzZDNaQ21UdzEweVJRRndMSFdFZk1qaGhn?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 01:16:00 GMT"
+      },
+      {
+        "title": "차봇, 신차 케어 서비스 ‘차봇케어’ 출시 - 와우테일",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkZk5lZXFqb3F0WUJZYnhNNS1jX0tMMXFIWTNlQTBablN0d1dKU2hWbld5VnJfVWZXZjZjZVdNbEtYSDBVN3RJUU8xZU9ZUU0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 00:38:12 GMT"
+      }
+    ]
+  },
+  {
+    "id": "피클플러스",
+    "name": "피클플러스",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "피클플러스은(는) 온라인/플랫폼 기반 서비스, 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 신규 서비스 출시",
+      "구독 서비스 출시",
+      "subscription 서비스 출시",
+      "구독형 서비스 사업 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "피클플러스, 6년만에 새 BI 공개…오프라인 영역 확장 | (주)피클플러스의 비즈니스 뉴스 | (주)피클플러스 - 잡플래닛",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE81aFdjUWl6RVVleTUxeGJZalJPeU5WYXlrdWlRZHVaTnF0ZEZ5T1ZIRzlNOTRaTDlJTG91U0lzNnBQa1JyM0dSWXBTaWJnOXBVTTROVU0yOEw2QQ?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 12:28:01 GMT"
+      },
+      {
+        "title": "피클플러스, 6년만에 새 BI 공개…오프라인 영역 확장 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vN3cyRzFBdXZpTGt3b1BqUzdtNmVvY19xOHF4OGJhOW95aE4xNDdhVXhObkdZN3ZCSXFiUnNhMGVkNHdVOU13RWZWOF9wNjg?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 09:01:37 GMT"
+      },
+      {
+        "title": "피클플러스, 6년만에 새 BI 공개…오프라인 영역 확장 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pSWVMczZwQkFOM0ExaURqTm9vcjgwS1VSckhNQ05FU20wbW9aUHdBRmpoZFlCS0M0RFlfM1ZrWFF5Qkp3cEdOSGFJbw?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 09:01:37 GMT"
+      },
+      {
+        "title": "피클플러스, 6년만에 새 BI 공개…오프라인 영역 확장 - 중앙일보",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mUl9mejk1LWpfV0VqVW5vNDVvc0hQWjFLVkp6VXlTMkt2cHdOVVFSN3pLdlItUWZBbWNkN2t4RFFaZERaRjRrUDhwOG5QaVZkQ0pnVnRn?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 09:00:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "더본코리아",
+    "name": "더본코리아",
+    "industry": "플랫폼/서비스",
+    "description": "플랫폼/서비스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요"
+    ],
+    "discoveryReason": "더본코리아은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 결제 시스템 도입"
+    ],
+    "latestNews": [
+      {
+        "title": "더본코리아, 가맹점 물품대금 카드결제 도입…수수료 본사 부담 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE40MllfLTVrYWZCZFVsbmxwOGpqckdFNExvZURuaHMxQy10XzNrZlNZcDNVdjdhNE4zbnB4M3hNNVgzOV9pcEFtMzJaTFIzdw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 00:51:35 GMT"
+      },
+      {
+        "title": "더본코리아, 물품대금 카드결제 도입…\"가맹점 자금운용 부담 낮춘다\" - 머니투데이 - 머니투데이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6LVIzcjE0WDlBTlJCbnZaMlZMempPbmZVSWpvLWYyVmw1SC0tSjQ2Vkw5X0dvTVdIRjZrU0pSSTNnSnhWSHRiVmJFQ0Q2dE5fZVlFOVYwdlgySFFiOFJBZ085Z3JTemVtUmfSAW9BVV95cUxOSnNMcDZaNVNHWHBjSHRnd1g2MkZvdzVydlZMYkdEWVhBbExpWUpTd0lINVhJSDRGeGpqUWg2ZTBJY1dFNjRJVEpUalJzaW95N1AtODg3S0g0UGxDZW1pWmppLW1QclV4ajZfZ1BSU3c?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 00:48:02 GMT"
+      },
+      {
+        "title": "더본코리아, 대금 카드 결제 시스템 도입…본사가 수수료 부담 - yna.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1JdEttWjhfYnk0TzhObEhyNHJkc0ItOHJNbHo4aktLYW9jaGQ2bG9HTE81QXBFaEtGUkZ3WkdCb2ZpaG9LZ1VpMUJoMVVOMl9zcDhkaEpSNG9TQ3PSAWBBVV95cUxOUWNhVTVuMjhreE9hY2hmTGRISktHd2I0bjJwQmgxLUJ2WlpMajd3NnlfWHE4YndrdUNLTzZjSmZiMjRJSThlbkw5OS1UTVkzem1VcHlXVUdSYlljemVaOGE?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 00:47:40 GMT"
+      },
+      {
+        "title": "더본코리아, '물품 대금 카드 결제 시스템' 도입 - 아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JS0FRZmVKNXVwT3kxSHRuSWZyN2ZmWWpEVXRxdngzSTdyS3lYbWN0cHcwRFU3Q0UtWUN5VDVwaURKazBleDR0MS1UMjltSWx0bVdBNlVQRDdvcm5IX2J2OXQtU0xrOXdwcFNYR3VFUzZvQQ?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 23:33:52 GMT"
+      }
+    ]
+  },
+  {
+    "id": "한컴",
+    "name": "한컴",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "한컴은(는) 온라인/플랫폼 기반 서비스, 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 사업 확장",
+      "SaaS 구독 서비스 출시",
+      "구독형 서비스 사업 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "한컴, 노마디안 띄우고 美로…에이전틱 OS 사업화 시험대 - 위키리크스한국",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9oSjNFUXRUcW5CSzJuYVRyTXRzRWduOHN4aENWWE5kN0lONEhtRkdzU29jQjZ3X2dLNEhlM2Q1RENqMmZDODdXRmIzbTdNYldNZVNOQTBKQ255NGM4WHJ1clJraTJKZF9zRFh6RmVJdw?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:51:58 GMT"
+      },
+      {
+        "title": "한컴, 노마디안 띄우고 美로…에이전틱 OS 사업화 시험대 - 위키리크스한국",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tTGh3UVJvVlZOWjN3dzBZMi1qV29ZXzVMaDVzODJTblFNQ19FTFI5a3dXemZEWEUwcTgwQklIQUJDVEJLUFZfVnJURkZRb3IwTjNldnpmRWZlMDhiWHR0ZVJFSEJaQTdjUEdIcGJDb2k?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:51:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "Meta은(는) 온라인/플랫폼 기반 서비스, 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "구독 서비스 출시",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "Meta, AI 구독 서비스 ‘Meta One’ 출시…페이스북·인스타·왓츠앱 유료화 확대 - 데브타임즈",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WSUM4TUxMLVFIQnZOVmFtMUhpWmFBMlNOSW04OGxMLTNJTXVETk5uMVUxTElNWHdUT0g0TzBSMVdZbDJNSXVUUl9fV2ZSaFk?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 06:07:06 GMT"
+      },
+      {
+        "title": "Meta, AI 사용을 앱 전반에 걸쳐 번들링하는 Meta One 구독 서비스 출시 - Unite.AI",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWkk2eE1GUXlsMVRFcFp6WHZLTHdzcl83UklGblhYeFNGZkQyeGs4Vl9OWEZ1SzhoZElDaE5EZGxuYjRFM29XdlVBUVJHbngxWG8zLW9QemxiRjk0YzVUclgzc0VmSVB1TU5xWXF3X1pKaEkySjl2dVJhNEFQQlhMbnpGc2Jka3VHQzVKNHNVcTc0Qk1zX3J6RFZfUQ?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 16:00:12 GMT"
+      }
+    ]
+  },
+  {
+    "id": "부산-시내버스",
+    "name": "부산 시내버스",
+    "industry": "플랫폼/서비스",
+    "description": "플랫폼/서비스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 40,
+    "partnershipScore": 40,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "상품·서비스 판매에 따른 결제 수요"
+    ],
+    "discoveryReason": "부산 시내버스은(는) 온라인/플랫폼 기반 서비스, 상품·서비스 판매에 따른 결제 수요 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "간편결제 도입 기업",
+      "모바일 결제 도입"
+    ],
+    "latestNews": [
+      {
+        "title": "부산 시내버스, 외국인 모바일 간편결제 도입 - news.kbs.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xZkFpRUpCeGF2ZVJhRW1qamxUU01yQVBEb2l3dGRVQzh1T0ZmNlNQaWFfZzBwcV9wbGQwRlpXV2xlcXVSaVFVMG1CTjZzMjBNMUJvZU1jWGM5d3M?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 02:51:00 GMT"
+      },
+      {
+        "title": "부산 시내버스, 국제 통화 제로페이 QR 결제 도입 - cartvnews.com",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LWlFQTF9VN2JHblRRZzhIaElaeFhCTUxXQWZVczY2YTRYZ2FfUFQ1MHpQVkFqY0s4NDJqdE5yclNyNERrMkZQU2k4d1pHcHNQVEN3ZlVzRVN5Rk1QaE9Ob09EZ1h5a1ZfalZWRA?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 21:30:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "삼성전자",
+    "name": "삼성전자",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 7,
+    "newsActivityScore": 86,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "삼성전자은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "B2B 플랫폼 출시",
+      "교육 플랫폼 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "삼성전자, 교사 500명의 노하우 교육 솔루션 '갤럭시 클래스룸' 출시 - 마일드경제",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QQk9vTDhfQS05ZVlPWTJHZXZlTDhmaDBodzN5djVTT0ZDT3dCSjEwU0ttaE1kb016TkMzQWZtZlFhMjJMXzV5aDU1ZDRINVlyUDZaRHNJVTFsWkZMSnNsWm5wWmhvcmdWRUVj?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 09:40:32 GMT"
+      },
+      {
+        "title": "삼성전자, 학교 디지털 교육 지원 ‘갤럭시 클래스룸’ 출시 - 디스커버리뉴스(DISCOVERYNEWS)",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WVGRlYWxud002aWVXVUNWaTVWdFBkUUVkYnFpWHo3bTdIRGhpQm82MlJkT2EwYzQyRVVjVHBDZDFzbzBDNDNLVTI4X2h0ZnNqUFllZEtkZlp6aG5zNHdFWUJsakFGSzJZR05OSUVlQ1B3Zw?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 07:34:12 GMT"
+      },
+      {
+        "title": "삼성전자, 갤럭시 생태계 교실로 확장···'갤럭시 클래스룸' 출시 - 스마트비즈",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sUVlWYUJUa2JVMnB5a1ZIRWFRSWFHeGEwakJxWVRIejI1azNkcXBXT0diTklvZmthNDRIVjBXcVpGRzA0Z1JiWWF2c082OGhmTU1peTVWZTZ4cjNOU002alpGZ3NrZ21aVW1neA?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:57:48 GMT"
+      },
+      {
+        "title": "삼성전자, 교실 수업용 교육 솔루션 ‘갤럭시 클래스룸’ 출시 - 우먼타임스",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oWmFiQ0hDZVI1Nk9xOTFJYnJ4LVEtMFlaZUU2VVNCOVp6UmM2QlVUUjh4a0NFRUlNQVlTaUw0ejNUQW1sRFZfSjFKdWtzV3VWWXNZNkVSRURNeXF3WnkzUDZ1Mkhaa0xEUzA5djM4V0hkSGI10gF0QVVfeXFMTWhaYWJDSENlUjU2T3E5MUlicngtUS0wWVplRTZVU0I5WnpSYzZCVVRSOHhrQ0VFSU1BWVNpTDR6M1RBbWxEVl9KMUp1a3NXdVZZc1k2RVJFRE15cXdaeTNQNnUySFprTERTMDl2MzhXSGRIYjU?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:24:59 GMT"
+      },
+      {
+        "title": "삼성전자, 교사 500명과 만든 '갤럭시 클래스룸' 출시 … 공교육 시장 공략 - 뉴데일리",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Ub1g4WjhBbFdvamptUmtKXzlGRG1aMXU3ZTBmZHhFZHVYS0hMTHNvUmh5SnBoTnk2Zlh1aTNqYmdSYU9qMk5nXy1BZGlzN2xwTnJYbm52TVJORWduSGVzN2R6cVZUb0lCX0FpckdPYkEtMkw4UXUzYkpCQdIBgAFBVV95cUxPTXRfUm55R09CQUZScXAxcTM5NGZJcGRWN2t3MVIxV29pT19IdXFLUzNIM29jekdwNUNDbk9ZQWc0bVRlQU00MGNfN2pZQ3E4NlhkMkNpWkJITHJvN2NhTnpscGlkX3RneG9xYTh3OV9EQ3NQb0FVRFZ3dTR0azRVRA?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:03:46 GMT"
+      }
+    ]
+  },
+  {
+    "id": "안랩블록체인컴퍼니",
+    "name": "안랩블록체인컴퍼니",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 7,
+    "newsActivityScore": 86,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "안랩블록체인컴퍼니은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "B2B 플랫폼 출시",
+      "기업용 플랫폼 출시",
+      "기업 대상 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "안랩블록체인컴퍼니, 금융사 내부망용 디지털자산 플랫폼 '트러스' 출시 - 메트로신문",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nRWxrenptQ2otdDNTYi05YjdMbE5rNENUMUZyNmtBQ2cwb2dpVmhDRWZyeDNfRE8tZ3d3R3ZITHU2OTBHVEhOVjdnOTBpVEZDSzY5UVB6Q3VSTXJ3SUxHNQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:34:27 GMT"
+      },
+      {
+        "title": "안랩블록체인컴퍼니, 금융사 맞춤형 디지털자산 플랫폼 출시 - 헤럴드경제",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VaGQ1LVdSSjA2X3JzOEx0ZmVuOGx1WkM2YXRNRTg3Vno4Uk12MDg4NUs3dUhjYXhFdEZ1NHF3TVpxM3NVSGZrYmp4RW9GYjQySFdJYmpR?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:28:38 GMT"
+      },
+      {
+        "title": "안랩블록체인컴퍼니, 금융기관 디지털자산 플랫폼 '트러스' 출시 - 블로터",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLVDhnT3NrYWNRcThBMTFVOVFZZDkxeEdLdi1jOVM1bV9uVTB6ZnhSVFFLMzdvSmFXOUNnYXlIQjN4VVBMcEtiNmZnVkpqaWZnQXZmUU1jSXlvNFNGLTdsVHRuZlpqS1JDbHFLVtIBbEFVX3lxTFBLVDhnT3NrYWNRcThBMTFVOVFZZDkxeEdLdi1jOVM1bV9uVTB6ZnhSVFFLMzdvSmFXOUNnYXlIQjN4VVBMcEtiNmZnVkpqaWZnQXZmUU1jSXlvNFNGLTdsVHRuZlpqS1JDbHFLVg?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:15:29 GMT"
+      },
+      {
+        "title": "안랩블록체인컴퍼니, 금융기관 내부망용 디지털자산 플랫폼 ‘트러스’ 출시 - 데이터넷",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2NmpudjdzOFpjaVRYTFF6QVlBdk04eUtfR09DMUtJTnVmN1ZOazVZMXBRMkVBcFNzSGc5YVhKcFBCM2gwalh1MTVpR2pIMjVVVy05aUs4UGo0djRGMGxtNmJURzBBVkU3UU9nZA?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:28:06 GMT"
+      },
+      {
+        "title": "안랩블록체인컴퍼니, 금융권 디지털자산 플랫폼 ‘트러스’ 선보여 - 서울경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZOEEzLTBkWTB4ellGNmgyT0Mxa3QxRlRDeG5raDg3UldmUkZMN2NKVkQ0UHFRcThkQVppSlFyTE1kNzdBNWdIVDhXdVJDRThaczJNRjJSV0RiUno3VS1MUnIwbHY?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:19:54 GMT"
+      }
+    ]
+  },
+  {
+    "id": "보이스루",
+    "name": "보이스루",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "보이스루은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "B2B 플랫폼 출시",
+      "B2B 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "온라인 교육 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "보이스루, AI·전문가 결합 더빙 서비스 ‘폴리타’ 출시 - FA저널",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjMnpJN0NJZ3VKTFhHS2lKZFU0NGVqcGpoWS1xemxUM283ZG9pNURjRnRRUzNRX21FQ2MzZ2JLdTNTS1J1ekFFVURqM0pYZWdCcVVvZnNiNXZSUkF1UDNURG1pQlBpZW44Yzhv?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 23:10:09 GMT"
+      },
+      {
+        "title": "보이스루, AI·전문가 결합 더빙 서비스 ‘폴리타’ 출시 - AI타임스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8xbVFScXo0NHBNSURURkJEc0sxeUZiTzVSdUl5SkpJNllnZHBxMGRNbGZSTGdBQW82UDIzMUdQaUxXV0pCLWV2V2t2ZDcwSWVwcDhWdEZYeFBYN1Q3Z2RmWFIyRGNWLVBWWXc?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 03:24:12 GMT"
+      },
+      {
+        "title": "보이스루, AI·전문가 결합 더빙 서비스 ‘폴리타’ 출시 - 브릿지경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9EZnN3MmxOWnR3ME84bjJsQjlPTFM2VEdGak9zVS14SEtUZmNqSThaaUFROHJIRTVRR1lxeFFIbEhPT0puRVhXREZyeXA3eTUta182cG9BeDAxZw?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 01:12:00 GMT"
+      },
+      {
+        "title": "보이스루, AI·전문가 결합 더빙 서비스 ‘폴리타’ 출시 - 세계문화신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9HVF92TlEyV1FfRl9xcmIzRVQ2TGJPVzBoWllIb0Rxd1Z2eU5Ka2lqMndOQU8tTHlrUXFfNHRkRmtTdEJ2TnRKX1MxanctOGxzY29MT1BDdGxmUk1STEd4dDh1QVMtTDJFQm5Rc0J3SG_SAXRBVV95cUxNeVEtMjI0akY2bmRyXy1pVi1KMEhsUlh0S256TEMwM2dVZEloczZUSzZBWGVJbU1uOXFDUEprTm51elhtbmQ1RHdsYmJ2dlJnUHZtVnBweXNnSVctZko2V3hOSlZfZVYtZ0FUU0w2MkhNMXJEVA?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 00:00:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "현대드림투어",
+    "name": "현대드림투어",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "현대드림투어은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "B2B 플랫폼 출시",
+      "B2B 서비스 출시",
+      "교육 플랫폼 서비스 출시",
+      "여행 플랫폼 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "현대드림투어, 해외 주재원 정착 돕는 '리로케이션 서비스' 출시 - yna.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RYm9SR2pSR0JtbDhPRzRieEpaMEw4SVhkN3pWb0V6NGx6bHIxUWwyUm14cGlaTDRkT2xoemhCcnJJYm1qUkw2SVlJTnc2OGZ5ajctOVpyMmJ4R1XSAWBBVV95cUxPSGsyLVBBSE0wYjdHbVRHMkdFOUx2Ti1Ic3oyV2ZBNDF3RXFmNUg5MFo0cHBCQW83aVNSTW85a3M2TXFwX2VWMkVnZmIwRWl5aTZ3R1NGdUFQMnRQdU9CWEI?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:34:31 GMT"
+      },
+      {
+        "title": "현대드림투어, 해외 주재원 정착 돕는 '리로케이션 서비스' 출시 - 매일경제 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxWGQzdFdjeFlIcjZ1ejFSUnNab3FmRHBxVF82b1E0TGZpSFNnZklsVUFjdjAzMDFkT0RiSl9Ya21fTEkwaGZId2hWRDE0QktoaGc?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:34:31 GMT"
+      },
+      {
+        "title": "현대드림투어, 해외 주재원 정착 지원…190개국 '리로케이션 서비스' 출시 - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WaWlsblViR0VDeXlFZGhMcUc3eXdDTW9rVXUxbHFOd0NGRXNBNmQ3RDdBUkg5LVdrS1FkTnJ1YmQ0OHBPNWNpRHdpTE1rSjIxXzJfWW42d2d4OTV6Y3NN0gFkQVVfeXFMTndscWhJY2xuVXBkWDFGektaalZraHFKQVgzUGxHdEZCbWhxTnhReEd1TVlUNG5EaVk2RDhnVnk0bENyX2dRdmdlcUFJSTZpV19mVGtGa1JWcVpCdV9kNWxrY3VJSA?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 23:52:10 GMT"
+      }
+    ]
+  },
+  {
+    "id": "아이온커뮤니케이션즈",
+    "name": "아이온커뮤니케이션즈",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "아이온커뮤니케이션즈은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "기업용 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "아이온커뮤니케이션즈, AI 인사이트 스튜디오·AI DevOps 네이버클라우드 마켓플레이스 출시 - 에너지데일리",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LOENNM0Fyc1JGOTRCZ1BWbHRSbHRyVVhyV1pTUGxZbGJHMFdFRllKajAtaUVhTmo3U3pHZjF4Y1JGUGFlRDltTnhaN0pTam9wOTlHbWRqcUtVbjFsdDU1azc1ZkRNc1RFOGpwVG1hZjdCUQ?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 08:32:42 GMT"
+      },
+      {
+        "title": "아이온커뮤니케이션즈, AI 솔루션 2종 네이버클라우드 마켓플레이스 출시 - 아이티데일리",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oSXRqM2c3Zkw3blRaWmlCMTNXRDc1VEJuOUpzM0xPRXU5elNsOTcyS3FPLUF6Yk5kempCejFIX0F0TWctZW92Sm5VR0FNdTc1RmpHRkhkal9pN1hLakhYTDlma0tzNlI4?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 08:21:36 GMT"
+      }
+    ]
+  },
+  {
+    "id": "앤트로픽",
+    "name": "앤트로픽",
+    "industry": "B2B",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "앤트로픽은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "기업용 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "앤트로픽은 오픈AI와의 경쟁 압력 속에서 새로운 AI 모델을 출시할 예정이다. - Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLUZxSVZpYk5UWVlHMDBDemVjeE5nWnNwT0J6QUxyRnJXRVZoUmlTN0xSbXZsaDlnUUxLUEsxMWRLUkgteVVKbWNvUUE1TFJDVVdGcnlyQkViNUV1QXhkcTdMOHlrWVVEelBqa0ZxaDJwQWpzSm9HZHlrdzd2Ynp4WlVxQnlmdHdUVnNiajhCZ3BaLWRSVHgyZ055OFlTSUJQc0FFUVBsMA?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 11:19:09 GMT"
+      },
+      {
+        "title": "앤트로픽, GPT-6 Astra 대응 새 AI 모델 출시 검토 - tokenpost.kr",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE95NW52QkZibGt4X2dHdEpUQ2ZUM3hsOTJRcEVsUXlKWWg1X3FwMG0zOGxlek9zYjdrUTN3T2NiSWFvUTVmM2tVMUozM3pYLUZw?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 13:26:49 GMT"
+      }
+    ]
+  },
+  {
+    "id": "무보",
+    "name": "무보",
+    "industry": "플랫폼/서비스",
+    "description": "B2B 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": true,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": true,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "법인결제(B2B)",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "B2B/법인 결제 수요 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "무보은(는) 온라인/플랫폼 기반 서비스, B2B/법인 결제 수요 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 법인결제(B2B), 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "기업 대상 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "무보, 수출기업 해외 신용정보 지원 위해 한국표준협회와 맞손 - 한국보험신문",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5vYjYtLTdTejFWU3R4Vi1lbnExVHNQOTlORmxOWWtzS0lNS2kwaWpCcUd6ZzNrTnYwZTBzZTRmRFo2Q2hXNjMtaTBYYUNHX09SdlBDUlhXcUN3U1kyc01sY25iQXZ6LTZGZ2ZfVEdsZ9IBb0FVX3lxTE5vYjYtLTdTejFWU3R4Vi1lbnExVHNQOTlORmxOWWtzS0lNS2kwaWpCcUd6ZzNrTnYwZTBzZTRmRFo2Q2hXNjMtaTBYYUNHX09SdlBDUlhXcUN3U1kyc01sY25iQXZ6LTZGZ2ZfVEdsZw?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 06:34:03 GMT"
+      },
+      {
+        "title": "무보, 수출기업 해외 신용정보 지원 위해 표준협회와 협력 - 데일리안",
+        "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNTWpkWHJtQ0dhODNKS0k2STlFckRWVjM0N3hjZFQ0U0c1R09mbXhHRGNXRktFX2xOMnJZS3oxZ3RDVElzd0tmbzJxVzZnMVJGRHRPV3lsNFdWOWJzR3ByOGdlYkNzLURWelpiZWxDY1lldmhxZGcteGdIcVFlSUY3YzEtMXdBWWVTdXhaOHBYak5SVDFMV3JMeWR5VlhSMG1DV0ZSc29mc2o0aVA0Tzl4dTgwZVlNTTNsYXkybDFtWWE5NkRXb3pqSVFGXzBZUXNNU2szejd1NENzcnBkZ3daRUV6bG1aLTdFWkVNZGZuT21kdjRXRWRyZHpwUzh5UlpYb3VmWm80dDdDVURlUHdVY3BUMGN5SUt2?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 23:18:00 GMT"
+      }
+    ]
+  },
+  {
+    "id": "강동구도시관리공단",
+    "name": "강동구도시관리공단",
+    "industry": "기부/비영리",
+    "description": "기부·후원 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 35,
+    "partnershipScore": 35,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": true,
+    "fitServices": [
+      "브랜드Pay",
+      "KB마음더하기"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "기부·후원·헌금 관련 서비스"
+    ],
+    "discoveryReason": "강동구도시관리공단은(는) 온라인/플랫폼 기반 서비스, 기부·후원·헌금 관련 서비스 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, KB마음더하기와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "온라인 기부 플랫폼"
+    ],
+    "latestNews": [
+      {
+        "title": "강동구도시관리공단, 남해안 호우 피해 복구 모금 진행..“사회적 책임 실천” - 시정일보",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9tWUN0Ul84Uzc4VXN5WGVlVW1jRjFYMDBtX1NUWmJtaUhnZVhSa1pKR29XUmtzVzZfaGhVMlRVVkZmREZXVEhTM1J5U2ZZMThPdGg3QXRjRXBaMV85UUlHa3h3VkU4ZGtZbXFN?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 15:00:00 GMT"
+      },
+      {
+        "title": "강동구도시관리공단, 집중호우 피해 복구 모금 동참 - 서울동부신문",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1kSmdHNi1BSVY5dlhoRzJsSFBnSlUyLUQ0VG1WSVRvYzA0YzNEel9TOVMxdGpYNUJtZU5vVi02RVpaNHpGYUhrVHFfZGFTMEhuV0JQLTIwdnc0NHZXdks3UmpsSEk3YldVQXNzN0x3?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 09:36:21 GMT"
+      }
+    ]
+  },
+  {
+    "id": "app",
+    "name": "APP",
+    "industry": "플랫폼/서비스",
+    "description": "모바일 앱 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 30,
+    "partnershipScore": 30,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": true,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "자체 모바일 앱 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "APP은(는) 온라인/플랫폼 기반 서비스, 자체 모바일 앱 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스",
+      "자체 앱 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "Applovin Corp (APP) 주식 움직였습니다 상승 6.06%에 9월21일: 전체 분석 - TradingKey",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcUFUZkowbFo3ems5T1gxZ3RqZmVSbjlSYkdpSnB1Y3RsSTBTck9GUUMxV1ZFQUp6MWZKdFgtdGlDOUJCcmEyY21IX2xkRmRfRW42bk1pWTI1a0FLSEg4M1JaYTNPTTdhZG1FbTR3Q18tVFdudFdVb1otYm5vTzIwNENWR1UtREw3SVVMRUtn?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 17:16:45 GMT"
+      },
+      {
+        "title": "스트리밍 TV 광고 플랫폼 출시가 AppLovin(APP) 투자자들에게 미칠 영향 - simplywall.st",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXp1Sm1XTG8zd2dZNU52WUVvclMxbXVRQ0hWYzEzQkF4RlhLN19XeW9EMjIzU1VCajVUNFV3YmtEektmd1oydjY5NWpIcHpJdXBCWmI2QUVMa24zb3NXWHJndFk2bXdUR3Z4UTJmUC1SdS1zQVg1ZEdUZ2hQWEdvek1iYUNnTWo2Z1HSAY8BQVVfeXFMTmVVMEdOaFBYc19hamxuU3NyeEZqRV9ITmNXNXdnMDVMTVFVMUdXWUV1X1M5a2pYVWdhVFI5Sl9fcnY1b0VtQUZueWVraUY4MktsVzMzTFVIQ2hSWEJLOTdUWl84S2tGTE1MNTNrbkVNYjNLVm1aNFpzVnV2ZnI2T0ZndzkyMlFGZl9rb3lUQnM?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 01:12:25 GMT"
+      }
+    ]
+  },
+  {
+    "id": "경동나비엔",
+    "name": "경동나비엔",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 4,
+    "newsActivityScore": 62,
+    "interestScore": 25,
+    "partnershipScore": 25,
+    "paymentNeed": true,
+    "onlineService": false,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "경동나비엔은(는) 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "구독 서비스 출시",
+      "월 구독 서비스 출시",
+      "subscription 서비스 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "경동나비엔, 보일러 구독 고객에 케어서비스…가스 누설도 찾아내 - 뉴스토마토",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53YXFLbGhyeC1sSTNMTEE1QWxKU1ctTHJIYm5hTW1BaWlkZ182YlJvNlM1UTRIM3pJb0FsSVNRcHI3S25hT3NhYkpfa004VVBwY2ZRcEZLbkluZ0N1TFAxUg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:39:19 GMT"
+      },
+      {
+        "title": "경동나비엔, ‘나비엔 바스케어’ 구독 출시 - 칸(KHARN)",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE00dW81U0pDRFBJV19aTFJrTTVPNjNfLTcyNzFLbE9ILU91dHJkakp2M2MxRW9rcjI5Z3lqckFmeWJ2aW1DbWk5aHU0YXlMTG5yS3Rwb2pB?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 09:27:09 GMT"
+      },
+      {
+        "title": "경동나비엔, ‘나비엔 바스케어’ 구독 서비스 운영 - 글로벌이코노믹",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVWdhNHNMaEZvNWRKS1ZKemJlMmJ2dFpDMURSYzRPVzFFVm1UOC1GMDN6bXRjSlNiOXZJaUxvS0Z0ZmZzV01BY0VLcUh0ZTdqNWlOdENFNGRfYkJVYU1EYklsbnRUdHg2Z2MteUpRdHRzdmt4czVtWmpXX3JhcTduTGpSVmNNbUd5cTJV?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 06:37:51 GMT"
+      },
+      {
+        "title": "경동나비엔, 나비엔 바스케어 구독 출시...결합 할인 도입 - 아주경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZUjZadEViRUxPMlZVc3ljcUNBWmx6UUFOOEJDcDdfZ1ZiUGxtR3ZLSVVWVXdwaEFtVFE3Rm1xSlFHeTNrX1pKeWpFVUVaZ21NR3lCbFBKMnpfUdIBWEFVX3lxTE1WNENKempnZ0RJbHM4TXpIZVJaTk9fUWk4ZlZQQXVmSmQ2ZnFHdFZ2eTlFeXY0NnB1S2JGNFV6YnkxdGRLN0FURXVzSUxqaE9UMmRkLWpTU2E?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 06:34:43 GMT"
+      }
+    ]
+  },
+  {
+    "id": "lg-cns",
+    "name": "LG CNS",
+    "industry": "구독/SaaS",
+    "description": "구독 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 2,
+    "newsActivityScore": 46,
+    "interestScore": 25,
+    "partnershipScore": 25,
+    "paymentNeed": true,
+    "onlineService": false,
+    "mobileApp": false,
+    "subscription": true,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay",
+      "정기결제",
+      "현금영수증",
+      "결제·정산 관리"
+    ],
+    "discoverySignals": [
+      "구독·정기결제 가능성",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "LG CNS은(는) 구독·정기결제 가능성, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay, 정기결제, 현금영수증와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "구독형 서비스 사업 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "LG CNS, 3814억원 투자에 담긴 AI 인프라 사업 전략 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBibDZyNEI4SGh0WWMyUjZFVGRpNHpXTWVlMnRZdnNxaDV0d0FCTzdBckF6NGZ4RVVhb21zMFdQTTRFaFRxazNyY0hZMA?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:52:14 GMT"
+      },
+      {
+        "title": "LG CNS, 3814억원 들여 베라 루빈 확보…그룹 AI 팩토리 키운다 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MYmJ3WnBKQ3RlanpPSy0xRVFBRjNjVFdidFdGMFFRT0hLSGh5QkdVaTdjYjJkQjhzcXl4cjlwZTNFOHlJMzNVUkRzYUoxMkdrYWg0RUFn?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:41:44 GMT"
+      }
+    ]
+  },
+  {
+    "id": "삼성생명",
+    "name": "삼성생명",
+    "industry": "헬스케어",
+    "description": "헬스케어 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 6,
+    "newsActivityScore": 78,
+    "interestScore": 20,
+    "partnershipScore": 20,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "삼성생명은(는) 온라인/플랫폼 기반 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "헬스케어 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "삼성생명, '삼성 팩 건강보험 Care+' 출시 - 한스경제",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5BN1RjRzF1QTR4TnNvV0M1QlNjTHlCc2V3ZWJLNUdLckFFcWF2eTNIY3ZZS1kwZFhzV3VQemxoU3JLaGVnVWRWLU9VdWgxemVvbjU4ZkFmT3NESmN5QXg3NjVXTF90UVBzQXVR0gFvQVVfeXFMUEt2Rkd0ZzBxT0Z3dVZ6S1kwZk1DUTNLem5rVUdFa1lfTHhoTnZkMG5DN2E0QzhvSXlCY1RXZkItdlFoWUdKRHNaSldkdzh5S0RxRm9iVHBpTm1MTE44ZVBqQWhaT2lRdWJ2dlhWblJV?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 22:00:14 GMT"
+      },
+      {
+        "title": "삼성생명, 건강관리 리워드 더한 '삼성 팩 건강보험 Care+' 출시 - 머니투데이 - 머니투데이",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4zdUZmeXd5UVotQnQ0YzVpTUpONjg0TWV4RWFSN0xnY3F2WGwtdTBPZEpXTXBLYUIyYlpVelprZHo2ZnZ6cTdwYUppYjVwc3NWWEl6Y3ZNVnVvRDFPMEdPR2p4c2NLZXhWMW1n0gFwQVVfeXFMT2NlU0gzOWI0dnh2clpHRFEzaE1iUFdyMW5EWm9ZaGhEOF80dDBPWkY4TDd3TjliY2Zob0o4R3N5UFdPcFdhVlRFT2RjaDZXLUlpTFBNbzFTMV9CcE9Bb0IyZjQyV25NcGNhR0RpY0lfTA?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 07:10:44 GMT"
+      },
+      {
+        "title": "삼성생명, 건강관리 리워드 더한 '삼성 팩 건강보험 Care+' 출시 - 파이낸셜포스트",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3dEFGY1FRX28tMVdQSTFabXZONlhzdTlkeGgtdGQ4YkVESHFTQ05RNWF4d2pwVlYwdVBBaXFJTzJMSHV6Zk1FSUxvalpVcGx5aHVIcE5VWGw5NnRUWHJvekN5Y3ZNaFpDeTRrTkdKZkVxck1X?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 06:51:18 GMT"
+      },
+      {
+        "title": "삼성생명, 건강관리 리워드 더한 ‘삼성 팩 건강보험 Care+’ 출시 - 천지일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE83SkkzcUhoNXAzMGpoTUpMZ090RUwxWnRDTkd2VDhnQ3F2dDBoYVRWS0g2NWFQWmdoemoyc1VKcHpfQ0t2NTBBUmRhQVRKXzh0cXRuLVNIaXNqS1E1WnVMLUNkR2FvbFprTXc?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 05:21:51 GMT"
+      },
+      {
+        "title": "삼성생명, ‘삼성 팩 건강보험 Care+’ 출시 - 보험신보",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1jN2pZZXY1WUdLVnF2UEtFZng1dFNMT3dTMmxfaE9tM3ZEZUFvTnRaX0l4elJqR2wtVHlGdWhtZlFES2UyWVZnd1R6VDZJV3JtWFA4ZTBwMEo3OXFBQkRrNks0LXFpTENoUWRv?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 05:07:38 GMT"
+      }
+    ]
+  },
+  {
+    "id": "대홍기획",
+    "name": "대홍기획",
+    "industry": "플랫폼/서비스",
+    "description": "플랫폼/서비스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 20,
+    "partnershipScore": 20,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "대홍기획은(는) 온라인/플랫폼 기반 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "모바일 플랫폼 신규 서비스"
+    ],
+    "latestNews": [
+      {
+        "title": "대홍기획, 티켓 할인 플랫폼 '엘티켓(L.TICKET)' 선봬… N차 관객 부담 줄여 - 브랜드브리프",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8ycWt1OHI1RVFJS3VWX0MzalNnODVoNm91RVBpM2dHT0Npa0pCTjJWVGtKeUI4QjRXdC1TS3M5cVE5SjFrX2pUVjUwdE85Nlg5OW1rS3drSXVfZzdsaERjWTlPbE5OSzNOUlJGeEJKUQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:07:12 GMT"
+      },
+      {
+        "title": "대홍기획, 티켓 할인 플랫폼 ‘엘티켓’ 서비스 론칭 - 조선비즈 - Chosunbiz",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcXBOX0dub1JQUW1ZXzZTSlpwN0lmajZVNUptcDQ2Qi0taTNMNEZoYllYRGFUb1d2Ujhfc0RPdU40Z28yRFFERTN5QjdFSmVXVm5FZUd4OEdWTkZvV05WZTgtdVA4Yk5pQWRtcUhVMk9DQ0dRYkdqRDh6MWtCRW5zYVFKT0ZuYWdxaUNWZzIxUVbSAaQBQVVfeXFMTWZxc2dOV3c4eG4tZEs4MmMtd1hlMkIyaGcxOXlJVEh5SXV6T0UtTll5SXpMWUhReDRWV0RXalc0ZW5CMTE1dG52WWdQZE83b0g4a0ZEeGdwMnZtZm1vSjI5RjdxUEJ1MlBHUzhfdTNubnp1RTZLMW1QVUhYRlpTVjZhODEzSmtwbkZjRVp3blB5eHY0bTBwRHlzV01JeUhfblFmeVY?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 23:55:00 GMT"
+      },
+      {
+        "title": "대홍기획, 티켓 할인 플랫폼 ‘엘티켓(L.TICKET)’ 서비스 론칭 - 매드타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OMkxkVjJ4Sk5fNk9nZngxaHE0X0lvZnRkb3Z1dTBEWjFGbkpUVDZOMnhrSkdQX1NJbV9BR2RIbHBwTXlxLTlJX05lRXhiMUlyVUN2Rk9DQjBac3pGMmtxdUpGZk9TZHk0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 23:41:13 GMT"
+      }
+    ]
+  },
+  {
+    "id": "브릴스",
+    "name": "브릴스",
+    "industry": "플랫폼/서비스",
+    "description": "플랫폼/서비스 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 20,
+    "partnershipScore": 20,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "브릴스은(는) 온라인/플랫폼 기반 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "플랫폼 사업 확장"
+    ],
+    "latestNews": [
+      {
+        "title": "브릴스, 산업용 로봇 넘어 ‘피지컬 AI’로…RFM·VLA 기반 차세대 로봇 플랫폼 본격화 - 인공지능신문",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1aFpRVnc3dF9vUG5FUWpPR1hQRlZUNHk0UER3M3FXVzVVMS1PYUhSQmVhOGJZQzc0VmdWLWRGYmVDTE4xQXZRS3I4bE9JNnZtcXlZdGlXS3JtaTluYWFGajExd2M2bnc?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 02:19:57 GMT"
+      },
+      {
+        "title": "브릴스, 로봇에 AI 두뇌 심는다…휴머노이드 사업 확장 - 매일일보",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBYazdMdmJVNkMxU21xZ1RZazViSXVRNVN2RUs5aW1IM0FtbW5CdlhNOVV5VUZlb1FvLVF5MmljRDRQOTFjYzVrZGd5VlcyMXZfY250ZHJVb1lXQTZvc1o5WjZtWdIBaEFVX3lxTE40Tk45RmNDeEZXZjE2TTJaU1hNdmVMX1VnN2tIUVFUQ2sxNnlNYTBUaTlnU2l6Y19DRHoxalhRQ3Z0LW1uU3E3YjlMamtZdGFMLThlcFZlQW5QOWpGQ281WHc4WFNkQWM3?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 01:51:10 GMT"
+      },
+      {
+        "title": "브릴스, 차세대 피지컬 AI 플랫폼에 'VLA·RFM' 적용…글로벌 로봇 생태계 주도 - 로봇신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5mNnhsZG1YcXFDdTNvZF9DeDZCVXVOSEtfZkV3dC1ydEE0S2h0RGE2RGloU2NFaHJObDZ6b3VFUGRlSHViQkZYLW44dmRkblM4dm0tcFNwOG1XWGlqeEhGWEpYQm1RRm1hNTVfTw?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 00:53:42 GMT"
+      }
+    ]
+  },
+  {
+    "id": "삼성물산",
+    "name": "삼성물산",
+    "industry": "헬스케어",
+    "description": "헬스케어 관련 외부 활동이 확인된 제휴 후보 기업",
+    "newsCount": 3,
+    "newsActivityScore": 54,
+    "interestScore": 20,
+    "partnershipScore": 20,
+    "paymentNeed": false,
+    "onlineService": true,
+    "mobileApp": false,
+    "subscription": false,
+    "b2b": false,
+    "commerce": false,
+    "donation": false,
+    "fitServices": [
+      "브랜드Pay"
+    ],
+    "discoverySignals": [
+      "온라인/플랫폼 기반 서비스",
+      "최근 신규 서비스/사업 확대"
+    ],
+    "discoveryReason": "삼성물산은(는) 온라인/플랫폼 기반 서비스, 최근 신규 서비스/사업 확대 등의 신호가 확인되어 KB스타플랫폼의 브랜드Pay와의 연계 가능성을 검토할 후보로 분류했습니다.",
+    "discoveryQueries": [
+      "헬스케어 플랫폼 출시"
+    ],
+    "latestNews": [
+      {
+        "title": "삼성물산, 공간 결합 AI 건강관리 '웰피' 출시…래미안에 첫 적용 - 웹이코노미",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YUUttTW1mbzVYR29MREdsUXlVRk85Z2pUQndmc2E4R1BzS2tlLWNNRV9fSVY3SjhJUFVxSl9YSjkxMWthVlliWWhCd3B4RWJ6VVY0Y2plNl9iS2VrNTVvdDNvZVpUVEFHNm5GOWFWSjdrQQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 09:30:38 GMT"
+      },
+      {
+        "title": "삼성물산, AI 기반 헬스케어 ‘웰피’ 공개… 주거·건설현장 동시 도입 - 서울경제",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rXzJJLUtzSk1oYXFIeXBRRjM0UTVTM0ZhT0hXc2FCV2xaMWNNUXk1UWdTdjFnUk5mZEtTcEc0NjgwdWRGOGwwcHpkTVAwNEd5QkHSAVNBVV95cUxNeTctU2hXN0hGU0pfclkxV2tSWmRYS3JxM2lhbW5MRmZZeTFRcFRMYmhmYnF1bG8yVzh5aWJMYzZTekhtMTBFVGJpX3QxQkFjMzdLWQ?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 05:23:12 GMT"
+      },
+      {
+        "title": "삼성물산, AI 웰니스 플랫폼 ‘웰피’ 출시…공간 중심 헬스케어 시장 진출 - 파이낸셜포스트",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QcVhaT01CSmd3RnkxT1ktbXk4MGhOekRPZC11dFFfdTNpRHdOWm9KSDJyQlNQOHdkd0xLcXp1RXBncWRWc3p1U3h4TXdjcjBSM2RQMVg1aE5PY2JhaUcxam5IX0tOenJMal9aV1paOHNhdDJG?oc=5",
+        "pubDate": "Tue, 15 Sep 2026 04:42:39 GMT"
       }
     ]
   }
