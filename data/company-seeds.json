@@ -1,0 +1,92 @@
+[
+  {
+    "name": "무신사",
+    "industry": "패션",
+    "customers": "20~30대",
+    "products": [
+      "패션",
+      "온라인 커머스"
+    ]
+  },
+  {
+    "name": "오늘의집",
+    "industry": "홈리빙",
+    "customers": "20~40대",
+    "products": [
+      "인테리어",
+      "홈리빙"
+    ]
+  },
+  {
+    "name": "야놀자",
+    "industry": "여행",
+    "customers": "20~40대",
+    "products": [
+      "여행",
+      "숙박"
+    ]
+  },
+  {
+    "name": "올리브영",
+    "industry": "뷰티",
+    "customers": "20~30대",
+    "products": [
+      "뷰티",
+      "헬스"
+    ]
+  },
+  {
+    "name": "배달의민족",
+    "industry": "식음료",
+    "customers": "20~40대",
+    "products": [
+      "배달",
+      "커머스"
+    ]
+  },
+  {
+    "name": "당근",
+    "industry": "플랫폼",
+    "customers": "20~40대",
+    "products": [
+      "지역생활",
+      "중고거래"
+    ]
+  },
+  {
+    "name": "29CM",
+    "industry": "패션",
+    "customers": "20~30대",
+    "products": [
+      "패션",
+      "라이프스타일"
+    ]
+  },
+  {
+    "name": "마켓컬리",
+    "industry": "식음료",
+    "customers": "20~40대",
+    "products": [
+      "식품",
+      "커머스"
+    ]
+  },
+  {
+    "name": "반려동물 플랫폼",
+    "industry": "반려동물",
+    "customers": "20~40대",
+    "products": [
+      "반려동물",
+      "생활서비스"
+    ]
+  },
+  {
+    "name": "직방",
+    "industry": "부동산",
+    "customers": "20~40대",
+    "products": [
+      "부동산",
+      "주거"
+    ]
+  }
+]

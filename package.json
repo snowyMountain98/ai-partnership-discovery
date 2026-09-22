@@ -1,0 +1,11 @@
+{
+  "name": "ai-partnership-discovery",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "crawl": "node scripts/crawl-companies.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5"
+  }
+}
