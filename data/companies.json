@@ -1,254 +1,160 @@
 [
   {
-    "id": "ai",
-    "name": "AI",
-    "industry": "서비스/예약",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
-    "newsCount": 3,
-    "newsActivityScore": 54,
-    "interestScore": 85,
-    "partnershipScore": 85,
-    "merchantFitScore": 85,
+    "id": "풀무원",
+    "name": "풀무원",
+    "industry": "식품/식음료",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 8,
+    "newsActivityScore": 81,
+    "interestScore": 95,
+    "partnershipScore": 95,
+    "merchantFitScore": 95,
     "paymentNeed": true,
     "onlineService": true,
     "subscription": true,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
-      "브랜드Pay",
-      "정기결제",
-      "현금영수증",
-      "결제·정산 관리"
+      "브랜드Pay(온라인/모바일 간편결제 체크아웃 통합)",
+      "정기결제(정기구독·정기배송 상품용)",
+      "현금영수증(소비자용 세금계산/영수증 발행 지원)",
+      "결제·정산 관리(정산·매출 리포팅 및 환불·정산 자동화)"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호",
+      "구독·멤버십 거래 신호"
     ],
-    "discoveryReason": "보도에 따르면 AI는 가격비교·장보기 대행 기능을 포함한 커머스형 앱을 출시하고, 파트너사(예: 풀무원)의 방문자·구매 증가를 유도하는 등 이용자 상품구매와 결제로 연결될 가능성이 높은 서비스 운영이 확인된다. 다만 공개 기사들에는 AI가 자체적으로 결제를 처리하는지(자체페이/결제사업자 여부) 또는 제3자 결제를 중개하는지에 대한 명확한 근거가 없어 결제 시스템 상태는 '확인 필요'이다. 따라서 가맹점 후보로 유망하지만 도입 전 결제흐름 및 자체 결제 보유 여부 확인이 필요하다.",
+    "discoveryReason": "풀무원은 자사몰 '#풀무원'을 통한 온라인 판매와 오프라인 유통을 병행하는 전형적 소비재 가맹점 후보임. 공식몰 트래픽·구매 급증 보도로 결제·정산 수요 증가가 예상되며, 브랜드Pay와 정기결제 등 KB스타플랫폼 서비스 도입 시 실거래 확대와 정산 효율화를 기대할 수 있음. 다만 자체 결제시스템 보유 여부는 보도에서 명시되지 않아 'unknown'으로 분류.",
     "discoveryQueries": [
-      "멤버십 상품 출시 온라인",
-      "자사몰 결제 시스템 도입",
-      "소비자 대상 신규 서비스 출시"
+      "식품기업 자사몰 신규 상품 출시",
+      "식음료 브랜드 온라인 주문 확대",
+      "식품 정기구독 상품 출시",
+      "온라인몰 간편결제 도입"
     ],
     "latestNews": [
       {
-        "title": "AI가 선택한 풀무원…GEO 적용 후 방문자 2.3배·구매 7.4배 늘었다 - the-pr.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOSzY3cUtLWHJ4Tld0WjZKOF9xWkE2MTZwNkVPcFZzRGltNjFJY2tGT0NzYU15ZmRvNlJ6YkkyV3p3YUlIZ2FUcVliVktvQlJYbm5aVFVxQWtiUWpKTlUwZ0Z0NmpXcklmd0HSAW5BVV95cUxOV2Q1eXE3WWYzaEFTZi1OaXFiYV9HZFFzQ0lEWkt5THF6RG0ydEZjY1gzTWtmbVhFODRFTUNBYnA1dWxMZVgyRVlSTE9PMlcyd1lmUUxUZ0picUZwSzFiMzlLTGUzNVRwTzlKSGc2QQ?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 03:04:52 GMT"
+        "title": "풀무원, 공식몰 ‘#풀무원’ 생성형 엔진 최적화(GEO) 구축… \"AI 쇼핑 특수 잡았다\" - 맥스무비",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43WDByUFRxRkpSNVFra19iSmdiSzV2blhhUi1JN201WURzdXUwZmZDY0l1OThvSnl3Qzg3aUp1UVNUM3UtakdGN1JJX05CUHRDb3F2Vm52X09kam5iMzR3VURhZ2JDQi1UVmo0?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 01:09:11 GMT"
       },
       {
-        "title": "AI가 장바구니 물가 비교, “김치찌개 해먹으려는데 어디가 싸지?”…‘알뜰하게 장볼지도’ 앱 출시 - 데일리연합",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1tdGpPYk5hcUVkQmNQOUJoNldzdnhtQnNZTkVwYmotT0ZPXzV3VnRkRWdKbklfZlZfbnBkZjhEQjFfRHNQdGhqei10QUlfUWdYZXRHaWZjTHBUVEU?oc=5",
-        "pubDate": "Mon, 21 Sep 2026 07:53:30 GMT"
+        "title": "풀무원, 공식몰에 GEO 적용… AI 쇼핑 대응 강화 - Korea IT Times",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bFpOT21rNXgyUThCa2RnTERWT0JLVHNOa3MwRklYZ0JEcXFFeFllTVkwTUFyb0tsQjhDUXVYN2hKVVk3eDJpZTFrMU45eEEzazRkakpsVnh6cXEwRWU2T0R4TTExVTFVUnVSaV9LQmU?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:54:55 GMT"
       },
       {
-        "title": "AI가 장보기까지 대신한다…편의점·물류·멤버십 넘어 ‘에이전틱 커머스’ - thepowernews.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrU3JRVHlxU3VaVVJkaHdlOUZEd3A3TUN2dWdXbmRacHkwRzFRUVhEUWpLRDBUTHNuMHZMaDdmZTJ6ZUpfUnpORURyeUw1YmxXYWxfbGVVZWFIUWpWaXF5RmpGNEg5NkJlZGpqVEJOcEUxUUxtTjZtTlBEamF5QQ?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 23:30:00 GMT"
+        "title": "풀무원, 자사몰에 ‘생성형 AI 최적화’…방문 2.3배·구매 7.4배 - 디스커버리뉴스(DISCOVERYNEWS)",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5rQ1E1dEhTQ1pReDNXeUJLRHZhRVhBV014Z3d1eC02cmFLeWxNN1Y0TG14T3N0NmpOR2ZiXzE5WHNQbERZbGRSNUFYd0JfVy1qTVNpcWFZYjlBQms5RFAwRXBUck4yYzdEQzVSV3VqM21fUQ?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:34:14 GMT"
+      },
+      {
+        "title": "풀무원, 공식몰 ‘AI 엔진 최적화’ 적용…시스템 구축 후 구매 7.4배 급증 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5JOEZxbjR6RmtlcjZJQy1oVXUydXNLalFzWEl1TmJkek1YNzNRUkQtVUdwNWl4TDVVVlQ1azRzbjJwSnVLS2c?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:29:00 GMT"
+      },
+      {
+        "title": "풀무원, 공식몰 '#풀무원'에 GEO 적용…방문자 2.3배 증가 - 청년일보",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85akZWNGxCdG00OGs1RWVlaUt3Y3d6TUFiWUpxd3cyNkVzZnM4TXo3c3RWejhCRTNUYzFDWWdTSzV3QmdxTENRZ211Nkx2RzhDR1FXckFlVUdidk84VEZwOUhhdWtDeUE?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:21:10 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "데일리연합: '알뜰하게 장볼지도' 앱 출시 — 장바구니 물가 비교 및 장보기 보조 기능(앱을 통한 쇼핑 흐름 언급)",
-      "thepowernews: 'AI가 장보기까지 대신한다…에이전틱 커머스' — 편의점·물류·멤버십 연계 등 커머스(구매·주문) 관련 서비스 확장 표현",
-      "the-pr: 'AI가 선택한 풀무원…GEO 적용 후 방문자 2.3배·구매 7.4배 늘었다' — AI 서비스가 파트너사 상품 구매로 이어진 사례 제시"
+      "식품/식음료 제조·판매 기업으로 소비재 직접 판매 구조 보유(일반 소비자 대상 유료 상품 제공)",
+      "공식몰 '#풀무원' 보유(자사몰 운영이 확인됨) — 온라인 결제 접점이 존재할 가능성이 높음",
+      "언론 보도에서 공식몰 적용 전후 지표(방문 2.3배, 구매 7.4배) 공개 — 온라인 매출·거래량 증가 신호",
+      "오프라인 유통(대형 유통 매장·리테일) 및 온라인 채널 병행으로 다중 결제 접점 보유(사업 유형상 온·오프라인 결제 수요 존재)"
     ],
-    "aiPaymentSystemEvidence": "공개 기사들(the-pr/데일리연합/thepowernews)에서는 AI의 앱 출시 및 장보기·커머스 기능이 보도되나, 자체 결제시스템(자체페이) 또는 결제 제공자 역할에 대한 언급은 없음."
+    "aiPaymentSystemEvidence": "공식몰 '#풀무원' 운영 및 AI 기반 구매 증가(방문 2.3배, 구매 7.4배) 보도는 존재하나, 자체 결제시스템(자체 Pay 등)을 보유한다는 명시적 공개 근거는 보이지 않음. 따라서 결제 인프라의 자체 구축 여부는 확인 불가."
   },
   {
-    "id": "11번가",
-    "name": "11번가",
-    "industry": "여행/숙박",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
+    "id": "정샘물뷰티",
+    "name": "정샘물뷰티",
+    "industry": "패션/뷰티",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
     "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 85,
-    "partnershipScore": 85,
-    "merchantFitScore": 85,
+    "newsActivityScore": 39,
+    "interestScore": 75,
+    "partnershipScore": 75,
+    "merchantFitScore": 75,
     "paymentNeed": true,
     "onlineService": true,
     "subscription": false,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
-      "브랜드Pay",
-      "현금영수증",
-      "결제·정산 관리"
+      "브랜드Pay (온라인/모바일 결제 통합)",
+      "현금영수증 (국내 소비자 대상 세금계산/영수증 발행 지원)",
+      "결제·정산 관리 (다채널 정산·월별 거래 내역 관리 및 reconciliation 지원)"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
     ],
-    "discoveryReason": "11번가는 플랫폼을 통해 숙박·여행 상품을 직접 판매·중개하며 대규모 숙박 할인 행사에 참여하는 등 고객 결제가 발생하는 사업자로, 가맹점 후보로 적합합니다. 다만 공개 뉴스만으로는 자체 결제시스템 보유 여부가 확인되지 않아 paymentSystemStatus는 'unknown'으로 표기했습니다.",
+    "discoveryReason": "정샘물뷰티는 국내외 오프라인·온라인 유통 채널을 통해 소비자 대상 뷰티 제품을 판매하는 사업자로, 최근 미국 세포라(오프라인 매장 34개 및 온라인몰) 공식 입점을 통해 판매 채널이 확대된 상태임. 온라인몰 및 리테일 입점으로 KB스타플랫폼의 브랜드Pay와 정산·현금영수증 서비스가 적용될 가능성이 높음. 다만 자체 결제시스템 보유 여부는 공개 근거가 없어 'unknown'으로 판단함.",
     "discoveryQueries": [
-      "숙박 예약 서비스 신규 상품",
-      "여행 상품 온라인 판매 확대"
+      "뷰티 브랜드 자사몰 온라인 판매 확대",
+      "브랜드 공식몰 온라인 판매 확대"
     ],
     "latestNews": [
       {
-        "title": "11번가, 가을 ‘숙박세일 페스타’ 동참 4만여 개 국내 숙박상품 할인 - 오늘경제",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1IcTEyVmN2Nkp4WFdzLVZqYjZKVE1YbVNQYTNOQ1d1b3MzRFprWWJsRk1VdXVwLTJ0QUlBWFNCY3VqVWJuVGgxNm50VDdKNGFNdmozQ21ncWVfUTJQcmtYZFFLUHF0R0tvRURVbkRWeHJrdzQ?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 02:22:01 GMT"
+        "title": "정샘물뷰티, 미국 세포라 34개 매장·온라인몰 공식 입점 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPcF92NWdQZGR3dzdIdzZMTzBRN2QzUHlzMmJpOE5GdTNBWFh1ODhVVEhlUFZONFNTZ0duNXloYW1lZmNGSi1qYUpHZ0gtZF9vM1Y4ZmV4MmhobTTSAWBBVV95cUxOVHBGTmNqSWh0bTlUbGZQOEY5RURhTFNZSkxMRUh2UFVVMGZySW5FMm81OGNnTkVEb0gzWFluZTZEWWRCSEhxbGxQcmZvUE1TMkJNRkVNeEZmdlZNdFIwQ0I?oc=5",
+        "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
       },
       {
-        "title": "11번가, '숙박페스타' 동참…중소여행사 상품 판로 확대 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VNEZ3eWdldlRnZVFEVi04T0JhU3IxUkRwbnRqRjZqd2UwUEpPcHBacy1Lc3RIb3lwYjhFeEhfd0NTRjNlX2RETE1PbS11Zw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:24:29 GMT"
+        "title": "정샘물 뷰티, 미국 세포라 공식 입점…뉴욕·LA서 현지 캠페인 전개 - 패션비즈",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSFNOMGp2c1gyeTA2cHFHWHJWRHJXb0FDdnY3RXhpTXBOYmROZy1Mcld3NjlYQXdTUnB1N1B5ZkFNeXNCNEc5MW5qOVA2bUEt?oc=5",
+        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "오늘경제: 11번가, 가을 ‘숙박세일 페스타’ 동참 — 4만여 개 국내 숙박상품 할인 (숙박상품 판매 및 할인 행사 진행)",
-      "전자신문: 11번가, '숙박페스타' 동참…중소여행사 상품 판로 확대 (여행·숙박 상품 판매 및 중개 활동 확인)",
-      "1차 발견 근거: 온라인 판매 채널 보유 및 상품·서비스 판매/거래 신호 확인"
+      "정샘물뷰티는 화장품(뷰티 제품) 제조·판매 업체로 소비재를 판매함.",
+      "연합뉴스 및 패션비즈 보도: 미국 세포라(Sephora) 34개 오프라인 매장 및 세포라 온라인몰 '공식 입점' 확정 — 유통망을 통한 오프라인 및 온라인 판매 채널 확보 확인.",
+      "공식 입점과 현지 캠페인 전개 보도는 해외(미국) 판매 채널 확장과 판매·유통 활동의 활성화를 시사함.",
+      "제품을 통한 반복적 거래 발생 가능성이 높고(브랜드 제품군 특성상 재구매·반복 주문 구조), 온라인몰을 통한 판매 접점이 존재함."
     ],
-    "aiPaymentSystemEvidence": ""
-  },
-  {
-    "id": "쿠팡",
-    "name": "쿠팡",
-    "industry": "여행/숙박",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
-    "newsCount": 6,
-    "newsActivityScore": 78,
-    "interestScore": 77,
-    "partnershipScore": 77,
-    "merchantFitScore": 77,
-    "paymentNeed": true,
-    "onlineService": true,
-    "subscription": false,
-    "existingPaymentSystem": false,
-    "paymentSystemStatus": "unknown",
-    "fitServices": [
-      "브랜드Pay",
-      "현금영수증",
-      "결제·정산 관리"
-    ],
-    "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
-    ],
-    "discoveryReason": "쿠팡은 다수 기사에서 온라인 판로를 통해 상품을 유통·판매하는 플랫폼으로 확인되어(제주 중소기업 47곳 온라인 판로 지원 보도 등) 가맹점 후보로 적합합니다. 다만 제공된 뉴스만으로는 쿠팡이 자체 결제시스템(자체 페이)을 보유했는지 확인되지 않아 결제 연계 가능성은 추가 확인이 필요합니다. 자체 결제시스템이 명확히 확인될 경우 제휴 적용 여부가 달라질 수 있습니다.",
-    "discoveryQueries": [
-      "온라인 쇼핑몰 사업 확대",
-      "여행 상품 온라인 판매 확대",
-      "온라인 판매 신규 진출 기업"
-    ],
-    "latestNews": [
-      {
-        "title": "쿠팡, 제주도와 손잡고 우수기업 온라인 판로 확대 지원 - 데일리안",
-        "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNclpUdUFGMnZXTXNYY0FNU2t5QWpqTzUzV3ZtNEg3LXJrQ1l2dlRJZnhsOGg2eUZkZzZ4SE92WF9tc1hPelY4WXhHblpzN1dfcWJ2VWpJYlRxNnpWeF9HLWxSVXZnYWpFTHE1dHZIRUFVdGxVdkMzQ3F2bW9lQnYyUFA1LXN6RHdfZ25RN003QjB0Z0I4NF96bWRDNVNQdTBQR3lJdmx3UXViUWRsMVpwUlBsV0x0Zk1yMko2bmZzZmFqWmJ6bHZ4TDlvbURWeXVKVEVLZjh0NlZtNWIzSTNFc29JNDZONy1xb1NzbXFNTkNEVXVReWo3QWpqbDFIS3AwU1lMV2ZyWUROZVdQQjB6Sy05RjJkZGc?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 02:09:00 GMT"
-      },
-      {
-        "title": "쿠팡, 제주 지역 우수기업 온라인 판로 확대 지원 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBwZE93RmhBVlMtNVE4Q3FqeEEzdWxhd0xRWXA0TGZKNkFOeTM0STlWUW90SFp3U3luM1FEbWhkZ0Mxd3luclY1RHVnVUI2cmpRTHVqNWxaOHNYNFJVNGJvRXU0cUpjdktVTFhEZ2MwZ9IBb0FVX3lxTFBwZE93RmhBVlMtNVE4Q3FqeEEzdWxhd0xRWXA0TGZKNkFOeTM0STlWUW90SFp3U3luM1FEbWhkZ0Mxd3luclY1RHVnVUI2cmpRTHVqNWxaOHNYNFJVNGJvRXU0cUpjdktVTFhEZ2MwZw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:59:30 GMT"
-      },
-      {
-        "title": "쿠팡, 제주 기업 47곳 만났다···온라인 판로 확대 지원 - 스마트비즈",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QaERjOUx0TlY0NXFPcktPVHF6YVlnTXZkWlpOaVpoWk1JTkNWWXg2WWRlRGpkbHdPSzUzOFlnaVRzOXlBLXM5LUg3NW5odlhJLWE3TklZa1F1VFUwaC02MVlUcWdZc2FkNUgzcw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:43:03 GMT"
-      },
-      {
-        "title": "쿠팡, 제주 중소기업 판로 확대 지원…47개사 상품 품평 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0tZXc2NTlJbVpqdHJ1SjJGUEdGZWJ0akJZdVhzMHBxVW9LYk04M0FYaVAyV0k3VjlxSTB1VVFKME93ZTZXbWl1SVBRVlRQZw?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 01:35:58 GMT"
-      },
-      {
-        "title": "쿠팡, 제주 중소기업 47곳 온라인 판로 지원…전국 확대 추진 - 연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFbXZ3OUJ5SFBlTlJLcjZxeUpYcDlVSFhYOHlJSGhoTkwwYTFIM3ExNldFNHp5Wl9KSWxTTGtWbnJzOGowOVhSSk4yM3I1cS04ZDlVV1JhalJrSHPSAWBBVV95cUxPc1Y1WVBpQko5bmIydldVWmFUdEJmV0tDZnpkYVZzNm1RektsaWpSZ0UwTWdILVg0UnBtZ0Y1ellWM1ZWVWpLTmtKd2Zfb01TUGV3UklkMVlDTEo5S25vTFE?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 00:39:14 GMT"
-      }
-    ],
-    "aiMerchantEvidence": [
-      "다수 기사(데일리안, 머니투데이, 스마트비즈, 전자신문, 연합뉴스)에서 '쿠팡이 제주 중소기업 47곳의 온라인 판로 확대 지원' 등 쿠팡의 온라인 판로 제공 활동을 보도함 — 플랫폼을 통해 판매·거래 채널을 운영함을 시사",
-      "기사 내용에 '온라인 판로 확대 지원', '상품 품평' 등 플랫폼에서 상품 판매·유통과 관련된 활동이 반복적으로 확인됨 — 고객 결제가 발생할 가능성이 높음"
-    ],
-    "aiPaymentSystemEvidence": "제공된 뉴스 목록에서는 쿠팡의 자체 결제시스템(자체페이) 보유 여부에 대한 언급이 없음. 자체 결제 보유 여부는 별도 확인 필요."
-  },
-  {
-    "id": "샵링커",
-    "name": "샵링커",
-    "industry": "기타 소비자 서비스",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
-    "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 77,
-    "partnershipScore": 77,
-    "merchantFitScore": 77,
-    "paymentNeed": true,
-    "onlineService": true,
-    "subscription": false,
-    "existingPaymentSystem": false,
-    "paymentSystemStatus": "unknown",
-    "fitServices": [
-      "브랜드Pay",
-      "현금영수증",
-      "결제·정산 관리"
-    ],
-    "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
-    ],
-    "discoveryReason": "샵링커는 온라인 판매자(자사몰·브랜드몰 등)를 위한 이미지호스팅 베타 서비스를 출시한 것으로 확인되어 고객(온라인 판매자)을 대상으로 한 서비스 제공 사실이 확인됩니다. 따라서 가맹점 후보로 적합하나, 기사에 자체 결제시스템 보유 또는 유료 결제 구조에 대한 명확한 언급이 없어 결제 인프라 보유 여부는 '확인 필요'입니다. 추천 서비스는 브랜드Pay, 현금영수증, 결제·정산 관리(정산 자동화)입니다.",
-    "discoveryQueries": [
-      "온라인 쇼핑몰 사업 확대",
-      "온라인 주문 서비스 출시"
-    ],
-    "latestNews": [
-      {
-        "title": "샵링커, 이미지 업로드·관리 지원하는 '이미지호스팅' 베타 출시 - 뉴스핌",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wUkRLaDk4ZjM0eGNVLTNmZDVDSURVQ3k0NnIxTXNoZWR5bHVpNTk2VF9VeEhlY1F6b1I4VGtTZVpvX2daTjU5NmZuRXdjbjFGbVBmVEM5NlFkV0pH?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 04:50:00 GMT"
-      },
-      {
-        "title": "샵링커, 온라인 판매자 위한 ‘이미지호스팅’ 베타 서비스 출시 - edaily.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdnc5T21rblJoMG80QlEtaFpzcW8ya0Y5el8taXpjRHlkalE5SDZ4b0x5OEZDR1ZldFRFcHdWX190U1FqMi1SeE1SOVV0c2FzREExeWZfamR4a00tSmZwcG1ESllTYU1TS0g0dFpyXzBYZFdfYnBlMDJjNHU3NG9PNg?oc=5",
-        "pubDate": "Tue, 15 Sep 2026 04:11:36 GMT"
-      }
-    ],
-    "aiMerchantEvidence": [
-      "뉴스핌: '샵링커, 이미지 업로드·관리 지원하는 이미지호스팅 베타 출시' — 온라인 판매자 대상 서비스 출시 보도",
-      "이데일리: '샵링커, 온라인 판매자 위한 이미지호스팅 베타 서비스 출시' — 온라인 판매 채널을 지원하는 서비스 제공 사실 확인"
-    ],
-    "aiPaymentSystemEvidence": "공개된 기사(뉴스핌, 이데일리)에는 이미지호스팅 베타 출시 등 서비스 출시 내용만 언급되어 있으며, 자체 결제시스템(자체페이) 보유에 대한 언급은 없음. 자체 결제 보유 여부는 추가 확인 필요."
+    "aiPaymentSystemEvidence": "제공된 최근 뉴스(세포라 공식 입점 관련 보도) 및 입력 정보에 결제 시스템(자체 페이 또는 결제 게이트웨이) 보유에 대한 공개적 언급이 없음. 자체 결제 구축 여부를 확인할 수 있는 명시적 근거가 없음."
   },
   {
     "id": "롯데온",
     "name": "롯데온",
     "industry": "패션/뷰티",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
-    "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 77,
-    "partnershipScore": 77,
-    "merchantFitScore": 77,
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 4,
+    "newsActivityScore": 53,
+    "interestScore": 70,
+    "partnershipScore": 70,
+    "merchantFitScore": 70,
     "paymentNeed": true,
     "onlineService": true,
     "subscription": false,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
-      "브랜드Pay",
-      "현금영수증",
-      "결제·정산 관리"
+      "브랜드Pay(온라인 결제 통합·간편결제 연동)",
+      "현금영수증 서비스",
+      "결제·정산 관리(정산 자동화, 정기정산 기능 포함)"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
     ],
-    "discoveryReason": "롯데온은 온라인몰을 통해 직접 상품(패션/뷰티) 및 최근에는 여행상품 등 유료 서비스 판매를 확대하고 있어 고객 결제가 실제 발생하는 가맹점 후보로 적합함. 다만 공개 기사만으로 자체 결제(자체 페이) 보유 여부는 확인되지 않아 결제 체계 관련 추가 확인이 필요함. 브랜드Pay, 현금영수증, 결제·정산 관리 서비스 도입을 우선 제안함.",
+    "discoveryReason": "롯데온은 온라인몰 기반의 소비재·식품·여행상품 등 다양한 상품과 기획전을 통해 반복적인 거래가 발생하는 전형적 이커머스 플랫폼으로 KB스타플랫폼의 가맹점 후보로 적합함. 다만 공개자료에서는 자체 결제시스템 보유 여부가 명확히 확인되지 않아 paymentSystemStatus는 'unknown'으로 분류함.",
     "discoveryQueries": [
-      "온라인 커머스 신규 브랜드 출시",
+      "생활용품 브랜드 온라인몰 신규 상품",
+      "잡화 브랜드 온라인 판매 확대",
       "여행 상품 온라인 판매 확대"
     ],
     "latestNews": [
@@ -258,81 +164,45 @@
         "pubDate": "Mon, 21 Sep 2026 07:39:59 GMT"
       },
       {
-        "title": "롯데온, 일본 대표 셀렉트숍 '투모로우랜드' 들여온다 - 패션비즈",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qTTdGZnBDMTdYdzc3ZDU3MTNralQ2MW9kcjZwZ1dVcUZhX0RwdGYxa3pWX3ptdXVPWGRHTmtZUk1hT1RZalZxdXd3WW9xM2Vo?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 00:12:34 GMT"
-      }
-    ],
-    "aiMerchantEvidence": [
-      "롯데온은 온라인몰(자사몰)로서 상품 판매 채널 운영 사실이 기사에서 확인됨.",
-      "추석·10월 연휴를 겨냥한 국내외 여행상품 판매 출시(고객이 결제하는 유료 상품) 보도.",
-      "일본 대표 셀렉트숍 '투모로우랜드' 입점 소식 등 브랜드 및 상품군 확대(상품 직접 판매/판매 채널 확대) 보도."
-    ],
-    "aiPaymentSystemEvidence": "제공된 최근 뉴스(추석·10월 연휴 여행상품 출시, 일본 셀렉트숍 입점 소식)에서는 롯데온의 자체 결제시스템(자체 페이) 보유 여부에 대한 언급이 없음. 공개된 기사만으로는 자체 결제·페이 서비스 존재를 확인할 수 없어 추가 확인 필요."
-  },
-  {
-    "id": "lf몰",
-    "name": "LF몰",
-    "industry": "기타 소비자 서비스",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
-    "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 69,
-    "partnershipScore": 69,
-    "merchantFitScore": 69,
-    "paymentNeed": true,
-    "onlineService": true,
-    "subscription": false,
-    "existingPaymentSystem": false,
-    "paymentSystemStatus": "unknown",
-    "fitServices": [
-      "브랜드Pay",
-      "현금영수증",
-      "결제·정산 관리"
-    ],
-    "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
-    ],
-    "discoveryReason": "LF몰은 자사 온라인몰 및 카카오톡 연계 AI 쇼핑 등으로 실제 상품 판매와 고객 결제가 발생하는 가맹점 후보로 판단됨(적합도 69). 다만 공개 기사에서 자체 결제시스템 보유 여부는 확인되지 않아 '확인 필요'로 표기함. KB스타플랫폼의 브랜드Pay, 현금영수증, 결제·정산 관리 도입이 유의미한 가치 제공 가능.",
-    "discoveryQueries": [
-      "온라인몰 신규 상품 출시",
-      "자사몰 신규 상품 출시"
-    ],
-    "latestNews": [
-      {
-        "title": "LF몰, AI 쇼핑 카카오톡으로 확장…메신저서 상품·코디 추천 - 토요경제",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01UFlJNlVURnhnMlBENmlveFhraV9nNGhEdjVYWWxtSkNCbE1hRmdFOGlFUVlCSkMyTE04eE1qVV81cUppelNZbWtraDJ6czlsT3VoMlVqMGZRWVhYNTN1U9IBb0FVX3lxTFBpWEtsNi1MVDVLc0tfSlFjQTBEOXEtMGRrUExLd19Xc2FpUUlSN2xtUEhITHBqLV9McjVqOVBiUmJMTVFiaDc0ckVjV1lhcWs4MXQ3S2lLc3pfMGNHalB5M3JlSXZuekNlTjAzUzdtbw?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 05:37:40 GMT"
+        "title": "롯데온, 추석 장보기 수요 겨냥 '브랜드 메가위크' 진행 - etnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBEVDFGbEMtcE5XTlBsUzUwempRYzI1Wm1ZeDdqamNvbUdqU2JXU0wzeE5NaTJtSzlWejR3QUY2TDcwRnlBdXBXVDQ4R21kUQ?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:42:22 GMT"
       },
       {
-        "title": "LF몰, 카카오톡 AI 쇼핑 서비스 출시…“대화하며 쇼핑한다” - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1uUlgxclVDcF9fX2ROdjhRVERqOFA0MEpVdFdpT3lYaE40TlRyY1BVMjRaMjdyNzFTYnh3M1hVdkVvbGhKcmhEYUs1MlU5UQ?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 01:32:04 GMT"
+        "title": "롯데온, 서울 소상공인 2000개사 온라인 판로 확대 지원 - etnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE40d1ZVZ3RURlY3U21aZmhGOXlvN3RsRkkzcWZjMHFFMmxTUzBQSy12dTdYSjlnaF96RTlCZmpRYS03Z24tVEpCOE14MW9yUQ?oc=5",
+        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "title": "롯데온, ‘서울시 소상공인 온라인 기획전’ 진행…판로 확대 및 우수 셀러 발굴 - 인더뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55RTV1cDMwQVRGMUVoSExsLUlGVG1JN2lSQ05LUG9mN2Z6QjZjcDVDQXV5RUdTQ3d5VDBxc25iOGZIVjREQ085OGNadU00VlhpeGt5c2dqNEt3TDBCTWR2b3VxelM?oc=5",
+        "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "LF몰은 온라인몰(자사몰/브랜드몰)에서 상품을 판매하는 이력이 있음(1차 발견 근거: 상품·서비스 판매/거래 신호, 온라인 판매 채널 확인).",
-      "최근 보도: 'LF몰, AI 쇼핑 카카오톡으로 확장…메신저서 상품·코디 추천' (토요경제) — 메신저를 통한 상품 추천·판매 채널 확장으로 고객 결제 발생 가능성 확인.",
-      "최근 보도: 'LF몰, 카카오톡 AI 쇼핑 서비스 출시…“대화하며 쇼핑한다”' (전자신문) — 대화형 쇼핑 서비스로 실제 구매 유도 및 결제 트래픽 증가 전망."
+      "추석·10월 연휴 겨냥 여행상품 출시 기사: 여행상품을 기획·판매하는 서비스 제공으로 결제 발생 가능성이 높음.",
+      "'추석 장보기'·'브랜드 메가위크' 프로모션 기사: 식품·소비재 등 판매·프로모션을 통해 반복적 주문·결제가 일어남.",
+      "서울 소상공인 2000개사 온라인 판로 확대 지원 기사: 플랫폼 형태로 다수 판매자(셀러)와 소비자 간 거래를 중개함을 시사.",
+      "'서울시 소상공인 온라인 기획전' 진행 기사: 온라인 기획전·셀러 발굴 활동을 통해 상품 노출 및 주문 채널(온라인몰/기획전)을 운영함.",
+      "업종 표기(패션/뷰티)와 함께 온라인 판매 채널 보유가 전제된 전형적 이커머스 사업 구조(자사몰·앱·온라인 주문/예약 채널)에 해당)."
     ],
-    "aiPaymentSystemEvidence": "제공된 최근 뉴스(카카오톡 AI 쇼핑 확장 관련 기사) 및 1차 발견 근거에서는 LF몰이 온라인으로 상품·서비스를 판매함이 확인되나, LF몰이 자체 간편결제·자체 페이 또는 자체 결제 시스템을 보유한다는 공개된 근거는 확인되지 않음. 자체 결제 보유 여부는 추가 확인 필요."
+    "aiPaymentSystemEvidence": "제공된 뉴스와 입력정보에서는 롯데온이 온라인 판로 확대·프로모션·상품 판매를 활발히 하고 있음을 확인할 수 있으나, 롯데온이 자체 결제시스템(예: 자사 Pay) 또는 외부 결제 솔루션을 독자적으로 운영하고 있다는 명시적 근거는 제시되어 있지 않음. 공개 기사들에서는 결제 인프라 관련 언급이 없음."
   },
   {
-    "id": "아성다이소",
-    "name": "아성다이소",
+    "id": "무신사",
+    "name": "무신사",
     "industry": "패션/뷰티",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
     "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 69,
-    "partnershipScore": 69,
-    "merchantFitScore": 69,
+    "newsActivityScore": 39,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "merchantFitScore": 65,
     "paymentNeed": true,
     "onlineService": true,
     "subscription": false,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
@@ -341,130 +211,515 @@
       "결제·정산 관리"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
     ],
-    "discoveryReason": "아성다이소는 다이소몰을 통해 직접 소비자에게 상품을 판매하고 있어 고객 결제가 실제 발생하는 가맹점 후보로 적합합니다. 온라인 판매 채널 확대(다이소몰) 및 카드 제휴 강화 보도가 있어 결제 연동·프로모션을 통한 시너지 기대 가능. 다만 자체 결제시스템(자체페이) 보유 여부는 공개 근거가 없어 '확인 필요'입니다.",
+    "discoveryReason": "무신사는 온라인 중심의 패션/뷰티 판매 기업으로, 상품 카테고리 확장 및 해외 거래액 증가 등으로 실제 결제·정산 수요가 존재하는 것으로 판단됨. 자체 결제시스템 보유 여부는 제공된 자료에 명시되어 있지 않아 'unknown'이나, KB스타플랫폼의 브랜드Pay·현금영수증·결제·정산 관리 서비스 도입 가능성은 높음.",
     "discoveryQueries": [
-      "온라인몰 신규 상품 출시",
-      "온라인 결제 도입 쇼핑몰"
+      "잡화 브랜드 온라인 판매 확대",
+      "브랜드 공식몰 온라인 판매 확대"
     ],
     "latestNews": [
       {
-        "title": "아성다이소, 온라인 고객 접점 확대…우리카드 제휴 강화 - thefairnews.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tQkJDTTJGVVdsQlBaWklKZTA0YW1wVkhWblByZXA1UVZsLUszQmstbkFXbGtYdXRlVTduWTBUZTFBWWhuZ0JJbG44eFVrd1V5dHd4bHJTOU45SnRXeXFfTE9BeGFyMTc5Zm1MOHktRjfSAXRBVV95cUxPeDNoZ04yRzFkRXVSSlJMZC1qRkpTSDBjRDM0OTdDOFZUOUV2Nk5DdmhUV2E0WElHZHRZZFBMU3FnbEFqcnRBZFJSbWJXemFWSUZqdklvNzRsMjJ3dEVzNWktTi1mWTdXYkpaXzl4V0lrTi0zZQ?oc=5",
-        "pubDate": "Tue, 22 Sep 2026 00:33:05 GMT"
+        "title": "무신사, 데상트 '무브스포츠' 온라인 첫선 … 스포츠 카테고리 강화 - 뉴데일리",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQem0zV3FsallkamFacld0ZDBHbWJtVm1oS3g3QWhBRnZDZXNxa0xnaW8xUDJ4ZWRDbUx5N2NxQ3U2ZDY4WEktSVMycE9COFVFbFJNRDhNVGhneUR0Zl9sSEdEZFVNX1FFanh0SjdjY1o0Qnl5QjRtUXpfQWJza0d5ONIBgAFBVV95cUxQem0zV3FsallkamFacld0ZDBHbWJtVm1oS3g3QWhBRnZDZXNxa0xnaW8xUDJ4ZWRDbUx5N2NxQ3U2ZDY4WEktSVMycE9COFVFbFJNRDhNVGhneUR0Zl9sSEdEZFVNX1FFanh0SjdjY1o0Qnl5QjRtUXpfQWJza0d5OA?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 00:16:49 GMT"
       },
       {
-        "title": "아성다이소, 가을 소비 정조준…다이소몰에 ‘전통·뷰티·인테리어’ 총출동 - 인더스트리뉴스",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zd0pTZXVUZERlVkVvOWRIdVBHWldhTnRZR2RLV09wVDlKUkU2cVZIcTdqOC1KUlNRbm9iczkxZkNHZHRyUERUOHFwdjFqaWwzOHdxMVpscElWVmNsaTgyTUNDMDN6WElqc2tBSEo4RENaZw?oc=5",
-        "pubDate": "Mon, 14 Sep 2026 06:45:34 GMT"
+        "title": "무신사, 대만 거래액 340% 증가···5년간 15개 매장 목표 - 현대경제신문",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oWFU1blZaNmRnSy1hZEJSRGxvVDkya3M3OHNONDRCNi1NX2tKejJSVHFPOGZFVFVSc1BQS0p6dGc4QklZdE9tbjNoSy1DNG9FZFYxYlRCcXpZcUUySWg2dTlfMHJpcXRQclU40gFrQVVfeXFMT2hYVTVuVlo2ZGdLLWFkQlJEbG9UOTJrczc4c040NEI2LU1fa0p6MlJUcU84ZkVUVVJzUFBLSnp0ZzhCSVl0T21uM2hLLUM0b0VkVjFiVEJxellxRTJJaDZ1OV8wcmlxdFByVTg?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:05:50 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "다이소몰에서 전통·뷰티·인테리어 등 상품을 판매한다는 보도(인더스트리뉴스): 다이소몰 운영으로 온라인 직접 판매 및 결제 발생 확인",
-      "온라인 고객 접점 확대 및 우리카드 제휴 강화를 알리는 보도(thefairnews.co.kr): 온라인 결제 관련 제휴·프로모션 활동이 진행되고 있음을 시사"
+      "업종: 패션/뷰티로 소비재 판매 기업(제공된 기업 정보)",
+      "온라인 판매·주문 채널 신호(자사몰/온라인 플랫폼을 통한 거래 발생이 관찰되는 것으로 기재됨)",
+      "반복적 판매/주문 신호(패션 플랫폼 특성상 상품 판매가 지속적으로 발생하는 구조로 판단됨)",
+      "제품 카테고리 확장 사례: 데상트 '무브스포츠' 온라인 론칭(뉴스1) — 상품군 확대 및 온라인 판매 채널 활용 근거",
+      "해외 거래액 증가 및 오프라인 확장: 대만 거래액 340% 증가·향후 매장 확대 계획(뉴스2) — 거래량 및 결제 수요 증가 가능성 시사"
     ],
-    "aiPaymentSystemEvidence": "다이소는 다이소몰을 통한 온라인 상품 판매가 뉴스에서 확인되나(인더스트리뉴스), 자체 결제시스템(자체페이) 보유 여부 또는 결제 플랫폼 관련 구체적 공개 근거는 발견되지 않음 — 확인 필요."
+    "aiPaymentSystemEvidence": "제공된 뉴스 및 발굴 근거에 자체 결제시스템(자체 Pay) 도입에 대한 명시적 공개 근거 없음. 따라서 자체 결제 시스템 보유 여부는 확인 불가(unknown)."
   },
   {
-    "id": "이스타항공",
-    "name": "이스타항공",
-    "industry": "여행/숙박",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
+    "id": "메디바이오랩",
+    "name": "메디바이오랩",
+    "industry": "식품/식음료",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
     "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 69,
-    "partnershipScore": 69,
-    "merchantFitScore": 69,
+    "newsActivityScore": 39,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "merchantFitScore": 65,
     "paymentNeed": true,
     "onlineService": true,
     "subscription": false,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
-      "브랜드Pay",
-      "결제·정산 관리",
-      "현금영수증"
+      "브랜드Pay (온라인 결제 통합 및 간편결제 연동)",
+      "현금영수증 발행 서비스",
+      "결제·정산 관리 (정산주기·정산내역·리포팅 지원)"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "B2B 상품 주문/유통 신호"
     ],
-    "discoveryReason": "이스타항공은 항공권과 관련 부가서비스를 자사 온라인 채널로 판매하는 전형적인 가맹점 후보임(온라인 예약·결제 발생 근거 존재). 다만 공개 자료만으로는 자체 결제시스템 보유 여부가 확인되지 않아 결제 시스템 현황은 추가 확인이 필요함.",
+    "discoveryReason": "메디바이오랩은 기존 약국 유통 채널에서 자사몰(D2C)로 확장하며 신제품(PMEC) 출시를 진행한 것으로 보이는 소비재(식품/식음료) 사업자입니다. 온라인 자사몰을 통한 판매 신호가 있어 KB스타플랫폼의 브랜드Pay·현금영수증·정산관리 서비스 적용 가능성이 높습니다. 다만 자체 결제시스템 보유 여부는 공개된 자료에서 확인되지 않습니다.",
     "discoveryQueries": [
-      "여행 상품 온라인 판매 확대"
+      "식품 브랜드 온라인몰 판매 확대"
     ],
     "latestNews": [
       {
-        "title": "이스타항공, 中최대 여행 플랫폼 '플리기'와 맞손…중국인 방한 수요 확대 - hankyung.com",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LQzU5SWhsSHBSRXd3U29saFBteURJd25neUZHb2d3eWp3RVEycTZzY3hkOV8xR3RkSFViaGF0NU1McXNPWFZMd2lvb2hpSnNDZHBFUENTRE1kUQ?oc=5",
-        "pubDate": "Fri, 11 Sep 2026 07:00:00 GMT"
+        "title": "메디바이오랩, 약국서 자사몰로 영토 확장…'PMEC' 첫 출격 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XMG9QNFQ1bHFHbW1BVGdIaHdpQnFKdVpkLUQ2cXl0Nk5rOXM3Rm9zbWtQM3BnbEpyeGNscE8xUi1EVWlOandmanA0VXVlNDNuWlJZcQ?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:44:44 GMT"
       },
       {
-        "title": "이스타항공, 中 최대 여행 플랫폼 ‘플리기’와 맞손-방한 관광객 유치 확대 - 미디어파인",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtcFVESWoyOXBvRk5SWHNtMG5SSUdqM0VCS2NWOFVQYldxczcyb21TZTUzYU1Oa2tOREFSVlZRV2dNYUpxcEdRQWp5QXRYM2wxaU9nZkYyTktoRHh0VEtqRExHZnJJUGYwamFQRTNR?oc=5",
-        "pubDate": "Fri, 11 Sep 2026 01:54:47 GMT"
+        "title": "메디바이오랩, 약국서 자사몰로 영토 확장…'PMEC' 첫 출격 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5XOWNtUjNROEFlZ3E5dG50aGwySEw5U0FsTmh4NUVuTHlpR3hfbnRUOGFmeGYxVVZkMjlnaHJKMGpXZUNnaWc?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:44:44 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "이스타항공은 항공권을 자사 웹사이트·온라인 채널을 통해 판매 및 예약을 제공(항공사로서 항공권 유료 판매가 발생함).",
-      "최근 보도: 중국 최대 여행 플랫폼 '플리기(Fliggy)'와 제휴하여 방한 관광객 유치 확대(제휴를 통한 판매 채널 확장·결제 발생 가능성 시사).",
-      "업종(여행/숙박) 특성상 숙박·항공권·부가서비스 등 고객 결제가 빈번하게 발생함."
+      "뉴스 보도: '약국서 자사몰로 영토 확장… PMEC 첫 출격' — 자사몰(온라인 판매 채널) 오픈·활용이 보도되어 온라인 결제 접점 존재 가능성 확인 (v.daum.net).",
+      "기존 유통 채널로 약국을 통한 판매 이력 언급 — 약국 유통을 통한 반복적 상품 판매·B2B 유통 구조 존재 가능성.",
+      "신제품 출격 보도로 제품 판매(유료상품)·주문 발생 근거 확인 (제품 출시를 통한 소비자 구매 유도)."
     ],
-    "aiPaymentSystemEvidence": "공개된 뉴스·기사에서 이스타항공의 자체 결제 시스템(자체 페이) 보유 여부에 대한 언급이 없음. 공식 웹사이트 결제 세부사항 및 제휴 PG/결제 처리 방식 추가 확인 필요."
+    "aiPaymentSystemEvidence": "공개된 뉴스는 '자사몰'으로 영토 확장 및 신제품(PMEC) 출격을 보도하나, 결제수단(자체 Pay 또는 특정 결제사업자 사용)에 대한 명시적 언급은 없음. 따라서 자체 결제시스템 운영 여부는 확인되지 않음."
   },
   {
-    "id": "쿠팡-쿠팡이츠",
-    "name": "쿠팡·쿠팡이츠",
+    "id": "홈앤쇼핑",
+    "name": "홈앤쇼핑",
     "industry": "여행/숙박",
-    "description": "실제 상품·서비스 판매 또는 고객 결제가 발생하는 것으로 보이는 가맹점 후보",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
     "newsCount": 2,
-    "newsActivityScore": 46,
-    "interestScore": 69,
-    "partnershipScore": 69,
-    "merchantFitScore": 69,
+    "newsActivityScore": 39,
+    "interestScore": 65,
+    "partnershipScore": 65,
+    "merchantFitScore": 65,
     "paymentNeed": true,
     "onlineService": true,
-    "subscription": false,
+    "subscription": true,
+    "b2b": false,
     "existingPaymentSystem": false,
     "paymentSystemStatus": "unknown",
     "fitServices": [
-      "브랜드Pay",
+      "브랜드Pay(간편결제 통합채널 제공)",
+      "정기결제(멤버십/구독형 서비스 지원)",
+      "현금영수증(소비자·세무 대응)",
+      "결제·정산 관리(판매채널·협력사 정산 자동화)"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호",
+      "구독·멤버십 거래 신호"
+    ],
+    "discoveryReason": "홈앤쇼핑은 TV홈쇼핑 기반의 상품·서비스 판매 사업자(전통시장 판로 지원·여행 특집 방송 등 실제 매출·예약 신호 존재)로, 온라인·방송 기반 결제 접점이 확인되어 KB스타플랫폼의 브랜드Pay·정기결제·정산 관리 서비스 적용 가능성이 높음. 다만 자체 결제시스템 보유 여부는 공개 자료에서 확인되지 않아 paymentSystemStatus는 'unknown'으로 판단함.",
+    "discoveryQueries": [
+      "여행 상품 온라인 판매 확대",
+      "월 구독 상품 온라인 판매"
+    ],
+    "latestNews": [
+      {
+        "title": "홈앤쇼핑, 전통시장 판로 넘어 자생력 키운다…5.6억 판매 - 아시아투데이",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qRE5QcmVJZXZRNXN0bk02VFlHcVdJZWxJeEk2UVBXMmloM1ZnbUdIVmx0WHdEU0pNRGttWXNocUdRREQ0QVZ1OEZ1eE9ZekZmM2x3NGhhOWIyVTdnTWJ6SUZNMWFnbm1IZGcyUHR3?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 05:32:29 GMT"
+      },
+      {
+        "title": "홈앤쇼핑, 대한항공 직항 시드니·마카오 여행 특집방송 - etnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iRkd0UDFTc3hwdzFSNUtnLXBiQXNSYTlGOWhvdjRTNDFtZjB3NkZGTmtlZ1Y5RkhIXzVZc1dDaE9wWjdtcHZ2UEE0OFVEUQ?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "아시아투데이 보도: 홈앤쇼핑이 전통시장 판로 확대를 통해 5.6억 판매 실적을 기록(제품 판매·거래 발생 근거).",
+      "etnews 보도: 홈앤쇼핑이 항공 직항 여행 특집방송을 편성(여행상품/패키지 판매·예약·예매 등 유료서비스 거래 신호).",
+      "제공된 발굴 근거: '상품·서비스 거래 신호', '반복적인 판매/주문 신호', '온라인 판매·주문 채널 신호', '최근 판매채널/상품 확대 신호', '구독·멤버십 거래 신호' 등 플랫폼형·유통형 사업 구조에 대한 관찰 내용."
+    ],
+    "aiPaymentSystemEvidence": "공개된 최근 기사에서는 홈앤쇼핑이 전통시장 판로 확대(5.6억 판매) 및 대한항공 직항 시드니·마카오 여행 특집방송 등 판매·방송 활동이 확인되나, 자체 결제시스템(예: 자체 간편결제, 결제 게이트웨이 등) 보유 여부는 기사 및 제공 자료에서 명시적으로 확인되지 않음."
+  },
+  {
+    "id": "신세계면세점",
+    "name": "신세계면세점",
+    "industry": "식품/식음료",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 3,
+    "newsActivityScore": 46,
+    "interestScore": 55,
+    "partnershipScore": 55,
+    "merchantFitScore": 55,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "브랜드Pay (온라인몰 결제 및 매장 간편결제 연동)",
+      "현금영수증 발행 지원",
+      "결제·정산 관리 서비스 (다수 상품·브랜드 정산, 해외 판로 연동 시 정산 기능)"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
+    ],
+    "discoveryReason": "신세계면세점은 온라인몰 확장(웰니스 전문관, 다수 상품 구성)과 외부 브랜드와의 글로벌 유통 협약을 통해 실질적 상품 판매 및 결제 접점이 확인된다. 자체 결제시스템 보유 여부는 공개 자료에서 확인되지 않아 'unknown'으로 분류하나, KB스타플랫폼의 브랜드Pay, 현금영수증 및 정산관리 서비스 적용 가능성이 높아 가맹점 후보로 적합하다.",
+    "discoveryQueries": [
+      "생활용품 브랜드 온라인몰 신규 상품",
+      "식품 브랜드 온라인몰 판매 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "신세계면세점, 이삭토스트와 '글로벌 판로 확대·동반성장' 협약 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93QVVxUTQyU3F0NjJrXzhGejlhbUE4N0VwSFhPYm5hNlBBcU16M3Q3ZEw1OU1iZlpqQWJGLUoteVp1X1M0U1NPUEQ1Q2F5cjZjMFI0TnZGaEtLd3PSAWBBVV95cUxNZ3V0TnpzRFBwSlNnMDBkSFZ4dVpZVEFTc0NFVU1tS1VDZGhMVVB2WmZaUWp2c1FKRW9tekVRUlFzTDVUM05NX19LWG5XVUdlQ3daa0E1SGtQRDcwQmxSUXE?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 01:40:13 GMT"
+      },
+      {
+        "title": "신세계면세점, 이삭토스트와 글로벌 시장 공략…해외 판매 채널 확대 - 뉴스퀘스트",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9NbEdOelFmdFE0Wl9Jb01KVktjVksyR21FcWRNdVNhRFZRWXhQX01Wc3had1pDUHhXU3Z1a1RXUnZINGN5d0JaclQ1NHZUT2hIRVJIZjBxdkV4QUdGaGR4UngyV1F3MEtEVU5xTEtETQ?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 01:15:08 GMT"
+      },
+      {
+        "title": "신세계면세점, 온라인몰에 '웰니스 전문관'…3만여개 상품 구성 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41Yll4WXluWDVaQVpLMUJIUkUyQmxfTkpseXVWUGhZTkZNSFJ4YWg4U1FPY0w2cmxKaGFhMExnbURITFRoQzYtQlJhX3pJcHctS193ZzNJZVFOa2_SAWBBVV95cUxOclFEeXRHWFh6ZDdoaWk4dzIyX2pSQWhjcjV4dmZLRU9LajdoZTlZemtsV2M3NEpDMGtjeTNhRkx2b0JMUmJiazFabW9lVjJ5T1p3V1JWR0xkaU9HU2NKOVQ?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "온라인몰에 '웰니스 전문관'을 개설하여 약 3만여개 상품 구성(연합뉴스) — 온라인 판매 채널 및 상품 판매 구조의 존재 근거",
+      "이삭토스트와의 협약을 통한 글로벌 판로 확대·동반성장(연합뉴스, 뉴스퀘스트) — 브랜드·상품의 유통·판매 채널 확장 및 반복적 거래 가능성",
+      "면세점(소매) 사업자로서 소비재 판매·유통을 전제로 한 사업 형태(기업명 및 업종 표기) — 온·오프라인에서 고객 결제가 발생할 가능성"
+    ],
+    "aiPaymentSystemEvidence": "제공된 최신 뉴스 및 정보에서 신세계면세점이 자체 결제시스템(자체 Pay 또는 유사 결제 인프라)을 보유하고 있다는 명시적 언급은 없음. 온라인몰 확장 및 유통 파트너십 관련 보도는 있으나 결제 인프라 보유 여부는 확인되지 않음."
+  },
+  {
+    "id": "모크레스",
+    "name": "모크레스",
+    "industry": "패션/뷰티",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 4,
+    "newsActivityScore": 53,
+    "interestScore": 50,
+    "partnershipScore": 50,
+    "merchantFitScore": 50,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "현금영수증 발급 지원",
+      "결제·정산 관리(정산 스케줄, 정산 내역 제공 등)",
+      "간편결제 연동(BrandPay) — 온라인 결제 및 오프라인 간편결제 연동 검토"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
+    ],
+    "discoveryReason": "모크레스는 패션·뷰티 브랜드로 온라인 판매를 기반으로 빠르게 오프라인(현대백화점 판교점)으로 확장한 신생 브랜드임. 실제 상품 판매 및 온·오프라인 결제 접점이 확인되어 KB스타플랫폼의 결제·정산·현금영수증 서비스 도입 후보로 적합하나, 자체 결제시스템 보유 여부는 공개 자료상 확인되지 않음.",
+    "discoveryQueries": [
+      "뷰티 브랜드 자사몰 온라인 판매 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "모크레스,론칭 3개월 만에 현대百 판교점 입점…직장인·육아 소비자등 첫 오프라인 승부수 - 퍼블릭타임스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PZjhvbEJ6MG5kTzBWMG5LNFM2V2djTDY5ZzJTdDFuT0ttbFZDZ3RaMUZrNURwMG9ubmE5ZjNPeG9jT3hnNF9CT2NQdE9saHhzZjg4YTFTSUhiMGtFazFkTUdnNTdhN3plc3fSAW5BVV95cUxQelVBY2dZYkN0NHpkQkZTTXptdjBST3lCeW5xYWxtM19SLTZGZGxHbEZONlJGY2JPQld2Q1I3YWR3MDlQNnBBWVBCSXhIdnlaR2dTM19WVllTZmpCVTdNZzZndmQ3T3VndlpXNUgtdw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 05:00:00 GMT"
+      },
+      {
+        "title": "모크레스, 론칭 3개월 만에 현대百 판교점 입점 - 보건신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtUlhJVi13WGhyQnhkdV9yYVdxbGYwX2VscHpJNmxTeEYzQkFMLVhjdVNEUGkwcTNLLVM3R0Z5T3NZVndxQklJT3Nyak8tNzZzMUxxZWNGR2lCOEs5d012eEJn?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 01:38:52 GMT"
+      },
+      {
+        "title": "모크레스, 론칭 3개월 만에 현대百 판교 입점…첫 오프라인 진출 - 헤럴드경제",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IeUtVdWVKd1Vmcm1WellZUGV5bEdETEM0Z0ZXNlNIa2d4bFFhWHFwWUpGWmlyZEg4WGEtLUd4Y2dXM0FfeUE0RnkySmx0S2tYc1c0d2RB?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 01:24:21 GMT"
+      },
+      {
+        "title": "모크레스, 온라인 넘어 오프라인 확장…현대백화점 판교점 진출 - 컨슈머타임스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hdWl1c0E0cENZaVpPMzBpZ3MzQl8tR3B4NDRfZHNOMVZXaGNXcXZCdEUzallMMjZiU2JHRFE2MjRSZ19UV203VVVHR2RJRndlSkowdG1kS1BSaE1QYVp1LU02d3YyMGM2SUE?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:47:37 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "론칭 3개월 만에 현대백화점 판교점 입점 보도(퍼블릭타임스, 보건신문, 헤럴드경제, 컨슈머타임스) — 오프라인 매장 운영으로 상품 판매·결제 발생 가능성 높음.",
+      "기사들에서 '온라인 넘어 오프라인 확장' 표기 — 온라인 판매 채널 존재 및 오프라인 확장으로 온·오프라인 결제 접점이 확인됨.",
+      "업종 분류: 패션/뷰티 — 소비재 판매로 고객의 결제(구매)가 발생하는 사업 구조에 부합."
+    ],
+    "aiPaymentSystemEvidence": "공개된 기사들은 모크레스의 온라인 활동 및 현대백화점 판교점 입점(오프라인 매장 출점)을 보도하고 있으나, 자체 결제 시스템(자체 Pay 또는 결제 게이트웨이) 보유 여부에 대한 명시적 언급은 없음. 따라서 자체 결제시스템은 확인 불가(unknown)."
+  },
+  {
+    "id": "파커스-자회사-알록",
+    "name": "파커스 자회사 알록",
+    "industry": "패션/뷰티",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 2,
+    "newsActivityScore": 39,
+    "interestScore": 50,
+    "partnershipScore": 50,
+    "merchantFitScore": 50,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
       "현금영수증",
       "결제·정산 관리"
     ],
     "discoverySignals": [
-      "상품·서비스 판매/거래 신호",
-      "온라인 판매 채널 확인",
-      "고객 결제가 발생하는 상품/서비스",
-      "최근 상품·서비스 확대 신호"
+      "상품·서비스 거래 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
     ],
-    "discoveryReason": "쿠팡·쿠팡이츠는 자사 온라인몰과 쿠팡이츠 앱을 통해 실제 상품·서비스 결제가 발생하므로 가맹점 후보로 적합합니다. 다만 공개된 최근 뉴스에서는 자체 결제시스템 존재 여부가 명시되지 않아 결제시스템 현황은 '확인 필요(unknown)'로 표기했습니다. 제휴로는 브랜드Pay, 현금영수증, 결제·정산 관리 등이 유의미한 서비스가 될 수 있습니다.",
+    "discoveryReason": "알록은 패션·뷰티 상품을 판매하고 온·오프라인 유통을 확대 중인 실물 상품 사업자로, KB스타플랫폼의 가맹점 후보로 적합하다. 다만 공개 자료상 자체 결제시스템 보유 여부는 확인되지 않아 paymentSystemStatus는 'unknown'으로 판정함. 초기 제휴 대상 서비스로는 현금영수증 처리와 결제·정산 관리 지원이 적합함.",
     "discoveryQueries": [
-      "여행 상품 온라인 판매 확대"
+      "뷰티 브랜드 자사몰 온라인 판매 확대"
     ],
     "latestNews": [
       {
-        "title": "쿠팡·쿠팡이츠, 전통시장 디지털 전환 지원…청주서 시작 - 매일일보",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5HQ2ljTE1zYWZZa2JfT1IwSFdEMUJzWnNrSEE3QUN1WmlqQkNEbGtDWVRPNjNfNnFrRUJvQ0lRTzFiMnlyb0VYcU45SzdCVmdXVHJYRzJTaTZvMVZqdDBtellDa23SAWhBVV95cUxOVHJocVJXVUN1Y0FaSUp3ajJRT2wyeTZ4Y0NGX1IxZXppenU2Z0JwT2hLeXpfNjNycUNfTmJCd2hhM0hlTnNhbkdFbTRFQVNuQWVvbV9WX0JTMkgtZ3hRblVhSlh0Y0QzVA?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT"
+        "title": "파커스 자회사 알록, K뷰티 글로벌 공략…온·오프라인 유통 확대 - etoday.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4zcUJNakpoeHZNMHQzV0ttZThwVHA3UUpTVjdPV2xUODBfX0hhOEFvdlE0ZGl3UExnaTZWQmQ3VV9GQW80bmlMMjVHcS1venA5b2JxeA?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 07:05:00 GMT"
       },
       {
-        "title": "쿠팡·쿠팡이츠, 전통시장 디지털 전환 지원 강화 - 청년일보",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83YjZ4ajVqdXpfVFpMbV9iblZUYmV2emthV3JmanY5NFZIT2Nma3l4aVZjSzJ5TjZKNEUzSFgxdXpoZHk1b1IwNDREM3ZDVFdQejFIQ0llOEo4RjVaOTczQWMtd0poakU?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 02:37:56 GMT"
+        "title": "파커스 자회사 알록, K-뷰티 글로벌 공략 본격화…온·오프라인 투트랙 - edaily.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSjQwT1JyS1NOcmdmdXZDUHNoZmNZU3phbUN1bGVEQ3J0YWhVWGd4dFVmN2RTenBSTU5oUmJzd05jZm9Yd0djZ29TRFhLcE96ajFpbnUyUWZhWTJqbmhNS0dnaU52dHJNLUl2TU5IcWc2TkdoZzNqMXFnVmpIbWlzWg?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 03:39:10 GMT"
       }
     ],
+    "aiValidationStatus": "verified",
     "aiMerchantEvidence": [
-      "쿠팡: 자사 온라인몰(쿠팡)을 통한 상품 판매 및 결제 발생(이커머스 판매 채널 보유)",
-      "쿠팡이츠: 앱을 통한 음식 주문·결제 서비스 운영으로 고객 결제 발생",
-      "최근 보도에서 쿠팡·쿠팡이츠가 전통시장 디지털 전환 지원을 추진(오프라인 상인 대상 결제·판매 채널 확장 신호)"
+      "알록은 파커스 자회사로서 패션/뷰티 상품을 판매하는 사업자임(기사: '파커스 자회사 알록, K뷰티 글로벌 공략…온·오프라인 유통 확대').",
+      "최근 보도에서 '온·오프라인 투트랙' 유통 전략을 명시, 온라인몰·오프라인 유통 채널을 통한 판매 구조 존재 시사(기사: '파커스 자회사 알록, K-뷰티 글로벌 공략 본격화…온·오프라인 투트랙').",
+      "기사에서 '유통 확대'와 '글로벌 공략'을 언급한 점은 제품 판매 및 주문·결제 발생 가능성이 높은 사업 구조임을 뒷받침."
     ],
-    "aiPaymentSystemEvidence": ""
+    "aiPaymentSystemEvidence": "공유된 보도자료(기사 제목)는 알록의 온·오프라인 유통 확대 및 K-뷰티 글로벌 공략을 보도하고 있으나, 자체 결제 시스템(자체 Pay 또는 결제 인프라) 보유 여부에 대한 명시적 언급은 없음. 공개된 자료에서 결제 제공 주체(제3자 결제사 혹은 자체 결제) 관련 근거를 확인할 수 없음."
+  },
+  {
+    "id": "한아원코리아",
+    "name": "한아원코리아",
+    "industry": "소비자/거래 서비스",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 2,
+    "newsActivityScore": 39,
+    "interestScore": 50,
+    "partnershipScore": 50,
+    "merchantFitScore": 50,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "현금영수증 발행 서비스",
+      "결제·정산 관리(가맹점 정산관리, 매출조회 등)",
+      "정기결제(구독형 상품 전개 가능성에 대비한 선택적 제안, 필요 시 고객에게 확인)"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
+    ],
+    "discoveryReason": "한아원코리아는 최근 '글리프'라는 뉴트리션/GLP-1 에프터케어 브랜드를 출시한 점으로 미루어 소비재(건강·영양) 상품을 시장에 판매하려는 사업자로 판단됨. 다만 공개 보도만으로는 자사 결제시스템 보유 여부나 구체적 판매 채널(자사몰/입점/주문앱 등)이 확인되지 않아 결제 연동 가능성은 추가 확인이 필요함.",
+    "discoveryQueries": [
+      "브랜드 공식몰 온라인 판매 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "한아원코리아, 뉴트리션 브랜드 ‘글리프’ 출시 - 한국일보",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JMGdFT1BKWUpZSGsyNE1CUllyNmRhcHFNQjhWUnBFTF9rS2swdGEwckQwRVVrWFJzVVJ3TU45X2pHWklvXy1yd1RzLTdZalVNenpMM05TVWNiOXNNclBRMnBaNjVOYnk2TDZuQnNn0gFzQVVfeXFMTWxGWndSb2d3ZERfTE9Rb1ZHaDJWR01SaG82TDZzR2RWRG5XN21IOGFGdXUxcDZyOUV0VEI1TUZFSU4xWF8wSVV1RlkzQ09tME1fYWNZWEQ1VzVNd0thcE5YUlhUSU15dnZvLWhUc09uU2ExMA?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "title": "한아원코리아, ‘GLP-1 에프터케어’ 브랜드 글리프 출시 - 서울신문",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56QmFsb1JoNk95SVBzMTBvTWxFSlI5bTU0N0NkSFFWODB6SG1xT1lfc3VoMUpFS0NFb2hmMHZCX0dlbG5USWxuRmgzWktmX3pRSGdLNFF5azdUdmk5b3k5RldtcF9jNEpTeDlMU0ltNA?oc=5",
+        "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "한아원코리아가 뉴트리션 브랜드 '글리프(GLP-1 에프터케어)'를 출시(한국일보, 서울신문 등 보도) — 신제품 출시로 소비재(영양·애프터케어) 상품을 판매할 가능성이 높음.",
+      "보도는 제품·브랜드 출시를 전면에 내세우고 있어 제조·유통 및 소비자 대상 판매(온라인몰·오프라인 유통 등)를 전제로 한 사업활동 신호로 해석됨.",
+      "사용자 제공 발굴 근거에 '상품·서비스 거래 신호', '온라인 판매·주문 채널 신호', '최근 판매채널/상품 확대 신호'가 관찰되었음(구체 채널은 보도에서 미확인)."
+    ],
+    "aiPaymentSystemEvidence": "공개된 뉴스(브랜드 출시 보도)에서는 제품 출시와 브랜드 확장 사실만 확인되며, 자체 결제시스템(자체Pay) 또는 특정 결제사 연동에 관한 명시적 공개 근거를 찾을 수 없음. 자체 결제시스템 보유 여부는 확인되지 않음."
+  },
+  {
+    "id": "대홍기획",
+    "name": "대홍기획",
+    "industry": "레저/티켓",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 2,
+    "newsActivityScore": 39,
+    "interestScore": 50,
+    "partnershipScore": 50,
+    "merchantFitScore": 50,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "현금영수증 발행",
+      "결제·정산 관리(정산데시보드, 정산주기·수수료 관리)",
+      "간편결제(브랜드Pay) 연동"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "온라인 판매·주문 채널 신호",
+      "최근 판매채널/상품 확대 신호"
+    ],
+    "discoveryReason": "대홍기획은 최근 티켓 할인 플랫폼 '엘티켓'을 론칭하여 온라인 티켓 판매·예매 채널을 확보한 것으로 보임. 고객 결제가 발생하는 구조로 KB스타플랫폼의 현금영수증·결제·정산 관리 및 간편결제 연동이 적용 가능성이 높으나, 자체 결제시스템 보유 여부는 기사에서 확인되지 않음.",
+    "discoveryQueries": [
+      "공연 티켓 온라인 판매 확대",
+      "전시 티켓 온라인 판매"
+    ],
+    "latestNews": [
+      {
+        "title": "대홍기획, 티켓 할인 플랫폼 '엘티켓' 론칭 - etnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1kTnpKdHVFZ2ZjOW1ZME1DMEhRZjhKdVlLSEZZYVdEajhGVUJZaDk2U0tFNWxRMVJ5cW03VUhmOTZVTjB5VkgzRkdRSTNIdw?oc=5",
+        "pubDate": "Tue, 22 Sep 2026 02:23:39 GMT"
+      },
+      {
+        "title": "대홍기획, 티켓 할인 플랫폼 ‘엘티켓(L.TICKET)’ 서비스 론칭 - 매드타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OMkxkVjJ4Sk5fNk9nZngxaHE0X0lvZnRkb3Z1dTBEWjFGbkpUVDZOMnhrSkdQX1NJbV9BR2RIbHBwTXlxLTlJX05lRXhiMUlyVUN2Rk9DQjBac3pGMmtxdUpGZk9TZHk0?oc=5",
+        "pubDate": "Mon, 21 Sep 2026 23:41:13 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "최근 보도: 대홍기획이 티켓 할인 플랫폼 '엘티켓(L.TICKET)' 서비스 론칭(언론보도) — 플랫폼을 통한 티켓 판매/예매 구조가 존재함.",
+      "업종 분류: 레저/티켓 — 고객의 예매·구매 시 결제가 발생하는 전형적 비즈니스 모델.",
+      "온라인 채널 신호: 서비스 론칭 보도에서 플랫폼(온라인/앱) 기반 서비스 제공이 암시되어 결제 접점(온라인 결제, 예매창 등)이 존재할 가능성이 높음.",
+      "사업 확장 신호: 기존 사업영역(광고/마케팅) 외에 티켓 유통·판매 채널을 새로 론칭한 점은 거래 발생 가능성 확대를 시사."
+    ],
+    "aiPaymentSystemEvidence": "보도자료·기사(엘티켓 론칭)에서 티켓 할인 플랫폼 출시가 확인되나, 자체 결제시스템 보유 또는 특정 결제사 연동에 대한 명시적 언급은 발견되지 않음. 따라서 자체 결제시스템 보유 여부는 확인 불가."
+  },
+  {
+    "id": "동원f-b",
+    "name": "동원F&B",
+    "industry": "식품/식음료",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 2,
+    "newsActivityScore": 39,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "merchantFitScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "BrandPay 온라인 결제 통합(자사몰/이커머스 체크아웃 연동)",
+      "정기결제(정기배송·구독상품 결제 지원)",
+      "법인결제(B2B 대량주문·법인청구 결제 기능)",
+      "현금영수증 자동발행 및 세금계산서 연계(소비자·사업자용)",
+      "결제·정산 관리 대시보드(거래·정산 모니터링 및 정산 자동화)"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호"
+    ],
+    "discoveryReason": "동원F&B는 식품·건강기능식품 등 소비재를 판매하며 최근 보도에서 '매장·온라인 할인' 행사를 진행한 것으로 나타나 결제 접점(온라인몰·오프라인 매장)을 갖춘 실거래 사업자로 판단됨. 자체 결제시스템 보유 여부는 공개 자료상 확인되지 않아 'unknown'으로 분류. 자사몰 결제 통합, 정기구독·B2B 결제 등 KB스타플랫폼의 BrandPay 기능 적용 가능성이 높음.",
+    "discoveryQueries": [
+      "식품 브랜드 온라인몰 판매 확대"
+    ],
+    "latestNews": [
+      {
+        "title": "동원F&B, 추석 건강기능식품 할인전…GNC·천지인 총출동 - etnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iWnFvU0loMzRZNUVDLWEzUkQwSjZxeU8wWkM5VjBGc0plaVhwTnNLQ1JvZWcwWXIySXRLWEpMSjJzMkRtajJYQnRmczRQZw?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 06:33:20 GMT"
+      },
+      {
+        "title": "동원F&B, 추석 건강기능식품 행사…매장·온라인 할인 혜택 확대 - 스마트경제",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SZ09CZEU0c2Q5LVY3cUV1clFUSlhhTGJOcWZqTjVhRmE0YWVCb185LWNsVzlxUHdlWWdRR1pGaFl2cW4xSE52R1hzUU1xTW9kWmxvN3lqUXl4cTZyTUx3QUN5Mjd5Mmppdk9RREdPeGI?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 00:29:16 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "업종: 식품/식음료(제조·판매) — 소비재 판매 사업자로서 유료상품 거래 구조가 존재할 가능성 높음.",
+      "뉴스: '동원F&B, 추석 건강기능식품 행사…매장·온라인 할인 혜택 확대' — 매장 및 온라인 채널을 통한 판매·할인 행사를 명시하여 결제 접점(온라인몰/오프라인 매장)이 존재함을 시사.",
+      "뉴스: '동원F&B, 추석 건강기능식품 할인전…GNC·천지인 총출동' — 타 브랜드와의 행사 참여 및 제품 할인전을 통해 반복적 판매·프로모션이 이루어지고 있음을 보여줌.",
+      "제품·유통 특성상 소매·유통 채널(온라인몰, 오프라인 매장, 행사/프로모션 채널)을 통한 실제 구매·결제 활동이 발생하는 비즈니스 모델로 판단됨."
+    ],
+    "aiPaymentSystemEvidence": "공개된 최근 보도(예: '동원F&B, 추석 건강기능식품 행사…매장·온라인 할인 혜택 확대')에서는 매장·온라인 판매·할인 행사를 언급하고 있으나, 동원F&B가 자체 결제시스템을 운영하거나 특정 결제사업자와 독점 제휴를 체결했다는 명시적 근거는 확인되지 않음."
+  },
+  {
+    "id": "배달의민족",
+    "name": "배달의민족",
+    "industry": "소비자/거래 서비스",
+    "description": "기존 KB스타플랫폼 거래사와 유사한 상품·서비스 거래 구조를 가진 신규 가맹점 후보",
+    "newsCount": 2,
+    "newsActivityScore": 39,
+    "interestScore": 45,
+    "partnershipScore": 45,
+    "merchantFitScore": 45,
+    "paymentNeed": true,
+    "onlineService": true,
+    "subscription": false,
+    "b2b": false,
+    "existingPaymentSystem": false,
+    "paymentSystemStatus": "unknown",
+    "fitServices": [
+      "BrandPay 간편결제 연동(소비자 결제 옵션 확대 및 원클릭 결제 지원)",
+      "법인결제(모바일식권·법인계정) 연동(기업 식대·복지 결제 수단으로 제안)",
+      "정산·결제 관리 솔루션 제공(가맹점 정산 자동화, 정산 대시보드)",
+      "현금영수증 자동발급 연동(세금계산 및 가맹점/소비자 편의성 향상)",
+      "정기결제(구독형 서비스 존재 시) 연동 권장(구독·멤버십 결제 자동화)"
+    ],
+    "discoverySignals": [
+      "상품·서비스 거래 신호",
+      "반복적인 판매/주문 신호",
+      "온라인 판매·주문 채널 신호"
+    ],
+    "discoveryReason": "배달의민족은 앱·웹을 통한 반복적 소비자 결제와 가맹점 정산 수요가 명확한 플랫폼형 사업자이므로 KB스타플랫폼의 가맹점 제휴 후보로 적합함. 다만 공개된 자료에서는 자체 결제시스템 보유 여부가 명확하지 않아 paymentSystemStatus는 'unknown'으로 판단됨. 모바일 식권 등 법인결제 관련 확장 신호가 있어 법인결제·정산 분야의 제안 잠재력이 큼.",
+    "discoveryQueries": [
+      "모바일 주문 결제 서비스 도입"
+    ],
+    "latestNews": [
+      {
+        "title": "배달의민족, 일상 속 접점 넓힌다...'보안·친환경·결제' 등 서비스 전방위 고도화 - 테크M",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCU0VabHVQQUQyNUo2M2pUZ2o2X3lJVmJLTTdSaFFKdGRJTWVvcDZXR3pIbE5CNzllUkpDalJkYkJjeGxMdE9QaUd2TWJZOGxqNFRPN2RpQktyaU9pWjQ5R1hIQlBDd9IBakFVX3lxTE5weWozVUlKdTRob1NZalZMaHBpNFhOMEVyY25iOWJHc3VqaW16TE15NUI4WTBLMEE4NHdUeExjc0J1VFItWWhobVA3ZWktUS0tcG5Ocnp1TWVKWnFLd29oaEZBRGZwbFpjaFE?oc=5",
+        "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "title": "배달의민족, 모바일 식권 결제 지원…결제수단 '페이코' 도입 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9QU1Y2T3QwV2FqS2l2cHlQN1pZWEdQOWV6RklsOUFWeXFvRmhQMUxMUmxJYzZlRHhFMzhiRDdfbTVqZHBhNnc?oc=5",
+        "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "aiValidationStatus": "verified",
+    "aiMerchantEvidence": [
+      "앱·웹 기반 음식 주문·결제 채널 보유 — 소비자가 플랫폼을 통해 음식 주문 후 결제하는 구조(배달의민족 서비스 특성).",
+      "반복적·빈번한 거래 발생 — 음식 배달 주문의 반복성으로 지속적 결제 흐름이 존재.",
+      "플랫폼-가맹점 구조로 가맹 음식점에 대한 결제·정산 수요 존재 — 주문 결제 이후 가맹점 정산이 필요한 사업 구조.",
+      "최근 뉴스: 모바일 식권 결제 지원을 위한 결제수단(페이코) 도입 → 법인/식권 등 B2B 결제 채널 수요와 연동 가능성 확인."
+    ],
+    "aiPaymentSystemEvidence": "최근 보도에서 배달의민족이 결제 관련 서비스를 고도화하고 있음을 언급(테크M 기사). 또한 '모바일 식권 결제 지원…결제수단 \"페이코\" 도입' 보도로 외부 결제수단 연동 사례가 확인됨(v.daum.net). 다만 자체 결제시스템(예: 독자적인 결제 게이트웨이 또는 자사 간편결제)의 보유 여부에 대한 명시적 공개 근거는 확인되지 않음."
   }
 ]
