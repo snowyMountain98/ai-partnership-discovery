@@ -39,9 +39,9 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      # 선택 사항: Naver 검색 API를 연결하면 뉴스/블로그/지역/쇼핑 데이터를 추가 수집합니다.
-      # Secrets에 NAVER_CLIENT_ID / NAVER_CLIENT_SECRET을 넣으면 자동으로 활성화됩니다.
-      # 선택 사항: YOUTUBE_API_KEY를 넣으면 YouTube 검색도 활성화됩니다.
+      # NAVER API HUB를 연결하면 News / Web / Blog / Cafe / Local 데이터를 추가 수집합니다.
+      # NAVER_CLIENT_ID / NAVER_CLIENT_SECRET은 NAVER Cloud Platform > NAVER API HUB에서 발급한 값을 사용합니다.
+      # YOUTUBE_API_KEY를 넣으면 YouTube 검색도 활성화됩니다.
 
 
       # 3. 변경된 JSON 저장

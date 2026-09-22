@@ -261,27 +261,6 @@ function extractCompanyCandidates(title, sourceType = "news", metadata = {}) {
       : [];
   }
 
-  // Naver Shopping: brand > maker > mallName. mallName은 상대적으로 낮은 신뢰도.
-  if (sourceType === "commerce-shop") {
-    const values = [
-      [metadata.brand, 0.98, "Naver 쇼핑 브랜드"],
-      [metadata.maker, 0.96, "Naver 쇼핑 제조사"],
-      [metadata.mallName, 0.88, "Naver 쇼핑 판매몰"]
-    ];
-    const unique = [];
-    const seen = new Set();
-    for (const [raw, confidence, reason] of values) {
-      const value = normalizeName(raw);
-      if (!isStrongCompanyName(value)) continue;
-      const key = normalizeKey(value);
-      if (!seen.has(key)) {
-        seen.add(key);
-        unique.push({ name: value, confidence, reason });
-      }
-    }
-    return unique;
-  }
-
   // YouTube 채널명 자체를 기업명으로 쓰지 않는다.
   // 영상 제목에서 기업명이 확인되는 경우에만 후보를 만든다.
   if (sourceType === "social-youtube") {
@@ -424,51 +403,154 @@ async function fetchGoogleNews(query) {
 let naverStatus = process.env.NAVER_CLIENT_ID && process.env.NAVER_CLIENT_SECRET ? "configured" : "not-configured";
 let naverAuthFailed = false;
 
-async function fetchNaver(query, type) {
+// NAVER API HUB는 기존 openapi.naver.com/v1/search/*가 아니라
+// https://naverapihub.apigw.ntruss.com/search/v1/* 엔드포인트를 사용한다.
+// API HUB의 인증 헤더도 X-NCP-APIGW-API-KEY-ID / X-NCP-APIGW-API-KEY를 사용한다.
+const NAVER_API_HUB_BASE = "https://naverapihub.apigw.ntruss.com/search/v1";
+
+const NAVER_API_CONFIG = {
+  news: { path: "news", display: 50, sort: "date" },
+  blog: { path: "blog", display: 50, sort: "date" },
+  web: { path: "webkr", display: 50, sort: null },
+  local: { path: "local", display: 5, sort: "comment" },
+  cafe: { path: "cafearticle", display: 50, sort: "date" }
+};
+
+function stripHtml(value) {
+  return String(value || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function fetchNaverHub(query, type) {
   if (naverAuthFailed) return [];
+
   const clientId = process.env.NAVER_CLIENT_ID;
   const clientSecret = process.env.NAVER_CLIENT_SECRET;
-  if (!clientId || !clientSecret) return [];
 
-  const endpointMap = { news: "news.json", blog: "blog.json", web: "webkr.json", local: "local.json", shop: "shop.json" };
-  const endpoint = endpointMap[type];
-  if (!endpoint) return [];
+  if (!clientId || !clientSecret) {
+    naverStatus = "not-configured";
+    return [];
+  }
 
-  const url = `https://openapi.naver.com/v1/search/${endpoint}?query=${encodeURIComponent(query)}&display=${MAX_ITEMS_PER_SOURCE}&start=1&sort=date`;
+  const config = NAVER_API_CONFIG[type];
+  if (!config) return [];
+
+  const params = new URLSearchParams({
+    query,
+    display: String(config.display),
+    start: "1",
+    format: "json"
+  });
+
+  if (config.sort) params.set("sort", config.sort);
+
+  const url = `${NAVER_API_HUB_BASE}/${config.path}?${params.toString()}`;
+
   const response = await fetch(url, {
+    method: "GET",
     headers: {
-      "X-Naver-Client-Id": clientId,
-      "X-Naver-Client-Secret": clientSecret,
-      "User-Agent": "KB-StarPlatform-MerchantDiscovery/6.0"
+      "X-NCP-APIGW-API-KEY-ID": clientId,
+      "X-NCP-APIGW-API-KEY": clientSecret,
+      "Accept": "application/json",
+      "User-Agent": "KB-StarPlatform-MerchantDiscovery/7.0"
     }
   });
+
+  const bodyText = await response.text();
+  let data = {};
+  try {
+    data = JSON.parse(bodyText);
+  } catch (_) {
+    data = {};
+  }
 
   if (!response.ok) {
     if (response.status === 401) {
       naverAuthFailed = true;
       naverStatus = "auth-failed-401";
-      console.error("Naver API 인증 실패(401): NAVER_CLIENT_ID/SECRET 또는 네이버 애플리케이션 설정을 확인하세요. 이후 Naver 요청은 중단하고 다른 채널로 계속 진행합니다.");
+      const message = data?.error?.message || data?.errorMessage || bodyText.slice(0, 200);
+      console.error(`Naver API HUB 인증 실패(401): ${message}`);
+      console.error("NAVER_CLIENT_ID/SECRET, NAVER API HUB Application의 API 권한을 확인하세요.");
+      console.error("기존 openapi.naver.com 키가 아니라 NAVER Cloud Platform > NAVER API HUB에서 발급한 키가 필요합니다.");
+    } else if (response.status === 429) {
+      naverStatus = "rate-limited-429";
+      console.error(`Naver API HUB 호출 한도 초과(429): ${type} / ${query}`);
     } else {
       naverStatus = `error-${response.status}`;
-      console.error(`Naver ${type} 오류 ${response.status}: ${query}`);
+      console.error(`Naver API HUB ${type} 오류 ${response.status}: ${query}`);
+      if (data?.errorMessage) console.error(`  ${data.errorMessage}`);
+      if (data?.error?.message) console.error(`  ${data.error.message}`);
     }
     return [];
   }
 
   naverStatus = "active";
-  const data = await response.json();
-  const items = data.items || [];
-  return items.map(item => ({
-    title: cleanText(item.title),
+  return Array.isArray(data.items) ? data.items : [];
+}
+
+function normalizeNaverHubItem(item, type) {
+  if (type === "local") {
+    return {
+      title: stripHtml(item.title),
+      link: item.link || "",
+      pubDate: "",
+      description: stripHtml([item.category, item.description, item.address, item.roadAddress].filter(Boolean).join(" ")),
+      source: "Naver Local",
+      sourceType: "commerce-local",
+      category: stripHtml(item.category || ""),
+      address: stripHtml(item.address || ""),
+      roadAddress: stripHtml(item.roadAddress || "")
+    };
+  }
+
+  if (type === "blog") {
+    return {
+      title: stripHtml(item.title),
+      link: item.link || "",
+      pubDate: item.postdate || "",
+      description: stripHtml(item.description || ""),
+      source: `Naver Blog / ${stripHtml(item.bloggername || "")}`,
+      sourceType: "social-naver-blog"
+    };
+  }
+
+  if (type === "cafe") {
+    return {
+      title: stripHtml(item.title),
+      link: item.link || "",
+      pubDate: "",
+      description: stripHtml(item.description || ""),
+      source: `Naver Cafe / ${stripHtml(item.cafename || "")}`,
+      sourceType: "social-naver-cafe"
+    };
+  }
+
+  if (type === "web") {
+    return {
+      title: stripHtml(item.title),
+      link: item.link || "",
+      pubDate: "",
+      description: stripHtml(item.description || ""),
+      source: "Naver Web",
+      sourceType: "web-naver"
+    };
+  }
+
+  return {
+    title: stripHtml(item.title),
     link: item.link || item.originallink || "",
     pubDate: item.pubDate || "",
-    description: cleanText(item.description || `${item.category || ""} ${item.address || ""}`),
-    brand: cleanText(item.brand || ""),
-    maker: cleanText(item.maker || ""),
-    mallName: cleanText(item.mallName || ""),
-    source: `Naver ${type}`,
-    sourceType: type === "local" ? "commerce-local" : type === "shop" ? "commerce-shop" : "social-web"
-  }));
+    description: stripHtml(item.description || ""),
+    source: "Naver News",
+    sourceType: "news-naver"
+  };
 }
 
 let youtubeStatus = process.env.YOUTUBE_API_KEY ? "configured" : "not-configured";
@@ -543,40 +625,85 @@ async function runQueryBatch(companyMap, queries, fetcher) {
   }
 }
 
-async function runNaverCommerce(companyMap) {
+async function runNaverSearch(companyMap) {
   if (!process.env.NAVER_CLIENT_ID || !process.env.NAVER_CLIENT_SECRET) {
     naverStatus = "not-configured";
-    console.log("Naver API Secret 미설정 → Google News/YouTube 기반으로 계속 진행");
+    console.log("Naver API HUB Secret 미설정 → Naver 검색은 건너뜀");
     return;
   }
 
-  const commerceQueries = [
-    "온라인몰", "자사몰", "브랜드몰", "쇼핑몰", "온라인 주문", "온라인 예약", "티켓 예매", "숙박 예약",
-    "식품 온라인 판매", "패션 온라인 판매", "뷰티 온라인 판매", "생활용품 온라인 판매", "식자재 주문",
-    "B2B 상품 주문", "정기구독 상품", "유료 멤버십", "헬스장 회원권", "교육 수강권"
+  // API HUB에서 실제 기업/사업자 후보를 찾기 위한 검색어.
+  // Local은 실제 업체명, News/Web은 기업명과 사업 활동, Blog/Cafe는 판매 활동의 보조 증거로 사용한다.
+  const naverQueries = [
+    "패션 브랜드 자사몰",
+    "의류 브랜드 온라인몰",
+    "뷰티 브랜드 온라인몰",
+    "화장품 브랜드 공식몰",
+    "생활용품 브랜드 온라인몰",
+    "리빙 브랜드 자사몰",
+    "식품 브랜드 온라인몰",
+    "식품기업 자사몰",
+    "건강식품 온라인몰",
+    "신선식품 온라인몰",
+    "베이커리 온라인 주문",
+    "카페 모바일 주문",
+    "외식 프랜차이즈 주문앱",
+    "프랜차이즈 온라인 주문",
+    "온라인 쇼핑몰",
+    "브랜드 공식몰",
+    "사업자 전용 온라인몰",
+    "B2B 온라인몰",
+    "도매 온라인몰",
+    "식자재 온라인 주문",
+    "기업용 상품 주문",
+    "온라인 교육 수강권",
+    "학원 수강권 온라인",
+    "피트니스 회원권",
+    "호텔 온라인 예약",
+    "숙박 예약",
+    "여행상품 온라인 판매",
+    "레저 이용권 온라인 판매",
+    "공연 티켓 온라인 판매",
+    "정기구독 상품",
+    "정기배송 서비스",
+    "온라인 멤버십 상품",
+    "온라인 판매채널 확대",
+    "자사몰 신규 오픈",
+    "온라인몰 신규 오픈",
+    "모바일 주문 서비스",
+    "온라인 예약 서비스"
   ];
 
-  for (const query of commerceQueries) {
+  // Local은 5개까지만 반환되므로 사업자/업종 검색어를 다양하게 사용한다.
+  // News/Web/Blog/Cafe는 동일 검색어를 재사용해 서로 다른 데이터 신호를 결합한다.
+  const searchTypes = ["news", "web", "blog", "cafe", "local"];
+
+  for (const query of naverQueries) {
     if (naverAuthFailed) break;
-    for (const type of ["local", "shop"]) {
+
+    for (const type of searchTypes) {
       if (naverAuthFailed) break;
+
       try {
-        const items = await fetchNaver(query, type);
+        const rawItems = await fetchNaverHub(query, type);
+        const items = rawItems.map(item => normalizeNaverHubItem(item, type));
+
         for (const item of items) {
-          const sourceType = type === "local" ? "commerce-local" : "commerce-shop";
-          const candidates = extractCompanyCandidates(item.title, sourceType, item);
+          const candidates = extractCompanyCandidates(item.title, item.sourceType, item);
+
           for (const candidate of candidates) {
             upsertCompany(companyMap, candidate.name, {
               ...item,
               query,
-              sourceType,
               nameConfidence: candidate.confidence,
               nameEvidence: candidate.reason
             });
           }
         }
+
+        await sleep(80);
       } catch (error) {
-        console.error(`Naver ${type} 예외: ${query} / ${error.message}`);
+        console.error(`Naver API HUB ${type} 예외: ${query} / ${error.message}`);
       }
     }
   }
@@ -592,7 +719,7 @@ async function runYouTube(companyMap) {
 }
 
 function isCandidateIdentityReliable(company) {
-  const trustedCommerce = [...company.sourceTypes].some(type => ["commerce-local", "commerce-shop"].includes(type));
+  const trustedCommerce = [...company.sourceTypes].some(type => ["commerce-local"].includes(type));
   const explicitIdentity = company.nameEvidenceCount >= 1 && [...company.identityReasons].some(reason =>
     ["법인명 표기", "기사 제목 선두 기업명", "기사 제목 주어", "기업명 suffix", "Naver 지역 업체명", "Naver 쇼핑 브랜드", "Naver 쇼핑 제조사"].includes(reason)
   );
@@ -609,8 +736,8 @@ function isCandidateIdentityReliable(company) {
 
 async function main() {
   console.log("==============================================");
-  console.log(" KB스타플랫폼 신규 가맹점 후보 발굴 v6");
-  console.log(" Company Identity Resolver + Multi-channel Discovery");
+  console.log(" KB스타플랫폼 신규 가맹점 후보 발굴 v7");
+  console.log(" NAVER API HUB + Company Identity Resolver + Multi-channel Discovery");
   console.log("==============================================");
 
   const companyMap = new Map();
@@ -621,8 +748,8 @@ async function main() {
   console.log(`2) Google News 색인 SNS/블로그 검색: ${indexedSocialQueries.length}개 쿼리`);
   await runQueryBatch(companyMap, indexedSocialQueries, fetchGoogleNews);
 
-  console.log("3) Naver Local/Shopping API");
-  await runNaverCommerce(companyMap);
+  console.log("3) Naver API HUB: News + Web + Blog + Cafe + Local");
+  await runNaverSearch(companyMap);
 
   console.log("4) YouTube Data API");
   await runYouTube(companyMap);
@@ -644,7 +771,7 @@ async function main() {
     const sourceTypes = [...company.sourceTypes];
     const sourceNames = [...company.sources];
     const newsActivityScore = Math.min(100, 20 + company.news.length * 5);
-    const socialSignal = sourceTypes.some(type => ["social", "social-web", "social-youtube"].includes(type));
+    const socialSignal = sourceTypes.some(type => ["social", "social-web", "social-youtube", "social-naver-blog", "social-naver-cafe"].includes(type));
     const commerceSignal = sourceTypes.some(type => ["commerce", "commerce-local", "commerce-shop"].includes(type));
 
     candidates.push({
