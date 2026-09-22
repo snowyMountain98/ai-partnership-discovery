@@ -56,6 +56,24 @@ const genericLeadWords = new Set([
   "온라인몰", "자사몰", "공식몰", "주문", "판매", "상품", "제품", "추석", "가을", "봄", "여름", "겨울"
 ]);
 
+// 검색 결과 제목에서 기업명으로 오인되기 쉬운 일반어/지역/시점/콘텐츠 용어.
+// 이 목록은 실제 실행 결과에서 확인된 오탐 사례를 우선 차단한다.
+const hardRejectNames = [
+  "AI로", "도매몰", "프랜차이즈", "생활용품", "대전", "명절", "10월", "부천", "지금", "혹시",
+  "프리미엄", "스크랩", "당일", "식품업계", "과자", "제조사", "외식", "UAE", "전북", "그랜드",
+  "동대문", "수원", "1인", "춘천", "B2B몰", "CJ푸드", "화장품", "유통업계", "아직도", "같은", "The",
+  "소도몰", "코웨", "NOL", "AI", "월드", "마켓", "몰", "브랜드", "사업자", "온라인몰", "쇼핑몰",
+  "자사몰", "공식몰", "브랜드몰", "도매", "식품", "패션", "판매", "주문", "상품", "제품", "예약",
+  "예매", "구독", "멤버십", "제조", "외식업계", "식품업계", "패션업계", "뷰티업계", "유통업계"
+].map(normalizeKey);
+
+// 너무 짧은 일반명사/지명은 상거래 업체명으로 바로 인정하지 않는다.
+const genericShortNames = new Set([
+  "대전", "부천", "전북", "수원", "춘천", "동대문", "명절", "당일", "지금", "혹시", "같은", "아직도",
+  "과자", "외식", "제조사", "프리미엄", "스크랩", "생활용품", "프랜차이즈", "도매몰", "b2b몰", "화장품"
+].map(normalizeKey));
+
+
 const discoveryQueries = [
   "패션 브랜드 자사몰 신상품", "의류 브랜드 온라인 판매", "패션 쇼핑몰 신상품 출시", "뷰티 브랜드 자사몰 판매",
   "화장품 브랜드 온라인몰", "생활용품 브랜드 온라인 판매", "리빙 브랜드 자사몰", "문구 브랜드 온라인몰",
@@ -177,9 +195,11 @@ function hasCorporateSuffix(name) {
 
 function looksLikeRealCompanyName(name) {
   const n = normalizeName(name);
+  const key = normalizeKey(n);
   if (!n || n.length < 2 || n.length > 35) return false;
   if (isExcludedName(n)) return false;
-  if (genericCompanyNames.some(item => normalizeKey(item) === normalizeKey(n))) return false;
+  if (hardRejectNames.includes(key) || genericShortNames.has(key)) return false;
+  if (genericCompanyNames.some(item => normalizeKey(item) === key)) return false;
   if (/https?:\/\//i.test(n)) return false;
   if (/^[0-9\s.,:/_\-]+$/.test(n)) return false;
   if (sentenceLikePatterns.some(pattern => pattern.test(n))) return false;
@@ -187,6 +207,9 @@ function looksLikeRealCompanyName(name) {
   if (genericLeadWords.has(firstWord)) return false;
   if ((n.match(/\s/g) || []).length > 3) return false;
   if (/^(?:전 세계|이번|오늘|요즘|무자본|성공적인|N년차|202\d)/i.test(n)) return false;
+  // 지역/날짜/단순 업종명은 기업명으로 인정하지 않는다.
+  if (/^(?:\d{1,2}월|\d{4}[./-]\d{1,2}|서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충북|충남|전북|전남|경북|경남|제주)$/i.test(n)) return false;
+  if (/^(?:온라인|모바일|식품|패션|뷰티|화장품|생활용품|도매|판매|주문|상품|제품|쇼핑|브랜드|사업자|폐쇄몰|프랜차이즈|제조사|식품업계|유통업계)$/i.test(n)) return false;
   return true;
 }
 
@@ -194,47 +217,58 @@ function isStrongCompanyName(name) {
   const n = normalizeName(name);
   if (!looksLikeRealCompanyName(n)) return false;
   if (hasCorporateSuffix(n)) return true;
-  if (/^[A-Za-z]{2,8}$/.test(n)) return true; // hy 등 짧은 브랜드명 허용. 단, 미디어/제외목록은 위에서 제거.
-  if (/^[가-힣A-Za-z0-9]{2,15}$/.test(n) && !/^(온라인|모바일|식품|패션|치킨|도매|판매|주문|상품|제품|쇼핑|브랜드|사업자|폐쇄몰)$/i.test(n)) return true;
+  // 영문 단일 브랜드는 2~8자의 짧은 단어라도 일반 단어를 제외한 경우에만 허용.
+  if (/^[A-Za-z][A-Za-z0-9&.-]{1,7}$/.test(n)) {
+    return !new Set(["AI", "The", "Mall", "Shop", "Brand", "Market", "Premium", "Food", "Beauty", "World", "NOL"]).has(n);
+  }
+  // 한글/혼합 단일 토큰은 명확한 기업명 형태만 허용한다.
+  if (/^[가-힣A-Za-z0-9&·.-]{2,15}$/.test(n)) {
+    if (genericShortNames.has(normalizeKey(n))) return false;
+    if (/^(?:온라인|모바일|식품|패션|치킨|도매|판매|주문|상품|제품|쇼핑|브랜드|사업자|폐쇄몰|프랜차이즈|제조사|화장품)$/i.test(n)) return false;
+    return true;
+  }
   return false;
 }
 
-function extractFromTitle(title) {
+function extractFromTitle(title, options = {}) {
   const text = cleanText(title)
     .replace(/^\[[^\]]{1,40}\]\s*/, "")
     .replace(/^【[^】]{1,40}】\s*/, "")
     .trim();
 
+  const { strict = false } = options;
   const candidates = [];
 
   // 1. 법인명 표기는 가장 높은 신뢰도로 처리한다.
   const corp = text.match(/(?:주식회사|㈜|유한회사)\s*([가-힣A-Za-z0-9&·.()\-]{2,35})/);
   if (corp) candidates.push({ name: corp[1], confidence: 0.99, reason: "법인명 표기" });
 
-  // 2. 제목의 가장 흔한 기업명 패턴: '기업명, 내용'
+  // 2. '기업명, 내용' 형태. 단, 제목 첫 부분이 실제 회사명처럼 보일 때만 허용.
   const prefix = text.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&·.()\- ]{1,24}?)[,，:：]\s*/);
   if (prefix && isStrongCompanyName(prefix[1])) {
     candidates.push({ name: prefix[1], confidence: 0.94, reason: "기사 제목 선두 기업명" });
   }
 
-  // 3. '기업명은/는/이/가 ...' 형태
+  // 3. '기업명은/는/이/가 ...' 형태.
   const subject = text.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&·.()\- ]{1,22}?)(?:은|는|이|가)\s/);
   if (subject && isStrongCompanyName(subject[1])) {
     candidates.push({ name: subject[1], confidence: 0.90, reason: "기사 제목 주어" });
   }
 
-  // 4. 명시적 기업명 suffix가 있는 경우. 문장 전체를 가져오지 않도록 최대 20자.
+  // 4. 법인/기업 suffix가 있는 이름은 제목 중간에서도 추출한다.
   const suffixPattern = new RegExp(`([가-힣A-Za-z0-9&·.-]{2,20}(?:${corporateSuffixPatterns.join("|")}))`, "i");
   const suffixMatch = text.match(suffixPattern);
   if (suffixMatch && isStrongCompanyName(suffixMatch[1])) {
     candidates.push({ name: suffixMatch[1], confidence: 0.88, reason: "기업명 suffix" });
   }
 
-  // 5. 단일 토큰은 무조건 허용하지 않는다. 첫 토큰이 기업명으로 강하게 보일 때만 허용.
-  const firstToken = text.split(/[\s,，:：|｜/]+/)[0];
-  const hasEditorialWords = /(?:후기|브리핑|뉴스|채용|면접|공고|추천|비법|꿀팁|가이드|정리|총정리|리뷰|논란|화제|창업|방법)/i.test(text);
-  if (!hasEditorialWords && firstToken && isStrongCompanyName(firstToken)) {
-    candidates.push({ name: firstToken, confidence: 0.80, reason: "기사 제목 선두 토큰" });
+  // V8에서는 '첫 단어'를 기업명으로 추정하지 않는다.
+  // 이 규칙이 AI로/도매몰/대전/명절/지금/혹시 같은 오탐을 대량으로 만들었던 원인이다.
+  if (!strict) {
+    const quoted = text.match(/["“”'‘’「」『』]([가-힣A-Za-z0-9&·.()\-]{2,25})["“”'‘’「」『』]/);
+    if (quoted && isStrongCompanyName(quoted[1])) {
+      candidates.push({ name: quoted[1], confidence: 0.82, reason: "제목 내 명시 브랜드명" });
+    }
   }
 
   const map = new Map();
@@ -246,6 +280,36 @@ function extractFromTitle(title) {
     if (!prev || candidate.confidence > prev.confidence) map.set(key, { ...candidate, name });
   }
   return [...map.values()].sort((a, b) => b.confidence - a.confidence);
+}
+
+function extractCompanyCandidates(title, sourceType = "news", metadata = {}) {
+  // Naver Local: API 응답의 title 자체가 업체명/기관명이다.
+  // 다만 일반어/지역명은 hardRejectNames에서 제거한다.
+  if (sourceType === "commerce-local") {
+    const raw = normalizeName(metadata.title || title);
+    const cleaned = raw
+      .replace(/\s*(?:납품|주문|예약|안내|음식점|카페|맛집|매장|영업|메뉴|쇼핑몰|온라인몰).*$/i, "")
+      .split(/\s*[·|｜]+\s*/)[0]
+      .trim();
+    return isStrongCompanyName(cleaned)
+      ? [{ name: cleaned, confidence: 0.99, reason: "Naver 지역 업체명" }]
+      : [];
+  }
+
+  // Blog/Cafe/Web은 제목 첫 단어를 기업명으로 추정하지 않는다.
+  // 법인명/기업명 suffix/명시 브랜드 표기만 제한적으로 사용한다.
+  const strict = ["social-naver-blog", "social-naver-cafe", "web-naver"].includes(sourceType);
+
+  // YouTube 채널명 자체를 기업명으로 쓰지 않는다.
+  if (sourceType === "social-youtube") {
+    return extractFromTitle(title, { strict: true }).map(candidate => ({
+      ...candidate,
+      confidence: Math.min(candidate.confidence, 0.86),
+      reason: `YouTube 영상 제목 기반: ${candidate.reason}`
+    }));
+  }
+
+  return extractFromTitle(title, { strict });
 }
 
 function extractCompanyCandidates(title, sourceType = "news", metadata = {}) {
@@ -288,7 +352,10 @@ function countMatches(text, keywords) {
 }
 
 function analyzeMerchantFit(company) {
-  const text = [company.name, ...company.queries, ...company.news.map(n => n.title), ...company.news.map(n => n.description || "")].join(" ");
+  // 검색어 자체에는 "온라인몰/주문/판매" 같은 의도어가 들어 있으므로
+  // 적합도 계산에 포함하면 검색어만으로 거래 신호가 있다고 오판한다.
+  // 실제 검색 결과 제목/본문과 업체명만 근거로 점수화한다.
+  const text = [company.name, ...company.news.map(n => n.title), ...company.news.map(n => n.description || "")].join(" ");
   const transaction = countMatches(text, transactionKeywords);
   const digitalChannel = countMatches(text, digitalChannelKeywords);
   const negative = countMatches(text, merchantNegativeKeywords);
@@ -719,24 +786,25 @@ async function runYouTube(companyMap) {
 }
 
 function isCandidateIdentityReliable(company) {
-  const trustedCommerce = [...company.sourceTypes].some(type => ["commerce-local"].includes(type));
-  const explicitIdentity = company.nameEvidenceCount >= 1 && [...company.identityReasons].some(reason =>
-    ["법인명 표기", "기사 제목 선두 기업명", "기사 제목 주어", "기업명 suffix", "Naver 지역 업체명", "Naver 쇼핑 브랜드", "Naver 쇼핑 제조사"].includes(reason)
+  const trustedCommerce = [...company.sourceTypes].includes("commerce-local");
+  const hasLegalIdentity = [...company.identityReasons].includes("법인명 표기");
+  const hasExplicitBusinessPattern = [...company.identityReasons].some(reason =>
+    ["기사 제목 선두 기업명", "기사 제목 주어", "기업명 suffix", "Naver 지역 업체명", "제목 내 명시 브랜드명"].includes(reason)
   );
   const corroborated = company.nameEvidenceCount >= 2 || company.uniqueLinks.size >= 2 || company.sourceTypes.size >= 2;
 
-  // 상거래 API가 있으면 업체/브랜드명이 직접 확인된 것으로 본다.
+  if (!isStrongCompanyName(company.name)) return false;
   if (trustedCommerce) return true;
-  // 법인명/기업명 패턴이 한 번이라도 명확하게 확인된 경우 허용.
-  if (explicitIdentity && company.nameConfidence >= 0.86) return true;
-  // 짧은 브랜드명은 여러 독립 자료에서 반복될 때만 허용한다.
-  if (corroborated && company.nameConfidence >= 0.80 && isStrongCompanyName(company.name)) return true;
+  // 법인명은 단일 기사에서도 허용한다.
+  if (hasLegalIdentity && company.nameConfidence >= 0.95) return true;
+  // 일반 제목 패턴은 반드시 독립적인 추가 근거가 있어야 한다.
+  if (hasExplicitBusinessPattern && corroborated && company.nameConfidence >= 0.86) return true;
   return false;
 }
 
 async function main() {
   console.log("==============================================");
-  console.log(" KB스타플랫폼 신규 가맹점 후보 발굴 v7");
+  console.log(" KB스타플랫폼 신규 가맹점 후보 발굴 v8");
   console.log(" NAVER API HUB + Company Identity Resolver + Multi-channel Discovery");
   console.log("==============================================");
 
@@ -765,14 +833,21 @@ async function main() {
     if (fit.merchantFitScore < MIN_SCORE) continue;
     if (fit.paymentSystemStatus === "existing" || fit.paymentSystemStatus === "provider") continue;
 
-    const allText = [company.name, ...company.queries, ...company.news.map(n => n.title), ...company.news.map(n => n.description)].join(" ");
+    // Local은 업체명 자체가 직접 확인되므로 단일 결과도 허용한다.
+    // 그 외 채널은 서로 다른 링크/채널에서 동일 기업명이 반복 확인되어야 한다.
+    const isLocalCandidate = [...company.sourceTypes].includes("commerce-local");
+    const independentEvidence = company.uniqueLinks.size >= 2 || company.sourceTypes.size >= 2;
+    const hasTransactionEvidence = fit.paymentNeed || fit.onlineService || fit.subscription || fit.b2b;
+    if (!isLocalCandidate && (!independentEvidence || !hasTransactionEvidence)) continue;
+
+    const allText = [company.name, ...company.news.map(n => n.title), ...company.news.map(n => n.description)].join(" ");
     company.news.sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0));
 
     const sourceTypes = [...company.sourceTypes];
     const sourceNames = [...company.sources];
     const newsActivityScore = Math.min(100, 20 + company.news.length * 5);
     const socialSignal = sourceTypes.some(type => ["social", "social-web", "social-youtube", "social-naver-blog", "social-naver-cafe"].includes(type));
-    const commerceSignal = sourceTypes.some(type => ["commerce", "commerce-local", "commerce-shop"].includes(type));
+    const commerceSignal = sourceTypes.some(type => ["commerce-local"].includes(type));
 
     candidates.push({
       id: makeId(company.name),
