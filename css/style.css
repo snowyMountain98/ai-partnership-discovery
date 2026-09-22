@@ -376,3 +376,353 @@ footer {
   .detail-title { font-size: 26px; }
   footer { width: 92vw; }
 }
+
+/* ================================
+   Company Detail
+================================ */
+
+.company-header {
+  margin-bottom: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+}
+
+.company-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.company-industry {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.company-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.interest-score {
+  min-width: 90px;
+  text-align: right;
+}
+
+.interest-score span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.interest-score strong {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.company-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.metric {
+  padding: 16px;
+  background: #f8f9fc;
+  border-radius: 14px;
+}
+
+.metric span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.metric strong {
+  font-size: 20px;
+  color: #111827;
+}
+
+
+/* ================================
+   Detail Section
+================================ */
+
+.detail-section {
+  margin-bottom: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+}
+
+.detail-section h2,
+.ai-section h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.section-label {
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #4f46e5;
+}
+
+
+/* ================================
+   News
+================================ */
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-title {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.news-item a {
+  font-size: 13px;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   AI Analysis
+================================ */
+
+.ai-section {
+  margin-bottom: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+}
+
+.analysis-summary {
+  padding: 18px;
+  background: #f7f7fb;
+  border-radius: 14px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.ai-section h3 {
+  margin: 24px 0 12px;
+  font-size: 17px;
+  color: #111827;
+}
+
+.analysis-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.analysis-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+
+/* ================================
+   Partnership Opportunity
+================================ */
+
+.opportunity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opportunity-card {
+  padding: 20px;
+  background: #f8f9fc;
+  border-radius: 16px;
+}
+
+.opportunity-card h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  color: #111827;
+}
+
+.opportunity-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.expected-effect {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.expected-effect strong {
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+.expected-effect span {
+  line-height: 1.6;
+  color: #374151;
+}
+
+
+/* ================================
+   Strategy
+================================ */
+
+.strategy-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: strategy;
+}
+
+.strategy-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 16px 16px 16px 50px;
+  background: #f8f9fc;
+  border-radius: 14px;
+  line-height: 1.6;
+  color: #374151;
+  counter-increment: strategy;
+}
+
+.strategy-list li::before {
+  content: counter(strategy);
+  position: absolute;
+  left: 16px;
+  top: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   Risk
+================================ */
+
+.risk-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.risk-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+
+/* ================================
+   AI Generated
+================================ */
+
+.ai-generated {
+  margin: -10px 4px 24px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* ================================
+   Empty
+================================ */
+
+.empty-analysis {
+  padding: 28px;
+  text-align: center;
+  color: #6b7280;
+  background: #f8f9fc;
+  border-radius: 14px;
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 600px) {
+
+  .company-header {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .company-header-top {
+    flex-direction: column;
+  }
+
+  .company-title {
+    font-size: 27px;
+  }
+
+  .interest-score {
+    text-align: left;
+  }
+
+  .company-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-section,
+  .ai-section {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .detail-section h2,
+  .ai-section h2 {
+    font-size: 21px;
+  }
+
+}
