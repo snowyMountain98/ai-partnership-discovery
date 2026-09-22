@@ -125,12 +125,16 @@ function cleanText(value) {
 
 function normalizeName(name) {
   return cleanText(name)
-    .replace(/^(주식회사|㈜|유한회사)\s*/i, "")
-    .replace(/\s+/g, " ").trim();
+    .replace(/^[\[【(（<][^\]】)）>]{0,30}[\]】)）>]/, "")
+    .replace(/^\(주\)\s*/i, "")
+    .replace(/^(?:주식회사|㈜|유한회사)\s*/i, "")
+    .replace(/\s*[-|｜].*$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function normalizeKey(name) {
-  return normalizeName(name).toLowerCase().replace(/[\s().,&\-]/g, "");
+  return normalizeName(name).toLowerCase().replace(/[\s().,&\-·]/g, "");
 }
 
 function isExcludedName(name) {
@@ -139,24 +143,150 @@ function isExcludedName(name) {
   return [...excludedKeys].some(excluded => key === excluded || key.includes(excluded) || excluded.includes(key));
 }
 
-function isValidCompanyName(name) {
+// 뉴스 제목에서 자주 기업명처럼 보이지만 실제로는 문장인 표현을 제거한다.
+const sentenceLikePatterns = [
+  /^(?:안녕하세요|감사합니다|축하합니다|알아보겠습니다|살펴보겠습니다)/,
+  /(?:방법|후기|브리핑|뉴스|채용|면접|공고|추천|비법|꿀팁|가이드|정리|총정리|리뷰|논란|화제)$/,
+  /(?:할|하는|한|했던|없는|있다|있어요|합니다|됩니다|해요|하세요|찾기|찾는|만들기|알기|보기|사는|사기|팔기|판매하기)/,
+  /(?:오늘|이번|올해|내년|전 세계|세계가|성공적인|무자본|N년차|\d{4}[./-]\d{1,2})/i,
+  /(?:^|\s)(?:그리고|하지만|그래서|왜|어떻게|무엇|누가|언제)(?:\s|$)/,
+  /(?:상품|제품|주문|판매|창업|공장|쇼핑몰|패션|식품|치킨|도매|온라인|오픈마켓|사이트|영상|콘텐츠)$/
+];
+
+const genericCompanyWords = new Set([
+  "AI", "APP", "월드", "가을", "전 세계", "이번 추석", "주문 하면", "오늘 주문한 치즈케이크",
+  "요즘 공동구매", "무자본 창업할 방법", "14일동안 식품공장 없", "패션 이커머스", "치킨 3사",
+  "추석 장보기", "식약처", "금감원", "국토부", "경상북도", "부산 시내버스", "직접판매 대형 행사",
+  "제천에서 난 농산물", "고농축 니코틴 원액", "N년차 도매브랜드",
+  "자사몰", "공식몰", "브랜드몰", "온라인몰", "쇼핑몰", "오픈마켓", "식자재", "상품", "제품", "주문", "판매"
+]);
+
+const genericLeadWords = new Set([
+  "오늘", "이번", "요즘", "매일", "직접판매", "병행수입", "전 세계", "성공적인",
+  "무자본", "제천에서", "고농축", "여성", "남성", "신규", "온라인", "모바일",
+  "패션", "식품", "치킨", "도매", "식자재", "쇼핑몰", "오픈마켓", "온라인몰", "자사몰", "공식몰", "주문", "판매", "상품",
+  "제품", "추석", "가을", "봄", "여름", "겨울"
+]);
+
+function looksLikeRealCompanyName(name) {
   const n = normalizeName(name);
-  if (!n || n.length < 2 || n.length > 40 || isExcludedName(n)) return false;
-  if (/^(온라인|모바일|디지털|신규|기업|서비스|플랫폼|상품|브랜드|시장|업계|소비자|국내|글로벌|인스타그램|유튜브)/.test(n)) return false;
-  if (/(출시|확대|도입|판매|사업|시장|관련|기반|기업들|업계)$/.test(n)) return false;
-  if (/^(정부|한국|서울|금융위원회|금융감독원|중소벤처기업부|과학기술정보통신부)/.test(n)) return false;
+  if (!n || n.length < 2 || n.length > 35) return false;
+  if (isExcludedName(n) || genericCompanyWords.has(n)) return false;
+  if (/https?:\/\//i.test(n)) return false;
+  if (/^\d/.test(n)) return false;
+  if (/^[0-9\s.,:/_-]+$/.test(n)) return false;
+  if (sentenceLikePatterns.some(pattern => pattern.test(n))) return false;
+  const firstWord = n.split(/\s+/)[0];
+  if (genericLeadWords.has(firstWord)) return false;
+  if ((n.match(/\s/g) || []).length > 3) return false;
   return true;
 }
 
-function extractCompanyCandidates(title) {
+function isValidCompanyName(name) {
+  return looksLikeRealCompanyName(name);
+}
+
+const companySuffixRegex = /[가-힣A-Za-z0-9&·.-]{2,28}(?:코리아|컴퍼니|리테일|푸드|식품|유통|전자|제약|백화점|호텔|리조트|커피|치킨|베이커리|마켓|몰|샵|농원|그룹|건설|산업|물산|상사|월드|스튜디오|랩|테크|미디어|웍스|시스템즈|소프트|모터스|투어|여행|라이프|웰니스|F&B)/i;
+
+function extractFromTitle(title) {
+  const text = cleanText(title)
+    .replace(/^\[[^\]]{1,40}\]\s*/, "")
+    .replace(/^【[^】]{1,40}】\s*/, "")
+    .trim();
+
   const candidates = [];
-  const prefix = title.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.()·\- ]{1,30}?)[,，:：]/);
-  if (prefix) candidates.push(prefix[1]);
-  const subject = title.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&.()·\- ]{1,28}?)(?:은|는|이|가)\s/);
-  if (subject) candidates.push(subject[1]);
-  const corp = title.match(/(?:주식회사|㈜|유한회사)\s*([가-힣A-Za-z0-9&.()·\-]{2,35})/);
-  if (corp) candidates.push(corp[1]);
-  return [...new Set(candidates.map(normalizeName).filter(isValidCompanyName))];
+
+  // 1) 법인명은 가장 신뢰도가 높다.
+  const corp = text.match(/(?:주식회사|㈜|유한회사)\s*([가-힣A-Za-z0-9&·.()\-]{2,35})/);
+  if (corp) candidates.push({ name: corp[1], confidence: 0.98, reason: "법인명 표기" });
+
+  // 2) 제목 앞부분의 명시적인 기업명 + 쉼표/콜론.
+  const prefix = text.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&·.()\- ]{1,24}?)[,，:：]\s*/);
+  if (prefix && looksLikeRealCompanyName(prefix[1])) {
+    candidates.push({ name: prefix[1], confidence: 0.90, reason: "기사 제목 선두 기업명" });
+  }
+
+  // 3) "기업명은/는/이/가" 패턴. 단, 문장형 후보는 제외한다.
+  const subject = text.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9&·.()\- ]{1,22}?)(?:은|는|이|가)\s/);
+  if (subject && looksLikeRealCompanyName(subject[1])) {
+    candidates.push({ name: subject[1], confidence: 0.86, reason: "기사 제목 주어" });
+  }
+
+  // 4) 기업명 suffix가 있는 경우. 긴 문장을 통째로 회사명으로 가져오는 것을 막는다.
+  const suffixMatch = text.match(companySuffixRegex);
+  if (suffixMatch && looksLikeRealCompanyName(suffixMatch[0])) {
+    candidates.push({ name: suffixMatch[0], confidence: 0.82, reason: "기업명 suffix" });
+  }
+
+  // 5) 제목에 '브랜드명 + 상품/판매'가 붙는 경우 첫 토큰을 제한적으로 사용한다.
+  const firstToken = text.split(/[\s,，:：|｜/]+/)[0];
+  const hasEditorialWords = /(?:후기|브리핑|뉴스|채용|면접|공고|추천|비법|꿀팁|가이드|정리|총정리|리뷰|논란|화제|창업|방법)/i.test(text);
+  const looksLikeMultiBrand = /[·+&]/.test(firstToken);
+  if (
+    !hasEditorialWords &&
+    !looksLikeMultiBrand &&
+    firstToken &&
+    looksLikeRealCompanyName(firstToken) &&
+    firstToken.length >= 2 &&
+    firstToken.length <= 15
+  ) {
+    candidates.push({ name: firstToken, confidence: 0.72, reason: "기사 제목 선두 토큰" });
+  }
+
+  // 같은 후보를 confidence가 높은 순으로 정리
+  const map = new Map();
+  for (const candidate of candidates) {
+    const name = normalizeName(candidate.name);
+    if (!looksLikeRealCompanyName(name)) continue;
+    const key = normalizeKey(name);
+    const prev = map.get(key);
+    if (!prev || candidate.confidence > prev.confidence) {
+      map.set(key, { ...candidate, name });
+    }
+  }
+  return [...map.values()].sort((a, b) => b.confidence - a.confidence);
+}
+
+function extractCompanyCandidates(title, sourceType = "news", metadata = {}) {
+  // Naver 지역검색: 업체명 자체가 가장 신뢰도 높은 후보명이다.
+  if (sourceType === "commerce-local") {
+    const raw = normalizeName(metadata.title || title);
+    const cleaned = raw
+      .replace(/\s*(?:납품|주문|예약|안내|음식점|카페|맛집|매장|영업|메뉴|쇼핑몰|온라인몰).*$/i, "")
+      .split(/\s*[·|｜]+\s*/)[0]
+      .trim();
+    const name = looksLikeRealCompanyName(cleaned) ? cleaned : raw;
+    return looksLikeRealCompanyName(name)
+      ? [{ name, confidence: 0.99, reason: "Naver 지역 업체명" }]
+      : [];
+  }
+
+  // Naver 쇼핑: brand > maker > mallName 순으로 사용한다.
+  if (sourceType === "commerce-shop") {
+    const values = [metadata.brand, metadata.maker, metadata.mallName]
+      .map(normalizeName)
+      .filter(looksLikeRealCompanyName);
+    const unique = [];
+    const seen = new Set();
+    for (const value of values) {
+      const key = normalizeKey(value);
+      if (!seen.has(key)) {
+        seen.add(key);
+        unique.push({ name: value, confidence: 0.97, reason: "Naver 쇼핑 브랜드/판매자" });
+      }
+    }
+    return unique;
+  }
+
+  // YouTube는 영상 제목보다 채널명이 기업/브랜드 후보로 더 안정적이다.
+  if (sourceType === "social-youtube") {
+    const channel = normalizeName(metadata.channelTitle || "");
+    if (looksLikeRealCompanyName(channel)) {
+      return [{ name: channel, confidence: 0.88, reason: "YouTube 채널명" }];
+    }
+  }
+
+  return extractFromTitle(title);
 }
 
 function inferIndustry(text) {
@@ -228,8 +358,22 @@ function upsertCompany(map, rawName, item) {
   const name = normalizeName(rawName);
   if (!isValidCompanyName(name)) return;
   const key = normalizeKey(name);
-  if (!map.has(key)) map.set(key, { name, queries: [], news: [], sources: new Set(), sourceTypes: new Set() });
+  if (!map.has(key)) {
+    map.set(key, {
+      name,
+      queries: [],
+      news: [],
+      sources: new Set(),
+      sourceTypes: new Set(),
+      nameConfidence: 0,
+      nameEvidence: ""
+    });
+  }
   const company = map.get(key);
+  if (item.nameConfidence && item.nameConfidence > company.nameConfidence) {
+    company.nameConfidence = item.nameConfidence;
+    company.nameEvidence = item.nameEvidence || company.nameEvidence;
+  }
   if (item.query && !company.queries.includes(item.query)) company.queries.push(item.query);
   if (item.source) company.sources.add(item.source);
   if (item.sourceType) company.sourceTypes.add(item.sourceType);
@@ -281,7 +425,7 @@ async function fetchNaver(query, type) {
     maker: cleanText(item.maker || ""),
     mallName: cleanText(item.mallName || ""),
     source: `Naver ${type}`,
-    sourceType: type === "local" || type === "shop" ? "commerce" : "social-web"
+    sourceType: type === "local" ? "commerce-local" : type === "shop" ? "commerce-shop" : "social-web"
   }));
 }
 
@@ -298,7 +442,8 @@ async function fetchYouTube(query) {
     pubDate: item.snippet?.publishedAt || "",
     description: cleanText(item.snippet?.description || ""),
     source: `YouTube / ${cleanText(item.snippet?.channelTitle || "channel")}`,
-    sourceType: "social"
+    sourceType: "social-youtube",
+    channelTitle: cleanText(item.snippet?.channelTitle || "")
   }));
 }
 
@@ -322,9 +467,20 @@ async function runQueryBatch(companyMap, queries, fetcher) {
     try {
       const items = await fetcher(query);
       for (const item of items) {
-        // 뉴스/블로그/검색결과 제목에서 기업명 추출
-        const candidates = extractCompanyCandidates(item.title);
-        for (const name of candidates) upsertCompany(companyMap, name, { ...item, query });
+        const candidates = extractCompanyCandidates(
+          item.title,
+          item.sourceType || "news",
+          item
+        );
+
+        for (const candidate of candidates) {
+          upsertCompany(companyMap, candidate.name, {
+            ...item,
+            query,
+            nameConfidence: candidate.confidence,
+            nameEvidence: candidate.reason
+          });
+        }
       }
       await sleep(180);
     } catch (error) {
@@ -348,11 +504,17 @@ async function runNaverCommerce(companyMap) {
       try {
         const items = await fetchNaver(query, type);
         for (const item of items) {
-          // Local 결과는 title이 상호명에 가깝다. Shop은 brand/maker가 없어도 title을 사용한다.
-          const rawNames = type === "local"
-            ? [cleanText(item.title)]
-            : [item.brand, item.maker, item.mallName, ...extractCompanyCandidates(item.title)];
-          for (const name of rawNames) upsertCompany(companyMap, name, { ...item, query });
+          const sourceType = type === "local" ? "commerce-local" : "commerce-shop";
+          const candidates = extractCompanyCandidates(item.title, sourceType, item);
+          for (const candidate of candidates) {
+            upsertCompany(companyMap, candidate.name, {
+              ...item,
+              query,
+              sourceType,
+              nameConfidence: candidate.confidence,
+              nameEvidence: candidate.reason
+            });
+          }
         }
       } catch (error) {
         console.error(`Naver ${type} 실패: ${query} / ${error.message}`);
@@ -399,18 +561,28 @@ async function main() {
     if (fit.merchantFitScore < MIN_SCORE) continue;
     if (fit.paymentSystemStatus === "existing" || fit.paymentSystemStatus === "provider") continue;
 
+    const hasTrustedCommerceSource = [...company.sourceTypes].some(type =>
+      type === "commerce-local" || type === "commerce-shop"
+    );
+
+    // 뉴스 제목에서 억지로 뽑힌 문장형 후보는 화면에 노출하지 않는다.
+    // 단, Naver 지역/쇼핑에서 직접 확인된 사업자명은 낮은 confidence라도 허용한다.
+    if (!hasTrustedCommerceSource && company.nameConfidence < 0.80) continue;
+
     const allText = [company.name, ...company.queries, ...company.news.map(n => n.title), ...company.news.map(n => n.description)].join(" ");
     company.news.sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0));
 
     const sourceTypes = [...company.sourceTypes];
     const sourceNames = [...company.sources];
     const newsActivityScore = Math.min(100, 20 + company.news.length * 5);
-    const socialSignal = sourceTypes.some(type => type === "social" || type === "social-web");
-    const commerceSignal = sourceTypes.includes("commerce");
+    const socialSignal = sourceTypes.some(type => type === "social" || type === "social-web" || type === "social-youtube");
+    const commerceSignal = sourceTypes.some(type => type === "commerce" || type === "commerce-local" || type === "commerce-shop");
 
     candidates.push({
       id: makeId(company.name),
       name: company.name,
+      nameConfidence: Number(company.nameConfidence.toFixed(2)),
+      nameEvidence: company.nameEvidence || "",
       industry: inferIndustry(allText),
       description: "상품·서비스 거래 및 판매채널 신호를 여러 외부 채널에서 발견한 신규 가맹점 후보",
       newsCount: company.news.length,

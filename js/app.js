@@ -64,8 +64,8 @@ function renderStats() {
   const highFit = companies.filter(company => Number(company.merchantFitScore || 0) >= 70).length;
   const paymentCandidates = companies.filter(company => company.paymentNeed).length;
   const verified = companies.filter(company => company.aiValidationStatus === "verified").length;
-  const social = companies.filter(company => company.socialSignal || (company.sourceTypes || []).some(type => type === "social" || type === "social-web")).length;
-  const commerce = companies.filter(company => company.commerceSignal || (company.sourceTypes || []).includes("commerce")).length;
+  const social = companies.filter(company => company.socialSignal || (company.sourceTypes || []).some(type => ["social", "social-web", "social-youtube"].includes(type))).length;
+  const commerce = companies.filter(company => company.commerceSignal || (company.sourceTypes || []).some(type => ["commerce", "commerce-local", "commerce-shop"].includes(type))).length;
 
   $("#statsGrid").innerHTML = `
     <div class="stat-card">
