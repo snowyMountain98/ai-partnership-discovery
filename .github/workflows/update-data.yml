@@ -1,0 +1,38 @@
+name: Update Data Placeholder
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show current data status
+        run: |
+          echo "Data update workflow is ready."
+          echo "Replace this step with a Node.js data collector later."
+          echo "For example: node scripts/crawl-companies.js"
+
+      # 실제 외부 데이터 수집을 연결할 때 아래와 같은 단계로 확장:
+      #
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #
+      # - run: npm ci
+      # - run: node scripts/crawl-companies.js
+      # - run: node scripts/generate-ai-analysis.js
+      # - run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #     git add data/
+      #     git diff --cached --quiet || git commit -m "chore: update data"
+      #     git push
