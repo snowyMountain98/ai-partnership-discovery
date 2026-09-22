@@ -10,7 +10,7 @@ const companies = JSON.parse(fs.readFileSync(companiesPath, "utf-8"));
 // 1차 Discovery 상위 후보를 AI가 실제 가맹점인지 재검증
 const targets = [...companies]
   .sort((a, b) => (b.merchantFitScore || 0) - (a.merchantFitScore || 0))
-  .slice(0, 15);
+  .slice(0, 30);
 
 async function analyzeCompany(company) {
   console.log(`AI 가맹점 검증: ${company.name}`);

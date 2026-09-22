@@ -768,3 +768,15 @@ footer {
 
 
 .verification-status { display: block; margin-top: 3px; font-size: 9px; color: var(--muted); font-weight: 600; }
+.source-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 9px;
+  font-weight: 700;
+}

@@ -27,12 +27,22 @@ jobs:
       # 1. KB스타플랫폼 제휴 후보 기업 발굴
       - name: Discover partnership candidates
         run: npm run discover
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       # 2. 발굴된 기업에 대한 AI 사업/제휴 분석
+      # 상위 30개만 AI 검증하고, 나머지는 1차 발굴 후보로 화면에 유지합니다.
       - name: Generate AI analysis
         run: npm run ai
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      # 선택 사항: Naver 검색 API를 연결하면 뉴스/블로그/지역/쇼핑 데이터를 추가 수집합니다.
+      # Secrets에 NAVER_CLIENT_ID / NAVER_CLIENT_SECRET을 넣으면 자동으로 활성화됩니다.
+      # 선택 사항: YOUTUBE_API_KEY를 넣으면 YouTube 검색도 활성화됩니다.
+
 
       # 3. 변경된 JSON 저장
       - name: Commit updated data

@@ -1,47 +1,43 @@
-# AI 제휴 후보 발굴 시스템
+# AI Partnership Discovery — KB스타플랫폼 가맹점 후보 발굴 PoC
 
-외부 데이터 기반 유망 업체 발굴 및 AI 비즈니스 분석 PoC입니다.
+## 목적
+기존 KB스타플랫폼 거래사에서 나타나는 **상품·서비스 거래 구조**를 기준으로 신규 가맹점 후보를 넓게 발굴하고, 상위 후보만 AI로 가맹점 적합성을 검증합니다.
 
-## 현재 구현
+## 데이터 발굴 채널
+1. **Google News RSS** — 기본 활성화, 별도 API Key 불필요
+2. **Google News의 SNS/블로그 색인 검색** — Instagram/YouTube/Naver Blog 등의 공개 색인 신호를 보조적으로 수집
+3. **Naver Search API** — 선택 사항
+   - News
+   - Blog
+   - Web
+   - Local
+   - Shopping
+   - 특히 Local/Shopping은 실제 판매·상거래 사업자 후보를 넓히는 데 사용
+4. **YouTube Data API** — 선택 사항
+   - 최근 영상 검색을 통해 브랜드/판매 활동 신호 보강
 
-- 유망 업체 목록
-- 업체 검색
-- 업종 필터
-- 성장률 / 검색량 / SNS 증가율 정렬
-- 업체 상세 페이지
-- 검색/SNS 추이 차트
-- AI 비즈니스 분석 결과
-- AI 제휴 전략 결과
-- 제휴 후보 저장(localStorage)
-- GitHub Pages 자동 배포
-- 데이터 자동 갱신 Workflow 기본 구조
+> Instagram/TikTok 등의 공식 API를 무조건 직접 연결하는 구조가 아닙니다. 플랫폼별 API 접근권한과 이용조건이 다르므로, 현재 MVP에서는 공개 검색/색인과 Naver/YouTube 공식 API를 조합합니다.
 
-## 실행
+## GitHub Actions Secrets
+### 필수
+- `OPENAI_API_KEY`
 
-VS Code에서 Live Server로 `index.html`을 실행하거나 GitHub Pages로 배포합니다.
+### 선택
+- `NAVER_CLIENT_ID`
+- `NAVER_CLIENT_SECRET`
+- `YOUTUBE_API_KEY`
 
-> `fetch()`로 JSON을 읽기 때문에 `file://`로 index.html을 직접 여는 것보다 Live Server를 사용하는 것을 권장합니다.
+Naver Secret이 없으면 Google News 기반으로 계속 실행됩니다.
+YouTube Key가 없으면 YouTube 검색만 건너뜁니다.
 
-## GitHub Pages 배포
+## 후보 수
+- Discovery 단계: 최대 **150개** 저장
+- 최소 언급 수: 1건
+- 1차 가맹점 적합도: 30점 이상
+- AI 검증: 상위 **30개** 우선 실행
+- AI 검증을 받지 않은 후보도 `1차 발굴` 상태로 화면에 유지
 
-1. Repository에 파일을 업로드합니다.
-2. `Settings > Pages`로 이동합니다.
-3. `Build and deployment`의 Source를 `GitHub Actions`로 설정합니다.
-4. `Actions > Deploy to GitHub Pages`를 실행합니다.
-5. 배포 완료 후 생성된 Pages URL로 접속합니다.
+따라서 AI 호출이 일부 실패하더라도 100개 이상의 1차 후보를 화면에서 유지할 수 있습니다.
 
-## 실제 운영으로 확장할 부분
-
-`data/companies.json`을 실제 외부 데이터 수집 결과로 교체합니다.
-
-권장 구조:
-
-외부 데이터
-→ Node.js 수집
-→ 데이터 정제
-→ 업체별 지표 계산
-→ AI 분석
-→ JSON 생성
-→ GitHub Pages
-
-실제 AI API Key는 절대 HTML/JavaScript에 넣지 말고 GitHub Actions Secrets에 저장해야 합니다.
+## 주의
+자체 결제시스템이 공개자료에서 확인되지 않는 경우 `unknown`으로 처리합니다. `unknown`은 자체 결제시스템이 없다는 의미가 아닙니다.

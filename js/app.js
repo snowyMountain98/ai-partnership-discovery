@@ -61,34 +61,32 @@ function renderDashboard() {
 }
 
 function renderStats() {
-  const totalNews = companies.reduce((sum, company) => sum + Number(company.newsCount || 0), 0);
-  const avgFit = companies.length
-    ? Math.round(companies.reduce((sum, company) => sum + Number(company.merchantFitScore || 0), 0) / companies.length)
-    : 0;
   const highFit = companies.filter(company => Number(company.merchantFitScore || 0) >= 70).length;
   const paymentCandidates = companies.filter(company => company.paymentNeed).length;
   const verified = companies.filter(company => company.aiValidationStatus === "verified").length;
+  const social = companies.filter(company => company.socialSignal || (company.sourceTypes || []).some(type => type === "social" || type === "social-web")).length;
+  const commerce = companies.filter(company => company.commerceSignal || (company.sourceTypes || []).includes("commerce")).length;
 
   $("#statsGrid").innerHTML = `
     <div class="stat-card">
       <span class="stat-label">가맹점 후보</span>
       <div class="stat-value">${companies.length}<small>개</small></div>
-      <div class="stat-sub">외부 데이터 + AI 검증</div>
+      <div class="stat-sub">최대 150개까지 발굴</div>
     </div>
     <div class="stat-card">
-      <span class="stat-label">높은 제휴 적합도</span>
-      <div class="stat-value">${highFit}<small>개</small></div>
-      <div class="stat-sub">가맹점 적합도 70 이상</div>
+      <span class="stat-label">다채널 발굴</span>
+      <div class="stat-value">${social}<small>개</small></div>
+      <div class="stat-sub">SNS·블로그·YouTube 신호</div>
     </div>
     <div class="stat-card">
-      <span class="stat-label">결제 수요 후보</span>
-      <div class="stat-value">${paymentCandidates}<small>개</small></div>
-      <div class="stat-sub">상품·서비스 거래 신호 확인</div>
+      <span class="stat-label">상거래 데이터</span>
+      <div class="stat-value">${commerce}<small>개</small></div>
+      <div class="stat-sub">Naver 지역·쇼핑 신호</div>
     </div>
     <div class="stat-card">
       <span class="stat-label">AI 검증 완료</span>
       <div class="stat-value">${verified}<small>개</small></div>
-      <div class="stat-sub">상위 후보 가맹점 검증</div>
+      <div class="stat-sub">상위 후보 30개 우선 검증</div>
     </div>
   `;
 }
@@ -104,6 +102,7 @@ function renderCompanies(list) {
     const score = Number(company.merchantFitScore || company.partnershipScore || 0);
     const services = (company.fitServices || []).slice(0, 3);
     const signals = (company.discoverySignals || []).slice(0, 2);
+    const sources = (company.sourceTypes || []).slice(0, 3);
 
     return `
       <article class="company-card merchant-card">
