@@ -765,3 +765,6 @@ footer {
   .detail-fit-box { grid-template-columns: 1fr; }
   .validation-banner { align-items: flex-start; flex-direction: column; }
 }
+
+
+.verification-status { display: block; margin-top: 3px; font-size: 9px; color: var(--muted); font-weight: 600; }

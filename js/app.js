@@ -67,6 +67,7 @@ function renderStats() {
     : 0;
   const highFit = companies.filter(company => Number(company.merchantFitScore || 0) >= 70).length;
   const paymentCandidates = companies.filter(company => company.paymentNeed).length;
+  const verified = companies.filter(company => company.aiValidationStatus === "verified").length;
 
   $("#statsGrid").innerHTML = `
     <div class="stat-card">
@@ -85,9 +86,9 @@ function renderStats() {
       <div class="stat-sub">상품·서비스 거래 신호 확인</div>
     </div>
     <div class="stat-card">
-      <span class="stat-label">수집 뉴스</span>
-      <div class="stat-value">${totalNews}<small>건</small></div>
-      <div class="stat-sub">최근 14일 외부 뉴스</div>
+      <span class="stat-label">AI 검증 완료</span>
+      <div class="stat-value">${verified}<small>개</small></div>
+      <div class="stat-sub">상위 후보 가맹점 검증</div>
     </div>
   `;
 }
@@ -125,6 +126,7 @@ function renderCompanies(list) {
         <div class="fit-score">
           <span>가맹점 적합도</span>
           <strong>${score}</strong>
+          <small class="verification-status">${company.aiValidationStatus === "verified" ? "AI 검증 완료" : "1차 발굴"}</small>
         </div>
         <a class="detail-btn" href="./company.html?id=${encodeURIComponent(company.id)}">상세 분석 →</a>
         <div class="company-reason">

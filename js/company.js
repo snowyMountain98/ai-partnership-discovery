@@ -31,7 +31,8 @@ async function loadCompanyData() {
 function renderCompany(company) {
   document.title = `${company.name} | KB스타플랫폼 가맹점 후보`;
   const score = Number(company.merchantFitScore || company.partnershipScore || 0);
-  const status = company.paymentSystemStatus === "unknown" ? "공개자료상 미확인" : "확인 필요";
+  const status = company.paymentSystemStatus === "unknown" ? "공개자료상 미확인" : company.paymentSystemStatus === "existing" ? "기존 시스템 확인" : "결제사업자 성격";
+  const validationStatus = company.aiValidationStatus === "verified" ? "AI 검증 완료" : "1차 발굴 후보";
   const services = company.fitServices || [];
   const evidence = company.aiMerchantEvidence || company.discoverySignals || [];
 
@@ -46,11 +47,12 @@ function renderCompany(company) {
         <div class="interest-score fit-score-large">
           <span>가맹점 적합도</span>
           <strong>${score}</strong>
+          <small class="verification-status">${validationStatus}</small>
         </div>
       </div>
 
       <div class="company-metrics">
-        <div class="metric"><span>결제 수요</span><strong>${company.paymentNeed ? "높음" : "확인 필요"}</strong></div>
+        <div class="metric"><span>거래 신호</span><strong>${company.paymentNeed ? "확인" : "추가 확인"}</strong></div>
         <div class="metric"><span>자체 결제시스템</span><strong>${escapeHtml(status)}</strong></div>
         <div class="metric"><span>최근 뉴스</span><strong>${company.newsCount || 0}건</strong></div>
       </div>
