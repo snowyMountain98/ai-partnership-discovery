@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "crawl": "node scripts/crawl-companies.js",
-    "ai": "node scripts/generate-ai-analysis.js"
+    "ai": "node scripts/generate-ai-analysis.js",
+    "discover": "node scripts/discover-companies.js"
   },
   "dependencies": {
     "fast-xml-parser": "^5.2.5",
