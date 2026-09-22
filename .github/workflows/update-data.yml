@@ -24,17 +24,17 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # ⭐ 기업 자동 발굴
-      - name: Discover companies
+      # 1. KB스타플랫폼 제휴 후보 기업 발굴
+      - name: Discover partnership candidates
         run: npm run discover
 
-      # ⭐ 발굴된 기업 AI 분석
+      # 2. 발굴된 기업에 대한 AI 사업/제휴 분석
       - name: Generate AI analysis
         run: npm run ai
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      # ⭐ 결과 저장
+      # 3. 변경된 JSON 저장
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
@@ -45,6 +45,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "변경된 데이터가 없습니다."
           else
-            git commit -m "chore: discover companies and update AI analysis"
+            git commit -m "chore: discover partnership candidates and update AI analysis"
             git push
           fi
