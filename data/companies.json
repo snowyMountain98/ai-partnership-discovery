@@ -1,711 +1,591 @@
 [
   {
     "id": 1,
-    "name": "A 라이프스타일",
-    "industry": "라이프스타일",
-    "growth": 57,
-    "searchGrowth": 183,
-    "snsGrowth": 240,
-    "interestScore": 94,
-    "status": "고성장 후보",
+    "name": "무신사",
+    "industry": "패션",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
     "customersShort": "20~30대",
-    "customers": "20~30대 여성 고객을 중심으로 온라인 구매 및 콘텐츠 소비 활동이 높은 것으로 나타났습니다.",
-    "description": "SNS 콘텐츠 확산과 신규 상품 출시를 기반으로 온라인 관심도가 빠르게 증가하고 있는 라이프스타일 업체입니다.",
+    "customers": "20~30대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "라이프스타일 상품",
-      "온라인 커머스",
-      "브랜드 콘텐츠"
+      "패션",
+      "온라인 커머스"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "무신사 스탠다드, 지역 상권에 450만 명 불렀다…매출 44% 성장 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUY1NlNFQtMmVoa1NhczBBUy1TdUNoQ2h0YkNJQlpxc0xNdzNjNjVjb0RCV1pyNTBfZU53c2gwR3JXMWZ4cVJBN1JtVngxWGs?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 01:13:00 GMT"
+      },
+      {
+        "title": "무신사 엠프티, 中 디자이너 브랜드 24ans 국내 첫 오프라인 팝업 - 조선비즈 - Chosunbiz",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNajZKUFVkeHVuZXFINThCaVRrRjhMZm9rTXMycHlSZF9zclpvdU84a0xrdDlLSjI5XzBBOVVBenJYTzVpUEx0T2FTd3ZTWlM5VGMtTXQ0R05XTU1qZU9za0s2Q05JeDBIemtnTl9QS0tXVEZsd0twT19qWUs2RzZIREl6SVBsd1B5VHfSAZ4BQVVfeXFMT1BQLWRrcHAtay1RamEtNzVjX2g4eEJOOUNzYjhSZlVEVUlZNW94T0NjSEtHVnUzU05SZi1rdW40ZGRBTXdGdWJtaUpBaFdZZ2FQUXB5UTZ0T2U4eU50TkpycFRTNkhETHpIYnhYYlQweDgxY3F3VW5WYmN4dzRETFdTY2JaR3dBY3hPa1VXSlFzcHJRV3JaU242RGlfS2c?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:14:00 GMT"
+      },
+      {
+        "title": "무신사 엠프티, 중국 디자이너 브랜드 '24ans' 국내 첫선 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xR05hNWlWQTVfOUtlUXhXSmpNaW9vSUFyWlZWU1ZzRmdzOWg2WFpTSHNrLTZLeTFuSkliZ1pJNFp3Mm9RbkIzMTc3YTVEVnJfZDZoQUl2QWZDeU1qNWpFZtIBeEFVX3lxTE9yQjdyZHJoSi1ZS0VTMVpKTEZ3RzdpbVNMRE9kbzlRd2J4UDhUZVZGUjJKV2RCLXdpaGNidU55QjAwX0lvVnVJZFU3V21nZ0JjTDNMbzBSZ0FGeEJvNlBiTG9Yd204bjZhMGR5YVQxMXFkLUdBWlQ3OA?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:24:44 GMT"
+      },
+      {
+        "title": "무신사 엠프티, 25일까지 '24ans'와 협업해 팝업스토어 운영 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzZFJrNmRLT3B3UkVVYnFsQjhPcUhpQW96OWF2OUp2cTRXTWZOM2VnNVpMRXRXVjZna1h0R2ZYY2FoenJjV3JEZThDUzlmaTNkVTkwUW9ZVHcyZ3PSAWBBVV95cUxOX1h6MHdZenViQ1FrN1J5Sk92VDJvU0o3cWIza1M2REpvZ1BBcVpPMlpuRTFYY0wyekNDNnlUUy1oNUxQVGdxTGltbEFwVnNMa3pDbXJrajRZR1FDV2xlOUQ?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:47:33 GMT"
+      },
+      {
+        "title": "무신사, 29일까지 폴로 랄프 로렌 '성수 에디션' 선발매 기획전 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEcGI4Mzk3LW5iYXlMRXVCR1lVb2FBS1czYkRnZHlFU3FwN1JIZU4tRHhTYTE1R1lEa2tiU0UwRUE3NEdnLUR4VkN6NnNMblpsdU5haEJITFZhdzI5NFJ3V9IBeEFVX3lxTFBobGEwNTBpWG5XeU16QlN1cXdpaG44YUp5bk9CNUxYUHpPZHgwMGdjeFFuTTdXZlQtZlNmWEtwSm9pdURUdHB3REpQejZvYTM0ekluYnVKVFJKZFRDbGRJRFFsRHg0Z1l0bDVkSXlZMEJtZTFEVGxQRw?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 00:07:49 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 48
-      },
-      {
-        "month": "5월",
-        "value": 56
-      },
-      {
-        "month": "6월",
-        "value": 65
-      },
-      {
-        "month": "7월",
-        "value": 76
-      },
-      {
-        "month": "8월",
-        "value": 94
-      },
-      {
-        "month": "9월",
-        "value": 112
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 42
-      },
-      {
-        "month": "5월",
-        "value": 55
-      },
-      {
-        "month": "6월",
-        "value": 63
-      },
-      {
-        "month": "7월",
-        "value": 81
-      },
-      {
-        "month": "8월",
-        "value": 103
-      },
-      {
-        "month": "9월",
-        "value": 143
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 2,
-    "name": "B 패션",
-    "industry": "패션",
-    "growth": 42,
-    "searchGrowth": 120,
-    "snsGrowth": 156,
-    "interestScore": 91,
-    "status": "성장 후보",
-    "customersShort": "20~30대 여성",
-    "customers": "트렌드 상품과 SNS 콘텐츠에 대한 반응이 높은 20~30대 여성 고객 비중이 높은 것으로 가정합니다.",
-    "description": "온라인 중심의 브랜드 활동과 신상품 출시를 통해 검색 및 SNS 관심도가 상승하고 있는 패션 업체입니다.",
+    "name": "오늘의집",
+    "industry": "홈리빙",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~40대",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "의류",
-      "패션잡화",
-      "온라인 스토어"
+      "인테리어",
+      "홈리빙"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "오늘의집, 이나피스퀘어와 협업… 7개 브랜드 참여 - m-i.kr",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhOEQtbl9mWE5WaGhGczFlS3dzZXZsQTljQnNiNVpiUFhseU1KQlNzQkY4dC1saXNmSjdHMjRnMkxOY0NWRVlRUVoyc29Qa3F1OWdtYjcxTWNzSnhwYVhrTkFYSC1fdzhn0gFoQVVfeXFMUGE4RC1uX2ZYTlZoaEZzMWVLd3NldmxBOWNCc2I1WmJQWGx5TUpCU3NCRjh0LWxpc2ZKN0cyNGcyTE5jQ1ZFWVFRWjJzb1BrcXU5Z21iNzFNY3NKeHBhWGtOQVhILV93OGc?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 02:09:16 GMT"
+      },
+      {
+        "title": "오늘의집, 이나피스퀘어와 북촌서 팝업…69종 단독 판매 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UVkJoS3BXcjN6aFhhMm9sOUdMM3JhNEVSTy1tcUptUmFMWE1qM2lqSFotNHgxVHZiRko3M0ZXNjk1dDdYTWc2dnMtSHR3QXpIRzgxOXN3?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 04:36:36 GMT"
+      },
+      {
+        "title": "[단독] 홈플러스 떠난 분당에 4300평 '오늘의집' 들어선다 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2XzBXbzFSdzhSQVRzanpVRWxxd3NCVzlOWlBLTGwtU2thNDhoYUllM1h6N2pLZ2d2WjJTWHFmcTY2V0lKZ2ozcFhHZGQzZGVaS1huNWpuMFpRdw?oc=5",
+        "publishedAt": "Mon, 07 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "title": "오늘의집, 북촌서 생활용품 69종 전시 팝업 연다 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYTkJMWEYyTGZkTkQ5OEVLTDY5VmxlNm9nSk90cmROYVdOamlYTHpIWi1tYzFZRTdHWDFBT2hSeTljRW5oSHRLS2t4NkxTQQ?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 01:31:59 GMT"
+      },
+      {
+        "title": "오늘의집×이나피스퀘어, 집안 곳곳에 흑백 드로잉…69종 한정 협업 공개 - 뉴스탭",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsNDhtOUhUaFVmUV9KNFhkSlcwSm1odl9rak1vaE42YjFPTVlWUWViUWJDNno5MmQxTy1YV2traWEtWGhSNWhQOXJwWDBwYXU1TmtTR1R2TVRjWjFvVVdjZWp3VmkzUkl0ZXdPcA?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 23:54:09 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 55
-      },
-      {
-        "month": "5월",
-        "value": 60
-      },
-      {
-        "month": "6월",
-        "value": 64
-      },
-      {
-        "month": "7월",
-        "value": 71
-      },
-      {
-        "month": "8월",
-        "value": 85
-      },
-      {
-        "month": "9월",
-        "value": 103
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 51
-      },
-      {
-        "month": "5월",
-        "value": 59
-      },
-      {
-        "month": "6월",
-        "value": 70
-      },
-      {
-        "month": "7월",
-        "value": 77
-      },
-      {
-        "month": "8월",
-        "value": 92
-      },
-      {
-        "month": "9월",
-        "value": 112
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 3,
-    "name": "C 푸드테크",
-    "industry": "식음료",
-    "growth": 39,
-    "searchGrowth": 97,
-    "snsGrowth": 132,
-    "interestScore": 88,
-    "status": "성장 후보",
+    "name": "야놀자",
+    "industry": "여행",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
     "customersShort": "20~40대",
-    "customers": "간편식과 신제품에 관심이 높은 20~40대 고객을 주요 대상으로 분석했습니다.",
-    "description": "신제품 출시와 온라인 리뷰 확산을 중심으로 고객 접점이 확대되고 있는 식음료 업체입니다.",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "간편식",
-      "식음료",
-      "정기배송"
+      "여행",
+      "숙박"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "야놀자, AI 페스타 2026 참가...\"그룹 AI 기술 한 자리에\" - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Cb0ZXdFRfbkZUV00xMlNKbnV5WEZOT1c0OVJfelA5NVhTVGg1YmR5ZTZVbVZhZXdxbWIxRFdPb3E3ZTk2WXRMeGN0cVRWdmI2dmJDUWdR?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:07:20 GMT"
+      },
+      {
+        "title": "NOL, '숙박세일 페스타' 참여→야놀자, 여행·생활 AI 기술 전시 - 싱글리스트",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80MF9TZ3BpendWY2F2M3pTQm1mbXVLV01fZmFUcGtBUW42LUFSbHdtUERCZkJxNWpUeHk0ZlVZclBIQUlZRGx0b05KZmhHMlJKbkQ2STF5UG9UY3ZhOGhuUmd0UFhDQQ?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 23:41:14 GMT"
+      },
+      {
+        "title": "야놀자, 여행 넘어 주거·호텔까지…AI 페스타 2026서 기술 총출동 - 아주경제",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sLTBhNHBfcUNWLTBRTG9oTHNmTmQtV0s2ZHBUdWRINmVZR2xmMWZDVGNqcnBQeTNvaEM1VHNfZXp6NGNfSEhIemhXUjN2aEdxOFZHWHBQbzjSAVhBVV95cUxNbC0wYTRwX3FDVi0wUUxvaExzZk5kLVdLNmRwVHVkSDZlWUdsZjFmQ1RjanJwUHkzb2hDNVRzX2V6ejRjX0hISHpoV1IzdmhHcThWR1hwUG84?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 23:11:18 GMT"
+      },
+      {
+        "title": "야놀자, ‘AI 페스타 2026’서 여행 일정·예약 AI 선보인다 - 국민일보",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPa1JiOVkySndhckp4WDB4eXV2TVZlZVg5Q3I1dzcyNTNCdXNBZFoxYVdMMVZFQVhmWGlXZWU5RFRIWDFoYzhkcHpYMmwxTFJGNzVtZ1NiSVJ0ekJwbWFkTzVWaHJESm5vSEI5UWtLTWhPV3JjV3ZYaTZ0eXNiRHFhQXFJUVdKVlU5c2VkeE11TFo3QdIBbEFVX3lxTFBVdVhaR25CNXM4XzNkRGJlQ01QcWZHNDRaN19VLUd6Q1ZjanZMMy1RemhoOWhzUDdWazk5RHVwd3ZrNzYtSks5UHlRRWJsTVNlZkJqZXAtV25XZlJuZkRaRWtONjc2RnotOU95WA?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:49:00 GMT"
+      },
+      {
+        "title": "야놀자그룹 인공지능 전시회 참가 및 최신 기술 부스 운영 계획 발표 - 로이슈",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBSblk5UnR1bWNHYlZEZTlhNHVpVFNzNldrWmdtQThZcWU5c0pMV3gxMDR0MEhrV3g2QUlNckNMQU1WcEdhV3o4Ym5wbEVHWW5jVG9iVG9QWEtpaThXVXNyREhFV0hkRVppTy1ieU5UNzZXQzhjeW1vV3Z3?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:22:08 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 61
-      },
-      {
-        "month": "5월",
-        "value": 66
-      },
-      {
-        "month": "6월",
-        "value": 71
-      },
-      {
-        "month": "7월",
-        "value": 78
-      },
-      {
-        "month": "8월",
-        "value": 86
-      },
-      {
-        "month": "9월",
-        "value": 101
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 50
-      },
-      {
-        "month": "5월",
-        "value": 57
-      },
-      {
-        "month": "6월",
-        "value": 66
-      },
-      {
-        "month": "7월",
-        "value": 74
-      },
-      {
-        "month": "8월",
-        "value": 83
-      },
-      {
-        "month": "9월",
-        "value": 116
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 4,
-    "name": "D 여행 플랫폼",
-    "industry": "여행",
-    "growth": 35,
-    "searchGrowth": 89,
-    "snsGrowth": 115,
-    "interestScore": 86,
-    "status": "관심 후보",
-    "customersShort": "20~40대",
-    "customers": "국내외 여행 및 모바일 예약 서비스 이용 빈도가 높은 20~40대 고객이 주요 타깃입니다.",
-    "description": "여행 수요 회복과 모바일 예약 서비스 이용 증가에 따라 온라인 관심도가 상승하는 업체입니다.",
+    "name": "올리브영",
+    "industry": "뷰티",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~30대",
+    "customers": "20~30대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "여행 예약",
-      "숙박",
-      "여행 콘텐츠"
+      "뷰티",
+      "헬스"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "그래디언트 '리앤핏', 올리브영 남포 타운 입점…오프라인 판매 확대 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSalVTdlVQYkVaN1dmMjh4WTRpZ0VyRTJUS2VXaWxQeTE2b2hZRWJHb09sWmdPbmVIRGpsb1VVb3R1UjNsaVMxc0k2TGlaMGg0TTdjZE1R?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 01:02:35 GMT"
+      },
+      {
+        "title": "아누아, 올리브영N 성수서 ‘PDRN 라인 팝업스토어’ 운영… 브랜드 경험 확장 - 매일타임즈",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9qa0ZnLTJWSU42X2ZvNnBpTzVVSDNYUGJZZkxRbUE1SUt6UFJNVTFYTUstbVNVTVNRQklVcElxNW1ocFVITTNqaHZqOVN5S0xLTjdYYzVMTnBTYzRsVlE?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 23:57:00 GMT"
+      },
+      {
+        "title": "루온셀, 올리브영 온라인몰서 론칭 기획전 열어 - 로이슈",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9Db2JYYzl0Um5FOHRkOEpQUjVLZ3Ixa3FlUFgyY3l6Ml9IRkpwUTltanlLQWpOWXAtV3QxSDJ1WGVlZl9kUGVXamhWdzBSRXZPdUd4OWNtaUpQYkNXSmZaX2x3NUJQSW5KZzF0cVRKQ3daV1o5VjhDZm9R?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 01:35:23 GMT"
+      },
+      {
+        "title": "동국제약, 비건 화장품 '루온셀' 올리브영 상륙 - 데일리안",
+        "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPWEwwRGJhYmVBZl96ZW1yOWQ3VUZ0azRweDFpSktJYS0zY2o0aC12dS1vaW1JaFB4enRVb3hBNW1OcFdvWmlLeWVGNnhYVjBWSmlqZDVYLWREV3dxWFlnYUtuOWJFM01LLTd4bWVQR0ZoeTFmYW0yYlpqYThvRWh6N1RFWmJlQ0pwenNCY0xnNktkTnQxUmJiOFFSNm5XbjhEc1IyajhWaFdvZ216VlpIMUhBbGtJb0FKa3lpcS14b0wzcWxfZEpMVE1KWnNaUC0tMWh6bGZmcHZKS0dzb29ZdEt5dGRvODJTSzU3YmFZM2g4cEN1QzBvYUROY3pza1U0ZVBqeUFWMFRtRVYxb0dveHgwNFYyTDRSZU9peDJtSHJqaWs?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 09:47:00 GMT"
+      },
+      {
+        "title": "동국제약 비건 코스메틱 '루온셀', 올리브영 온라인몰 론칭 - 뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TZnc5RkxsOE8ySUlIZGVTempyYlBldXFwZWhYdnNicUpodlVEa0tZN0ZxZHQ2VXR6dUUwTFNiVEpCd0FXVmgyaG83ZHo4dFZuLWl2azdrNDB4Wnhq?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 05:44:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 47
-      },
-      {
-        "month": "5월",
-        "value": 51
-      },
-      {
-        "month": "6월",
-        "value": 62
-      },
-      {
-        "month": "7월",
-        "value": 69
-      },
-      {
-        "month": "8월",
-        "value": 78
-      },
-      {
-        "month": "9월",
-        "value": 89
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 45
-      },
-      {
-        "month": "5월",
-        "value": 53
-      },
-      {
-        "month": "6월",
-        "value": 59
-      },
-      {
-        "month": "7월",
-        "value": 68
-      },
-      {
-        "month": "8월",
-        "value": 75
-      },
-      {
-        "month": "9월",
-        "value": 97
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 5,
-    "name": "E 뷰티",
-    "industry": "뷰티",
-    "growth": 33,
-    "searchGrowth": 84,
-    "snsGrowth": 108,
-    "interestScore": 84,
-    "status": "관심 후보",
-    "customersShort": "20~30대",
-    "customers": "신상품 및 리뷰 콘텐츠에 대한 반응이 높은 20~30대 고객을 중심으로 분석했습니다.",
-    "description": "SNS 리뷰와 신제품 중심으로 온라인 관심이 지속적으로 확대되는 뷰티 업체입니다.",
+    "name": "배달의민족",
+    "industry": "식음료",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~40대",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "스킨케어",
-      "메이크업",
-      "뷰티 콘텐츠"
+      "배달",
+      "커머스"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "배민, 내달 28일 '우아한테크콘퍼런스'…AI·로봇 등 40개 세션 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nRFB6RFlPUm5NenZPLU0ySjFleC10SENRd2dJSmdBUGRIZFJHYkdER2ZFM3JxeTc0cVI3ekpIWjZqcHRhNnZIMlFFQW04WXc?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:00:00 GMT"
+      },
+      {
+        "title": "배민, 내달 28일 '우아한테크콘퍼런스'…AI·로봇 등 40개 세션 - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1rVEw4Yzh3NFJZUkd1VHljN0VtTE90ZFk5WHhlcWkzM3VPeHpqUmlzNXRkNGlkS3VfcDdWZGMxY1YtdnRlZThUaHBkbDNNSkN0Q2JRa1hmRWI0LTFZczZz0gFkQVVfeXFMT1hYLWEzWVkyNTZhQ1ZIWTFPOTBLT3NTU2RCYkpJYXotbmw0UWxPVGhzRngxYUxWM2paR0J4TDRWM1JJRWtoSmQ0Ry1XdHVvSkZqdjRKWWJzNkd2cjJydFpjTEpxeQ?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 23:59:43 GMT"
+      },
+      {
+        "title": "배민, 내달 28일 ‘우아한테크콘퍼런스 2026’ 개최 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JdURBUmR5WFlJbmY1NHZLQUtBTVh5OTdfczV4a01abnRGRU5EcE04WjJHUEFOdTZuMWVJMFMzWUhFWnRPYUd5ajdBWkZtMnl3YlBZckt3?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:48:01 GMT"
+      },
+      {
+        "title": "서울대 관악학생생활관, 배달의민족·잇그린과 '제로웨이스트 캠퍼스' 조성 나서 - 베리타스알파",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9SVFdlekx0WTMtNU13TnFad0tUbC0xUVFWT1BtTkdpdVF6azU1VnowS0d2Rkp0b1d2ekRCSXVCV0hCNWhOTlNHMDhsRUpaY0k1ZVU3N1QxZ3c5YjZPQzBlM1B4MDJsNTBKTzh4NA?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 07:43:09 GMT"
+      },
+      {
+        "title": "배민은 아이폰, 쿠팡이츠는 카톡…배달앱 '앱 밖 연동' 경쟁' - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9mWGFiTUFXQ2pPdHU5dWJ0RmxtNzZwUF84M1M0N08zMEk0amcwZ0EyQ2E1OEkwZ1RzSi1oOUpjZ2E4M09TWE9qcnQ4RWdtUQ?oc=5",
+        "publishedAt": "Fri, 18 Sep 2026 05:39:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 60
-      },
-      {
-        "month": "5월",
-        "value": 63
-      },
-      {
-        "month": "6월",
-        "value": 68
-      },
-      {
-        "month": "7월",
-        "value": 74
-      },
-      {
-        "month": "8월",
-        "value": 80
-      },
-      {
-        "month": "9월",
-        "value": 91
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 53
-      },
-      {
-        "month": "5월",
-        "value": 61
-      },
-      {
-        "month": "6월",
-        "value": 67
-      },
-      {
-        "month": "7월",
-        "value": 76
-      },
-      {
-        "month": "8월",
-        "value": 87
-      },
-      {
-        "month": "9월",
-        "value": 104
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 6,
-    "name": "F 펫서비스",
-    "industry": "반려동물",
-    "growth": 29,
-    "searchGrowth": 72,
-    "snsGrowth": 91,
-    "interestScore": 81,
-    "status": "관심 후보",
+    "name": "당근",
+    "industry": "플랫폼",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
     "customersShort": "20~40대",
-    "customers": "반려동물 양육 가구를 중심으로 반복 구매와 서비스 이용 가능성이 높은 고객군입니다.",
-    "description": "반려동물 관련 상품과 서비스에 대한 온라인 검색 및 SNS 관심이 증가하는 업체입니다.",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "반려동물 용품",
-      "예약 서비스",
-      "커뮤니티"
+      "지역생활",
+      "중고거래"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "[별일이약] 약국이 당근 거래 현장?…돈 꺼내는 장면 목격한 약사 - 약사공론",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ETkNkSEZ3LTRpeDR0WmlhZXc2eGRmX2d6V192U3N4T3I0VURfQXhBNXA3alhZTFh1VTU1ZDF4WDNUZjBUeWxzcFlfZHNsc3NWOUIwTy10emRhY2xUSktuWmtsbmZkUmk3eDJhTw?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 20:54:00 GMT"
+      },
+      {
+        "title": "“담백한 감자서 단맛, 달콤한 당근서 쓴맛”… 보관법에 따라 맛 달라지는 채소 두 가지 - 헬스조선",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5MT2lEY212VmI5blkwc0h5MGFXSG9hSkJOeE9NdlpmNEJnQW5RNFF6Mm5RWFNuV1NhQXI4OEZSV040ZGFvZDBuWnpBR0tOb0NSVFFZckhFTDNrWnpNU2RCNVU5QWhxbmZ4Yjd5U1U3cWFKaTBPX3ZaYUhZMzZQV3c?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 02:42:00 GMT"
+      },
+      {
+        "title": "당근마켓의 ‘유산균 파격 할인’ 이럴수가…경찰, 민생사기범죄 반년 만에 2만6782명 검거 [세상&] - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vQ2pqN0p5RzEtX1JVa3VvU2tjcTBjano2LUJNNDY4eVhGWlB4NVFVX2xhYlpIQUVrQ0RhN0J1dUJEc3dhT3BsbjhkZmpCN0k?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 06:46:51 GMT"
+      },
+      {
+        "title": "농지 전수조사 '채찍과 당근'... \"불법 전용농지 양성화 추진\" - lawtv.kr",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tMURGNWJWNkhBa3JicXFUbXhuQkU0aGJxX3BNdHI0ZTJfREM5UXdaa2pPMjNBSEtoY0N4U2dKUWk0RnZkM1JBY0kyM0ZOT3MzdGV5S05kZGxmUklLNDRzY1N2Mmg?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 08:18:39 GMT"
+      },
+      {
+        "title": "한복·제기 넘었다, 당근 거래 369% 폭증한 복주머니 - 한겨레",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzeC1HVjgtTTY4NFFlUjJQNzdJWFlTRFRUZFhwN0lyeDVoUVF0TkRsN0IycXJGSVZZQmJtS1ZOZWNnZG5CSUU5NUw1RVBCbUhDSWNiZm4tTUExNjlFS3pteQ?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 10:11:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 52
-      },
-      {
-        "month": "5월",
-        "value": 56
-      },
-      {
-        "month": "6월",
-        "value": 59
-      },
-      {
-        "month": "7월",
-        "value": 66
-      },
-      {
-        "month": "8월",
-        "value": 71
-      },
-      {
-        "month": "9월",
-        "value": 82
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 49
-      },
-      {
-        "month": "5월",
-        "value": 52
-      },
-      {
-        "month": "6월",
-        "value": 58
-      },
-      {
-        "month": "7월",
-        "value": 64
-      },
-      {
-        "month": "8월",
-        "value": 73
-      },
-      {
-        "month": "9월",
-        "value": 85
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 7,
-    "name": "G 교육 플랫폼",
-    "industry": "교육",
-    "growth": 26,
-    "searchGrowth": 64,
-    "snsGrowth": 79,
-    "interestScore": 79,
-    "status": "관심 후보",
-    "customersShort": "20~40대",
-    "customers": "자기계발 및 직무교육에 관심이 높은 직장인과 대학생이 주요 이용층입니다.",
-    "description": "온라인 교육 콘텐츠와 신규 과정 출시를 중심으로 이용자 관심도가 상승하는 교육 플랫폼입니다.",
+    "name": "29CM",
+    "industry": "패션",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~30대",
+    "customers": "20~30대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "온라인 강의",
-      "자격증 과정",
-      "커뮤니티"
+      "패션",
+      "라이프스타일"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "무신사와 29CM, 매장을 늘리는 법이 다릅니다 - 오픈애즈",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iLTVzU3pHU09oUzBqMk9nTWU4RHNhVE1sWXhzUXhpQW5uYmJqVXRCSFRGSWNpSlF5bVdWM1NoU01PbEFzajV2dDNrZThNdGRnbXpzb21YUzBxSV8xZmg2Zjl0NmtwZlpKc3FYVHhn?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 11:37:43 GMT"
+      },
+      {
+        "title": "주문조회 API 뚫린 ‘29CM’... 이름·배송정보 등 15만9852건 유출 - 보안뉴스",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lcUVab2xxaDloY0tNUTJWUE5uUmt6RmZjY0RlQUlkNEF3akRjWF9nRnJpVERZSjhvVEVoZ3hTc0hSaHVkN1B6UHd6Tks2RFFPeGNqTUlxSDBCQndrNFZvT0ZqdFdQcW9mcXBz?oc=5",
+        "publishedAt": "Sun, 30 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "title": "[단독] 무신사, ‘입점사 관계자’ 개인정보 유출…29CM 고객 정보 이어 - 한겨레",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NaUhSTVNXa3NhU0pTVWJTbXdMN2MwSXFBSHk5S1dtN1NPczB2dzl0VG9Mb2FaOWNjZlR0LWZXdl9lTjR3TVVOWHJpYVR4WmYzUEljZXFfZzBFcDVIYm5jckloeTJJR3UzUmVKS1IwZnVqZw?oc=5",
+        "publishedAt": "Mon, 07 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "title": "기록과 취향을 잇는 29CM×LOFT 문구 팝업 - design.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE51QkhpM1MxVl9SNXhmeFowMWZKQmlUQnRWdEpMc2hmNmtEM2UyenBFVHZLTUdwelhjd2ZnQl9MVzNod2tRcGVyLS03MnM?oc=5",
+        "publishedAt": "Fri, 04 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "title": "\"집·차는 못 사도 이건 산다\"…'뜻밖의 소비'에 빠진 2030 [김기자의 알고리즘] - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwWU9fQWplVzltZUU3VENKcExFMm83NFZSNERPc2lqbndac1MyZ3VJV0hieGFzNmpxeVJyc0EwdTVOMXlRZm42OWZQd0tpVS1LV3puZ1NoZFRTQQ?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 10:29:34 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 58
-      },
-      {
-        "month": "5월",
-        "value": 60
-      },
-      {
-        "month": "6월",
-        "value": 65
-      },
-      {
-        "month": "7월",
-        "value": 70
-      },
-      {
-        "month": "8월",
-        "value": 76
-      },
-      {
-        "month": "9월",
-        "value": 84
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 54
-      },
-      {
-        "month": "5월",
-        "value": 58
-      },
-      {
-        "month": "6월",
-        "value": 62
-      },
-      {
-        "month": "7월",
-        "value": 68
-      },
-      {
-        "month": "8월",
-        "value": 73
-      },
-      {
-        "month": "9월",
+        "month": "현재",
         "value": 80
       }
     ]
   },
   {
     "id": 8,
-    "name": "H 인테리어",
-    "industry": "홈리빙",
-    "growth": 24,
-    "searchGrowth": 59,
-    "snsGrowth": 74,
-    "interestScore": 77,
-    "status": "관심 후보",
-    "customersShort": "30~40대",
-    "customers": "주거환경 개선 및 인테리어 상품 구매 관심이 높은 30~40대 고객층이 주요 대상입니다.",
-    "description": "홈리빙 콘텐츠와 상품 검색량이 꾸준히 증가하는 인테리어 관련 업체입니다.",
+    "name": "마켓컬리",
+    "industry": "식음료",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~40대",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "가구",
-      "홈데코",
-      "인테리어 콘텐츠"
+      "식품",
+      "커머스"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "컬리, 추석 ‘라스트 오더’…2500여 상품 최대 77% 할인 - 푸드투데이",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5vVTlCbXBqRGFSUTQtWU5BcmpuUE5ITUZGMlVyeEpIejM1N1pXUXFZd01GNjVXMUtFMmdGUDZ5U2ZfeTJWTkg3Z0NvbEwzdjhGd1FFQ3VFYXZKVnZnN0FuTE1aVi15UQ?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 23:55:31 GMT"
+      },
+      {
+        "title": "적자 늪 빠진 이커머스…컬리 '홀로 흑자' 질주하는 이유는 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE41T0dBRS0tQWhwTnBoSUVRYjRfT0NoZzBGTHNLLVg5ZE92bXU4WWdKeXpfeW9LV04yQllPWm1NaVNFakNqTnBoYXJKYmttOTQ?oc=5",
+        "publishedAt": "Mon, 31 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "title": "[기획] 쿠팡 52.3일·컬리 54.6일…'35일 룰' 영향권 확대 - m-i.kr",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fMDgxZ0tMbmxpSHNENGJEc0U3dmxDZ3VlNUFOWlduZHZlUEt0aThDQVdWcktCRlNJajdCVGVuRlNPOGhmRk05UnBSQlFudV9IR0FmTkZob0VRWi1IdVpmbXpCM3DSAWhBVV95cUxQeFlUNGpFeHNxeFJESnA5aHlDeG9OUWpfczhzZ2h4ZWVEUy1YN2xKOHl1elk3aDhxaFpleTR5NDRkRnBJYXJhaHRPbUZsVkRPVmF1OVJrZHpLaFNSak84d1NZcHdXeG5xVw?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 03:00:00 GMT"
+      },
+      {
+        "title": "토스-오아시스 동맹, 네이버-컬리와 닮았지만 다르다 - 네이버 프리미엄콘텐츠",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWnBGZGdMUkJUWjZtbGJfNlA4WkJ4T0VlenI2cnNrTDk1MTFNc0hCbkoteHp1cnlxVkRZa3hFVHY1ckxhVzZOOHZEV1Z5WUwyUTM2bW1HbUFxU3Awd3c2am5GaTNWN2FHNDBxbEJjcHBfSmxZY3FZcnlkdGU2M2k2anYwNlpodw?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 10:00:00 GMT"
+      },
+      {
+        "title": "폭염에 컬리 신선식품 배송 품질 논란…고객 불만 잇따라 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9GQ2RjcldLYmFTaEx0ekJIVFlMMEw1M3Z3RU5LdDFrT0ZyZE5yWDRZclF6c19OX0FzVEkyRFZfSGxjbnlOdFNvUWNRcGowMzQxbDZTMHZfSndrdFXSAWBBVV95cUxOV19CSEZ4NTYxU1NtRVg2R1A4TVlhWlZjbEUwY1RqcnlvQlkxWllmclh3aHBKZkhndEItRGJtR1ZxM1dhVE1sZ2tjOEl5M1ZFZXB4RXBxeHM4aWxrZlNfV2k?oc=5",
+        "publishedAt": "Tue, 11 Aug 2026 07:00:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 55
-      },
-      {
-        "month": "5월",
-        "value": 57
-      },
-      {
-        "month": "6월",
-        "value": 60
-      },
-      {
-        "month": "7월",
-        "value": 65
-      },
-      {
-        "month": "8월",
-        "value": 70
-      },
-      {
-        "month": "9월",
-        "value": 78
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 48
-      },
-      {
-        "month": "5월",
-        "value": 52
-      },
-      {
-        "month": "6월",
-        "value": 56
-      },
-      {
-        "month": "7월",
-        "value": 61
-      },
-      {
-        "month": "8월",
-        "value": 67
-      },
-      {
-        "month": "9월",
-        "value": 76
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 9,
-    "name": "I 모빌리티",
-    "industry": "모빌리티",
-    "growth": 21,
-    "searchGrowth": 51,
-    "snsGrowth": 69,
-    "interestScore": 74,
-    "status": "관심 후보",
-    "customersShort": "20~50대",
-    "customers": "이동 및 생활 편의 서비스에 관심이 높은 모바일 이용자층을 주요 고객으로 분석했습니다.",
-    "description": "생활형 이동 서비스와 앱 기반 이용 경험을 중심으로 온라인 활동이 증가하는 업체입니다.",
+    "name": "반려동물 플랫폼",
+    "industry": "반려동물",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~40대",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "모빌리티 서비스",
-      "예약",
-      "멤버십"
+      "반려동물",
+      "생활서비스"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "추석 연휴 반려동물 위탁, 사고 나면 배상 사각지대 - 매일신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQSURWdzFXN0lLVmFqYU5naTU4ay1OT1pQSGZiNmVRdFp0RUlrTDVZQmN6MklYMWZwbndxM0JJMHFPaDJ6cVJ2T2dMZDhTT1VIQ0ZER3kxQUJWX1AtQzRTeUpR?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 07:28:39 GMT"
+      },
+      {
+        "title": "반려동물 추석 풍속도…호텔은 만석, 봉안당도 붐빈다 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OZzg2UW1xR3ZMT2c0WkVNaDVxMDF5S1c3VFlGT0tyZEdPVmwtMkFBcWhvekU1ZWRlSWxOeUNqMkNLcEt0TzQ4MVhESkFQRVI0SVpnV0lSMTByTjDSAWBBVV95cUxOV3lYYnNUSVBDN211WjNhOGo0TUxJa2xQRTlhXzVxbUZ0LTE5dXpFRExLelRxbjRZUkJOU3ZNT2E0b1JHc2pRQ1Bwdlk5dWcybHNOdHhoWGh5Z3ZPcWk0Tjk?oc=5",
+        "publishedAt": "Fri, 18 Sep 2026 08:52:00 GMT"
+      },
+      {
+        "title": "소식통에 따르면, 반려동물 사료 플랫폼 ‘골든 펫 브랜즈’가 기업공개를 위해 은행들과 접촉하고 있다고 한다. - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1iTlVPN0JRYlFXYnJvbWJubE40ak4wT1YxQ2NHQXllaXA3c3V3TEZKMElTUDNfdnhMTkVkU1pIb282UkN0VklDV1M3aDNCTE5FVktid2V3THBWTmlHRnVub2JacU1oYjhGa2NFa0U3UGVYSEExX2Fv?oc=5",
+        "publishedAt": "Wed, 02 Sep 2026 19:44:34 GMT"
+      },
+      {
+        "title": "'반려동물 보험 시장 잡자' 펫 플랫폼 내놓는 DB손보 - 연합인포맥스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tWGNWSzdUU0pfWG11czJIQ1E0RkhLX09NQTZjTTVzRDBFOU5RejZONW94b2QyYkE2cmdnYXNZanZUTTZuZ21VbDBQZkVTbnJ0eVU3c0dFMWlHU2VZcUZxZ1NmRWdFX3l1cXhFUEZnU1HSAXRBVV95cUxQRnVqOFo2dGx6aWZDZXAyN0twNVdjV3lUM2M1YjFXMlpGLVM2UFJ1bVoxeGpwc3Q5TXUwUGpFN1Fxa0ZLcVN0YnBoQlF3azNEdHhSRmVOdWdpTkZUUnlncnNvSmZnVFlJcTlXejJXYy1jUkpSaw?oc=5",
+        "publishedAt": "Tue, 16 Jun 2026 07:00:00 GMT"
+      },
+      {
+        "title": "인투씨엔에스 '반려동물 플랫폼', AI 리포트 특허 취득 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5maVUzb0pHemt6M0ZSTDYtMmQ4Qkt4S0RSTE5PelNPdU9WMWRQeGZENEtRT2pRNVJ6M0E2NTk0YnVlQWVBTkN1Yk81R1M2QQ?oc=5",
+        "publishedAt": "Wed, 29 Jul 2026 07:00:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 50
-      },
-      {
-        "month": "5월",
-        "value": 53
-      },
-      {
-        "month": "6월",
-        "value": 56
-      },
-      {
-        "month": "7월",
-        "value": 60
-      },
-      {
-        "month": "8월",
-        "value": 67
-      },
-      {
-        "month": "9월",
-        "value": 75
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 44
-      },
-      {
-        "month": "5월",
-        "value": 49
-      },
-      {
-        "month": "6월",
-        "value": 55
-      },
-      {
-        "month": "7월",
-        "value": 58
-      },
-      {
-        "month": "8월",
-        "value": 65
-      },
-      {
-        "month": "9월",
-        "value": 74
+        "month": "현재",
+        "value": 80
       }
     ]
   },
   {
     "id": 10,
-    "name": "J 헬스케어",
-    "industry": "헬스케어",
-    "growth": 18,
-    "searchGrowth": 46,
-    "snsGrowth": 61,
-    "interestScore": 72,
-    "status": "관심 후보",
-    "customersShort": "30~50대",
-    "customers": "건강관리 및 생활습관 개선 서비스에 관심이 높은 30~50대 고객층이 주요 대상입니다.",
-    "description": "건강관리 콘텐츠와 모바일 서비스 이용을 중심으로 온라인 관심도가 점진적으로 증가하고 있습니다.",
+    "name": "직방",
+    "industry": "부동산",
+    "growth": 85,
+    "searchGrowth": 100,
+    "snsGrowth": 80,
+    "interestScore": 99,
+    "status": "고관심 후보",
+    "customersShort": "20~40대",
+    "customers": "20~40대 고객군을 중심으로 외부 활동량을 확인하고 있습니다.",
+    "description": "외부 뉴스 및 온라인 활동 데이터를 기반으로 분석 중인 제휴 후보 업체입니다.",
     "products": [
-      "건강관리",
-      "콘텐츠",
-      "예약 서비스"
+      "부동산",
+      "주거"
     ],
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-22",
+    "newsCount": 20,
+    "newsActivityScore": 100,
+    "latestNews": [
+      {
+        "title": "직방, 집코노미 박람회서 단기임대 등 3종 서비스 소개 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NeUlxUnZPNHhuM0tUZm9yOHpvVDlCWDdkSi0xUWVIT2t4Y0hMR3ZWZVFfTk9iYW9RaWJ1d3Fjdk1hT3E3bUJndWo4Mm9YNnVNc3ZQeG8zUy1KUQ?oc=5",
+        "publishedAt": "Tue, 22 Sep 2026 00:09:58 GMT"
+      },
+      {
+        "title": "10월 전국 아파트 입주물량 1만6천567호…전월 대비 65%↑ - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ya01XaGpEZ0d6TkM1WE9VX3ZGdEdUdGpkZXFyY2phUGd2a2QzV2NRVDltd1o5M0MtcERKT2lmSUotMnhQeEM3UnlCcXBLU3A3dEZFdHducjNDYk1UMW8zaNIBYEFVX3lxTE1ya01XaGpEZ0d6TkM1WE9VX3ZGdEdUdGpkZXFyY2phUGd2a2QzV2NRVDltd1o5M0MtcERKT2lmSUotMnhQeEM3UnlCcXBLU3A3dEZFdHducjNDYk1UMW8zaA?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 23:46:06 GMT"
+      },
+      {
+        "title": "대구 10월 새 아파트 299가구 입주…전국 물량은 65% 증가 - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWQTlVQVJKUUs1YUE2YktmSTlxcHNiQ3Y3Ui1ndzMya2Y3QVl3OWtCUklRNURlZmRxa0xjSHZRcU9ZcUJFZHRWbE12dFRGcDUtQVJ5ZTJzVEtaM1NCb0pF0gFkQVVfeXFMUDQ1Z09MSDRIcUM1VW50aG1EQ284LWlqUGI1VklUSk5XZm1rcHFLT25jaDVpSzR4eTdURkRPekM2SUlPb2RSMFFrUEd0MGQ1bXJDTE1yUEg4RGtnRmgzNzF4MkVrWQ?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 05:41:24 GMT"
+      },
+      {
+        "title": "10월 강원지역 아파트 264세대 입주 - kwnews.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94NmNGTFJwUnFKUUVKbUVDSXl0MFp1U2tNbVI4cGhrVFhYQzZ4SDYwOHpOaWRoZDNaV3pLdFVzcTB0V2tveG45OVZKem5UQW5oN1pKSUhFY2Q2cVk?oc=5",
+        "publishedAt": "Mon, 21 Sep 2026 09:06:59 GMT"
+      },
+      {
+        "title": "10월 전국 1만6567가구 입주… 전월보다 65% 늘어 - 조선비즈 - Chosunbiz",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbXJkNlNSUTRCaXhCWnA4bHJyS2tjRnZXMGpiWHhCOUNBSFFLa25XNWJVdnFrQ1NvSkhxQjhrcjlQSVRrNzJVUm9xNExuZVN6Tkc4dkJrWlh6WklQVG1wM2tNbk95a2FZdmRxR3RtNzNVenJJNjcxMGw3WllDOTRjRHJVR3k4QXdiczV3YkZrTGJkUHdyaGJqQtIBrAFBVV95cUxPc1NXVVY0QS1lUkk1U3dLVC1nYW5vcXlsdFRSaDdlRFBvTl9Ba3QtWGxZX3N5aEQ5R3Uydndwc1o1dTMwTUtFbU9jeWVlZFdEaVBPa3dCSVNFUm10ekFCSDd1SUp6ZWFfeGt4Ym1lMVJja0lRRTJmbjh6cllVeVNwb1pVc0pmNTV2S1lQUmplaUgydWdmVkRyU1dHWURtR3FHTmV4Zkg1OTJlRDFt?oc=5",
+        "publishedAt": "Sun, 20 Sep 2026 23:35:00 GMT"
+      }
+    ],
     "searchHistory": [
       {
-        "month": "4월",
-        "value": 53
-      },
-      {
-        "month": "5월",
-        "value": 55
-      },
-      {
-        "month": "6월",
-        "value": 58
-      },
-      {
-        "month": "7월",
-        "value": 62
-      },
-      {
-        "month": "8월",
-        "value": 66
-      },
-      {
-        "month": "9월",
-        "value": 72
+        "month": "현재",
+        "value": 100
       }
     ],
     "snsHistory": [
       {
-        "month": "4월",
-        "value": 47
-      },
-      {
-        "month": "5월",
-        "value": 50
-      },
-      {
-        "month": "6월",
-        "value": 54
-      },
-      {
-        "month": "7월",
-        "value": 58
-      },
-      {
-        "month": "8월",
-        "value": 63
-      },
-      {
-        "month": "9월",
-        "value": 69
+        "month": "현재",
+        "value": 80
       }
     ]
   }
