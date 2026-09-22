@@ -2,7 +2,6 @@ name: Update Company Data
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 1 * * *"
 
@@ -14,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -29,16 +27,21 @@ jobs:
       - name: Crawl company data
         run: npm run crawl
 
+      - name: Generate AI analysis
+        run: npm run ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/companies.json
+          git add data/companies.json data/analyses.json
 
           if git diff --cached --quiet; then
             echo "변경된 데이터가 없습니다."
           else
-            git commit -m "chore: update company data"
+            git commit -m "chore: update company data and AI analysis"
             git push
           fi

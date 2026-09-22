@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "crawl": "node scripts/crawl-companies.js"
+    "crawl": "node scripts/crawl-companies.js",
+    "ai": "node scripts/generate-ai-analysis.js"
   },
   "dependencies": {
-    "fast-xml-parser": "^5.2.5"
+    "fast-xml-parser": "^5.2.5",
+    "openai": "^6.0.0"
   }
 }
