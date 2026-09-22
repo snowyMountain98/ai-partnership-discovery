@@ -5,7 +5,7 @@ async function loadCompanies() {
   try {
     const response = await fetch("./data/companies.json");
     if (!response.ok) throw new Error("가맹점 후보 데이터를 불러오지 못했습니다.");
-    companies = await response.json();
+    companies = (await response.json()).filter(company => !company.aiExcluded);
     initializeFilters();
     renderDashboard();
   } catch (error) {
@@ -71,7 +71,7 @@ function renderStats() {
     <div class="stat-card">
       <span class="stat-label">가맹점 후보</span>
       <div class="stat-value">${companies.length}<small>개</small></div>
-      <div class="stat-sub">최대 150개까지 발굴</div>
+      <div class="stat-sub">최대 150개까지 발굴 · 기업명 검증 후 저장</div>
     </div>
     <div class="stat-card">
       <span class="stat-label">다채널 발굴</span>
@@ -86,7 +86,7 @@ function renderStats() {
     <div class="stat-card">
       <span class="stat-label">AI 검증 완료</span>
       <div class="stat-value">${verified}<small>개</small></div>
-      <div class="stat-sub">상위 후보 30개 우선 검증</div>
+      <div class="stat-sub">상위 후보 30개 우선 AI 검증</div>
     </div>
   `;
 }
